@@ -28609,7 +28609,7 @@
 		"page": 448,
 		"year": "2018",
 		"notes": "F-6",
-		"status": "UnRead",
+		"status": "Reading",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a"
@@ -29961,7 +29961,7 @@
 		"page": 384,
 		"year": "2024",
 		"notes": "H-6",
-		"status": "UnRead",
+		"status": "Reading",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a"
@@ -30231,10 +30231,10 @@
 		"page": 204,
 		"year": "2024",
 		"notes": "B-6",
-		"status": "Reading",
-		"newstatus": "n/a",
+		"status": "JustRead",
+		"newstatus": "ToBeUpdated",
 		"categories": "psikoloji",
-		"reread": "n/a"
+		"reread": "yes"
 	},
 	{
 		"bookshelf": 3016,
