@@ -30366,7 +30366,7 @@
 		"page": 408,
 		"year": "2017",
 		"notes": "B-8",
-		"status": "UnRead",
+		"status": "Reading",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a"
@@ -30396,10 +30396,10 @@
 		"page": 208,
 		"year": "2016",
 		"notes": "B-8",
-		"status": "Reading",
-		"newstatus": "n/a",
-		"categories": "n/a",
-		"reread": "n/a"
+		"status": "JustRead",
+		"newstatus": "TobeUpdated",
+		"categories": "psikoloji",
+		"reread": "yes"
 	},
 	{
 		"bookshelf": 3027,
@@ -30840,6 +30840,21 @@
 		"bookshelf": 3055,
 		"No": 2055,
 		"title": "Yolda Ogrenmek - Psikanaliz ve Psikoterapi Uzerine Dusunceler",
+		"publisher": "Okuyan Us Yayinlari",
+		"author": "Patrick J. Casement",
+		"lang": "Turkce",
+		"page": 300,
+		"year": "2025",
+		"notes": "A-9",
+		"status": "UnRead",
+		"newstatus": "n/a",
+		"categories": "n/a",
+		"reread": "n/a"
+	},
+	{
+		"bookshelf": 3056,
+		"No": 2056,
+		"title": "Yasam Dersleri",
 		"publisher": "Okuyan Us Yayinlari",
 		"author": "Patrick J. Casement",
 		"lang": "Turkce",
