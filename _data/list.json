@@ -26927,9 +26927,9 @@
 		"page": 224,
 		"year": "2024",
 		"notes": "D-6",
-		"status": "UnRead",
+		"status": "Reading",
 		"newstatus": "n/a",
-		"categories": "n/a",
+		"categories": "psikoloji",
 		"reread": "n/a"
 	},
 	{
@@ -30501,9 +30501,9 @@
 		"page": 336,
 		"year": "2018",
 		"notes": "B-8",
-		"status": "UnRead",
+		"status": "Reading",
 		"newstatus": "n/a",
-		"categories": "n/a",
+		"categories": "psikoloji",
 		"reread": "n/a"
 	},
 	{
@@ -30531,9 +30531,9 @@
 		"page": 288,
 		"year": "2025",
 		"notes": "A-6",
-		"status": "UnRead",
+		"status": "Reading",
 		"newstatus": "n/a",
-		"categories": "n/a",
+		"categories": "psikoloji",
 		"reread": "n/a"
 	},
 	{
@@ -31057,9 +31057,9 @@
 		"year": "2018",
 		"notes": "B-8",
 		"status": "Reading",
-		"newstatus": "n/a",
+		"newstatus": "ToBeUpdated",
 		"categories": "psikoloji",
-		"reread": "n/a"
+		"reread": "no"
 	},
 	{
 		"bookshelf": 3070,
