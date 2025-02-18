@@ -16333,7 +16333,7 @@
 		"year": "2018",
 		"notes": "G-8",
 		"status": "JustRead",
-		"newstatus": "ToBeUpdated",
+		"newstatus": "updated",
 		"categories": "psikoloji",
 		"reread": "no"
 	},
@@ -28192,7 +28192,7 @@
 		"status": "JustRead",
 		"newstatus": "ToBeUpdated",
 		"categories": "sosyoloji",
-		"reread": "no"
+		"reread": "yes"
 	},
 	{
 		"bookshelf": 2880,
@@ -29902,7 +29902,7 @@
 		"year": "2023",
 		"notes": "G-6",
 		"status": "JustRead",
-		"newstatus": "Updated",
+		"newstatus": "updated",
 		"categories": "biyografi",
 		"reread": "no"
 	},
@@ -30397,7 +30397,7 @@
 		"year": "2016",
 		"notes": "B-8",
 		"status": "JustRead",
-		"newstatus": "TobeUpdated",
+		"newstatus": "ToBeUpdated",
 		"categories": "psikoloji",
 		"reread": "yes"
 	},
@@ -31056,8 +31056,8 @@
 		"page": 304,
 		"year": "2018",
 		"notes": "B-8",
-		"status": "Reading",
-		"newstatus": "ToBeUpdated",
+		"status": "JustRead",
+		"newstatus": "updated",
 		"categories": "psikoloji",
 		"reread": "no"
 	},
