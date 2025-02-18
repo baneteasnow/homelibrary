@@ -29062,8 +29062,8 @@
 		"notes": "G-7",
 		"status": "JustRead",
 		"newstatus": "updated",
-		"categories": "n/a",
-		"reread": "n/a"
+		"categories": "biyografi",
+		"reread": "no"
 	},
 	{
 		"bookshelf": 2938,
@@ -29212,8 +29212,8 @@
 		"notes": "G-7",
 		"status": "JustRead",
 		"newstatus": "updated",
-		"categories": "n/a",
-		"reread": "n/a"
+		"categories": "biyografi",
+		"reread": "no"
 	},
 	{
 		"bookshelf": 2948,
@@ -29227,8 +29227,8 @@
 		"notes": "G-7",
 		"status": "JustRead",
 		"newstatus": "updated",
-		"categories": "n/a",
-		"reread": "n/a"
+		"categories": "biyografi",
+		"reread": "no"
 	},
 	{
 		"bookshelf": 2949,
@@ -29894,7 +29894,7 @@
 	{
 		"bookshelf": 2993,
 		"No": 1993,
-		"title": "Buyrun Ziyafete",
+		"title": "Buyurun Ziyafete",
 		"publisher": "Iletisim Yayinlari",
 		"author": "Vedat Milor, Besim Hatinoğlu",
 		"lang": "Turkce",
@@ -29902,8 +29902,8 @@
 		"year": "2023",
 		"notes": "G-6",
 		"status": "JustRead",
-		"newstatus": "ToBeUpdated",
-		"categories": "sosyoloji",
+		"newstatus": "Updated",
+		"categories": "biyografi",
 		"reread": "no"
 	},
 	{
