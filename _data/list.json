@@ -342,7 +342,7 @@
 		"status": "Read",
 		"newstatus": "updated",
 		"categories": "motivasyon",
-		"reread": "no"
+		"reread": "yes"
 	},
 	{
 		"bookshelf": 1024,
@@ -24726,7 +24726,7 @@
 	{
 		"bookshelf": 2649,
 		"No": 1649,
-		"title": "Yetiskin Olmak",
+		"title": "Yetiskin Olmak - Buyumek ve Duygusal Olgunluga Erismek",
 		"publisher": "Aganta Kitap",
 		"author": "Lara A. Fielding",
 		"lang": "Turkce",
@@ -24734,9 +24734,9 @@
 		"year": "2020",
 		"notes": "F-3",
 		"status": "JustRead",
-		"newstatus": "ToBeUpdated",
+		"newstatus": "updated",
 		"categories": "psikoloji",
-		"reread": "n/a"
+		"reread": "no"
 	},
 	{
 		"bookshelf": 2650,
@@ -25726,9 +25726,9 @@
 		"year": "2019",
 		"notes": "E-10",
 		"status": "JustRead",
-		"newstatus": "ToBeUpdated",
-		"categories": "n/a",
-		"reread": "n/a"
+		"newstatus": "updated",
+		"categories": "ekonomi",
+		"reread": "no"
 	},
 	{
 		"bookshelf": 2716,
@@ -26087,9 +26087,9 @@
 		"year": "2023",
 		"notes": "D-4",
 		"status": "JustRead",
-		"newstatus": "ToBeUpdated",
-		"categories": "n/a",
-		"reread": "n/a"
+		"newstatus": "updated",
+		"categories": "fen bilimleri",
+		"reread": "no"
 	},
 	{
 		"bookshelf": 2740,
@@ -26538,9 +26538,9 @@
 		"year": "2020",
 		"notes": "D-4",
 		"status": "JustRead",
-		"newstatus": "ToBeUpdated",
-		"categories": "n/a",
-		"reread": "n/a"
+		"newstatus": "updated",
+		"categories": "fen bilimleri",
+		"reread": "no"
 	},
 	{
 		"bookshelf": 2770,
@@ -26613,9 +26613,9 @@
 		"year": "2007",
 		"notes": "C-4",
 		"status": "JustRead",
-		"newstatus": "ToBeUpdated",
-		"categories": "n/a",
-		"reread": "n/a"
+		"newstatus": "updated",
+		"categories": "biyografi",
+		"reread": "no"
 	},
 	{
 		"bookshelf": 2775,
@@ -27408,9 +27408,9 @@
 		"year": "2023",
 		"notes": "G-7",
 		"status": "JustRead",
-		"newstatus": "ToBeUpdated",
-		"categories": "n/a",
-		"reread": "n/a"
+		"newstatus": "updated",
+		"categories": "motivasyon",
+		"reread": "no"
 	},
 	{
 		"bookshelf": 2828,
@@ -28040,7 +28040,7 @@
 		"year": "2021",
 		"notes": "F-6",
 		"status": "JustRead",
-		"newstatus": "ToBeUpdated",
+		"newstatus": "updated",
 		"categories": "sosyoloji",
 		"reread": "no"
 	},
@@ -30157,7 +30157,7 @@
 		"year": "2024",
 		"notes": "A-7",
 		"status": "JustRead",
-		"newstatus": "ToBeUpdated",
+		"newstatus": "updated",
 		"categories": "psikoloji",
 		"reread": "no"
 	},
