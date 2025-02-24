@@ -2874,10 +2874,10 @@
 		"page": 256,
 		"year": "2017",
 		"notes": "F-3",
-		"status": "JustRead",
-		"newstatus": "ToBeUpdated",
+		"status": "Read",
+		"newstatus": "updated",
 		"categories": "uretkenlik teknoloji",
-		"reread": "n/a"
+		"reread": "no"
 	},
 	{
 		"bookshelf": 1193,
@@ -3504,10 +3504,10 @@
 		"page": 346,
 		"year": "2011",
 		"notes": "C-2",
-		"status": "JustRead",
-		"newstatus": "ToBeUpdated",
-		"categories": "n/a",
-		"reread": "n/a"
+		"status": "Read",
+		"newstatus": "updated",
+		"categories": "biyografi",
+		"reread": "no"
 	},
 	{
 		"bookshelf": 1235,
@@ -9626,10 +9626,10 @@
 		"page": 240,
 		"year": "2023",
 		"notes": "F-4",
-		"status": "JustRead",
-		"newstatus": "ToBeUpdated",
+		"status": "Read",
+		"newstatus": "updated",
 		"categories": "veganlik",
-		"reread": "n/a"
+		"reread": "no"
 	},
 	{
 		"bookshelf": 1643,
@@ -23413,8 +23413,8 @@
 		"page": 288,
 		"year": "2023",
 		"notes": "E-3",
-		"status": "JustRead",
-		"newstatus": "ToBeUpdated",
+		"status": "Read",
+		"newstatus": "updated",
 		"categories": "pazarlama",
 		"reread": "no"
 	},
@@ -24007,7 +24007,7 @@
 		"bookshelf": 2601,
 		"No": 1601,
 		"title": "Fraternis - Kayip Kitaplar Gizli Kardeslik",
-		"publisher": "Inkilap",
+		"publisher": "Inkilap Kitabevi",
 		"author": "Burak Eldem",
 		"lang": "Turkce",
 		"page": 648,
@@ -24022,7 +24022,7 @@
 		"bookshelf": 2602,
 		"No": 1602,
 		"title": "Kozmik Okyanus - Sakli Tarih",
-		"publisher": "Inkilap",
+		"publisher": "Inkilap Kitabevi",
 		"author": "Burak Eldem",
 		"lang": "Turkce",
 		"page": 416,
@@ -24037,16 +24037,16 @@
 		"bookshelf": 2603,
 		"No": 1603,
 		"title": "2012 - Marduk'la Randevu",
-		"publisher": "Inkilap",
+		"publisher": "Inkilap Kitabevi",
 		"author": "Burak Eldem",
 		"lang": "Turkce",
 		"page": 607,
 		"year": "2003",
 		"notes": "H-2",
-		"status": "JustRead",
-		"newstatus": "ToBeUpdated",
+		"status": "Read",
+		"newstatus": "updated",
 		"categories": "tarih",
-		"reread": "n/a"
+		"reread": "no"
 	},
 	{
 		"bookshelf": 2604,
@@ -26492,10 +26492,10 @@
 		"page": 248,
 		"year": "2023",
 		"notes": "A-6",
-		"status": "Reading",
-		"newstatus": "n/a",
+		"status": "Read",
+		"newstatus": "ToBeUpdated",
 		"categories": "psikoloji",
-		"reread": "n/a"
+		"reread": "yes"
 	},
 	{
 		"bookshelf": 2767,
@@ -26702,10 +26702,10 @@
 		"page": 272,
 		"year": "2023",
 		"notes": "C-2",
-		"status": "JustRead",
+		"status": "Read",
 		"newstatus": "ToBeUpdated",
-		"categories": "n/a",
-		"reread": "n/a"
+		"categories": "biyografi",
+		"reread": "no"
 	},
 	{
 		"bookshelf": 2781,
