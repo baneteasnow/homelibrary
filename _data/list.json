@@ -31101,10 +31101,10 @@
 		"page": 303,
 		"year": "2019",
 		"notes": "B-8",
-		"status": "UnRead",
-		"newstatus": "n/a",
-		"categories": "n/a",
-		"reread": "n/a"
+		"status": "JustRead",
+		"newstatus": "ToBeUpdated",
+		"categories": "psikoloji",
+		"reread": "yes"
 	},
 	{
 		"bookshelf": 3073,
