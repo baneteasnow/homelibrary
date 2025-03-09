@@ -1315,9 +1315,9 @@
 		"year": "2012",
 		"notes": "C-2",
 		"status": "Read",
-		"newstatus": "n/a",
+		"newstatus": "updated",
 		"categories": "marka profili",
-		"reread": "n/a"
+		"reread": "no"
 	},
 	{
 		"bookshelf": 1089,
@@ -6190,9 +6190,9 @@
 		"year": "2016",
 		"notes": "C-1",
 		"status": "Read",
-		"newstatus": "n/a",
+		"newstatus": "updated",
 		"categories": "biyografi",
-		"reread": "n/a"
+		"reread": "no"
 	},
 	{
 		"bookshelf": 1414,
@@ -7210,9 +7210,9 @@
 		"year": "2014",
 		"notes": "E-3",
 		"status": "Read",
-		"newstatus": "n/a",
+		"newstatus": "updated",
 		"categories": "teknoloji",
-		"reread": "n/a"
+		"reread": "no"
 	},
 	{
 		"bookshelf": 1482,
@@ -7270,9 +7270,9 @@
 		"year": "2016",
 		"notes": "C-3",
 		"status": "Read",
-		"newstatus": "n/a",
+		"newstatus": "updated",
 		"categories": "siber guvenlik",
-		"reread": "n/a"
+		"reread": "no"
 	},
 	{
 		"bookshelf": 1486,
@@ -11592,9 +11592,9 @@
 		"year": "2010",
 		"notes": "C-1",
 		"status": "Read",
-		"newstatus": "n/a",
+		"newstatus": "updated",
 		"categories": "biyografi",
-		"reread": "n/a"
+		"reread": "no"
 	},
 	{
 		"bookshelf": 1774,
@@ -14323,7 +14323,7 @@
 		"year": "2003",
 		"notes": "C-2",
 		"status": "Read",
-		"newstatus": "ToBeUpdated",
+		"newstatus": "updated",
 		"categories": "calisma yasami",
 		"reread": "no"
 	},
@@ -20220,7 +20220,7 @@
 		"notes": "C-5",
 		"status": "Read",
 		"reread": "yes",
-		"newstatus": "n/a",
+		"newstatus": "updated",
 		"categories": "teknoloji"
 	},
 	{
@@ -21434,9 +21434,9 @@
 		"year": "2009",
 		"notes": "D-2",
 		"status": "Read",
-		"newstatus": "n/a",
+		"newstatus": "updated",
 		"categories": "marka profili",
-		"reread": "n/a"
+		"reread": "no"
 	},
 	{
 		"bookshelf": 2430,
