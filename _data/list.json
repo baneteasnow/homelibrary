@@ -1045,9 +1045,9 @@
 		"year": "2011",
 		"notes": "A-2",
 		"status": "Read",
-		"newstatus": "n/a",
+		"newstatus": "updated",
 		"categories": "tuketici",
-		"reread": "n/a"
+		"reread": "no"
 	},
 	{
 		"bookshelf": 1071,
@@ -3596,7 +3596,7 @@
 		"notes": "E-1",
 		"status": "Read",
 		"reread": "yes",
-		"newstatus": "n/a",
+		"newstatus": "updated",
 		"categories": "teknoloji"
 	},
 	{
@@ -8276,7 +8276,7 @@
 		"notes": "D-4",
 		"status": "Read",
 		"reread": "yes",
-		"newstatus": "n/a",
+		"newstatus": "updated",
 		"categories": "felsefe"
 	},
 	{
@@ -8321,7 +8321,7 @@
 		"notes": "C-6",
 		"status": "Read",
 		"reread": "yes",
-		"newstatus": "n/a",
+		"newstatus": "updated",
 		"categories": "yazilim"
 	},
 	{
@@ -11968,7 +11968,7 @@
 		"notes": "E-2",
 		"status": "Read",
 		"reread": "yes",
-		"newstatus": "n/a",
+		"newstatus": "updated",
 		"categories": "tuketici"
 	},
 	{
@@ -16304,7 +16304,7 @@
 		"notes": "A-3",
 		"status": "Read",
 		"reread": "yes",
-		"newstatus": "n/a",
+		"newstatus": "updated",
 		"categories": "moda markalari"
 	},
 	{
@@ -19318,9 +19318,9 @@
 		"year": "2015",
 		"notes": "C-1",
 		"status": "Read",
-		"newstatus": "n/a",
-		"categories": "n/a",
-		"reread": "n/a"
+		"newstatus": "updated",
+		"categories": "biyografi",
+		"reread": "no"
 	},
 	{
 		"bookshelf": 2289,
