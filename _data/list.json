@@ -1330,9 +1330,9 @@
 		"year": "2015",
 		"notes": "F-1",
 		"status": "Read",
-		"newstatus": "n/a",
+		"newstatus": "updated",
 		"categories": "biyografi",
-		"reread": "n/a"
+		"reread": "no"
 	},
 	{
 		"bookshelf": 1090,
@@ -1616,7 +1616,7 @@
 		"notes": "C-8",
 		"status": "Read",
 		"reread": "yes",
-		"newstatus": "n/a",
+		"newstatus": "updated",
 		"categories": "yapay zeka"
 	},
 	{
@@ -4480,9 +4480,9 @@
 		"year": "2016",
 		"notes": "C-9",
 		"status": "Read",
-		"newstatus": "n/a",
+		"newstatus": "updated",
 		"categories": "siber guvenlik",
-		"reread": "n/a"
+		"reread": "no"
 	},
 	{
 		"bookshelf": 1300,
@@ -8455,9 +8455,9 @@
 		"year": "2009",
 		"notes": "D-4",
 		"status": "Read",
-		"newstatus": "n/a",
+		"newstatus": "updated",
 		"categories": "felsefe",
-		"reread": "n/a"
+		"reread": "yes"
 	},
 	{
 		"bookshelf": 1565,
@@ -11668,7 +11668,7 @@
 		"notes": "D-4",
 		"status": "Read",
 		"reread": "yes",
-		"newstatus": "n/a",
+		"newstatus": "updated",
 		"categories": "felsefe"
 	},
 	{
@@ -18163,9 +18163,9 @@
 		"year": "2018",
 		"notes": "D-9",
 		"status": "Read",
-		"newstatus": "n/a",
+		"newstatus": "updated",
 		"categories": "siber guvenlik",
-		"reread": "n/a"
+		"reread": "no"
 	},
 	{
 		"bookshelf": 2212,
