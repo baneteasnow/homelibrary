@@ -24382,7 +24382,7 @@
 		"bookshelf": 2626,
 		"No": 1626,
 		"title": "Yasasin Orgazm - Kadinlar Icin Siradisi Bir Orgazm Rehberi",
-		"publisher": "Aganta Yayinlari",
+		"publisher": "Aganta Kitap",
 		"author": "Dorian Solot",
 		"lang": "Turkce",
 		"page": 296,
@@ -28173,7 +28173,7 @@
 		"page": 280,
 		"year": "2023",
 		"notes": "E-6",
-		"status": "UnRead",
+		"status": "Reading",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a"
@@ -31535,7 +31535,7 @@
 		"page": 400,
 		"year": "2025",
 		"notes": "F-6",
-		"status": "UnRead",
+		"status": "Reading",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a"
@@ -31658,6 +31658,21 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
+		"reread": "n/a"
+	},
+	{
+		"bookshelf": 3111,
+		"No": 2111,
+		"title": "Kendimize Soyledigimiz Yalanlar",
+		"publisher": "Aganta Kitap",
+		"author": "Jon Frederickson",
+		"lang": "Turkce",
+		"page": 160,
+		"year": "2025",
+		"notes": "B-5",
+		"status": "Reading",
+		"newstatus": "n/a",
+		"categories": "psikoloji",
 		"reread": "n/a"
 	}
 ]
