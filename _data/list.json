@@ -2546,7 +2546,7 @@
 		"notes": "E-2",
 		"status": "Read",
 		"reread": "yes",
-		"newstatus": "n/a",
+		"newstatus": "updated",
 		"categories": "teknoloji"
 	},
 	{
@@ -3161,7 +3161,7 @@
 		"notes": "H-6",
 		"status": "Read",
 		"reread": "yes",
-		"newstatus": "n/a",
+		"newstatus": "updated",
 		"categories": "gelecek trendler"
 	},
 	{
@@ -3836,7 +3836,7 @@
 		"notes": "B-7",
 		"status": "Read",
 		"reread": "yes",
-		"newstatus": "n/a",
+		"newstatus": "updated",
 		"categories": "felsefe"
 	},
 	{
@@ -7301,7 +7301,7 @@
 		"notes": "D-9",
 		"status": "Read",
 		"reread": "yes",
-		"newstatus": "n/a",
+		"newstatus": "updated",
 		"categories": "teknoloji"
 	},
 	{
@@ -12859,7 +12859,7 @@
 	{
 		"bookshelf": 1858,
 		"No": 858,
-		"title": "Leading Digital",
+		"title": "Leading Digital - Donusum Icin Teknolojiyi Kullanmak",
 		"publisher": "Optimist Kitap",
 		"author": "George Westerman",
 		"lang": "Turkce",
@@ -12868,7 +12868,7 @@
 		"notes": "E-1",
 		"status": "Read",
 		"reread": "yes",
-		"newstatus": "n/a",
+		"newstatus": "updated",
 		"categories": "yonetim"
 	},
 	{
@@ -13347,9 +13347,9 @@
 		"year": "1997",
 		"notes": "D-2",
 		"status": "Read",
-		"newstatus": "n/a",
+		"newstatus": "updated",
 		"categories": "biyografi",
-		"reread": "n/a"
+		"reread": "no"
 	},
 	{
 		"bookshelf": 1891,
@@ -16874,7 +16874,7 @@
 		"notes": "C-8",
 		"status": "Read",
 		"reread": "yes",
-		"newstatus": "n/a",
+		"newstatus": "updated",
 		"categories": "uretkenlik teknoloji"
 	},
 	{
@@ -18914,7 +18914,7 @@
 		"notes": "C-8",
 		"status": "Read",
 		"reread": "yes",
-		"newstatus": "n/a",
+		"newstatus": "updated",
 		"categories": "uretkenlik teknoloji"
 	},
 	{
@@ -22019,9 +22019,9 @@
 		"year": "2006",
 		"notes": "C-2",
 		"status": "Read",
-		"newstatus": "n/a",
+		"newstatus": "updated",
 		"categories": "marka profili",
-		"reread": "n/a"
+		"reread": "no"
 	},
 	{
 		"bookshelf": 2469,
