@@ -5936,7 +5936,7 @@
 		"notes": "G-1",
 		"status": "Read",
 		"reread": "yes",
-		"newstatus": "n/a",
+		"newstatus": "updated",
 		"categories": "internet"
 	},
 	{
@@ -7870,14 +7870,14 @@
 		"year": "2010",
 		"notes": "D-2",
 		"status": "Read",
-		"newstatus": "n/a",
+		"newstatus": "updated",
 		"categories": "marka profili",
-		"reread": "n/a"
+		"reread": "no"
 	},
 	{
 		"bookshelf": 1526,
 		"No": 526,
-		"title": "Google Sirlari",
+		"title": "Google Sirlari - Google, Dunyanin En Yaratici ve Basarili Sirketi Olabilmek Icin Neyi Farkli Yapiyor?",
 		"publisher": "Koridor Yayincilik",
 		"author": "Laszlo Bock",
 		"lang": "Turkce",
@@ -7885,9 +7885,9 @@
 		"year": "2017",
 		"notes": "D-2",
 		"status": "Read",
-		"newstatus": "n/a",
+		"newstatus": "updated",
 		"categories": "yonetim",
-		"reread": "n/a"
+		"reread": "no"
 	},
 	{
 		"bookshelf": 1527,
@@ -9117,7 +9117,7 @@
 		"notes": "C-7",
 		"status": "Read",
 		"reread": "yes",
-		"newstatus": "n/a",
+		"newstatus": "updated",
 		"categories": "sosyal medya"
 	},
 	{
@@ -9702,9 +9702,9 @@
 		"year": "2013",
 		"notes": "B-1",
 		"status": "Read",
-		"newstatus": "n/a",
+		"newstatus": "updated",
 		"categories": "psikoloji",
-		"reread": "n/a"
+		"reread": "no"
 	},
 	{
 		"bookshelf": 1648,
@@ -11292,9 +11292,9 @@
 		"year": "2015",
 		"notes": "A-8",
 		"status": "Read",
-		"newstatus": "n/a",
+		"newstatus": "updated",
 		"categories": "ekonomi",
-		"reread": "n/a"
+		"reread": "no"
 	},
 	{
 		"bookshelf": 1754,
@@ -11892,9 +11892,9 @@
 		"year": "2016",
 		"notes": "C-2",
 		"status": "Read",
-		"newstatus": "n/a",
+		"newstatus": "updated",
 		"categories": "calisma yasami",
-		"reread": "n/a"
+		"reread": "no"
 	},
 	{
 		"bookshelf": 1794,
@@ -16588,9 +16588,9 @@
 		"year": "2016",
 		"notes": "D-8",
 		"status": "Read",
-		"newstatus": "n/a",
+		"newstatus": "updated",
 		"categories": "uretkenlik teknoloji",
-		"reread": "n/a"
+		"reread": "no"
 	},
 	{
 		"bookshelf": 2107,
@@ -16858,9 +16858,9 @@
 		"year": "2016",
 		"notes": "C-9",
 		"status": "Read",
-		"newstatus": "n/a",
+		"newstatus": "updated",
 		"categories": "psikoloji",
-		"reread": "n/a"
+		"reread": "no"
 	},
 	{
 		"bookshelf": 2125,
