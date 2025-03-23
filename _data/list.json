@@ -4907,7 +4907,7 @@
 	{
 		"bookshelf": 1328,
 		"No": 328,
-		"title": "Dikkat Tacirleri",
+		"title": "Dikkat Tacirleri - Insan Zihnine Girmek Icin Verilen Amansiz Mucadele",
 		"publisher": "The Kitap",
 		"author": "Tim Wu",
 		"lang": "Turkce",
@@ -4916,7 +4916,7 @@
 		"notes": "C-7",
 		"status": "Read",
 		"reread": "yes",
-		"newstatus": "n/a",
+		"newstatus": "updated",
 		"categories": "uretkenlik teknoloji"
 	},
 	{
@@ -8942,7 +8942,7 @@
 	{
 		"bookshelf": 1597,
 		"No": 597,
-		"title": "Her Sey Bir Gecede Cokebilir",
+		"title": "Her Sey Bir Gecede Cokebilir - X-Events",
 		"publisher": "Optimist Kitap",
 		"author": "John Casti",
 		"lang": "Turkce",
@@ -8950,9 +8950,9 @@
 		"year": "2013",
 		"notes": "C-4",
 		"status": "Read",
-		"newstatus": "n/a",
+		"newstatus": "updated",
 		"categories": "gelecek trendler",
-		"reread": "n/a"
+		"reread": "yes"
 	},
 	{
 		"bookshelf": 1598,
