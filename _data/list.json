@@ -685,9 +685,9 @@
 		"year": "2015",
 		"notes": "D-7",
 		"status": "Read",
-		"newstatus": "n/a",
+		"newstatus": "updated",
 		"categories": "davranissal iktisat",
-		"reread": "n/a"
+		"reread": "yes"
 	},
 	{
 		"bookshelf": 1047,
@@ -1300,9 +1300,9 @@
 		"year": "2014",
 		"notes": "E-3",
 		"status": "Read",
-		"newstatus": "n/a",
+		"newstatus": "updated",
 		"categories": "sosyoloji",
-		"reread": "n/a"
+		"reread": "no"
 	},
 	{
 		"bookshelf": 1088,
@@ -3317,7 +3317,7 @@
 	{
 		"bookshelf": 1222,
 		"No": 222,
-		"title": "Brandwashed",
+		"title": "Brandwashed - Pazarlama ve Reklamcilik Sektorunun Uyguladigi Hilelere Carpici Bir Bakis",
 		"publisher": "Optimist Kitap",
 		"author": "Martin Lindstrom",
 		"lang": "Turkce",
@@ -3326,7 +3326,7 @@
 		"notes": "A-2",
 		"status": "Read",
 		"reread": "yes",
-		"newstatus": "n/a",
+		"newstatus": "updated",
 		"categories": "tuketici"
 	},
 	{
@@ -3460,9 +3460,9 @@
 		"year": "2015",
 		"notes": "C-2",
 		"status": "Read",
-		"newstatus": "n/a",
+		"newstatus": "updated",
 		"categories": "calisma yasami",
-		"reread": "n/a"
+		"reread": "no"
 	},
 	{
 		"bookshelf": 1232,
@@ -3482,7 +3482,7 @@
 	{
 		"bookshelf": 1233,
 		"No": 233,
-		"title": "Buyology",
+		"title": "Buyology - Satin Almaya Dair Bildigimiz Her Sey Neden Yanlis?",
 		"publisher": "Optimist Kitap",
 		"author": "Martin Lindstrom",
 		"lang": "Turkce",
@@ -3491,7 +3491,7 @@
 		"notes": "A-2",
 		"status": "Read",
 		"reread": "yes",
-		"newstatus": "n/a",
+		"newstatus": "updated",
 		"categories": "tuketici"
 	},
 	{
@@ -3805,9 +3805,9 @@
 		"year": "2004",
 		"notes": "A-10",
 		"status": "Read",
-		"newstatus": "n/a",
+		"newstatus": "updated",
 		"categories": "lifestyle",
-		"reread": "n/a"
+		"reread": "no"
 	},
 	{
 		"bookshelf": 1255,
@@ -9658,7 +9658,7 @@
 		"notes": "C-4",
 		"status": "Read",
 		"reread": "yes",
-		"newstatus": "n/a",
+		"newstatus": "updated",
 		"categories": "endustriyel tasarim"
 	},
 	{
@@ -10798,7 +10798,7 @@
 		"notes": "C-8",
 		"status": "Read",
 		"reread": "yes",
-		"newstatus": "n/a",
+		"newstatus": "updated",
 		"categories": "reklam"
 	},
 	{
@@ -14248,9 +14248,9 @@
 		"year": "2011",
 		"notes": "A-9",
 		"status": "Read",
-		"newstatus": "n/a",
+		"newstatus": "updated",
 		"categories": "lifestyle",
-		"reread": "n/a"
+		"reread": "no"
 	},
 	{
 		"bookshelf": 1951,
@@ -16934,7 +16934,7 @@
 		"notes": "C-4",
 		"status": "Read",
 		"reread": "yes",
-		"newstatus": "n/a",
+		"newstatus": "updated",
 		"categories": "yonetim"
 	},
 	{
@@ -19980,7 +19980,7 @@
 		"notes": "C-4",
 		"status": "Read",
 		"reread": "yes",
-		"newstatus": "n/a",
+		"newstatus": "updated",
 		"categories": "teknoloji"
 	},
 	{
@@ -22499,9 +22499,9 @@
 		"year": "2011",
 		"notes": "H-3",
 		"status": "Read",
-		"newstatus": "n/a",
+		"newstatus": "updated",
 		"categories": "calisma yasami",
-		"reread": "n/a"
+		"reread": "no"
 	},
 	{
 		"bookshelf": 2501,
