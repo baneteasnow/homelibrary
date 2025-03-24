@@ -2066,7 +2066,7 @@
 		"notes": "A-2",
 		"status": "Read",
 		"reread": "yes",
-		"newstatus": "n/a",
+		"newstatus": "updated",
 		"categories": "ekonomi"
 	},
 	{
@@ -9162,7 +9162,7 @@
 		"notes": "C-7",
 		"status": "Read",
 		"reread": "yes",
-		"newstatus": "n/a",
+		"newstatus": "updated",
 		"categories": "uretkenlik teknoloji"
 	},
 	{
@@ -11458,7 +11458,7 @@
 		"notes": "C-7",
 		"status": "Read",
 		"reread": "yes",
-		"newstatus": "n/a",
+		"newstatus": "updated",
 		"categories": "uretkenlik teknoloji"
 	},
 	{
