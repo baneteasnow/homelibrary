@@ -10228,7 +10228,7 @@
 		"notes": "C-7",
 		"status": "Read",
 		"reread": "yes",
-		"newstatus": "n/a",
+		"newstatus": "updated",
 		"categories": "uretkenlik teknoloji"
 	},
 	{
@@ -18253,9 +18253,9 @@
 		"year": "2016",
 		"notes": "E-2",
 		"status": "Read",
-		"newstatus": "n/a",
+		"newstatus": "updated",
 		"categories": "girisimcilik",
-		"reread": "n/a"
+		"reread": "no"
 	},
 	{
 		"bookshelf": 2218,
@@ -31670,9 +31670,9 @@
 		"page": 160,
 		"year": "2025",
 		"notes": "B-5",
-		"status": "Reading",
+		"status": "JustRead",
 		"newstatus": "n/a",
 		"categories": "psikoloji",
-		"reread": "n/a"
+		"reread": "no"
 	}
 ]
