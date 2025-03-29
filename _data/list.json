@@ -6040,9 +6040,9 @@
 		"year": "2018",
 		"notes": "C-10",
 		"status": "Read",
-		"newstatus": "n/a",
+		"newstatus": "updated",
 		"categories": "egitim",
-		"reread": "n/a"
+		"reread": "no"
 	},
 	{
 		"bookshelf": 1404,
@@ -17324,7 +17324,7 @@
 		"notes": "A-6",
 		"status": "Read",
 		"reread": "yes",
-		"newstatus": "n/a",
+		"newstatus": "updated",
 		"categories": "felsefe"
 	},
 	{
@@ -31673,6 +31673,36 @@
 		"status": "JustRead",
 		"newstatus": "n/a",
 		"categories": "psikoloji",
-		"reread": "no"
+		"reread": "n/a"
+	},
+	{
+		"bookshelf": 3112,
+		"No": 2112,
+		"title": "Ofke Makinesi",
+		"publisher": "Buzdagi Yayinlari",
+		"author": "Tobias Rose-Stockwell",
+		"lang": "Turkce",
+		"page": 512,
+		"year": "2025",
+		"notes": "B-5",
+		"status": "UnRead",
+		"newstatus": "n/a",
+		"categories": "psikoloji",
+		"reread": "n/a"
+	},
+	{
+		"bookshelf": 3113,
+		"No": 2113,
+		"title": "Hatalarimizdan Ogrenmek",
+		"publisher": "Epsilon Yayinevi",
+		"author": "Patrick J. Casement",
+		"lang": "Turkce",
+		"page": 248,
+		"year": "2025",
+		"notes": "B-5",
+		"status": "UnRead",
+		"newstatus": "n/a",
+		"categories": "psikoloji",
+		"reread": "n/a"
 	}
 ]
