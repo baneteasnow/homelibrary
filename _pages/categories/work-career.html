@@ -7,7 +7,7 @@ title: "Work & Career"
 
 {%-include backtotop.html-%}
 <br />
-{% for item in site.data.list %} {% if item.categories == "work career" %}
+{% for item in site.data.list %} {% if item.categories == "WorkCareer" %}
 <div>
 	<i
 		><a
@@ -24,6 +24,6 @@ title: "Work & Career"
 
 <!-- size -->
 {% assign cat_data = site.data.list %} {% assign cat_workcareer = cat_data |
-where: "categories", "work career" | size %}
+where: "categories", "WorkCareer" | size %}
 <!-- {{ }} -->
 {{ cat_workcareer }}

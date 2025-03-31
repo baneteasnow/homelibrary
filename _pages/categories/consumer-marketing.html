@@ -7,8 +7,7 @@ title: "Consumer & Marketing"
 
 {%-include backtotop.html-%}
 <br />
-{% for item in site.data.list %} {% if item.categories == "consumer-marketing"
-%}
+{% for item in site.data.list %} {% if item.categories == "ConsumerMarketing" %}
 <div>
 	<i
 		><a
@@ -25,6 +24,6 @@ title: "Consumer & Marketing"
 
 <!-- size -->
 {% assign cat_data = site.data.list %} {% assign cat_consumermarketing =
-cat_data | where: "categories", "consumer marketing" | size %}
+cat_data | where: "categories", "ConsumerMarketing" | size %}
 <!-- {{ }} -->
 {{ cat_consumermarketing }}

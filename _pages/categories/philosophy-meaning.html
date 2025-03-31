@@ -7,8 +7,7 @@ title: "Philosophy & Meaning"
 
 {%-include backtotop.html-%}
 <br />
-{% for item in site.data.list %} {% if item.categories == "philosophy meaning"
-%}
+{% for item in site.data.list %} {% if item.categories == "PhilosophyMeaning" %}
 <div>
 	<i
 		><a
@@ -25,6 +24,6 @@ title: "Philosophy & Meaning"
 
 <!-- size -->
 {% assign cat_data = site.data.list %} {% assign cat_philosophymeaning =
-cat_data | where: "categories", "philosophy meaning" | size %}
+cat_data | where: "categories", "PhilosophyMeaning" | size %}
 <!-- {{ }} -->
 {{ cat_philosophymeaning }}

@@ -7,8 +7,8 @@ title: "Psychology & Mental Life"
 
 {%-include backtotop.html-%}
 <br />
-{% for item in site.data.list %} {% if item.categories == "psychology mental
-life" %}
+{% for item in site.data.list %} {% if item.categories == "PsychologyMentalLife"
+%}
 <div>
 	<i
 		><a
@@ -25,6 +25,6 @@ life" %}
 
 <!-- size -->
 {% assign cat_data = site.data.list %} {% assign cat_psychologymentallife =
-cat_data | where: "categories", "psychology mental life" | size %}
+cat_data | where: "categories", "PsychologyMentalLife" | size %}
 <!-- {{ }} -->
 {{ cat_psychologymentallife }}

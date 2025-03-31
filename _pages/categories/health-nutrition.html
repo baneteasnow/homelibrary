@@ -7,7 +7,7 @@ title: "Health & Nutrition"
 
 {%-include backtotop.html-%}
 <br />
-{% for item in site.data.list %} {% if item.categories == "health nutrition" %}
+{% for item in site.data.list %} {% if item.categories == "HealthNutrition" %}
 <div>
 	<i
 		><a
@@ -24,6 +24,6 @@ title: "Health & Nutrition"
 
 <!-- size -->
 {% assign cat_data = site.data.list %} {% assign cat_healthnutrition = cat_data
-| where: "categories", "health nutrition" | size %}
+| where: "categories", "HealthNutrition" | size %}
 <!-- {{ }} -->
 {{ cat_healthnutrition }}

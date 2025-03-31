@@ -7,8 +7,8 @@ title: "Technology & the Digital World"
 
 {%-include backtotop.html-%}
 <br />
-{% for item in site.data.list %} {% if item.categories == "technology the
-digital world" %}
+{% for item in site.data.list %} {% if item.categories ==
+"TechnologyTheDigitalWorld" %}
 <div>
 	<i
 		><a
@@ -25,6 +25,6 @@ digital world" %}
 
 <!-- size -->
 {% assign cat_data = site.data.list %} {% assign cat_technologythedigitalworld =
-cat_data | where: "categories", "technology the digital world" | size %}
+cat_data | where: "categories", "TechnologyTheDigitalWorld" | size %}
 <!-- {{ }} -->
 {{ cat_technologythedigitalworld }}

@@ -7,7 +7,7 @@ title: "Society & Culture"
 
 {%-include backtotop.html-%}
 <br />
-{% for item in site.data.list %} {% if item.categories == "society culture" %}
+{% for item in site.data.list %} {% if item.categories == "SocietyCulture" %}
 <div>
 	<i
 		><a
@@ -24,6 +24,6 @@ title: "Society & Culture"
 
 <!-- size -->
 {% assign cat_data = site.data.list %} {% assign cat_societyculture = cat_data |
-where: "categories", "society culture" | size %}
+where: "categories", "SocietyCulture" | size %}
 <!-- {{ }} -->
 {{ cat_societyculture }}

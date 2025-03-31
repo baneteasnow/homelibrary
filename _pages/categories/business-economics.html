@@ -7,8 +7,7 @@ title: "Business & Economics"
 
 {%-include backtotop.html-%}
 <br />
-{% for item in site.data.list %} {% if item.categories == "business economics"
-%}
+{% for item in site.data.list %} {% if item.categories == "BusinessEconomics" %}
 <div>
 	<i
 		><a
@@ -25,6 +24,6 @@ title: "Business & Economics"
 
 <!-- size -->
 {% assign cat_data = site.data.list %} {% assign cat_businesseconomics =
-cat_data | where: "categories", "business economics" | size %}
+cat_data | where: "categories", "BusinessEconomics" | size %}
 <!-- {{ }} -->
 {{ cat_businesseconomics }}
