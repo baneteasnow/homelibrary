@@ -7,7 +7,8 @@ title: "Personal Growth & Productivity"
 
 {%-include backtotop.html-%}
 <br />
-{% for item in site.data.list %} {% if item.categories == "personal" %}
+{% for item in site.data.list %} {% if item.categories ==
+"PersonalGrowthProductivity" %}
 <div>
 	<i
 		><a
@@ -24,6 +25,6 @@ title: "Personal Growth & Productivity"
 
 <!-- size -->
 {% assign cat_data = site.data.list %} {% assign cat_personalgrowthproductivity
-= cat_data | where: "categories", "personal" | size %}
+= cat_data | where: "categories", "PersonalGrowthProductivity" | size %}
 <!-- {{ }} -->
 {{ cat_personalgrowthproductivity }}

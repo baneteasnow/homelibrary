@@ -90,10 +90,32 @@ title: "Home Library Book List"
 		class="decorated"
 		style="font-size: 85%; color: darkgray"
 	>
-		{% if item.categories == "personal" %}
+		{% if item.categories == "BiographyLifeStories" %}
+		<i>Biography & Life Stories</i>
+		{% elsif item.categories == "BusinessEconomics" %}
+		<i>Business & Economics</i>
+		{% elsif item.categories == "ConsumerMarketing" %}
+		<i>Consumer & Marketing</i>
+		{% elsif item.categories == "CreativityExpression" %}
+		<i>Creativity & Expression</i>
+		{% elsif item.categories == "EnvironmentSustainableLiving" %}
+		<i>Environment & Sustainable Living</i>
+		{% elsif item.categories == "HealthNutrition" %}
+		<i>Health & Nutrition</i>
+		{% elsif item.categories == "PersonalGrowthProductivity" %}
 		<i>Personal Growth & Productivity</i>
-		{% elsif item.categories == "466" %}
-		<i>hundred</i>
+		{% elsif item.categories == "PhilosophyMeaning" %}
+		<i>Philosophy & Meaning</i>
+		{% elsif item.categories == "PsychologyMentalLife" %}
+		<i>Psychology & Mental Life</i>
+		{% elsif item.categories == "SimpleLivingEverydayComforts" %}
+		<i>Simple Living & Everyday Comforts</i>
+		{% elsif item.categories == "SocietyCulture" %}
+		<i>Society & Culture</i>
+		{% elsif item.categories == "TechnologyTheDigitalWorld" %}
+		<i>Technology & the Digital World</i>
+		{% elsif item.categories == "WorkCareer" %}
+		<i>Work & Career</i>
 		{% else %}
 		<div style="visibility: hidden"></div>
 		{% endif %}
