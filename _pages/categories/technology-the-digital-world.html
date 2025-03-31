@@ -2,13 +2,13 @@
 layout: page-6
 published: true
 last_modified_at: 2025-03-31
-title: "Personal Growth & Productivity"
+title: "Technology & the Digital World"
 ---
 
 {%-include backtotop.html-%}
 <br />
-{% for item in site.data.list %} {% if item.categories == "personal growth &
-productivity" %}
+{% for item in site.data.list %} {% if item.categories == "technology the
+digital world" %}
 <div>
 	<i
 		><a
@@ -24,7 +24,7 @@ productivity" %}
 <br />
 
 <!-- size -->
-{% assign cat_data = site.data.list %} {% assign cat_personalgrowthproductivity
-= cat_data | where: "categories", "personal growth & productivity" | size %}
+{% assign cat_data = site.data.list %} {% assign cat_technologythedigitalworld =
+cat_data | where: "categories", "technology the digital world" | size %}
 <!-- {{ }} -->
-{{ cat_personalgrowthproductivity }}
+{{ cat_technologythedigitalworld }}
