@@ -90,10 +90,12 @@ title: "Home Library Book List"
 		class="decorated"
 		style="font-size: 85%; color: darkgray"
 	>
-		{% if item.categories == "n/a" %}
-		<div style="visibility: hidden"></div>
+		{% if item.categories == "personal" %}
+		<i>Personal Growth & Productivity</i>
+		{% elsif item.categories == "466" %}
+		<i>hundred</i>
 		{% else %}
-		<i>{{ item.categories }}</i>
+		<div style="visibility: hidden"></div>
 		{% endif %}
 	</div>
 	<div
@@ -114,6 +116,5 @@ title: "Home Library Book List"
 	</div>
 </div>
 {% endfor %}
-<div>:;</div>
 <br />
 <br />
