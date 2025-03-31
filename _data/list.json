@@ -672,7 +672,7 @@
 		"status": "Read",
 		"reread": "yes",
 		"newstatus": "updated",
-		"categories": "davranissal iktisat"
+		"categories": "PsychologyMentalLife"
 	},
 	{
 		"bookshelf": 1046,
@@ -3492,7 +3492,7 @@
 		"status": "Read",
 		"reread": "yes",
 		"newstatus": "updated",
-		"categories": "tuketici"
+		"categories": "ConsumerMarketing"
 	},
 	{
 		"bookshelf": 1234,
@@ -4362,7 +4362,7 @@
 		"status": "Read",
 		"reread": "yes",
 		"newstatus": "updated",
-		"categories": "dijital kultur"
+		"categories": "BusinessEconomics"
 	},
 	{
 		"bookshelf": 1292,
@@ -9297,7 +9297,7 @@
 		"notes": "E-4",
 		"status": "Read",
 		"newstatus": "n/a",
-		"categories": "lifestyle",
+		"categories": "SimpleLivingEverydayComforts",
 		"reread": "n/a"
 	},
 	{
@@ -10229,7 +10229,7 @@
 		"status": "Read",
 		"reread": "yes",
 		"newstatus": "updated",
-		"categories": "uretkenlik teknoloji"
+		"categories": "TechnologyTheDigitalWorld"
 	},
 	{
 		"bookshelf": 1683,
@@ -14625,7 +14625,7 @@
 		"status": "Read",
 		"reread": "yes",
 		"newstatus": "updated",
-		"categories": "felsefe"
+		"categories": "PhilosophyMeaning"
 	},
 	{
 		"bookshelf": 1976,
@@ -16875,7 +16875,7 @@
 		"status": "Read",
 		"reread": "yes",
 		"newstatus": "updated",
-		"categories": "uretkenlik teknoloji"
+		"categories": "PersonalGrowthProductivity"
 	},
 	{
 		"bookshelf": 2126,
@@ -19244,7 +19244,7 @@
 		"notes": "F-3",
 		"status": "Read",
 		"newstatus": "updated",
-		"categories": "biyografi",
+		"categories": "BiographyLifeStories",
 		"reread": "no"
 	},
 	{
@@ -21435,7 +21435,7 @@
 		"notes": "D-2",
 		"status": "Read",
 		"newstatus": "updated",
-		"categories": "marka profili",
+		"categories": "WorkCareer",
 		"reread": "no"
 	},
 	{
