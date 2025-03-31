@@ -1,13 +1,14 @@
 ---
 layout: page-6
 published: true
-last_modified_at: 2024-04-28
-title: "Veganlik"
+last_modified_at: 2025-03-31
+title: "Philosophy & Meaning"
 ---
 
 {%-include backtotop.html-%}
 <br />
-{% for item in site.data.list %} {% if item.categories == "veganlik" %}
+{% for item in site.data.list %} {% if item.categories == "philosophy meaning"
+%}
 <div>
 	<i
 		><a
@@ -23,7 +24,7 @@ title: "Veganlik"
 <br />
 
 <!-- size -->
-{% assign cat_data = site.data.list %} {% assign cat_veganlik = cat_data |
-where: "categories", "veganlik" | size %}
+{% assign cat_data = site.data.list %} {% assign cat_philosophymeaning =
+cat_data | where: "categories", "philosophy meaning" | size %}
 <!-- {{ }} -->
-{{ cat_veganlik }}
+{{ cat_philosophymeaning }}

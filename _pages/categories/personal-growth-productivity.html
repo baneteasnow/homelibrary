@@ -1,13 +1,14 @@
 ---
 layout: page-6
 published: true
-last_modified_at: 2024-04-28
-title: "Zaman Planlamasi"
+last_modified_at: 2025-03-31
+title: "Personal Growth & Productivity"
 ---
 
 {%-include backtotop.html-%}
 <br />
-{% for item in site.data.list %} {% if item.categories == "zaman planlamasi" %}
+{% for item in site.data.list %} {% if item.categories == "personal growth
+productivity" %}
 <div>
 	<i
 		><a
@@ -23,7 +24,7 @@ title: "Zaman Planlamasi"
 <br />
 
 <!-- size -->
-{% assign cat_data = site.data.list %} {% assign cat_zamanplanlamasi = cat_data
-| where: "categories", "zaman planlamasi" | size %}
+{% assign cat_data = site.data.list %} {% assign cat_personalgrowthproductivity
+= cat_data | where: "categories", "personal growth productivity" | size %}
 <!-- {{ }} -->
-{{ cat_zamanplanlamasi }}
+{{ cat_personalgrowthproductivity }}

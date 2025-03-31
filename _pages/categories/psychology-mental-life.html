@@ -1,13 +1,14 @@
 ---
 layout: page-6
 published: true
-last_modified_at: 2024-04-28
-title: "Reklam"
+last_modified_at: 2025-03-31
+title: "Psychology & Mental Life"
 ---
 
 {%-include backtotop.html-%}
 <br />
-{% for item in site.data.list %} {% if item.categories == "reklam" %}
+{% for item in site.data.list %} {% if item.categories == "psychology mental
+life" %}
 <div>
 	<i
 		><a
@@ -23,7 +24,7 @@ title: "Reklam"
 <br />
 
 <!-- size -->
-{% assign cat_data = site.data.list %} {% assign cat_reklam = cat_data | where:
-"categories", "reklam" | size %}
+{% assign cat_data = site.data.list %} {% assign cat_psychologymentallife =
+cat_data | where: "categories", "psychology mental life" | size %}
 <!-- {{ }} -->
-{{ cat_reklam }}
+{{ cat_psychologymentallife }}
