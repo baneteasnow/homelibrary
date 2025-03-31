@@ -1,0 +1,31 @@
+---
+layout: page-6
+published: true
+last_modified_at: 2025-03-31
+title: "Simple Living & Everday Comforts"
+---
+
+{%-include backtotop.html-%}
+<br />
+{% for item in site.data.list %} {% if item.categories == "simple living
+everyday comforts" %}
+<div>
+	<i
+		><a
+			href="{{ site.baseurl }}booklist#{{ item.bookshelf }}"
+			name="{{ item.bookshelf }}"
+			>{{ item.title }} | {{ item.author }}</a
+		>
+	</i>
+</div>
+{% else %}
+<div style="visibility: hidden"></div>
+{% endif %} {% endfor %}
+<br />
+
+<!-- size -->
+{% assign cat_data = site.data.list %} {% assign
+cat_simplelivingeverydaycomforts = cat_data | where: "categories", "simple
+living everyday comforts" | size %}
+<!-- {{ }} -->
+{{ cat_simplelivingeverydaycomforts }}
