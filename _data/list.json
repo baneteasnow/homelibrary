@@ -13,7 +13,7 @@
 		"newstatus": "n/a",
 		"categories": "CreativityExpression",
 		"reread": "n/a",
-		"tbr": "yes"
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1002,
@@ -28,7 +28,8 @@
 		"status": "Read",
 		"newstatus": "n/a",
 		"categories": "PhilosophyMeaning",
-		"reread": "no"
+		"reread": "no",
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1003,
@@ -43,7 +44,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "CreativityExpression",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1004,
@@ -58,7 +60,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "PersonalGrowthProductivity",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 1005,
@@ -73,7 +76,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "EnvironmentSustainableLiving",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1006,
@@ -88,7 +92,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "SocietyCulture",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1007,
@@ -103,7 +108,8 @@
 		"status": "Read",
 		"newstatus": "ToBeUpdated",
 		"categories": "EnvironmentSustainableLiving",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1008,
@@ -118,7 +124,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "CreativityExpression",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1009,
@@ -133,7 +140,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "HealthNutrition",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1010,
@@ -148,7 +156,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "SocietyCulture",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1011,
@@ -163,7 +172,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "HistoryPoliticalThought",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1012,
@@ -178,7 +188,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "no"
+		"reread": "no",
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1013,
@@ -193,7 +204,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1014,
@@ -208,7 +220,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1015,
@@ -223,7 +236,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1016,
@@ -238,7 +252,8 @@
 		"status": "JustRead",
 		"newstatus": "ToBeUpdated",
 		"categories": "tarih",
-		"reread": "yes"
+		"reread": "yes",
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1017,
@@ -253,7 +268,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1018,
@@ -268,7 +284,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1019,
@@ -283,7 +300,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1020,
@@ -298,7 +316,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1021,
@@ -313,7 +332,8 @@
 		"status": "Read",
 		"newstatus": "n/a",
 		"categories": "veganlik",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1022,
@@ -328,7 +348,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1023,
@@ -343,7 +364,8 @@
 		"status": "Read",
 		"newstatus": "updated",
 		"categories": "motivasyon",
-		"reread": "yes"
+		"reread": "yes",
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1024,
@@ -358,7 +380,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1025,
@@ -373,7 +396,8 @@
 		"status": "Read",
 		"reread": "yes",
 		"newstatus": "ToBeUpdated",
-		"categories": "cevre"
+		"categories": "cevre",
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1026,
@@ -388,7 +412,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1027,
@@ -403,7 +428,8 @@
 		"status": "Read",
 		"newstatus": "updated",
 		"categories": "zaman planlamasi",
-		"reread": "no"
+		"reread": "no",
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1028,
@@ -418,7 +444,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1029,
@@ -433,7 +460,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1030,
@@ -448,7 +476,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1031,
@@ -463,7 +492,8 @@
 		"status": "Read",
 		"newstatus": "n/a",
 		"categories": "lifestyle",
-		"reread": "no"
+		"reread": "no",
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1032,
@@ -478,7 +508,8 @@
 		"status": "Read",
 		"newstatus": "n/a",
 		"categories": "lifestyle",
-		"reread": "no"
+		"reread": "no",
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1033,
@@ -493,7 +524,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1034,
@@ -508,7 +540,8 @@
 		"status": "Read",
 		"newstatus": "n/a",
 		"categories": "sosyoloji",
-		"reread": "no"
+		"reread": "no",
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1035,
@@ -523,7 +556,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1036,
@@ -538,7 +572,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1037,
@@ -553,7 +588,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1038,
@@ -568,7 +604,8 @@
 		"status": "JustRead",
 		"reread": "yes",
 		"newstatus": "ToBeUpdated",
-		"categories": "psikoloji"
+		"categories": "psikoloji",
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1039,
@@ -583,7 +620,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1040,
@@ -598,7 +636,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1041,
@@ -613,7 +652,8 @@
 		"status": "Read",
 		"reread": "yes",
 		"newstatus": "n/a",
-		"categories": "psikoloji"
+		"categories": "psikoloji",
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1042,
@@ -628,7 +668,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1043,
@@ -643,7 +684,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1044,
@@ -658,7 +700,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 1045,
@@ -673,7 +716,8 @@
 		"status": "Read",
 		"reread": "yes",
 		"newstatus": "updated",
-		"categories": "PsychologyMentalLife"
+		"categories": "PsychologyMentalLife",
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1046,
@@ -688,7 +732,8 @@
 		"status": "Read",
 		"newstatus": "updated",
 		"categories": "davranissal iktisat",
-		"reread": "yes"
+		"reread": "yes",
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1047,
@@ -703,7 +748,8 @@
 		"status": "Read",
 		"reread": "yes",
 		"newstatus": "updated",
-		"categories": "davranissal iktisat"
+		"categories": "davranissal iktisat",
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1048,
@@ -718,7 +764,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1049,
@@ -733,7 +780,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1050,
@@ -748,7 +796,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1051,
