@@ -17,7 +17,8 @@ layout: null
       "status"     : "{{ item.status }}",
       "reread"     : "{{ item.reread }}",
       "status2"    : "{{ item.newstatus }}",
-      "categories" : "{{ item.categories }}"
+      "categories" : "{{ item.categories }}",
+      "tbr"        : "{{ item.tbr }}"
 
     } {% unless forloop.last %},{% endunless %}
   {% endfor %}

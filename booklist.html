@@ -88,6 +88,16 @@ title: "Home Library Book List"
 	</div>
 	<div
 		class="decorated"
+		style="font-size: 85%; color: lightgray"
+	>
+		{% if item.tbr == "yes" %}
+		<i>TBR</i>
+		{% else %}
+		<div style="visibility: hidden"></div>
+		{% endif %}
+	</div>
+	<div
+		class="decorated"
 		style="font-size: 85%; color: darkgray"
 	>
 		{% if item.categories == "BiographyLifeStories" %}
