@@ -812,7 +812,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1052,
@@ -827,7 +828,8 @@
 		"status": "Read",
 		"reread": "yes",
 		"newstatus": "n/a",
-		"categories": "psikoloji"
+		"categories": "psikoloji",
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1053,
@@ -842,7 +844,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1054,
@@ -857,7 +860,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1055,
@@ -872,7 +876,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1056,
@@ -887,7 +892,8 @@
 		"status": "JustRead",
 		"newstatus": "ToBeUpdated",
 		"categories": "psikoloji",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1057,
