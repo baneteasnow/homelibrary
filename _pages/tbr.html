@@ -1,0 +1,31 @@
+---
+layout: page-6
+published: true
+last_modified_at: 2023-09-22
+title: "TBR List"
+---
+
+{%-include backtotop.html-%}
+<br />
+{% for item in site.data.list %} {% if item.tbr == "yes" %}
+<div>
+	<i
+		><a
+			href="{{ site.baseurl }}booklist#{{ item.bookshelf }}"
+			name="{{ item.bookshelf }}"
+			>{{ forloop.index }}.</a
+		>
+		{{ item.title }} | {{ item.author }}
+	</i>
+</div>
+{% else %}
+<div style="visibility: hidden"></div>
+{% endif %} {% endfor %}
+<div>.....</div>
+<!-- {%-include tbr.html-%} -->
+{% for item in site.data.tbr %}
+<div>
+	<i>{{ forloop.index }}. {{ item.title }} | {{ item.author }} </i>
+</div>
+{% endfor %}
+<br />
