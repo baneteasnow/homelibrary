@@ -21,11 +21,3 @@ title: "TBR List"
 {% else %}
 <div style="visibility: hidden"></div>
 {% endif %} {% endfor %}
-<div>.....</div>
-<!-- {%-include tbr.html-%} -->
-{% for item in site.data.tbr %}
-<div>
-	<i>{{ forloop.index }}. {{ item.title }} | {{ item.author }} </i>
-</div>
-{% endfor %}
-<br />
