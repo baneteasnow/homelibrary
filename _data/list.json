@@ -28670,7 +28670,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2793,
@@ -28685,7 +28686,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2794,
@@ -28700,7 +28702,8 @@
 		"status": "JustRead",
 		"newstatus": "ToBeUpdated",
 		"categories": "n/a",
-		"reread": "yes"
+		"reread": "yes",
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 2795,
@@ -28715,7 +28718,8 @@
 		"status": "Read",
 		"newstatus": "updated",
 		"categories": "PsychologyMentalLife",
-		"reread": "yes"
+		"reread": "yes",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2796,
@@ -28730,7 +28734,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2797,
@@ -28745,7 +28750,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2798,
@@ -28760,7 +28766,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2799,
@@ -28775,7 +28782,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2800,
@@ -28790,7 +28798,8 @@
 		"status": "JustRead",
 		"newstatus": "ToBeUpdated",
 		"categories": "n/a",
-		"reread": "yes"
+		"reread": "yes",
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 2801,
@@ -28805,7 +28814,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2802,
@@ -28820,7 +28830,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2803,
@@ -28835,7 +28846,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2804,
@@ -28850,7 +28862,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2805,
@@ -28865,7 +28878,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2806,
@@ -28880,7 +28894,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2807,
@@ -28895,7 +28910,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2808,
@@ -28910,7 +28926,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2809,
@@ -28925,7 +28942,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2810,
@@ -28940,7 +28958,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2811,
@@ -28955,7 +28974,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2812,
@@ -28970,7 +28990,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2813,
@@ -28985,7 +29006,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2814,
@@ -29000,7 +29022,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2815,
@@ -29015,7 +29038,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2816,
@@ -29030,7 +29054,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2817,
@@ -29045,7 +29070,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2818,
@@ -29060,7 +29086,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2819,
@@ -29075,7 +29102,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2820,
@@ -29090,7 +29118,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2821,
@@ -29105,7 +29134,8 @@
 		"status": "JustRead",
 		"newstatus": "ToBeUpdated",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 2822,
@@ -29120,7 +29150,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2823,
@@ -29135,7 +29166,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2824,
@@ -29150,7 +29182,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2825,
@@ -29164,8 +29197,9 @@
 		"notes": "B-6",
 		"status": "Read",
 		"newstatus": "updated",
-		"categories": "psikoloji",
-		"reread": "yes"
+		"categories": "n/a",
+		"reread": "yes",
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 2826,
@@ -29180,7 +29214,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2827,
@@ -29194,8 +29229,9 @@
 		"notes": "G-7",
 		"status": "Read",
 		"newstatus": "updated",
-		"categories": "motivasyon",
-		"reread": "no"
+		"categories": "n/a",
+		"reread": "no",
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 2828,
@@ -29210,7 +29246,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2829,
@@ -29225,7 +29262,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2830,
@@ -29240,7 +29278,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2831,
@@ -29255,7 +29294,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2832,
@@ -29270,7 +29310,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2833,
@@ -29285,7 +29326,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2834,
@@ -29300,7 +29342,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2835,
@@ -29315,7 +29358,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2836,
@@ -29330,7 +29374,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2837,
@@ -29345,7 +29390,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2838,
@@ -29360,7 +29406,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2839,
@@ -29376,7 +29423,8 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"note": "reading through the year"
+		"note": "reading through the year",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2840,
@@ -29391,7 +29439,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2841,
@@ -29406,7 +29455,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2842,
@@ -29421,7 +29471,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2843,
@@ -29436,7 +29487,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2844,
@@ -29451,7 +29503,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2845,
@@ -29466,7 +29519,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2846,
@@ -29481,7 +29535,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2847,
@@ -29496,7 +29551,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2848,
@@ -29511,7 +29567,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2849,
@@ -29526,7 +29583,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2850,
@@ -29541,7 +29599,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2851,
@@ -29556,7 +29615,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2852,
@@ -29571,7 +29631,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2853,
@@ -29586,7 +29647,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2854,
@@ -29601,7 +29663,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2855,
@@ -29616,7 +29679,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2856,
@@ -29631,7 +29695,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2857,
@@ -29646,7 +29711,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2858,
@@ -29661,7 +29727,8 @@
 		"status": "JustRead",
 		"newstatus": "ToBeUpdated",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 2859,
@@ -29676,7 +29743,8 @@
 		"status": "JustRead",
 		"newstatus": "ToBeUpdated",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 2860,
@@ -29690,8 +29758,9 @@
 		"notes": "A-5",
 		"status": "JustRead",
 		"newstatus": "ToBeUpdated",
-		"categories": "psikoloji",
-		"reread": "yes"
+		"categories": "n/a",
+		"reread": "yes",
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 2861,
@@ -29706,7 +29775,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2862,
@@ -29721,7 +29791,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2863,
@@ -29736,7 +29807,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2864,
@@ -29751,7 +29823,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2865,
@@ -29766,7 +29839,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2866,
@@ -29781,7 +29855,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2867,
@@ -29796,7 +29871,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2868,
@@ -29810,8 +29886,9 @@
 		"notes": "A-6",
 		"status": "JustRead",
 		"newstatus": "ToBeUpdated",
-		"categories": "psikoloji",
-		"reread": "no"
+		"categories": "n/a",
+		"reread": "no",
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 2869,
@@ -29825,8 +29902,9 @@
 		"notes": "F-6",
 		"status": "Read",
 		"newstatus": "updated",
-		"categories": "sosyoloji",
-		"reread": "no"
+		"categories": "n/a",
+		"reread": "no",
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 2870,
@@ -29841,7 +29919,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2871,
@@ -29856,7 +29935,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2872,
@@ -29871,7 +29951,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2873,
@@ -29886,7 +29967,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2874,
@@ -29900,8 +29982,9 @@
 		"notes": "B-8",
 		"status": "JustRead",
 		"newstatus": "ToBeUpdated",
-		"categories": "psikoloji",
-		"reread": "no"
+		"categories": "n/a",
+		"reread": "no",
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 2875,
@@ -29916,7 +29999,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2876,
@@ -29931,7 +30015,8 @@
 		"status": "JustRead",
 		"newstatus": "ToBeUpdated",
 		"categories": "n/a",
-		"reread": "yes"
+		"reread": "yes",
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 2877,
@@ -29946,7 +30031,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2878,
@@ -29961,7 +30047,8 @@
 		"status": "Reading",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 2879,
@@ -29975,8 +30062,9 @@
 		"notes": "G-6",
 		"status": "JustRead",
 		"newstatus": "ToBeUpdated",
-		"categories": "sosyoloji",
-		"reread": "yes"
+		"categories": "n/a",
+		"reread": "yes",
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 2880,
@@ -29991,7 +30079,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2881,
@@ -30006,7 +30095,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2882,
@@ -30021,7 +30111,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2883,
@@ -30035,8 +30126,9 @@
 		"notes": "B-8",
 		"status": "JustRead",
 		"newstatus": "ToBeUpdated",
-		"categories": "psikoloji",
-		"reread": "no"
+		"categories": "n/a",
+		"reread": "no",
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 2884,
@@ -30051,7 +30143,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2885,
@@ -30066,7 +30159,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2886,
@@ -30081,7 +30175,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2887,
@@ -30096,7 +30191,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2888,
@@ -30111,7 +30207,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2889,
@@ -30126,7 +30223,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2890,
@@ -30141,7 +30239,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2891,
@@ -30156,7 +30255,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2892,
@@ -30171,7 +30271,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2893,
@@ -30186,7 +30287,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2894,
@@ -30201,7 +30303,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2895,
@@ -30216,7 +30319,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2896,
@@ -30231,7 +30335,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2897,
@@ -30246,7 +30351,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2898,
@@ -30261,7 +30367,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2899,
@@ -30276,7 +30383,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2900,
@@ -30291,7 +30399,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2901,
@@ -30306,7 +30415,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2902,
@@ -30321,7 +30431,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2903,
@@ -30336,7 +30447,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2904,
@@ -30351,7 +30463,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2905,
@@ -30366,7 +30479,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2906,
@@ -30381,7 +30495,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2907,
@@ -30395,8 +30510,9 @@
 		"notes": "F-6",
 		"status": "JustRead",
 		"newstatus": "ToBeUpdated",
-		"categories": "saglik",
-		"reread": "no"
+		"categories": "n/a",
+		"reread": "no",
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 2908,
@@ -30411,7 +30527,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2909,
@@ -30426,7 +30543,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2910,
@@ -30441,7 +30559,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2911,
@@ -30456,7 +30575,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2912,
@@ -30471,7 +30591,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2913,
@@ -30486,7 +30607,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2914,
@@ -30501,7 +30623,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2915,
@@ -30516,7 +30639,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2916,
@@ -30531,7 +30655,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2917,
@@ -30546,7 +30671,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2918,
@@ -30561,7 +30687,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2919,
@@ -30576,7 +30703,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2920,
@@ -30591,7 +30719,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2921,
@@ -30606,7 +30735,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2922,
@@ -30621,7 +30751,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2923,
@@ -30636,7 +30767,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2924,
@@ -30651,7 +30783,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2925,
@@ -30666,7 +30799,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2926,
@@ -30681,7 +30815,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2927,
@@ -30696,7 +30831,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2928,
@@ -30711,7 +30847,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2929,
@@ -30727,7 +30864,8 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"note": "reading through the year"
+		"note": "reading through the year",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2930,
@@ -30742,7 +30880,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2931,
@@ -30756,8 +30895,9 @@
 		"notes": "D-7",
 		"status": "JustRead",
 		"newstatus": "ToBeUpdated",
-		"categories": "tarih",
-		"reread": "yes"
+		"categories": "n/a",
+		"reread": "yes",
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 2932,
@@ -30772,7 +30912,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2933,
@@ -30787,7 +30928,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2934,
@@ -30802,7 +30944,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2935,
@@ -30817,7 +30960,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2936,
@@ -30832,7 +30976,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2937,
@@ -30846,8 +30991,9 @@
 		"notes": "G-7",
 		"status": "Read",
 		"newstatus": "updated",
-		"categories": "biyografi",
-		"reread": "no"
+		"categories": "n/a",
+		"reread": "no",
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 2938,
@@ -30862,7 +31008,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2939,
@@ -30877,7 +31024,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2940,
@@ -30892,7 +31040,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2941,
@@ -30907,7 +31056,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2942,
@@ -30922,7 +31072,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2943,
@@ -30937,7 +31088,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2944,
@@ -30952,7 +31104,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2945,
@@ -30967,7 +31120,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2946,
@@ -30982,7 +31136,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2947,
@@ -30996,8 +31151,9 @@
 		"notes": "G-7",
 		"status": "Read",
 		"newstatus": "updated",
-		"categories": "biyografi",
-		"reread": "no"
+		"categories": "n/a",
+		"reread": "no",
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 2948,
@@ -31011,8 +31167,9 @@
 		"notes": "G-7",
 		"status": "Read",
 		"newstatus": "updated",
-		"categories": "biyografi",
-		"reread": "no"
+		"categories": "n/a",
+		"reread": "no",
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 2949,
@@ -31027,7 +31184,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2950,
@@ -31042,7 +31200,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2951,
@@ -31057,7 +31216,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2952,
@@ -31072,7 +31232,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2953,
@@ -31087,7 +31248,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2954,
@@ -31102,7 +31264,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2955,
@@ -31116,8 +31279,9 @@
 		"notes": "F-6",
 		"status": "JustRead",
 		"newstatus": "ToBeUpdated",
-		"categories": "saglik",
-		"reread": "no"
+		"categories": "n/a",
+		"reread": "no",
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 2956,
@@ -31132,7 +31296,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2957,
@@ -31147,7 +31312,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2958,
@@ -31162,7 +31328,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2959,
@@ -31177,7 +31344,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2960,
@@ -31192,7 +31360,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2961,
@@ -31207,7 +31376,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2962,
@@ -31222,7 +31392,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2963,
@@ -31237,7 +31408,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2964,
@@ -31252,7 +31424,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2965,
@@ -31267,7 +31440,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2966,
@@ -31282,7 +31456,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2967,
@@ -31297,7 +31472,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2968,
@@ -31312,7 +31488,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2969,
@@ -31326,8 +31503,9 @@
 		"notes": "G-5",
 		"status": "JustRead",
 		"newstatus": "ToBeUpdated",
-		"categories": "sosyoloji",
-		"reread": "no"
+		"categories": "n/a",
+		"reread": "no",
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 2970,
@@ -31342,7 +31520,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2971,
@@ -31357,7 +31536,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2972,
@@ -31372,7 +31552,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2973,
@@ -31387,7 +31568,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2974,
@@ -31402,7 +31584,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2975,
@@ -31417,7 +31600,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2976,
@@ -31432,7 +31616,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2977,
@@ -31447,7 +31632,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2978,
@@ -31462,7 +31648,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2979,
@@ -31477,7 +31664,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2980,
@@ -31492,7 +31680,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2981,
@@ -31507,7 +31696,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2982,
@@ -31522,7 +31712,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2983,
@@ -31537,7 +31728,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2984,
@@ -31552,7 +31744,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2985,
@@ -31567,7 +31760,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2986,
@@ -31582,7 +31776,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2987,
@@ -31597,7 +31792,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2988,
@@ -31612,7 +31808,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2989,
@@ -31628,7 +31825,8 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"note": "reading through the year"
+		"note": "reading through the year",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2990,
@@ -31643,7 +31841,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2991,
@@ -31658,7 +31857,8 @@
 		"status": "Read",
 		"newstatus": "updated",
 		"categories": "lifestyle",
-		"reread": "no"
+		"reread": "no",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2992,
@@ -31673,7 +31873,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2993,
@@ -31687,8 +31888,9 @@
 		"notes": "G-6",
 		"status": "Read",
 		"newstatus": "updated",
-		"categories": "biyografi",
-		"reread": "no"
+		"categories": "n/a",
+		"reread": "no",
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 2994,
@@ -31703,7 +31905,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2995,
@@ -31718,7 +31921,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2996,
@@ -31733,7 +31937,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2997,
@@ -31748,7 +31953,8 @@
 		"status": "JustRead",
 		"newstatus": "ToBeUpdated",
 		"categories": "n/a",
-		"reread": "no"
+		"reread": "no",
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 2998,
@@ -31763,7 +31969,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2999,
@@ -31778,7 +31985,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3000,
@@ -31793,7 +32001,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3001,
@@ -31808,7 +32017,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3002,
@@ -31823,7 +32033,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3003,
@@ -31838,7 +32049,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3004,
@@ -31853,7 +32065,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3005,
@@ -31867,8 +32080,9 @@
 		"notes": "B-9",
 		"status": "Reading",
 		"newstatus": "n/a",
-		"categories": "psikoloji",
-		"reread": "n/a"
+		"categories": "n/a",
+		"reread": "n/a",
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 3006,
@@ -31883,7 +32097,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3007,
@@ -31898,7 +32113,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3008,
@@ -31913,7 +32129,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3009,
@@ -31928,7 +32145,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3010,
@@ -31942,8 +32160,9 @@
 		"notes": "A-7",
 		"status": "Read",
 		"newstatus": "updated",
-		"categories": "psikoloji",
-		"reread": "no"
+		"categories": "n/a",
+		"reread": "no",
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 3011,
@@ -31958,7 +32177,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3012,
@@ -31972,8 +32192,9 @@
 		"notes": "B-9",
 		"status": "JustRead",
 		"newstatus": "ToBeUpdated",
-		"categories": "saglik",
-		"reread": "no"
+		"categories": "n/a",
+		"reread": "no",
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 3013,
@@ -31988,7 +32209,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3014,
@@ -32003,7 +32225,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3015,
@@ -32017,8 +32240,9 @@
 		"notes": "B-6",
 		"status": "JustRead",
 		"newstatus": "ToBeUpdated",
-		"categories": "psikoloji",
-		"reread": "yes"
+		"categories": "n/a",
+		"reread": "yes",
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 3016,
@@ -32033,7 +32257,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3017,
@@ -32048,7 +32273,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3018,
@@ -32063,7 +32289,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3019,
@@ -32078,7 +32305,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3020,
@@ -32093,7 +32321,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3021,
@@ -32108,7 +32337,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3022,
@@ -32123,7 +32353,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3023,
@@ -32137,8 +32368,9 @@
 		"notes": "B-8",
 		"status": "JustRead",
 		"newstatus": "ToBeUpdated",
-		"categories": "psikoloji",
-		"reread": "no"
+		"categories": "n/a",
+		"reread": "no",
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 3024,
@@ -32152,8 +32384,9 @@
 		"notes": "B-8",
 		"status": "JustRead",
 		"newstatus": "ToBeUpdated",
-		"categories": "psikoloji",
-		"reread": "no"
+		"categories": "n/a",
+		"reread": "no",
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 3025,
@@ -32168,7 +32401,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3026,
@@ -32182,8 +32416,9 @@
 		"notes": "B-8",
 		"status": "JustRead",
 		"newstatus": "ToBeUpdated",
-		"categories": "psikoloji",
-		"reread": "yes"
+		"categories": "n/a",
+		"reread": "yes",
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 3027,
@@ -32198,7 +32433,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3028,
@@ -32213,7 +32449,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3029,
@@ -32228,7 +32465,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3030,
@@ -32243,7 +32481,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3031,
@@ -32258,7 +32497,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3032,
@@ -32273,7 +32513,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3033,
@@ -32288,7 +32529,8 @@
 		"status": "Read",
 		"newstatus": "updated",
 		"categories": "PsychologyMentalLife",
-		"reread": "no"
+		"reread": "no",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3034,
@@ -32303,7 +32545,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3035,
@@ -32317,8 +32560,9 @@
 		"notes": "A-6",
 		"status": "Read",
 		"newstatus": "updated",
-		"categories": "psikoloji",
-		"reread": "no"
+		"categories": "n/a",
+		"reread": "no",
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 3036,
@@ -32333,7 +32577,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3037,
@@ -32348,7 +32593,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3038,
@@ -32363,7 +32609,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3039,
@@ -32378,7 +32625,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3040,
@@ -32393,7 +32641,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3041,
@@ -32408,7 +32657,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3042,
@@ -32423,7 +32673,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3043,
@@ -32438,7 +32689,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3044,
@@ -32453,7 +32705,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3045,
@@ -32468,7 +32721,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3046,
@@ -32483,7 +32737,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3047,
@@ -32498,7 +32753,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3048,
@@ -32513,7 +32769,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3049,
@@ -32528,7 +32785,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3050,
@@ -32543,7 +32801,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3051,
@@ -32558,7 +32817,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3052,
@@ -32573,7 +32833,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3053,
@@ -32588,7 +32849,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3054,
@@ -32603,7 +32865,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3055,
@@ -32618,7 +32881,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3056,
@@ -32633,7 +32897,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3057,
@@ -32648,7 +32913,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3058,
@@ -32663,7 +32929,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3059,
@@ -32678,7 +32945,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3060,
@@ -32693,7 +32961,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3061,
@@ -32708,7 +32977,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3062,
@@ -32723,7 +32993,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3063,
@@ -32738,7 +33009,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3064,
@@ -32753,7 +33025,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3065,
@@ -32768,7 +33041,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3066,
@@ -32783,7 +33057,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3067,
@@ -32798,7 +33073,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3068,
@@ -32813,7 +33089,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3069,
@@ -32828,7 +33105,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3070,
@@ -32842,8 +33120,9 @@
 		"notes": "B-8",
 		"status": "Read",
 		"newstatus": "updated",
-		"categories": "psikoloji",
-		"reread": "yes"
+		"categories": "n/a",
+		"reread": "yes",
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 3071,
@@ -32858,7 +33137,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3072,
@@ -32873,7 +33153,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3073,
@@ -32887,8 +33168,9 @@
 		"notes": "B-8",
 		"status": "JustRead",
 		"newstatus": "ToBeUpdated",
-		"categories": "psikoloji",
-		"reread": "yes"
+		"categories": "n/a",
+		"reread": "yes",
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 3074,
@@ -32903,7 +33185,8 @@
 		"status": "Read",
 		"newstatus": "updated",
 		"categories": "PsychologyMentalLife",
-		"reread": "yes"
+		"reread": "yes",
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 3075,
@@ -32917,8 +33200,9 @@
 		"notes": "G-7",
 		"status": "Read",
 		"newstatus": "updated",
-		"categories": "motivasyon",
-		"reread": "no"
+		"categories": "n/a",
+		"reread": "no",
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 3076,
@@ -32933,7 +33217,8 @@
 		"status": "Read",
 		"newstatus": "updated",
 		"categories": "PsychologyMentalLife",
-		"reread": "yes"
+		"reread": "yes",
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 3077,
@@ -32948,7 +33233,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3078,
@@ -32963,7 +33249,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3079,
@@ -32978,7 +33265,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3080,
@@ -32993,7 +33281,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3081,
@@ -33008,7 +33297,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3082,
@@ -33023,7 +33313,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3083,
@@ -33038,7 +33329,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3084,
@@ -33053,7 +33345,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3085,
@@ -33068,7 +33361,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3086,
@@ -33083,7 +33377,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3087,
@@ -33098,7 +33393,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3088,
@@ -33113,7 +33409,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3089,
@@ -33128,7 +33425,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3090,
@@ -33143,7 +33441,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3091,
@@ -33158,7 +33457,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3092,
@@ -33173,7 +33473,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3093,
@@ -33188,7 +33489,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3094,
@@ -33203,7 +33505,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3095,
@@ -33218,7 +33521,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3096,
@@ -33233,7 +33537,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3097,
@@ -33248,7 +33553,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3098,
@@ -33263,7 +33569,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3099,
@@ -33278,7 +33585,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3100,
@@ -33293,7 +33601,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3101,
@@ -33308,7 +33617,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3102,
@@ -33323,7 +33633,8 @@
 		"status": "Reading",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 3103,
@@ -33338,7 +33649,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3104,
@@ -33353,7 +33665,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3105,
@@ -33368,7 +33681,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3106,
@@ -33383,7 +33697,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3107,
@@ -33398,7 +33713,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3108,
@@ -33413,7 +33729,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3109,
@@ -33428,7 +33745,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3110,
@@ -33443,7 +33761,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3111,
@@ -33458,7 +33777,8 @@
 		"status": "JustRead",
 		"newstatus": "n/a",
 		"categories": "psikoloji",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3112,
@@ -33473,7 +33793,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "psikoloji",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3113,
@@ -33488,7 +33809,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "psikoloji",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3114,
@@ -33503,7 +33825,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "BiographyLifeStories",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3115,
@@ -33518,7 +33841,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "PsychologyMentalLife",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3116,
@@ -33533,7 +33857,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "PsychologyMentalLife",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3117,
@@ -33548,7 +33873,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "PsychologyMentalLife",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3118,
@@ -33563,7 +33889,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "TechnologyTheDigitalWorld",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3119,
@@ -33578,7 +33905,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3120,
@@ -33593,7 +33921,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3121,
@@ -33608,7 +33937,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3122,
@@ -33623,7 +33953,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3123,
@@ -33638,7 +33969,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3124,
@@ -33653,7 +33985,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3125,
@@ -33668,7 +34001,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3126,
@@ -33683,7 +34017,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 3127,
@@ -33698,6 +34033,7 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	}
 ]
