@@ -29,7 +29,7 @@
 		"newstatus": "n/a",
 		"categories": "PhilosophyMeaning",
 		"reread": "no",
-		"tbr": "no"
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 1003,
@@ -109,7 +109,7 @@
 		"newstatus": "ToBeUpdated",
 		"categories": "EnvironmentSustainableLiving",
 		"reread": "n/a",
-		"tbr": "no"
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 1008,
@@ -251,9 +251,9 @@
 		"notes": "D-7",
 		"status": "JustRead",
 		"newstatus": "ToBeUpdated",
-		"categories": "tarih",
+		"categories": "n/a",
 		"reread": "yes",
-		"tbr": "no"
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 1017,
@@ -331,9 +331,9 @@
 		"notes": "F-4",
 		"status": "Read",
 		"newstatus": "n/a",
-		"categories": "veganlik",
+		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "no"
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 1022,
@@ -363,9 +363,9 @@
 		"notes": "E-5",
 		"status": "Read",
 		"newstatus": "updated",
-		"categories": "motivasyon",
+		"categories": "n/a",
 		"reread": "yes",
-		"tbr": "no"
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 1024,
@@ -396,8 +396,8 @@
 		"status": "Read",
 		"reread": "yes",
 		"newstatus": "ToBeUpdated",
-		"categories": "cevre",
-		"tbr": "no"
+		"categories": "n/a",
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 1026,
@@ -413,7 +413,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "no"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 1027,
@@ -429,7 +429,7 @@
 		"newstatus": "updated",
 		"categories": "zaman planlamasi",
 		"reread": "no",
-		"tbr": "no"
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 1028,
@@ -491,9 +491,9 @@
 		"notes": "G-6",
 		"status": "Read",
 		"newstatus": "n/a",
-		"categories": "lifestyle",
+		"categories": "n/a",
 		"reread": "no",
-		"tbr": "no"
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 1032,
@@ -507,9 +507,9 @@
 		"notes": "G-6",
 		"status": "Read",
 		"newstatus": "n/a",
-		"categories": "lifestyle",
+		"categories": "n/a",
 		"reread": "no",
-		"tbr": "no"
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 1033,
@@ -539,9 +539,9 @@
 		"notes": "F-1",
 		"status": "Read",
 		"newstatus": "n/a",
-		"categories": "sosyoloji",
+		"categories": "n/a",
 		"reread": "no",
-		"tbr": "no"
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 1035,
@@ -557,7 +557,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "no"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 1036,
@@ -604,8 +604,8 @@
 		"status": "JustRead",
 		"reread": "yes",
 		"newstatus": "ToBeUpdated",
-		"categories": "psikoloji",
-		"tbr": "no"
+		"categories": "n/a",
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 1039,
@@ -652,8 +652,8 @@
 		"status": "Read",
 		"reread": "yes",
 		"newstatus": "n/a",
-		"categories": "psikoloji",
-		"tbr": "no"
+		"categories": "n/a",
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 1042,
@@ -717,7 +717,7 @@
 		"reread": "yes",
 		"newstatus": "updated",
 		"categories": "PsychologyMentalLife",
-		"tbr": "no"
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 1046,
@@ -731,9 +731,9 @@
 		"notes": "D-7",
 		"status": "Read",
 		"newstatus": "updated",
-		"categories": "davranissal iktisat",
+		"categories": "n/a",
 		"reread": "yes",
-		"tbr": "no"
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 1047,
@@ -748,8 +748,8 @@
 		"status": "Read",
 		"reread": "yes",
 		"newstatus": "updated",
-		"categories": "davranissal iktisat",
-		"tbr": "no"
+		"categories": "n/a",
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 1048,
@@ -765,7 +765,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "no"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 1049,
@@ -828,8 +828,8 @@
 		"status": "Read",
 		"reread": "yes",
 		"newstatus": "n/a",
-		"categories": "psikoloji",
-		"tbr": "no"
+		"categories": "n/a",
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 1053,
@@ -891,9 +891,9 @@
 		"notes": "E-3",
 		"status": "JustRead",
 		"newstatus": "ToBeUpdated",
-		"categories": "psikoloji",
+		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "no"
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 1057,
@@ -908,7 +908,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1058,
@@ -923,7 +924,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1059,
@@ -938,7 +940,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 1060,
@@ -953,7 +956,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1061,
@@ -968,7 +972,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 1062,
@@ -983,7 +988,8 @@
 		"status": "Read",
 		"reread": "yes",
 		"newstatus": "ToBeUpdated",
-		"categories": "psikoloji"
+		"categories": "n/a",
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 1063,
@@ -997,8 +1003,9 @@
 		"notes": "E-4",
 		"status": "Read",
 		"newstatus": "n/a",
-		"categories": "motivasyon",
-		"reread": "n/a"
+		"categories": "n/a",
+		"reread": "n/a",
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 1064,
@@ -1013,7 +1020,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 1065,
@@ -1028,7 +1036,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 1066,
@@ -1043,7 +1052,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 1067,
@@ -1058,7 +1068,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 1068,
@@ -1073,7 +1084,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1069,
@@ -1087,8 +1099,9 @@
 		"notes": "D-8",
 		"status": "Read",
 		"newstatus": "n/a",
-		"categories": "minimalizm",
-		"reread": "n/a"
+		"categories": "n/a",
+		"reread": "n/a",
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1070,
@@ -1103,7 +1116,8 @@
 		"status": "Read",
 		"newstatus": "updated",
 		"categories": "tuketici",
-		"reread": "no"
+		"reread": "no",
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1071,
@@ -1118,7 +1132,8 @@
 		"status": "Read",
 		"reread": "yes",
 		"newstatus": "n/a",
-		"categories": "sosyoloji"
+		"categories": "n/a",
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1072,
@@ -1133,7 +1148,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1073,
@@ -1148,7 +1164,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1074,
@@ -1163,7 +1180,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1075,
@@ -1178,7 +1196,8 @@
 		"status": "Read",
 		"reread": "yes",
 		"newstatus": "ToBeUpdated",
-		"categories": "cevre"
+		"categories": "n/a",
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1076,
@@ -1193,7 +1212,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1077,
@@ -1208,7 +1228,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1078,
@@ -1223,7 +1244,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1079,
@@ -1238,7 +1260,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 1080,
@@ -1253,7 +1276,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1081,
@@ -1268,7 +1292,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 1082,
@@ -1283,7 +1308,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 1083,
@@ -1298,7 +1324,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 1084,
@@ -1313,7 +1340,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 1085,
@@ -1328,7 +1356,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1086,
@@ -1343,7 +1372,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 1087,
