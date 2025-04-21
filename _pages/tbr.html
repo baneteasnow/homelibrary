@@ -27,15 +27,21 @@ title: "TBR List"
 	"tbr", "yes" | size %}
 	<div><i>TBR: {{ tbr_yes }} </i></div>
 </div>
-<br />
+
 <div style="color: #b7b2b2">
 	{% assign tbrna_data = site.data.list %} {% assign tbr_na = tbrna_data |
 	where: "tbr", "n/a" | size %}
 	<div><i>TBR n/a: {{ tbr_na }} </i></div>
 </div>
-<br />
+
 <div style="color: #b7b2b2">
 	{% assign tbrno_data = site.data.list %} {% assign tbr_no = tbrno_data |
 	where: "tbr", "no" | size %}
-	<div><i>TBR: {{ tbr_no }} </i></div>
+	<div><i>TBR no: {{ tbr_no }} </i></div>
+</div>
+
+<div style="color: #b7b2b2">
+	{% assign tbrread_data = site.data.list %} {% assign tbr_read = tbrread_data |
+	where: "tbr", "read" | size %}
+	<div><i>TBR read: {{ tbr_read }} </i></div>
 </div>
