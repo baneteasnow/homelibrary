@@ -9002,7 +9002,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 1564,
@@ -11707,7 +11708,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 1733,
@@ -13914,7 +13916,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 1871,
@@ -21291,7 +21294,8 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a"
+		"reread": "n/a",
+		"tbr": "n/a"
 	},
 	{
 		"bookshelf": 2332,
