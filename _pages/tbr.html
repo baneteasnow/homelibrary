@@ -23,6 +23,7 @@ title: "TBR List"
 {% endif %} {% endfor %}
 <br />
 <div style="color: #b7b2b2">
-	{% assign tbr_data = site.data.tbr %} {% assign tbr_yes = tbr_data | size %}
-	<div><i>TBR: {{ tbr_yes | size }} </i></div>
+	{% assign tbr_data = site.data.list %} {% assign tbr_yes = tbr_data | where:
+	"tbr", "yes" | size %}
+	<div><i>TBR: {{ tbr_yes }} </i></div>
 </div>
