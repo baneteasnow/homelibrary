@@ -48,7 +48,7 @@ title: "TBR List"
 <br />
 missing?
 <br />
-{% for item in site.data.list %} {% if item.tbr != "" %}
+{% for item in site.data.list %} {% if item.tbr == "" %}
 <div>
 	<i
 		><a
@@ -61,7 +61,7 @@ missing?
 </div>
 {% else %}
 <div style="visibility: hidden"></div>
-{% endif %} {% endfor %} {% for item in site.data.list %} {% if item.tbr != nil
+{% endif %} {% endfor %} {% for item in site.data.list %} {% if item.tbr == nil
 %}
 <div>
 	<i
@@ -75,7 +75,7 @@ missing?
 </div>
 {% else %}
 <div style="visibility: hidden"></div>
-{% endif %} {% endfor %}{% for item in site.data.list %} {% if item.tbr != "-"
+{% endif %} {% endfor %}{% for item in site.data.list %} {% if item.tbr == "-"
 %}
 <div>
 	<i
