@@ -123,10 +123,16 @@ justread_data | where: "status", "JustRead" | size %}
 50
 <br />
 <!-- eread size -->
-{% assign eread_data = site.data.eread %} {% assign status_eread = eread_data |
-where: "status", "Read" | size %}
+{% assign ereadread_data = site.data.eread %} {% assign status_ereadread =
+ereadread_data | where: "status", "Read" | size %} {% assign ereadjustread_data
+= site.data.eread %} {% assign status_ereadjustread = ereadjustread_data |
+where: "status", "JustRead" | size %}
 <!-- {{ }} -->
-{{ status_eread }}
+{{ status_ereadread }}
+<br />
+
+<!-- {{ }} -->
+{{ status_ereadjustread }}
 <br />
 <br />
 <h4><i>Gaveaway</i></h4>
