@@ -120,7 +120,13 @@ justread_data | where: "status", "JustRead" | size %}
 	<div>I’m Glad My Mom Died | Jennette McCurdy</div>
 </i>
 <br />
-49
+50
+<br />
+<!-- eread size -->
+{% assign eread_data = site.data.eread %} {% assign status_eread = eread_data |
+where: "status", "Read" | size %}
+<!-- {{ }} -->
+{{ status_eread }}
 <br />
 <br />
 <h4><i>Gaveaway</i></h4>
