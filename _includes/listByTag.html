@@ -41,11 +41,21 @@ reading_data | where: "status", "Reading" | size %}
 <div style="color: #b7b2b2">
 	<i>
 		<a
+			href="https://homelibrary.next52books.com/completed"
+			style="color: #b7b2b2"
+			>gaveaway:
+		</a>
+		{{ gaveaway_yes }}
+	</i>
+</div>
+<div style="color: #b7b2b2">
+	<i>
+		<a
 			href="https://homelibrary.next52books.com/tobeupdated"
 			style="color: #b7b2b2"
 			>to be updated (incl. just finished):
 		</a>
-		{{ status_tobeupdated | plus: '5' }}
+		{{ status_tobeupdated }}
 	</i>
 </div>
 <div style="color: #b7b2b2">
