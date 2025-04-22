@@ -22,13 +22,13 @@ reading_data | where: "status", "Reading" | size %}
 <!-- tbr_yes -->
 {% assign tbr_data = site.data.list %} {% assign tbr_yes = tbr_data | where:
 "tbr", "yes" | size %}
-<!-- plus: '49' = read as ebook - - - includes and comes from: reread.html & tobeupdated.html -->
+<!-- plus: '50' = read as ebook - - - includes and comes from: reread.html & tobeupdated.html -->
 <div style="color: #b7b2b2">
 	<i>read: {{ status_read | plus: gaveaway_yes | plus: '50' }}</i>
 </div>
-<!-- adding +5 to just finished because of ereads of 2024-->
+<!-- adding +? to just finished because of ereads of the year-->
 <div style="color: #b7b2b2">
-	<i>just finished: {{ status_justread | plus: '5' }}</i>
+	<i>just finished: {{ status_justread }}</i>
 </div>
 <div style="color: #b7b2b2">
 	<b>
