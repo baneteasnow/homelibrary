@@ -19,6 +19,9 @@ tobeupdated_data | where: "newstatus", "ToBeUpdated" | size %}
 <!-- reading_yes -->
 {% assign reading_data = site.data.list %} {% assign status_reading =
 reading_data | where: "status", "Reading" | size %}
+<!-- tbr_yes -->
+{% assign tbr_data = site.data.list %} {% assign tbr_yes = tbr_data | where:
+"tbr", "yes" | size %}
 <!-- plus: '49' = read as ebook - - - includes and comes from: reread.html & tobeupdated.html -->
 <div style="color: #b7b2b2">
 	<i>read: {{ status_read | plus: gaveaway_yes | plus: '50' }}</i>
@@ -63,6 +66,15 @@ reading_data | where: "status", "Reading" | size %}
 			style="color: #b7b2b2"
 			>reread (incl. e-reads): </a
 		>{{ reread_yes | plus: ereread_yes }}
+	</i>
+</div>
+<div style="color: #b7b2b2">
+	<i>
+		<a
+			href="https://homelibrary.next52books.com/tbr"
+			style="color: #b7b2b2"
+			>TBR: </a
+		>{{ tbr_yes }}
 	</i>
 </div>
 
