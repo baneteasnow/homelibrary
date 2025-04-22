@@ -28722,8 +28722,8 @@
 		"status": "Read",
 		"newstatus": "updated",
 		"categories": "PsychologyMentalLife",
-		"reread": "yes",
-		"tbr": "n/a"
+		"reread": "no",
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 2796,
@@ -33221,7 +33221,7 @@
 		"status": "Read",
 		"newstatus": "updated",
 		"categories": "PsychologyMentalLife",
-		"reread": "yes",
+		"reread": "no",
 		"tbr": "read"
 	},
 	{
