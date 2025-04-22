@@ -9,15 +9,15 @@ title: "TBR List"
 <br />
 {% for item in site.data.list %} {% if item.tbr == "yes" %}
 <div>
-	<i></i>
-		<div style="color: #b7b2b2">
+	<i>
+		<span style="color: red">
 			<a
 				href="{{ site.baseurl }}booklist#{{ item.bookshelf }}"
 				name="{{ item.bookshelf }}"
 			>
 				{{ item.bookshelf }}.</a
 			>
-		</div>
+		</span>
 		{{ item.title }} | {{ item.author }}
 	</i>
 </div>
