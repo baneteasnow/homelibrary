@@ -132,14 +132,17 @@ ereadread_data | where: "status", "Read" | size %}
 {% assign ereadreading_data = site.data.eread %} {% assign status_ereadreading =
 ereadreading_data | where: "status", "Reading" | size %}
 <!-- {{ }} -->
-{{ status_ereadread }} (eread read)
+{{ status_ereadread }} <i> (eread read) </i>
 <br />
 <!-- {{ }} -->
-{{ status_ereadjustread }} (eread justread)
+{{ status_ereadjustread }}
+<i> (eread justread) </i>
 <br />
 <!-- {{ }} -->
-{{ status_ereadreading }} (eread reading)
+{{ status_ereadreading }}
+<i>(eread reading)</i>
 <br />
+<i> total eread: {{ status_ereadread | plus: status_ereadjustread }} </i>
 <br />
 <h4><i>Gaveaway</i></h4>
 <br />
