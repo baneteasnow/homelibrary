@@ -301,7 +301,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1020,
@@ -1437,7 +1437,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 1091,
@@ -1469,7 +1469,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1093,
@@ -1515,7 +1515,7 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"tbr": "n/a"
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1096,
@@ -1531,7 +1531,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1097,
@@ -1547,7 +1547,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1098,
@@ -1675,7 +1675,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1106,
@@ -1739,7 +1739,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 1110,
@@ -1755,7 +1755,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1111,
@@ -1771,7 +1771,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1112,
@@ -1787,7 +1787,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1113,
@@ -1803,7 +1803,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1114,
@@ -1819,7 +1819,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1115,
@@ -1835,7 +1835,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1116,
@@ -1867,7 +1867,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 1118,
@@ -24879,7 +24879,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2556,
@@ -24895,7 +24895,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2557,
@@ -24911,7 +24911,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2558,
@@ -24927,7 +24927,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2559,
@@ -24959,7 +24959,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2561,
@@ -24991,7 +24991,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2563,
@@ -25007,7 +25007,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2564,
@@ -25023,7 +25023,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2565,
@@ -25039,7 +25039,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2566,
@@ -25055,7 +25055,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2567,
@@ -25071,7 +25071,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2568,
@@ -25087,7 +25087,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2569,
@@ -25103,7 +25103,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2570,
@@ -25119,7 +25119,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2571,
@@ -25135,7 +25135,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2572,
@@ -25151,7 +25151,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2573,
@@ -25167,7 +25167,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2574,
@@ -25183,7 +25183,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2575,
@@ -25215,7 +25215,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2577,
@@ -25231,7 +25231,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2578,
@@ -25247,7 +25247,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2579,
@@ -25263,7 +25263,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2580,
@@ -25279,7 +25279,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2581,
@@ -25327,7 +25327,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2584,
@@ -25407,7 +25407,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2589,
@@ -25439,7 +25439,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2591,
@@ -25455,7 +25455,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2592,
@@ -25471,7 +25471,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2593,
@@ -25487,7 +25487,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2594,
@@ -25503,7 +25503,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2595,
@@ -25519,7 +25519,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2596,
@@ -25535,7 +25535,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2597,
@@ -25551,7 +25551,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2598,
@@ -25567,7 +25567,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2599,
@@ -25583,7 +25583,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2600,
@@ -25679,7 +25679,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2606,
@@ -25695,7 +25695,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2607,
@@ -25711,7 +25711,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2608,
@@ -25727,7 +25727,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2609,
@@ -25743,7 +25743,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2610,
@@ -25807,7 +25807,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "read"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2614,
@@ -25823,7 +25823,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2615,
@@ -25855,7 +25855,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2617,
@@ -25887,7 +25887,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2619,
@@ -25935,7 +25935,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2622,
@@ -25983,7 +25983,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2625,
@@ -25999,7 +25999,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2626,
@@ -26015,7 +26015,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2627,
@@ -26031,7 +26031,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2628,
@@ -26047,7 +26047,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2629,
@@ -26079,7 +26079,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2631,
@@ -26111,7 +26111,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2633,
@@ -26127,7 +26127,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2634,
@@ -26143,7 +26143,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2635,
@@ -26175,7 +26175,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2637,
@@ -26207,7 +26207,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2639,
@@ -26223,7 +26223,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2640,
@@ -26239,7 +26239,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2641,
@@ -26255,7 +26255,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2642,
@@ -26351,7 +26351,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2648,
@@ -26415,7 +26415,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2652,
@@ -26431,7 +26431,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2653,
@@ -26447,7 +26447,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2654,
@@ -26463,7 +26463,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2655,
@@ -26575,7 +26575,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2662,
@@ -26591,7 +26591,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2663,
@@ -26607,7 +26607,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2664,
@@ -26623,7 +26623,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2665,
@@ -26639,7 +26639,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2666,
@@ -26655,7 +26655,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2667,
@@ -26671,7 +26671,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2668,
@@ -26687,7 +26687,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2669,
@@ -26703,7 +26703,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2670,
@@ -26719,7 +26719,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2671,
@@ -26735,7 +26735,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2672,
@@ -26751,7 +26751,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2673,
@@ -26832,7 +26832,7 @@
 		"categories": "n/a",
 		"reread": "n/a",
 		"note": "reading through the year",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2678,
@@ -26848,7 +26848,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2679,
@@ -26864,7 +26864,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2680,
@@ -26944,7 +26944,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2685,
@@ -26960,7 +26960,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2686,
@@ -26976,7 +26976,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2687,
@@ -26992,7 +26992,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2688,
@@ -27024,7 +27024,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2690,
@@ -27041,7 +27041,7 @@
 		"categories": "n/a",
 		"reread": "n/a",
 		"note": "reading through the year",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2691,
@@ -27057,7 +27057,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2692,
@@ -27073,7 +27073,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2693,
@@ -27089,7 +27089,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2694,
@@ -27105,7 +27105,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2695,
@@ -27121,7 +27121,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2696,
@@ -27137,7 +27137,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2697,
@@ -27185,7 +27185,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2700,
@@ -27265,7 +27265,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2705,
@@ -27281,7 +27281,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2706,
@@ -27313,7 +27313,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2708,
@@ -27329,7 +27329,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2709,
@@ -27345,7 +27345,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2710,
@@ -27361,7 +27361,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2711,
@@ -27377,7 +27377,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2712,
@@ -27393,7 +27393,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2713,
@@ -27409,7 +27409,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2714,
@@ -27489,7 +27489,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2719,
@@ -27505,7 +27505,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2720,
@@ -27521,7 +27521,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2721,
@@ -27553,7 +27553,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2723,
@@ -27618,7 +27618,7 @@
 		"categories": "n/a",
 		"reread": "n/a",
 		"note": "reading through the year",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2727,
@@ -27714,7 +27714,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2733,
@@ -27730,7 +27730,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2734,
@@ -27746,7 +27746,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2735,
@@ -27778,7 +27778,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2737,
@@ -27794,7 +27794,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2738,
@@ -27810,7 +27810,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2739,
@@ -27842,7 +27842,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2741,
@@ -27890,7 +27890,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2744,
@@ -27906,7 +27906,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2745,
@@ -27938,7 +27938,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2747,
@@ -27954,7 +27954,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2748,
@@ -28018,7 +28018,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2752,
@@ -28099,7 +28099,7 @@
 		"categories": "n/a",
 		"reread": "n/a",
 		"note": "reading through the year",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2757,
@@ -28131,7 +28131,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2759,
@@ -28147,7 +28147,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2760,
@@ -28163,7 +28163,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2761,
@@ -28179,7 +28179,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2762,
@@ -28211,7 +28211,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2764,
@@ -28227,7 +28227,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2765,
@@ -28243,7 +28243,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2766,
@@ -28291,7 +28291,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": ""
 	},
 	{
 		"bookshelf": 2769,
@@ -28323,7 +28323,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2771,
@@ -28339,7 +28339,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2772,
@@ -28355,7 +28355,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2773,
@@ -28371,7 +28371,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2774,
@@ -28419,7 +28419,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2777,
@@ -28435,7 +28435,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2778,
@@ -28451,7 +28451,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2779,
@@ -28467,7 +28467,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2780,
@@ -28499,7 +28499,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2782,
@@ -28515,7 +28515,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2783,
@@ -28547,7 +28547,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2785,
@@ -28563,7 +28563,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2786,
@@ -28579,7 +28579,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2787,
@@ -28611,7 +28611,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2789,
@@ -28627,7 +28627,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2790,
@@ -28643,7 +28643,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2791,
@@ -28675,7 +28675,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2793,
@@ -28691,7 +28691,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2794,
@@ -28739,7 +28739,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2797,
@@ -28755,7 +28755,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2798,
@@ -28771,7 +28771,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2799,
@@ -28787,7 +28787,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2800,
@@ -28819,7 +28819,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2802,
@@ -28835,7 +28835,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2803,
@@ -28851,7 +28851,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2804,
@@ -28867,7 +28867,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2805,
@@ -28883,7 +28883,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2806,
@@ -28899,7 +28899,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2807,
@@ -28915,7 +28915,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2808,
@@ -28931,7 +28931,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2809,
@@ -28947,7 +28947,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2810,
@@ -28963,7 +28963,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2811,
@@ -28979,7 +28979,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2812,
@@ -29059,7 +29059,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2817,
@@ -29075,7 +29075,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2818,
@@ -29107,7 +29107,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2820,
@@ -29123,7 +29123,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2821,
@@ -29155,7 +29155,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2823,
@@ -29171,7 +29171,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2824,
@@ -29187,7 +29187,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2825,
@@ -29251,7 +29251,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2829,
@@ -29267,7 +29267,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2830,
@@ -29283,7 +29283,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2831,
@@ -29299,7 +29299,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2832,
@@ -29315,7 +29315,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2833,
@@ -29331,7 +29331,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2834,
@@ -29347,7 +29347,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2835,
@@ -29363,7 +29363,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2836,
@@ -29379,7 +29379,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2837,
@@ -29395,7 +29395,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2838,
@@ -29411,7 +29411,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2839,
@@ -29428,7 +29428,7 @@
 		"categories": "n/a",
 		"reread": "n/a",
 		"note": "reading through the year",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2840,
@@ -29460,7 +29460,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2842,
@@ -29476,7 +29476,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2843,
@@ -29492,7 +29492,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2844,
@@ -29508,7 +29508,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2845,
@@ -29524,7 +29524,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2846,
@@ -29540,7 +29540,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2847,
@@ -29556,7 +29556,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2848,
@@ -29572,7 +29572,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2849,
@@ -29588,7 +29588,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2850,
@@ -29604,7 +29604,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2851,
@@ -29620,7 +29620,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2852,
@@ -29636,7 +29636,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2853,
@@ -29652,7 +29652,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2854,
@@ -29668,7 +29668,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2855,
@@ -29684,7 +29684,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2856,
@@ -29700,7 +29700,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2857,
@@ -29716,7 +29716,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2858,
@@ -29780,7 +29780,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2862,
@@ -29796,7 +29796,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2863,
@@ -29812,7 +29812,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2864,
@@ -29828,7 +29828,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2865,
@@ -29844,7 +29844,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2866,
@@ -29860,7 +29860,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2867,
@@ -29876,7 +29876,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2868,
@@ -29972,7 +29972,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2874,
@@ -30004,7 +30004,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2876,
@@ -30036,7 +30036,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2878,
@@ -30052,7 +30052,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "read"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2879,
@@ -30084,7 +30084,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2881,
@@ -30100,7 +30100,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2882,
@@ -30116,7 +30116,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2883,
@@ -30148,7 +30148,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2885,
@@ -30164,7 +30164,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2886,
@@ -30180,7 +30180,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2887,
@@ -30196,7 +30196,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2888,
@@ -30260,7 +30260,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2892,
@@ -30276,7 +30276,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2893,
@@ -30292,7 +30292,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2894,
@@ -30308,7 +30308,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2895,
@@ -30324,7 +30324,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2896,
@@ -30340,7 +30340,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2897,
@@ -30356,7 +30356,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2898,
@@ -30372,7 +30372,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2899,
@@ -30388,7 +30388,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2900,
@@ -30404,7 +30404,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2901,
@@ -30420,7 +30420,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2902,
@@ -30436,7 +30436,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2903,
@@ -30452,7 +30452,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2904,
@@ -30468,7 +30468,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2905,
@@ -30500,7 +30500,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2907,
@@ -30532,7 +30532,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2909,
@@ -30548,7 +30548,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2910,
@@ -30580,7 +30580,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2912,
@@ -30596,7 +30596,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2913,
@@ -30612,7 +30612,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2914,
@@ -30660,7 +30660,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2917,
@@ -30676,7 +30676,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2918,
@@ -30692,7 +30692,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2919,
@@ -30708,7 +30708,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2920,
@@ -30724,7 +30724,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2921,
@@ -30740,7 +30740,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2922,
@@ -30756,7 +30756,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2923,
@@ -30772,7 +30772,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2924,
@@ -30788,7 +30788,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2925,
@@ -30804,7 +30804,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2926,
@@ -30820,7 +30820,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2927,
@@ -30852,7 +30852,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2929,
@@ -30869,7 +30869,7 @@
 		"categories": "n/a",
 		"reread": "n/a",
 		"note": "reading through the year",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2930,
@@ -30885,7 +30885,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2931,
@@ -30933,7 +30933,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2934,
@@ -30949,7 +30949,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2935,
@@ -30965,7 +30965,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2936,
@@ -30981,7 +30981,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2937,
@@ -31013,7 +31013,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2939,
@@ -31029,7 +31029,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2940,
@@ -31045,7 +31045,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2941,
@@ -31061,7 +31061,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2942,
@@ -31077,7 +31077,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2943,
@@ -31093,7 +31093,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2944,
@@ -31125,7 +31125,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2946,
@@ -31141,7 +31141,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2947,
@@ -31189,7 +31189,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2950,
@@ -31237,7 +31237,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2953,
@@ -31253,7 +31253,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2954,
@@ -31269,7 +31269,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2955,
@@ -31301,7 +31301,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2957,
@@ -31317,7 +31317,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2958,
@@ -31333,7 +31333,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2959,
@@ -31349,7 +31349,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2960,
@@ -31381,7 +31381,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2962,
@@ -31397,7 +31397,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2963,
@@ -31413,7 +31413,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2964,
@@ -31445,7 +31445,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2966,
@@ -31461,7 +31461,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2967,
@@ -31477,7 +31477,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2968,
@@ -31493,7 +31493,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2969,
@@ -31525,7 +31525,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2971,
@@ -31541,7 +31541,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2972,
@@ -31557,7 +31557,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2973,
@@ -31573,7 +31573,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2974,
@@ -31589,7 +31589,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2975,
@@ -31605,7 +31605,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2976,
@@ -31621,7 +31621,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2977,
@@ -31637,7 +31637,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2978,
@@ -31653,7 +31653,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2979,
@@ -31669,7 +31669,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2980,
@@ -31685,7 +31685,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2981,
@@ -31701,7 +31701,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2982,
@@ -31717,7 +31717,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2983,
@@ -31733,7 +31733,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2984,
@@ -31749,7 +31749,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2985,
@@ -31765,7 +31765,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2986,
@@ -31781,7 +31781,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2987,
@@ -31797,7 +31797,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2988,
@@ -31830,7 +31830,7 @@
 		"categories": "n/a",
 		"reread": "n/a",
 		"note": "reading through the year",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2990,
@@ -31846,7 +31846,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2991,
@@ -31878,7 +31878,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2993,
@@ -31910,7 +31910,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2995,
@@ -31926,7 +31926,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2996,
@@ -31942,7 +31942,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2997,
@@ -31974,7 +31974,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2999,
@@ -32054,7 +32054,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3004,
@@ -32070,7 +32070,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3005,
@@ -32102,7 +32102,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3007,
@@ -32118,7 +32118,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3008,
@@ -32134,7 +32134,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3009,
@@ -32150,7 +32150,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3010,
@@ -32230,7 +32230,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3015,
@@ -32262,7 +32262,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3017,
@@ -32278,7 +32278,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3018,
@@ -32294,7 +32294,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3019,
@@ -32310,7 +32310,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3020,
@@ -32326,7 +32326,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3021,
@@ -32342,7 +32342,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3022,
@@ -32406,7 +32406,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3026,
@@ -32438,7 +32438,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3028,
@@ -32454,7 +32454,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3029,
@@ -32470,7 +32470,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3030,
@@ -32486,7 +32486,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3031,
@@ -32502,7 +32502,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3032,
@@ -32518,7 +32518,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3033,
@@ -32550,7 +32550,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3035,
@@ -32582,7 +32582,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3037,
@@ -32598,7 +32598,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3038,
@@ -32614,7 +32614,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3039,
@@ -32630,7 +32630,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3040,
@@ -32646,7 +32646,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3041,
@@ -32662,7 +32662,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3042,
@@ -32678,7 +32678,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3043,
@@ -32694,7 +32694,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3044,
@@ -32710,7 +32710,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3045,
@@ -32726,7 +32726,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3046,
@@ -32742,7 +32742,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3047,
@@ -32758,7 +32758,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3048,
@@ -32774,7 +32774,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3049,
@@ -32790,7 +32790,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3050,
@@ -32806,7 +32806,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3051,
@@ -32822,7 +32822,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3052,
@@ -32838,7 +32838,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3053,
@@ -32854,7 +32854,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3054,
@@ -32870,7 +32870,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3055,
@@ -32886,7 +32886,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3056,
@@ -32902,7 +32902,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3057,
@@ -32918,7 +32918,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3058,
@@ -32934,7 +32934,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3059,
@@ -32950,7 +32950,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3060,
@@ -32982,7 +32982,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3062,
@@ -32998,7 +32998,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3063,
@@ -33014,7 +33014,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3064,
@@ -33030,7 +33030,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3065,
@@ -33046,7 +33046,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3066,
@@ -33062,7 +33062,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3067,
@@ -33078,7 +33078,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3068,
@@ -33094,7 +33094,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3069,
@@ -33110,7 +33110,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3070,
@@ -33142,7 +33142,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3072,
@@ -33158,7 +33158,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3073,
@@ -33254,7 +33254,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3079,
@@ -33270,7 +33270,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3080,
@@ -33286,7 +33286,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3081,
@@ -33302,7 +33302,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3082,
@@ -33318,7 +33318,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3083,
@@ -33334,7 +33334,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3084,
@@ -33350,7 +33350,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3085,
@@ -33366,7 +33366,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3086,
@@ -33382,7 +33382,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3087,
@@ -33398,7 +33398,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3088,
@@ -33414,7 +33414,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3089,
@@ -33430,7 +33430,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3090,
@@ -33446,7 +33446,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3091,
@@ -33462,7 +33462,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3092,
@@ -33478,7 +33478,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3093,
@@ -33494,7 +33494,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3094,
@@ -33510,7 +33510,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3095,
@@ -33526,7 +33526,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3096,
@@ -33542,7 +33542,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3097,
@@ -33558,7 +33558,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3098,
@@ -33574,7 +33574,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3099,
@@ -33590,7 +33590,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3100,
@@ -33606,7 +33606,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3101,
@@ -33622,7 +33622,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3102,
@@ -33654,7 +33654,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3104,
@@ -33670,7 +33670,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3105,
@@ -33686,7 +33686,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3106,
@@ -33750,7 +33750,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3110,
@@ -33766,7 +33766,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3111,
@@ -33798,7 +33798,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3113,
@@ -33814,7 +33814,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3114,
@@ -33830,7 +33830,7 @@
 		"newstatus": "n/a",
 		"categories": "BiographyLifeStories",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3115,
@@ -33846,7 +33846,7 @@
 		"newstatus": "n/a",
 		"categories": "PsychologyMentalLife",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3116,
@@ -33862,7 +33862,7 @@
 		"newstatus": "n/a",
 		"categories": "PsychologyMentalLife",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3117,
@@ -33878,7 +33878,7 @@
 		"newstatus": "n/a",
 		"categories": "PsychologyMentalLife",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3118,
@@ -33894,7 +33894,7 @@
 		"newstatus": "n/a",
 		"categories": "TechnologyTheDigitalWorld",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3119,
@@ -33910,7 +33910,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3120,
@@ -33926,7 +33926,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3121,
@@ -33942,7 +33942,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3122,
@@ -33958,7 +33958,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3123,
@@ -33990,7 +33990,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3125,
@@ -34006,7 +34006,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3126,
@@ -34022,7 +34022,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3127,
@@ -34038,6 +34038,6 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "n/a"
+		"tbr": "yes"
 	}
 ]
