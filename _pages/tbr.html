@@ -90,7 +90,7 @@ missing? 1992
 <br />
 <div style="color: #b7b2b2">
 	{% assign tbrmissing_data = site.data.list %} {% assign tbr_missing =
-	tbrmissing_data | where: "tbr", nil | size %}
+	tbrmissing_data | where: "tbr", "" | size %}
 	<div><i>TBR missing?: {{ tbr_missing }} </i></div>
 </div>
 <br />
