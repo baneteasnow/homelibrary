@@ -43,7 +43,7 @@ title: "TBR List"
 	</div>
 </div>
 <br />
-missing?
+missing? 1992
 <br />
 {% for item in site.data.list %} {% if item.tbr == "" %}
 <div>
@@ -51,7 +51,7 @@ missing?
 		><a
 			href="{{ site.baseurl }}booklist#{{ item.bookshelf }}"
 			name="{{ item.bookshelf }}"
-			>{{ forloop.index }}.</a
+			>{{ item.bookshelf }}.</a
 		>
 		{{ item.title }} | {{ item.author }}
 	</i>
@@ -65,7 +65,7 @@ missing?
 		><a
 			href="{{ site.baseurl }}booklist#{{ item.bookshelf }}"
 			name="{{ item.bookshelf }}"
-			>{{ forloop.index }}.</a
+			>{{ item.bookshelf }}.</a
 		>
 		{{ item.title }} | {{ item.author }}
 	</i>
@@ -87,6 +87,12 @@ missing?
 {% else %}
 <div style="visibility: hidden"></div>
 {% endif %} {% endfor %}
+<br />
+<div style="color: #b7b2b2">
+	{% assign tbrmissing_data = site.data.list %} {% assign tbr_missing =
+	tbrmissing_data | where: "tbr", nil | size %}
+	<div><i>TBR missing?: {{ tbr_missing }} </i></div>
+</div>
 <br />
 <div><i>Reading List</i></div>
 {% for item in site.data.list %} {% if item.tbr == "reading" %}
