@@ -7,22 +7,6 @@ title: "TBR List"
 
 {%-include backtotop.html-%}
 <br />
-{% for item in site.data.list %} {% if item.tbr == "yes" %}
-<div>
-	<i>
-		<a
-			href="{{ site.baseurl }}booklist#{{ item.bookshelf }}"
-			name="{{ item.bookshelf }}"
-		>
-			<span style="color: #b7b2b2"> {{ item.bookshelf }}. </span>
-		</a>
-		{{ item.title }} | {{ item.author }}
-	</i>
-</div>
-{% else %}
-<div style="visibility: hidden"></div>
-{% endif %} {% endfor %}
-<br />
 <div style="color: #b7b2b2">
 	{% assign tbr_data = site.data.list %} {% assign tbr_yes = tbr_data | where:
 	"tbr", "yes" | size %}
@@ -42,9 +26,16 @@ title: "TBR List"
 </div>
 
 <div style="color: #b7b2b2">
+	{% assign tbrreading_data = site.data.list %} {% assign tbr_reading =
+	tbrreading_data | where: "tbr", "reading" | size %}
+	<div><i>TBR no: {{ tbr_reading }} </i></div>
+</div>
+
+<div style="color: #b7b2b2">
 	{% assign tbrread_data = site.data.list %} {% assign tbr_read = tbrread_data |
 	where: "tbr", "read" | size %}
 	<div><i>TBR read: {{ tbr_read }} </i></div>
+	<div><i>TBR read all: {{ tbr_read | plus: '15' | plus: '50' }} </i></div>
 </div>
 <br />
 missing?
@@ -91,3 +82,20 @@ missing?
 {% else %}
 <div style="visibility: hidden"></div>
 {% endif %} {% endfor %}
+<br />
+{% for item in site.data.list %} {% if item.tbr == "yes" %}
+<div>
+	<i>
+		<a
+			href="{{ site.baseurl }}booklist#{{ item.bookshelf }}"
+			name="{{ item.bookshelf }}"
+		>
+			<span style="color: #b7b2b2"> {{ item.bookshelf }}. </span>
+		</a>
+		{{ item.title }} | {{ item.author }}
+	</i>
+</div>
+{% else %}
+<div style="visibility: hidden"></div>
+{% endif %} {% endfor %}
+<br />
