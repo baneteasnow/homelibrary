@@ -35,7 +35,12 @@ title: "TBR List"
 	{% assign tbrread_data = site.data.list %} {% assign tbr_read = tbrread_data |
 	where: "tbr", "read" | size %}
 	<div><i>TBR read: {{ tbr_read }} </i></div>
-	<div><i>TBR read all: {{ tbr_read | plus: '15' | plus: '50' }} </i></div>
+	<div>
+		<i
+			>&nbsp; &nbsp; &nbsp; TBR read all: {{ tbr_read | plus: '15' | plus: '50'
+			}}
+		</i>
+	</div>
 </div>
 <br />
 missing?
