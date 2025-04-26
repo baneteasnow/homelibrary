@@ -8,19 +8,27 @@ title: "Completed List"
 {%-include backtotop.html-%}
 <br />
 <!--read size-->
-{% assign read_data = site.data.list %} {% assign status_read = read_data |
-where: "status", "Read" | size %}
-<i>read: {{ status_read }} </i>
+<div>
+	{% assign read_data = site.data.list %} {% assign status_read = read_data |
+	where: "status", "Read" | size %}
+	<i>read: {{ status_read }} </i>
+</div>
 <!--justread size-->
-{% assign justread_data = site.data.list %} {% assign status_justread =
-justread_data | where: "status", "JustRead" | size %}
-<i>justread: {{ status_justread }} </i>
+<div>
+	{% assign justread_data = site.data.list %} {% assign status_justread =
+	justread_data | where: "status", "JustRead" | size %}
+	<i>justread: {{ status_justread }} </i>
+</div>
+
 <!--reading size-->
-{% assign reading_data = site.data.list %} {% assign status_reading =
-reading_data | where: "status", "Reading" | size %}
-<i>justread: {{ status_reading }} </i>
+<div>
+	{% assign reading_data = site.data.list %} {% assign status_reading =
+	reading_data | where: "status", "Reading" | size %}
+	<i>reading: {{ status_reading }} </i>
+</div>
+
 <!--eread-->
-<i></i>e-read: 50
+<i>e-read: 50</i>
 <!--gaveaway-->
 <i>gaveaway: 15</i>
 <!--total-->
