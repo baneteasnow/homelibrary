@@ -7,30 +7,35 @@ title: "TBR List"
 
 {%-include backtotop.html-%}
 <br />
+<!-- TBR yes -->
 <div style="color: #b7b2b2">
 	{% assign tbr_data = site.data.list %} {% assign tbr_yes = tbr_data | where:
 	"tbr", "yes" | size %}
 	<div><i>TBR: {{ tbr_yes }} </i></div>
 </div>
 
+<!-- TBR n/a -->
 <div style="color: #b7b2b2">
 	{% assign tbrna_data = site.data.list %} {% assign tbr_na = tbrna_data |
 	where: "tbr", "n/a" | size %}
 	<div><i>TBR n/a: {{ tbr_na }} </i></div>
 </div>
 
+<!-- TBR no -->
 <div style="color: #b7b2b2">
 	{% assign tbrno_data = site.data.list %} {% assign tbr_no = tbrno_data |
 	where: "tbr", "no" | size %}
 	<div><i>TBR no: {{ tbr_no }} </i></div>
 </div>
 
+<!-- TBR reading -->
 <div style="color: #b7b2b2">
 	{% assign tbrreading_data = site.data.list %} {% assign tbr_reading =
 	tbrreading_data | where: "tbr", "reading" | size %}
 	<div><i>TBR reading: {{ tbr_reading }} </i></div>
 </div>
 
+<!-- TBR read + read all -->
 <div style="color: #b7b2b2">
 	{% assign tbrread_data = site.data.list %} {% assign tbr_read = tbrread_data |
 	where: "tbr", "read" | size %}
@@ -42,8 +47,15 @@ title: "TBR List"
 		</i>
 	</div>
 </div>
+<!-- total -->
+<div>
+	<i
+		>total: {{ tbr_read | plus: tbr_no | plus: tbr_yes | plus: tbr_reading }}
+	</i>
+</div>
 <br />
-missing? 1992
+<!-- TBR missing -->
+missing?
 <br />
 {% for item in site.data.list %} {% if item.tbr == "" %}
 <div>
@@ -56,10 +68,29 @@ missing? 1992
 		{{ item.title }} | {{ item.author }}
 	</i>
 </div>
-{% else %}
-<div style="visibility: hidden"></div>
-{% endif %} {% endfor %} {% for item in site.data.list %} {% if item.tbr == nil
-%}
+{% elsif item.tbr == nil %}
+<div>
+	<i
+		><a
+			href="{{ site.baseurl }}booklist#{{ item.bookshelf }}"
+			name="{{ item.bookshelf }}"
+			>{{ item.bookshelf }}.</a
+		>
+		{{ item.title }} | {{ item.author }}
+	</i>
+</div>
+{% elsif item.tbr == "-" %}
+<div>
+	<i
+		><a
+			href="{{ site.baseurl }}booklist#{{ item.bookshelf }}"
+			name="{{ item.bookshelf }}"
+			>{{ item.bookshelf }}.</a
+		>
+		{{ item.title }} | {{ item.author }}
+	</i>
+</div>
+{% elsif item.tbr != "-" or item,tbr != "" or item.tbr != nil %}
 <div>
 	<i
 		><a
@@ -72,8 +103,9 @@ missing? 1992
 </div>
 {% else %}
 <div style="visibility: hidden"></div>
-{% endif %} {% endfor %}{% for item in site.data.list %} {% if item.tbr == "-"
-%}
+{% endif %} {% endfor %}
+<!-- -->
+{% for item in site.data.list %} {% if item.tbr == "-" %}
 <div>
 	<i
 		><a
