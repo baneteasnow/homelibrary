@@ -90,17 +90,6 @@ missing?
 		{{ item.title }} | {{ item.author }}
 	</i>
 </div>
-{% elsif item.tbr != "-" or item,tbr != "" or item.tbr != nil %}
-<div>
-	<i
-		><a
-			href="{{ site.baseurl }}booklist#{{ item.bookshelf }}"
-			name="{{ item.bookshelf }}"
-			>{{ item.bookshelf }}.</a
-		>
-		{{ item.title }} | {{ item.author }}
-	</i>
-</div>
 {% else %}
 <div style="visibility: hidden"></div>
 {% endif %} {% endfor %}

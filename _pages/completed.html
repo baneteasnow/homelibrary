@@ -7,6 +7,29 @@ title: "Completed List"
 
 {%-include backtotop.html-%}
 <br />
+<!--read size-->
+{% assign read_data = site.data.list %} {% assign status_read = read_data |
+where: "status", "Read" | size %}
+<i>read: {{ status_read }} </i>
+<!--justread size-->
+{% assign justread_data = site.data.list %} {% assign status_justread =
+justread_data | where: "status", "JustRead" | size %}
+<i>justread: {{ status_justread }} </i>
+<!--reading size-->
+{% assign reading_data = site.data.list %} {% assign status_reading =
+reading_data | where: "status", "Reading" | size %}
+<i>justread: {{ status_reading }} </i>
+<!--eread-->
+<i></i>e-read: 50
+<!--gaveaway-->
+<i>gaveaway: 15</i>
+<!--total-->
+<i
+	>&nbsp; &nbsp; &nbsp; total: {{ status_read | plus: status_justread | plus:
+	status_reading }}</i
+>
+<br />
+<!-- read -->
 <h4><i>Read</i></h4>
 {% for item in site.data.list %} {% if item.status == "Read" %}
 <div>
@@ -22,12 +45,13 @@ title: "Completed List"
 <div style="visibility: hidden"></div>
 {% endif %} {% endfor %}
 <br />
-<!-- size -->
+<!-- read size -->
 {% assign read_data = site.data.list %} {% assign status_read = read_data |
 where: "status", "Read" | size %}
 <!-- {{ }} -->
 <i>read: {{ status_read }} </i>
 <br />
+<!-- justread -->
 <h4><i>Just Read</i></h4>
 {% for item in site.data.list %} {% if item.status == "JustRead" %}
 <div>
@@ -43,7 +67,7 @@ where: "status", "Read" | size %}
 <div style="visibility: hidden"></div>
 {% endif %} {% endfor %}
 <br />
-<!-- size -->
+<!-- justread size -->
 {% assign justread_data = site.data.list %} {% assign status_justread =
 justread_data | where: "status", "JustRead" | size %}
 <!-- {{ }} -->
