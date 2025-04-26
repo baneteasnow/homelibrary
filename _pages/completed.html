@@ -26,16 +26,21 @@ title: "Completed List"
 	reading_data | where: "status", "Reading" | size %}
 	<i>reading: {{ status_reading }} </i>
 </div>
-
 <!--eread-->
-<i>e-read: 50</i>
+<div>
+	<i>e-read: 50</i>
+</div>
 <!--gaveaway-->
-<i>gaveaway: 15</i>
+<div>
+	<i>gaveaway: 15</i>
+</div>
 <!--total-->
-<i
-	>&nbsp; &nbsp; &nbsp; total: {{ status_read | plus: status_justread | plus:
-	status_reading }}</i
->
+<div>
+	<i
+		>&nbsp; &nbsp; &nbsp; total: {{ status_read | plus: status_justread | plus:
+		status_reading }}</i
+	>
+</div>
 <br />
 <!-- read -->
 <h4><i>Read</i></h4>
