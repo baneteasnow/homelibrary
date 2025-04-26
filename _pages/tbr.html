@@ -48,14 +48,14 @@ title: "TBR List"
 	</div>
 </div>
 <!-- total -->
-<div>
+<div style="color: #b7b2b2">
 	<i
 		>total: {{ tbr_read | plus: tbr_no | plus: tbr_yes | plus: tbr_reading }}
 	</i>
 </div>
 <br />
 <!-- TBR missing -->
-missing?
+<i>missing?</i>
 <br />
 {% for item in site.data.list %} {% if item.tbr == "" %}
 <div>
@@ -80,21 +80,6 @@ missing?
 	</i>
 </div>
 {% elsif item.tbr == "-" %}
-<div>
-	<i
-		><a
-			href="{{ site.baseurl }}booklist#{{ item.bookshelf }}"
-			name="{{ item.bookshelf }}"
-			>{{ item.bookshelf }}.</a
-		>
-		{{ item.title }} | {{ item.author }}
-	</i>
-</div>
-{% else %}
-<div style="visibility: hidden"></div>
-{% endif %} {% endfor %}
-<!-- -->
-{% for item in site.data.list %} {% if item.tbr == "-" %}
 <div>
 	<i
 		><a

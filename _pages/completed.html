@@ -27,10 +27,16 @@ title: "Completed List"
 	<i>reading: {{ status_reading }} </i>
 </div>
 <!--eread-->
+<!--{{}}-->
+<!-- read eread size -->
 {% assign ereadread_data = site.data.eread %} {% assign status_ereadread =
 ereadread_data | where: "status", "Read" | size %}
+<!-- justread eread -->
+{% assign ereadjustread_data = site.data.eread %} {% assign status_ereadjustread
+= ereadjustread_data | where: "status", "JustRead" | size %}
+<!--{{}}-->
 <div>
-	<i>e-read: {{ status_ereadread }}</i>
+	<i>e-read: {{ status_ereadread | plus: status_ereadjustread }}</i>
 </div>
 <!--gaveaway-->
 <div>
@@ -40,7 +46,7 @@ ereadread_data | where: "status", "Read" | size %}
 <div>
 	<i
 		>&nbsp; &nbsp; &nbsp; total: {{ status_read | plus: status_justread | plus:
-		"status_ereadread" | plus: "15" }}</i
+		status_ereadread | plus: status_ereadjustread | plus: "15" }}</i
 	>
 </div>
 <br />
