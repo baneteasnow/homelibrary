@@ -24715,11 +24715,11 @@
 		"page": 256,
 		"year": "2022",
 		"notes": "B-4",
-		"status": "Reading",
+		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "reading"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 2546,
@@ -32082,11 +32082,11 @@
 		"page": 256,
 		"year": "2025",
 		"notes": "B-9",
-		"status": "Reading",
+		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "reading"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3006,
@@ -32594,11 +32594,11 @@
 		"page": 160,
 		"year": "2025",
 		"notes": "E-4",
-		"status": "UnRead",
-		"newstatus": "n/a",
-		"categories": "n/a",
-		"reread": "n/a",
-		"tbr": "yes"
+		"status": "Read",
+		"newstatus": "updated",
+		"categories": "SimpleLivingEverydayComforts",
+		"reread": "no",
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 3038,
