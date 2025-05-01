@@ -28687,11 +28687,11 @@
 		"page": 128,
 		"year": "2023",
 		"notes": "C-4",
-		"status": "UnRead",
-		"newstatus": "n/a",
-		"categories": "n/a",
-		"reread": "n/a",
-		"tbr": "yes"
+		"status": "Read",
+		"newstatus": "updated",
+		"categories": "PhilosophyMeaning",
+		"reread": "yes",
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 2794,
