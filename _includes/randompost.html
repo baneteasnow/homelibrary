@@ -4,7 +4,7 @@
 	const allPosts =
 	  [{%- for item in site.data.list -%}
 	    {%- assign i = i | minus: 1 -%}
-	      "{{ post.url }}.html"{%- unless i == 0 -%},{%- endunless -%}
+	      "{{ item.title }}"{%- unless i == 0 -%},{%- endunless -%}
 	    {%- endfor -%}];
 
 	function linkToRandomBlogPost() {
