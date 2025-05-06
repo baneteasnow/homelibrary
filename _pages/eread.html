@@ -14,10 +14,160 @@ title: "Home Library ERead List"
 {% for item in site.data.eread %}
 <div>
 	<a
-		href="{{ site.baseurl }}booklist#{{ item.bookshelf }}"
+		href="{{ site.baseurl }}eread#{{ item.bookshelf }}"
 		name="{{ item.bookshelf }}"
 		>{{ item.title }}</a
 	>
+</div>
+{% endfor %}
+<br />
+<br />
+<div style="margin-left: 5%">
+	<div
+		class="decorated"
+		style="font-size: 85%"
+	>
+		<i>{{ item.notes }}</i>
+	</div>
+	<div
+		class="decorated"
+		style="font-size: 85%"
+	>
+		<i>{{ item.author }}</i>
+	</div>
+	<div
+		class="decorated"
+		style="font-size: 85%"
+	>
+		<i>{{ item.year }}</i>
+	</div>
+	<div
+		class="decorated"
+		style="font-size: 85%"
+	>
+		<i>{{ item.publisher }}</i>
+	</div>
+	<div
+		class="decorated"
+		style="font-size: 85%"
+	>
+		<i>{{ item.page }} sayfa</i>
+	</div>
+	<div
+		class="decorated"
+		style="font-size: 85%"
+	>
+		<i># {{ item.bookshelf }}</i>
+	</div>
+	<div
+		class="decorated"
+		style="font-size: 85%; color: lightgray"
+	>
+		{% if item.status == "UnRead" %}
+		<div style="visibility: hidden"></div>
+		{% else %}
+		<i>{{ item.status }}</i>
+		{% endif %}
+	</div>
+	<div
+		class="decorated"
+		style="font-size: 85%; color: lightgray"
+	>
+		{% if item.newstatus != "ToBeUpdated" %}
+		<div style="visibility: hidden"></div>
+		{% else %}
+		<i>to be updated</i>
+		{% endif %}
+	</div>
+	<div
+		class="decorated"
+		style="font-size: 85%; color: lightgray"
+	>
+		{% if item.reread != "yes" %}
+		<div style="visibility: hidden"></div>
+		{% else %}
+		<i>reread</i>
+		{% endif %}
+	</div>
+	<div
+		class="decorated"
+		style="font-size: 85%; color: lightgray"
+	>
+		{% if item.tbr == "yes" %}
+		<i>TBR</i>
+		{% else %}
+		<div style="visibility: hidden"></div>
+		{% endif %}
+	</div>
+	<div
+		class="decorated"
+		style="font-size: 85%; color: darkgray"
+	>
+		{% if item.categories == "BiographyLifeStories" %}
+		<i>Biography & Life Stories</i>
+		{% elsif item.categories == "BusinessEconomics" %}
+		<i>Business & Economics</i>
+		{% elsif item.categories == "ConsumerMarketing" %}
+		<i>Consumer & Marketing</i>
+		{% elsif item.categories == "CreativityExpression" %}
+		<i>Creativity & Expression</i>
+		{% elsif item.categories == "EnvironmentSustainableLiving" %}
+		<i>Environment & Sustainable Living</i>
+		{% elsif item.categories == "HealthNutrition" %}
+		<i>Health & Nutrition</i>
+		{% elsif item.categories == "PersonalGrowthProductivity" %}
+		<i>Personal Growth & Productivity</i>
+		{% elsif item.categories == "PhilosophyMeaning" %}
+		<i>Philosophy & Meaning</i>
+		{% elsif item.categories == "PsychologyMentalLife" %}
+		<i>Psychology & Mental Life</i>
+		{% elsif item.categories == "SimpleLivingEverydayComforts" %}
+		<i>Science & Discovery</i>
+		{% elsif item.categories == "ScienceDiscovery" %}
+		<i>Simple Living & Everyday Comforts</i>
+		{% elsif item.categories == "SocietyCulture" %}
+		<i>Society & Culture</i>
+		{% elsif item.categories == "TechnologyTheDigitalWorld" %}
+		<i>Technology & the Digital World</i>
+		{% elsif item.categories == "WorkCareer" %}
+		<i>Work & Career</i>
+		{% else %}
+		<div style="visibility: hidden"></div>
+		{% endif %}
+	</div>
+	<span
+		class="decorated"
+		style="font-size: 85%"
+	>
+		<i
+			><a
+				name="{{ item.title }}"
+				title="google search"
+				href="https://www.google.com/search?q={{ item.title }}%20{{ item.author }}"
+				target="_blank"
+				rel="noreferrer,nofollow"
+			>
+				google
+			</a></i
+		>
+	</span>
+	|
+	<span
+		class="decorated"
+		style="font-size: 85%"
+	>
+		<i
+			><a
+				name="{{ item.title }}"
+				title="google search"
+				href="https://www.google.com/search?q={{ item.title }}%20{{ item.author }}&tbm=isch"
+				target="_blank"
+				rel="noreferrer,nofollow"
+			>
+				google images
+			</a></i
+		>
+	</span>
 </div>
 {% endfor %}
 <br />
