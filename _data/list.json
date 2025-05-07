@@ -21019,11 +21019,11 @@
 		"page": 128,
 		"year": "2016",
 		"notes": "E-4",
-		"status": "UnRead",
-		"newstatus": "n/a",
-		"categories": "n/a",
-		"reread": "n/a",
-		"tbr": "yes"
+		"status": "Read",
+		"newstatus": "updated",
+		"categories": "PhilosophyMeaning",
+		"reread": "yes",
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 2315,
