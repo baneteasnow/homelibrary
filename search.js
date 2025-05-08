@@ -1,7 +1,6 @@
 /*!
- * Simple-Jekyll-Search v1.7.2 (https://github.com/christian-fei/Simple-Jekyll-Search)
- * Copyright 2015-2018, Christian Fei
- * Licensed under the MIT License.
+ * Simple-Jekyll-Search v1.7.2 (with debounce)
+ * Modified by Brooklyn for improved performance
  */
 !(function () {
 	"use strict"
@@ -219,17 +218,24 @@
 						)
 					})
 			})({ required: n })
+
 		function i(t) {
 			o.success(t),
 				l.put(t),
 				(function e() {
+					let debounceTimer
 					o.searchInput.addEventListener("keyup", function (t) {
-						;(function e(t) {
-							return -1 === [13, 16, 20, 37, 38, 39, 40, 91].indexOf(t)
-						})(t.which) && (u(), c(t.target.value))
+						if (-1 === [13, 16, 20, 37, 38, 39, 40, 91].indexOf(t.which)) {
+							clearTimeout(debounceTimer)
+							debounceTimer = setTimeout(function () {
+								u()
+								c(t.target.value)
+							}, 300)
+						}
 					})
 				})()
 		}
+
 		function u() {
 			o.resultsContainer.innerHTML = ""
 		}
@@ -237,42 +243,45 @@
 			o.resultsContainer.innerHTML += t
 		}
 		function c(t) {
-			;(function e(t) {
-				return t && 0 < t.length
-			})(t) &&
-				(u(),
-				(function i(t, e) {
-					var n = t.length
-					if (0 === n) return a(o.noResultsText)
-					for (var r = 0; r < n; r++) (t[r].query = e), a(h.compile(t[r]))
-				})(l.search(t), t))
+			if (t && 0 < t.length) {
+				u()
+				var results = l.search(t)
+				if (results.length === 0) {
+					a(o.noResultsText)
+				} else {
+					for (var r = 0; r < results.length; r++) {
+						results[r].query = t
+						a(h.compile(results[r]))
+					}
+				}
+			}
 		}
 		function s(t) {
 			throw new Error("SimpleJekyllSearch --- " + t)
 		}
 		t.SimpleJekyllSearch = function (t) {
-			return (
-				0 < r.validate(t).length &&
-					s("You must specify the following required options: " + n),
-				(o = v.merge(o, t)),
-				h.setOptions({
-					template: o.searchResultTemplate,
-					middleware: o.templateMiddleware,
-				}),
-				l.setOptions({
-					fuzzy: o.fuzzy,
-					limit: o.limit,
-					sort: o.sortMiddleware,
-				}),
-				v.isJSON(o.json)
-					? i(o.json)
-					: (function e(n) {
-							f.load(n, function (t, e) {
-								t && s("failed to get JSON (" + n + ")"), i(e)
-							})
-					  })(o.json),
-				{ search: c }
-			)
+			if (0 < r.validate(t).length) {
+				s("You must specify the following required options: " + n)
+			}
+			o = v.merge(o, t)
+			h.setOptions({
+				template: o.searchResultTemplate,
+				middleware: o.templateMiddleware,
+			})
+			l.setOptions({
+				fuzzy: o.fuzzy,
+				limit: o.limit,
+				sort: o.sortMiddleware,
+			})
+			if (v.isJSON(o.json)) {
+				i(o.json)
+			} else {
+				f.load(o.json, function (t, e) {
+					if (t) s("failed to get JSON (" + o.json + ")")
+					i(e)
+				})
+			}
+			return { search: c }
 		}
 	})(window)
 })()
