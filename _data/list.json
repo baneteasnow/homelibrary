@@ -33634,11 +33634,11 @@
 		"page": 400,
 		"year": "2025",
 		"notes": "F-6",
-		"status": "Reading",
-		"newstatus": "n/a",
-		"categories": "n/a",
-		"reread": "n/a",
-		"tbr": "reading"
+		"status": "Read",
+		"newstatus": "updated",
+		"categories": "HealthNutrition",
+		"reread": "no",
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 3103,
