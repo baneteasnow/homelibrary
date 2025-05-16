@@ -2,14 +2,10 @@
 	<i>
 		<a href="https://homelibrary.next52books.com/shelves">bookshelves</a>
 	</i>
-</div>
-	<div style="color: #b7b2b2">
-		
+</div>		
 			{% assign episodes = site.data.list %} {% assign last_item = episodes |
 			last %} {% assign url = "/booklist#" | append: last_item.bookshelf %}
-
 			<i><a href="{{ url }}">total (books):</a> {{ episodes | size }}</i>
-			</div>
 			<div>
 				<i>total (ebooks & audiobooks): {{ site.data.eread | size }} </i>
 			</div>
