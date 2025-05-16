@@ -34102,7 +34102,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": ""
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3132,
@@ -34390,7 +34390,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": ""
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3150,
@@ -34450,10 +34450,10 @@
 		"page": 248,
 		"year": "2009",
 		"notes": "A-5",
-		"status": "UnRead",
+		"status": "Reading",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "yes"
+		"tbr": "reading"
 	}
 ]
