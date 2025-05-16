@@ -4,6 +4,12 @@
 	</i>
 </div>
 <div style="color: #b7b2b2">
-	<div><i>total (books): {{ site.data.list | size }} </i></div>
+	<div>
+		{% assign episodes = site.data.list %}
+		<i
+			><a href="{{ episodes.last.url }}">total (books):</a> {{ site.data.list |
+			size }}
+		</i>
+	</div>
 	<div><i>total (ebooks & audiobooks): {{ site.data.eread | size }} </i></div>
 </div>
