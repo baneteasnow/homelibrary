@@ -27053,11 +27053,11 @@
 		"page": 376,
 		"year": "2023",
 		"notes": "A-5",
-		"status": "UnRead",
-		"newstatus": "n/a",
-		"categories": "n/a",
-		"reread": "n/a",
-		"tbr": "yes"
+		"status": "Read",
+		"newstatus": "updated",
+		"categories": "BiographyLifeStories",
+		"reread": "no",
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 2692,
@@ -34098,11 +34098,11 @@
 		"page": 408,
 		"year": "2025",
 		"notes": "A-5",
-		"status": "UnRead",
+		"status": "Reading",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "yes"
+		"tbr": "reading"
 	},
 	{
 		"bookshelf": 3132,
