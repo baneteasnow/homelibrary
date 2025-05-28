@@ -18252,7 +18252,7 @@
 		"notes": "G-9",
 		"status": "Reading",
 		"newstatus": "n/a",
-		"categories": "n/a",
+		"categories": "PhilosophyMeaning",
 		"reread": "n/a",
 		"tbr": "reading"
 	},
@@ -21062,14 +21062,14 @@
 		"No": 1317,
 		"title": "Tanri, Insan, Hayvan, Makine",
 		"publisher": "Altin Kitaplar",
-		"author": "Meghan O’gieblyn",
+		"author": "Meghan O’Gieblyn",
 		"lang": "Turkce",
 		"page": 288,
 		"year": "2023",
 		"notes": "C-8",
 		"status": "Reading",
 		"newstatus": "n/a",
-		"categories": "n/a",
+		"categories": "PhilosophyMeaning",
 		"reread": "n/a",
 		"tbr": "reading"
 	},
@@ -27776,7 +27776,7 @@
 		"notes": "B-5",
 		"status": "Reading",
 		"newstatus": "n/a",
-		"categories": "PhilosophyMeaning",
+		"categories": "SocietyCulture",
 		"reread": "n/a",
 		"tbr": "reading"
 	},
@@ -34507,18 +34507,18 @@
 	{
 		"bookshelf": 3157,
 		"No": 2157,
-		"title": "Bu Su",
+		"title": "Bu Su - Yasama Ugrasina Dair Bir Yol Haritasi",
 		"publisher": "Siren Yayinlari",
 		"author": "David Foster Wallace",
 		"lang": "Turkce",
 		"page": 140,
 		"year": "2022",
 		"notes": "B-9",
-		"status": "UnRead",
+		"status": "Reading",
 		"newstatus": "n/a",
-		"categories": "n/a",
+		"categories": "PhilosophyMeaning",
 		"reread": "n/a",
-		"tbr": "yes"
+		"tbr": "reading"
 	},
 	{
 		"bookshelf": 3158,
