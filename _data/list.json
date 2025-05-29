@@ -34498,11 +34498,11 @@
 		"page": 224,
 		"year": "2024",
 		"notes": "B-9",
-		"status": "UnRead",
+		"status": "Reading",
 		"newstatus": "n/a",
 		"categories": "PsychologyMentalLife",
 		"reread": "n/a",
-		"tbr": "yes"
+		"tbr": "reading"
 	},
 	{
 		"bookshelf": 3157,
@@ -34642,11 +34642,11 @@
 		"page": 456,
 		"year": "2023",
 		"notes": "B-9",
-		"status": "UnRead",
+		"status": "Reading",
 		"newstatus": "n/a",
-		"categories": "n/a",
+		"categories": "PsychologyMentalLife",
 		"reread": "n/a",
-		"tbr": "yes"
+		"tbr": "reading"
 	},
 	{
 		"bookshelf": 3166,
@@ -34708,7 +34708,7 @@
 		"notes": "B-9",
 		"status": "UnRead",
 		"newstatus": "n/a",
-		"categories": "n/a",
+		"categories": "SocietyCulture",
 		"reread": "n/a",
 		"tbr": "yes"
 	},
