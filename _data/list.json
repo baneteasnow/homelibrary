@@ -8887,11 +8887,11 @@
 		"page": 168,
 		"year": "2019",
 		"notes": "C-10",
-		"status": "UnRead",
+		"status": "Reading",
 		"newstatus": "n/a",
-		"categories": "n/a",
+		"categories": "SocietyCulture",
 		"reread": "n/a",
-		"tbr": "yes"
+		"tbr": "reading"
 	},
 	{
 		"bookshelf": 1557,
@@ -29103,11 +29103,11 @@
 		"page": 198,
 		"year": "2024",
 		"notes": "C-10",
-		"status": "UnRead",
+		"status": "Reading",
 		"newstatus": "n/a",
-		"categories": "n/a",
+		"categories": "PhilosophyMeaning",
 		"reread": "n/a",
-		"tbr": "yes"
+		"tbr": "reading"
 	},
 	{
 		"bookshelf": 2820,
@@ -34706,11 +34706,11 @@
 		"page": 264,
 		"year": "2024",
 		"notes": "B-9",
-		"status": "UnRead",
-		"newstatus": "n/a",
+		"status": "Read",
+		"newstatus": "updated",
 		"categories": "SocietyCulture",
 		"reread": "n/a",
-		"tbr": "yes"
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 3170,
@@ -34850,11 +34850,11 @@
 		"page": 224,
 		"year": "2021",
 		"notes": "A-7",
-		"status": "UnRead",
+		"status": "Reading",
 		"newstatus": "n/a",
-		"categories": "n/a",
+		"categories": "PsychologyMentalLife",
 		"reread": "n/a",
-		"tbr": "yes"
+		"tbr": "reading"
 	},
 	{
 		"bookshelf": 3179,
