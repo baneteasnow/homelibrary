@@ -58,7 +58,7 @@ where: "categories", "WorkCareer" | size %}
 <br />
 <div style="color: #b7b2b2">
 	<i
-		>{{ cat_biographylifestories }}
+		>{{ cat_biographylifestories }} |
 		<a href="https://homelibrary.next52books.com/biography-life-stories"
 			>Biography & Life Stories</a
 		></i
@@ -66,7 +66,7 @@ where: "categories", "WorkCareer" | size %}
 </div>
 <div style="color: #b7b2b2">
 	<i
-		>{{ cat_businesseconomics }}
+		>{{ cat_businesseconomics }} |
 		<a href="https://homelibrary.next52books.com/business-economics"
 			>Business & Economics</a
 		></i
@@ -74,7 +74,7 @@ where: "categories", "WorkCareer" | size %}
 </div>
 <div style="color: #b7b2b2">
 	<i
-		>{{ cat_consumermarketing }}
+		>{{ cat_consumermarketing }} |
 		<a href="https://homelibrary.next52books.com/consumer-marketing"
 			>Consumer & Marketing</a
 		></i
@@ -82,7 +82,7 @@ where: "categories", "WorkCareer" | size %}
 </div>
 <div style="color: #b7b2b2">
 	<i
-		>{{ cat_creativityexpression }}
+		>{{ cat_creativityexpression }} |
 		<a href="https://homelibrary.next52books.com/creativity-expression"
 			>Creativity & Expression</a
 		></i
@@ -90,7 +90,7 @@ where: "categories", "WorkCareer" | size %}
 </div>
 <div style="color: #b7b2b2">
 	<i
-		>{{ cat_environmentsustainableliving }}
+		>{{ cat_environmentsustainableliving }} |
 		<a href="https://homelibrary.next52books.com/environment-sustainable-living"
 			>Environment & Sustainable Living</a
 		></i
@@ -98,7 +98,7 @@ where: "categories", "WorkCareer" | size %}
 </div>
 <div style="color: #b7b2b2">
 	<i
-		>{{ cat_healthnutrition }}
+		>{{ cat_healthnutrition }} |
 		<a href="https://homelibrary.next52books.com/health-nutrition"
 			>Health & Nutrition</a
 		></i
@@ -106,7 +106,7 @@ where: "categories", "WorkCareer" | size %}
 </div>
 <div style="color: #b7b2b2">
 	<i
-		>{{ cat_historypoliticalthought }}
+		>{{ cat_historypoliticalthought }} |
 		<a href="https://homelibrary.next52books.com/history-political-thought"
 			>History & Political Thought</a
 		></i
@@ -114,7 +114,7 @@ where: "categories", "WorkCareer" | size %}
 </div>
 <div style="color: #b7b2b2">
 	<i
-		>{{ cat_personalgrowthproductivity }}
+		>{{ cat_personalgrowthproductivity }} |
 		<a href="https://homelibrary.next52books.com/personal-growth-productivity"
 			>Personal Growth & Productivity</a
 		></i
@@ -122,7 +122,7 @@ where: "categories", "WorkCareer" | size %}
 </div>
 <div style="color: #b7b2b2">
 	<i
-		>{{ cat_philosophymeaning }}
+		>{{ cat_philosophymeaning }} |
 		<a href="https://homelibrary.next52books.com/philosophy-meaning"
 			>Philosophy & Meaning</a
 		></i
@@ -130,7 +130,7 @@ where: "categories", "WorkCareer" | size %}
 </div>
 <div style="color: #b7b2b2">
 	<i
-		>{{ cat_psychologymentallife }}
+		>{{ cat_psychologymentallife }} |
 		<a href="https://homelibrary.next52books.com/psychology-mental-life"
 			>Psychology & Mental Life</a
 		></i
@@ -138,7 +138,7 @@ where: "categories", "WorkCareer" | size %}
 </div>
 <div style="color: #b7b2b2">
 	<i
-		>{{ cat_sciencediscovery }}
+		>{{ cat_sciencediscovery }} |
 		<a href="https://homelibrary.next52books.com/science-discovery"
 			>Science & Discovery</a
 		></i
@@ -146,7 +146,7 @@ where: "categories", "WorkCareer" | size %}
 </div>
 <div style="color: #b7b2b2">
 	<i
-		>{{ cat_simplelivingeverydaycomforts }}
+		>{{ cat_simplelivingeverydaycomforts }} |
 		<a
 			href="https://homelibrary.next52books.com/simple-living-everyday-comforts"
 			>Simple Living & Everyday Comforts</a
@@ -155,7 +155,7 @@ where: "categories", "WorkCareer" | size %}
 </div>
 <div style="color: #b7b2b2">
 	<i
-		>{{ cat_societyculture }}
+		>{{ cat_societyculture }} |
 		<a href="https://homelibrary.next52books.com/society-culture"
 			>Society & Culture</a
 		></i
@@ -163,7 +163,7 @@ where: "categories", "WorkCareer" | size %}
 </div>
 <div style="color: #b7b2b2">
 	<i
-		>{{ cat_technologythedigitalworld }}
+		>{{ cat_technologythedigitalworld }} |
 		<a href="https://homelibrary.next52books.com/technology-the-digital-world">
 			Tehnology & the Digital World</a
 		>
@@ -174,4 +174,19 @@ where: "categories", "WorkCareer" | size %}
 		>{{ cat_workcareer }} |
 		<a href="https://homelibrary.next52books.com/work-career">Work & Career</a>
 	</i>
+</div>
+<!--{{}}-->
+<br />
+<div style="clear: both"></div>
+<hr />
+<div style="clear: both"></div>
+<div style="color: #b7b2b2">
+	<i>total: </i> {{ cat_biographylifestories | plus: cat_businesseconomics |
+	plus: cat_consumermarketing | plus: cat_creativityexpression | plus:
+	cat_environmentsustainableliving | plus: cat_healthnutrition | plus:
+	cat_historypoliticalthought | plus: cat_personalgrowthproductivity | plus:
+	cat_philosophymeaning | plus: cat_psychologymentallife | plus:
+	cat_sciencediscovery | plus: cat_simplelivingeverydaycomforts | plus:
+	cat_societyculture | plus: cat_technologythedigitalworld | plus:
+	cat_workcareer }}
 </div>
