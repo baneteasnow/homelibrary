@@ -35143,5 +35143,37 @@
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "yes"
+	},
+	{
+		"bookshelf": 3197,
+		"No": 2197,
+		"title": "The Year of Magical Thinking",
+		"publisher": "Fourth Estate Ltd",
+		"author": "Joan Didion",
+		"lang": "English",
+		"page": 240,
+		"year": "2009",
+		"notes": "F-7",
+		"status": "UnRead",
+		"newstatus": "n/a",
+		"categories": "n/a",
+		"reread": "n/a",
+		"tbr": "yes"
+	},
+	{
+		"bookshelf": 3198,
+		"No": 2198,
+		"title": "The White Album",
+		"publisher": "Fourth Estate Ltd",
+		"author": "Joan Didion",
+		"lang": "English",
+		"page": 224,
+		"year": "2017",
+		"notes": "F-7",
+		"status": "UnRead",
+		"newstatus": "n/a",
+		"categories": "n/a",
+		"reread": "n/a",
+		"tbr": "yes"
 	}
 ]
