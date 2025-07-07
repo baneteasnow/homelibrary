@@ -24827,11 +24827,11 @@
 		"page": 408,
 		"year": "2023",
 		"notes": "B-7",
-		"status": "UnRead",
+		"status": "Reading",
 		"newstatus": "n/a",
-		"categories": "n/a",
+		"categories": "ScienceDiscovery",
 		"reread": "n/a",
-		"tbr": "yes"
+		"tbr": "reading"
 	},
 	{
 		"bookshelf": 2553,
@@ -34386,11 +34386,11 @@
 		"page": 222,
 		"year": "2021",
 		"notes": "C-5",
-		"status": "Reading",
-		"newstatus": "n/a",
+		"status": "Read",
+		"newstatus": "updated",
 		"categories": "PsychologyMentalLife",
-		"reread": "n/a",
-		"tbr": "reading"
+		"reread": "no",
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 3150,
