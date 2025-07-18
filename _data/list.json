@@ -16003,18 +16003,18 @@
 	{
 		"bookshelf": 2001,
 		"No": 1001,
-		"title": "Neden Bunu Bana Daha Once Kimse Soylemedi ?",
+		"title": "Neden Bunu Bana Daha Once Kimse Soylemedi?",
 		"publisher": "Butik Yayincilik",
 		"author": "Julie Smith",
 		"lang": "Turkce",
 		"page": 328,
 		"year": "2022",
 		"notes": "A-9",
-		"status": "UnRead",
+		"status": "Reading",
 		"newstatus": "n/a",
-		"categories": "n/a",
+		"categories": "PsychologyMentalLife",
 		"reread": "n/a",
-		"tbr": "yes"
+		"tbr": "reading"
 	},
 	{
 		"bookshelf": 2002,
@@ -29071,11 +29071,11 @@
 		"page": 232,
 		"year": "2023",
 		"notes": "E-6",
-		"status": "UnRead",
+		"status": "Reading",
 		"newstatus": "n/a",
-		"categories": "n/a",
+		"categories": "PersonalGrowthProductivity",
 		"reread": "n/a",
-		"tbr": "yes"
+		"tbr": "reading"
 	},
 	{
 		"bookshelf": 2818,
