@@ -34130,11 +34130,11 @@
 		"page": 416,
 		"year": "2022",
 		"notes": "A-5",
-		"status": "Reading",
-		"newstatus": "n/a",
+		"status": "Read",
+		"newstatus": "updated",
 		"categories": "PsychologyMentalLife",
-		"reread": "n/a",
-		"tbr": "reading"
+		"reread": "no",
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 3134,
@@ -35483,18 +35483,18 @@
 	{
 		"bookshelf": 3218,
 		"No": 2218,
-		"title": "Bedenimin Bildikleri Kompleks Travmadan Iyilesme Anilari",
+		"title": "Bedenimin Bildikleri - Kompleks Travmadan Iyilesme Anilari",
 		"publisher": "Mona Kitap",
 		"author": "Stephanie Foo",
 		"lang": "Turkce",
 		"page": 400,
 		"year": "2025",
 		"notes": "A-5",
-		"status": "UnRead",
+		"status": "Reading",
 		"newstatus": "n/a",
-		"categories": "n/a",
+		"categories": "PsychologyMentalLife",
 		"reread": "n/a",
-		"tbr": "yes"
+		"tbr": "reading"
 	},
 	{
 		"bookshelf": 3219,
