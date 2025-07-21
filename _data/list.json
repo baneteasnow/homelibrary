@@ -731,7 +731,7 @@
 		"notes": "D-7",
 		"status": "Read",
 		"newstatus": "updated",
-		"categories": "n/a",
+		"categories": "PsychologyMentalLife",
 		"reread": "yes",
 		"tbr": "read"
 	},
@@ -1115,7 +1115,7 @@
 		"notes": "A-2",
 		"status": "Read",
 		"newstatus": "updated",
-		"categories": "n/a",
+		"categories": "ConsumerMarketing",
 		"reread": "no",
 		"tbr": "read"
 	},
@@ -1387,7 +1387,7 @@
 		"notes": "E-3",
 		"status": "Read",
 		"newstatus": "updated",
-		"categories": "n/a",
+		"categories": "TechnologyTheDigitalWorld",
 		"reread": "no",
 		"tbr": "read"
 	},
@@ -1419,7 +1419,7 @@
 		"notes": "F-1",
 		"status": "Read",
 		"newstatus": "updated",
-		"categories": "n/a",
+		"categories": "BiographyLifeStories",
 		"reread": "no",
 		"tbr": "read"
 	},
@@ -1722,7 +1722,7 @@
 		"status": "Read",
 		"reread": "yes",
 		"newstatus": "updated",
-		"categories": "n/a",
+		"categories": "TechnologyTheDigitalWorld",
 		"tbr": "read"
 	},
 	{
@@ -2202,7 +2202,7 @@
 		"status": "Read",
 		"reread": "yes",
 		"newstatus": "updated",
-		"categories": "n/a",
+		"categories": "BusinessEconomics",
 		"tbr": "read"
 	},
 	{
@@ -2714,7 +2714,7 @@
 		"status": "Read",
 		"reread": "yes",
 		"newstatus": "updated",
-		"categories": "n/a",
+		"categories": "TechnologyTheDigitalWorld",
 		"tbr": "read"
 	},
 	{
@@ -3370,7 +3370,7 @@
 		"status": "Read",
 		"reread": "yes",
 		"newstatus": "updated",
-		"categories": "n/a",
+		"categories": "ScienceDiscovery",
 		"tbr": "read"
 	},
 	{
@@ -3546,7 +3546,7 @@
 		"status": "Read",
 		"reread": "yes",
 		"newstatus": "updated",
-		"categories": "n/a",
+		"categories": "ConsumerMarketing",
 		"tbr": "read"
 	},
 	{
@@ -3689,7 +3689,7 @@
 		"notes": "C-2",
 		"status": "Read",
 		"newstatus": "updated",
-		"categories": "n/a",
+		"categories": "CreativityExpression",
 		"reread": "no",
 		"tbr": "read"
 	},
@@ -3834,7 +3834,7 @@
 		"status": "Read",
 		"reread": "yes",
 		"newstatus": "updated",
-		"categories": "n/a",
+		"categories": "TechnologyTheDigitalWorld",
 		"tbr": "read"
 	},
 	{
@@ -4057,7 +4057,7 @@
 		"notes": "A-10",
 		"status": "Read",
 		"newstatus": "updated",
-		"categories": "n/a",
+		"categories": "WorkCareer",
 		"reread": "no",
 		"tbr": "read"
 	},
@@ -4090,7 +4090,7 @@
 		"status": "Read",
 		"reread": "yes",
 		"newstatus": "updated",
-		"categories": "n/a",
+		"categories": "WorkCareer",
 		"tbr": "read"
 	},
 	{
@@ -4744,8 +4744,8 @@
 		"year": "2017",
 		"notes": "E-6",
 		"status": "Read",
-		"newstatus": "n/a",
-		"categories": "n/a",
+		"newstatus": "updated",
+		"categories": "SocietyCulture",
 		"reread": "n/a",
 		"tbr": "read"
 	},
@@ -4777,7 +4777,7 @@
 		"notes": "C-9",
 		"status": "Read",
 		"newstatus": "updated",
-		"categories": "n/a",
+		"categories": "TechnologyTheDigitalWorld",
 		"reread": "no",
 		"tbr": "read"
 	},
@@ -5242,7 +5242,7 @@
 		"status": "Read",
 		"reread": "yes",
 		"newstatus": "updated",
-		"categories": "n/a",
+		"categories": "ConsumerMarketing",
 		"tbr": "read"
 	},
 	{
@@ -6330,7 +6330,7 @@
 		"status": "Read",
 		"reread": "yes",
 		"newstatus": "updated",
-		"categories": "n/a",
+		"categories": "TechnologyTheDigitalWorld",
 		"tbr": "read"
 	},
 	{
@@ -6441,7 +6441,7 @@
 		"notes": "C-10",
 		"status": "Read",
 		"newstatus": "updated",
-		"categories": "n/a",
+		"categories": "SocietyCulture",
 		"reread": "no",
 		"tbr": "read"
 	},
@@ -7786,7 +7786,7 @@
 		"status": "Read",
 		"reread": "yes",
 		"newstatus": "updated",
-		"categories": "n/a",
+		"categories": "HistoryPoliticalThought",
 		"tbr": "read"
 	},
 	{
@@ -8042,7 +8042,7 @@
 		"status": "Read",
 		"reread": "yes",
 		"newstatus": "updated",
-		"categories": "n/a",
+		"categories": "HistoryPoliticalThought",
 		"tbr": "read"
 	},
 	{
@@ -8393,7 +8393,7 @@
 		"notes": "D-2",
 		"status": "Read",
 		"newstatus": "updated",
-		"categories": "n/a",
+		"categories": "TechnologyTheDigitalWorld",
 		"reread": "no",
 		"tbr": "read"
 	},
@@ -8409,7 +8409,7 @@
 		"notes": "D-2",
 		"status": "Read",
 		"newstatus": "updated",
-		"categories": "n/a",
+		"categories": "WorkCareer",
 		"reread": "no",
 		"tbr": "read"
 	},
@@ -8826,7 +8826,7 @@
 		"status": "Read",
 		"reread": "yes",
 		"newstatus": "updated",
-		"categories": "n/a",
+		"categories": "SocietyCulture",
 		"tbr": "read"
 	},
 	{
@@ -8874,7 +8874,7 @@
 		"status": "Read",
 		"reread": "yes",
 		"newstatus": "updated",
-		"categories": "n/a",
+		"categories": "TechnologyTheDigitalWorld",
 		"tbr": "read"
 	},
 	{
@@ -9545,7 +9545,7 @@
 		"notes": "C-4",
 		"status": "Read",
 		"newstatus": "updated",
-		"categories": "n/a",
+		"categories": "ScienceDiscovery",
 		"reread": "yes",
 		"tbr": "read"
 	},
@@ -9723,7 +9723,7 @@
 		"status": "Read",
 		"reread": "yes",
 		"newstatus": "updated",
-		"categories": "n/a",
+		"categories": "TechnologyTheDigitalWorld",
 		"tbr": "read"
 	},
 	{
@@ -9771,7 +9771,7 @@
 		"status": "Read",
 		"reread": "yes",
 		"newstatus": "updated",
-		"categories": "n/a",
+		"categories": "ConsumerMarketing",
 		"tbr": "read"
 	},
 	{
@@ -10300,7 +10300,7 @@
 		"status": "Read",
 		"reread": "yes",
 		"newstatus": "updated",
-		"categories": "n/a",
+		"categories": "CreativityExpression",
 		"tbr": "read"
 	},
 	{
@@ -10347,7 +10347,7 @@
 		"notes": "B-1",
 		"status": "Read",
 		"newstatus": "updated",
-		"categories": "n/a",
+		"categories": "ConsumerMarketing",
 		"reread": "no",
 		"tbr": "read"
 	},
@@ -11516,7 +11516,7 @@
 		"status": "Read",
 		"reread": "yes",
 		"newstatus": "updated",
-		"categories": "n/a",
+		"categories": "ConsumerMarketing",
 		"tbr": "read"
 	},
 	{
@@ -12043,7 +12043,7 @@
 		"notes": "A-8",
 		"status": "Read",
 		"newstatus": "updated",
-		"categories": "n/a",
+		"categories": "BusinessEconomics",
 		"reread": "no",
 		"tbr": "read"
 	},
@@ -12220,7 +12220,7 @@
 		"status": "Read",
 		"reread": "yes",
 		"newstatus": "updated",
-		"categories": "n/a",
+		"categories": "TechnologyTheDigitalWorld",
 		"tbr": "read"
 	},
 	{
@@ -12444,7 +12444,7 @@
 		"status": "Read",
 		"reread": "yes",
 		"newstatus": "updated",
-		"categories": "n/a",
+		"categories": "WorkCareer",
 		"tbr": "read"
 	},
 	{
@@ -12683,7 +12683,7 @@
 		"notes": "C-2",
 		"status": "Read",
 		"newstatus": "updated",
-		"categories": "n/a",
+		"categories": "WorkCareer",
 		"reread": "no",
 		"tbr": "read"
 	},
@@ -12764,7 +12764,7 @@
 		"status": "Read",
 		"reread": "yes",
 		"newstatus": "updated",
-		"categories": "n/a",
+		"categories": "BusinessEconomics",
 		"tbr": "read"
 	},
 	{
@@ -13724,7 +13724,7 @@
 		"status": "Read",
 		"reread": "yes",
 		"newstatus": "updated",
-		"categories": "n/a",
+		"categories": "TechnologyTheDigitalWorld",
 		"tbr": "read"
 	},
 	{
@@ -14235,7 +14235,7 @@
 		"notes": "D-2",
 		"status": "Read",
 		"newstatus": "updated",
-		"categories": "n/a",
+		"categories": "WorkCareer",
 		"reread": "no",
 		"tbr": "read"
 	},
@@ -15196,7 +15196,7 @@
 		"notes": "A-9",
 		"status": "Read",
 		"newstatus": "updated",
-		"categories": "n/a",
+		"categories": "SimpleLivingEverydayComforts",
 		"reread": "no",
 		"tbr": "read"
 	},
@@ -17389,7 +17389,7 @@
 		"status": "Read",
 		"reread": "yes",
 		"newstatus": "updated",
-		"categories": "n/a",
+		"categories": "ConsumerMarketing",
 		"tbr": "read"
 	},
 	{
@@ -17437,7 +17437,7 @@
 		"status": "Read",
 		"reread": "yes",
 		"newstatus": "n/a",
-		"categories": "n/a",
+		"categories": "SocietyCulture",
 		"tbr": "read"
 	},
 	{
@@ -17692,7 +17692,7 @@
 		"notes": "D-8",
 		"status": "Read",
 		"newstatus": "updated",
-		"categories": "n/a",
+		"categories": "PersonalGrowthProductivity",
 		"reread": "no",
 		"tbr": "read"
 	},
@@ -17980,7 +17980,7 @@
 		"notes": "C-9",
 		"status": "Read",
 		"newstatus": "updated",
-		"categories": "n/a",
+		"categories": "PsychologyMentalLife",
 		"reread": "no",
 		"tbr": "read"
 	},
@@ -18061,7 +18061,7 @@
 		"status": "Read",
 		"reread": "yes",
 		"newstatus": "updated",
-		"categories": "n/a",
+		"categories": "WorkCareer",
 		"tbr": "read"
 	},
 	{
@@ -18477,7 +18477,7 @@
 		"status": "Read",
 		"reread": "yes",
 		"newstatus": "updated",
-		"categories": "n/a",
+		"categories": "PhilosophyMeaning",
 		"tbr": "read"
 	},
 	{
@@ -19372,7 +19372,7 @@
 		"notes": "D-9",
 		"status": "Read",
 		"newstatus": "updated",
-		"categories": "n/a",
+		"categories": "TechnologyTheDigitalWorld",
 		"reread": "no",
 		"tbr": "read"
 	},
@@ -19468,7 +19468,7 @@
 		"notes": "E-2",
 		"status": "Read",
 		"newstatus": "updated",
-		"categories": "n/a",
+		"categories": "BusinessEconomics",
 		"reread": "no",
 		"tbr": "read"
 	},
@@ -20173,7 +20173,7 @@
 		"status": "Read",
 		"reread": "yes",
 		"newstatus": "updated",
-		"categories": "n/a",
+		"categories": "TechnologyTheDigitalWorld",
 		"tbr": "read"
 	},
 	{
@@ -20604,7 +20604,7 @@
 		"notes": "C-1",
 		"status": "Read",
 		"newstatus": "updated",
-		"categories": "n/a",
+		"categories": "BiographyLifeStories",
 		"reread": "no",
 		"tbr": "read"
 	},
@@ -21310,7 +21310,7 @@
 		"status": "Read",
 		"reread": "yes",
 		"newstatus": "updated",
-		"categories": "n/a",
+		"categories": "TechnologyTheDigitalWorld",
 		"tbr": "read"
 	},
 	{
@@ -23485,7 +23485,7 @@
 		"notes": "C-2",
 		"status": "Read",
 		"newstatus": "updated",
-		"categories": "n/a",
+		"categories": "WorkCareer",
 		"reread": "no",
 		"tbr": "read"
 	},
@@ -23997,7 +23997,7 @@
 		"notes": "H-3",
 		"status": "Read",
 		"newstatus": "updated",
-		"categories": "n/a",
+		"categories": "WorkCareer",
 		"reread": "no",
 		"tbr": "read"
 	},
