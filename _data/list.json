@@ -35490,11 +35490,11 @@
 		"page": 400,
 		"year": "2025",
 		"notes": "A-5",
-		"status": "Reading",
+		"status": "Read",
 		"newstatus": "n/a",
 		"categories": "PsychologyMentalLife",
-		"reread": "n/a",
-		"tbr": "reading"
+		"reread": "no",
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 3219,
