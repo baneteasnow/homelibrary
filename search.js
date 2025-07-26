@@ -180,8 +180,11 @@
 				resultsContainer: null,
 				json: [],
 				success: Function.prototype,
-				searchResultTemplate:
-					'<li><a href="{url}" title="{desc}">{title}</a></li>',
+				searchResultTemplate: `
+				<li>
+					<a href="{url}" title="{title}">{title}</a><br>
+					<small>Yazar: <a href="#" class="author-search" data-author="{author}">{author}</a></small>
+				</li>`,
 				templateMiddleware: Function.prototype,
 				sortMiddleware: function () {
 					return 0
@@ -243,17 +246,32 @@
 			o.resultsContainer.innerHTML += t
 		}
 		function c(t) {
-			if (t && 0 < t.length) {
-				u()
+			if (t && t.length > 0) {
+				u() // Arama kutusu boş değilse, önce sonuçları temizle
+
 				var results = l.search(t)
-				if (results.length === 0) {
+				var n = results.length
+
+				if (n === 0) {
 					a(o.noResultsText)
-				} else {
-					for (var r = 0; r < results.length; r++) {
-						results[r].query = t
-						a(h.compile(results[r]))
-					}
+					return
 				}
+
+				for (var r = 0; r < n; r++) {
+					results[r].query = t
+					a(h.compile(results[r]))
+				}
+
+				// 🌱 YAZAR ADINA TIKLANABİLİR ARAMA
+				document.querySelectorAll(".author-search").forEach(function (link) {
+					link.addEventListener("click", function (e) {
+						e.preventDefault()
+						var authorName = e.target.dataset.author
+						o.searchInput.value = authorName
+						o.searchInput.focus()
+						o.searchInput.dispatchEvent(new Event("keyup"))
+					})
+				})
 			}
 		}
 		function s(t) {
