@@ -30,7 +30,14 @@ title: "Home Library Book List"
 		class="decorated"
 		style="font-size: 85%"
 	>
-		<i>{{ item.author }}</i>
+		<i
+			><a
+				href="#"
+				class="author-link"
+				data-author="{{ item.author }}"
+				>{{ item.author }}</a
+			></i
+		>
 	</div>
 	<div
 		class="decorated"
