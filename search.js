@@ -285,35 +285,3 @@
 		}
 	})(window)
 })()
-document.addEventListener("click", function (e) {
-	if (e.target.classList.contains("author-link")) {
-		e.preventDefault()
-		var authorName = e.target.dataset.author
-		var searchInput = document.getElementById("search-box")
-
-		if (searchInput) {
-			searchInput.value = authorName
-			searchInput.focus()
-			searchInput.dispatchEvent(new Event("keyup"))
-		} else {
-			window.location.href = "/?author=" + encodeURIComponent(authorName)
-		}
-	}
-})
-document.addEventListener("DOMContentLoaded", function () {
-	document.addEventListener("click", function (e) {
-		if (e.target.classList.contains("author-link")) {
-			e.preventDefault()
-			var authorName = e.target.dataset.author
-			var searchInput = document.getElementById("search-box")
-
-			if (searchInput) {
-				searchInput.value = authorName
-				searchInput.focus()
-				searchInput.dispatchEvent(new Event("keyup"))
-			} else {
-				window.location.href = "/?author=" + encodeURIComponent(authorName)
-			}
-		}
-	})
-})
