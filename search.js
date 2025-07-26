@@ -180,11 +180,8 @@
 				resultsContainer: null,
 				json: [],
 				success: Function.prototype,
-				searchResultTemplate: `
-			<li>
-				<a href="{url}" title="{title}">{title}</a><br>
-				<small>Yazar: <a href="#" class="author-search" data-author="{author}">{author}</a></small>
-			</li>`,
+				searchResultTemplate:
+					'<li><a href="{url}" title="{desc}">{title}</a></li>',
 				templateMiddleware: Function.prototype,
 				sortMiddleware: function () {
 					return 0
