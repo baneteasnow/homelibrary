@@ -4746,7 +4746,7 @@
 		"status": "Read",
 		"newstatus": "updated",
 		"categories": "SocietyCulture",
-		"reread": "n/a",
+		"reread": "yes",
 		"tbr": "read"
 	},
 	{
@@ -17693,7 +17693,7 @@
 		"status": "Read",
 		"newstatus": "updated",
 		"categories": "PersonalGrowthProductivity",
-		"reread": "no",
+		"reread": "yes",
 		"tbr": "read"
 	},
 	{
@@ -22030,7 +22030,7 @@
 		"status": "Read",
 		"newstatus": "updated",
 		"categories": "n/a",
-		"reread": "no",
+		"reread": "yes",
 		"tbr": "read"
 	},
 	{
