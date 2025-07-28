@@ -1004,7 +1004,7 @@
 		"status": "Read",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a",
+		"reread": "yes",
 		"tbr": "read"
 	},
 	{
@@ -4666,7 +4666,7 @@
 		"status": "Read",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a",
+		"reread": "yes",
 		"tbr": "read"
 	},
 	{
@@ -6026,7 +6026,7 @@
 		"status": "Read",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a",
+		"reread": "yes",
 		"tbr": "read"
 	},
 	{
@@ -11420,7 +11420,7 @@
 		"status": "Read",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a",
+		"reread": "yes",
 		"tbr": "read"
 	},
 	{
@@ -13084,7 +13084,7 @@
 		"status": "Read",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a",
+		"reread": "yes",
 		"tbr": "read"
 	},
 	{
@@ -14524,7 +14524,7 @@
 		"status": "Read",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a",
+		"reread": "yes",
 		"tbr": "read"
 	},
 	{
@@ -16557,7 +16557,7 @@
 		"status": "Read",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a",
+		"reread": "yes",
 		"tbr": "read"
 	},
 	{
@@ -19213,7 +19213,7 @@
 		"status": "Read",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a",
+		"reread": "yes",
 		"tbr": "read"
 	},
 	{
@@ -23022,7 +23022,7 @@
 		"status": "Read",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a",
+		"reread": "yes",
 		"tbr": "read"
 	},
 	{
@@ -23934,7 +23934,7 @@
 		"status": "Read",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a",
+		"reread": "yes",
 		"tbr": "read"
 	},
 	{
@@ -24180,7 +24180,7 @@
 	{
 		"bookshelf": 2512,
 		"No": 1512,
-		"title": "Yoga - Bir Donusum Klavuzu",
+		"title": "Yoga - Bir Donusum Kilavuzu",
 		"publisher": "Omega Yayinlari",
 		"author": "Vedacarya David Frawley",
 		"lang": "Turkce",
@@ -32533,7 +32533,7 @@
 		"status": "Read",
 		"newstatus": "updated",
 		"categories": "PsychologyMentalLife",
-		"reread": "no",
+		"reread": "yes",
 		"tbr": "read"
 	},
 	{
@@ -33701,7 +33701,7 @@
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"reread": "n/a",
+		"reread": "yes",
 		"tbr": "no"
 	},
 	{
