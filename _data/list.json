@@ -3458,7 +3458,7 @@
 		"No": 217,
 		"title": "Bosluk Hissi - Cocuklukta Ihmalin Izi",
 		"publisher": "Sola Unitas",
-		"author": "Jonice Webb",
+		"author": "Jonice Webb, Christine Musello",
 		"lang": "Turkce",
 		"page": 308,
 		"year": "2021",
@@ -4631,11 +4631,11 @@
 		"page": 264,
 		"year": "2021",
 		"notes": "A-6",
-		"status": "UnRead",
-		"newstatus": "n/a",
-		"categories": "n/a",
-		"reread": "n/a",
-		"tbr": "yes"
+		"status": "Read",
+		"newstatus": "updated",
+		"categories": "PsychologyMentalLife",
+		"reread": "no",
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 1291,
