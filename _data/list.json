@@ -32165,7 +32165,7 @@
 		"status": "Read",
 		"newstatus": "updated",
 		"categories": "PsychologyMentalLife",
-		"reread": "no",
+		"reread": "yes",
 		"tbr": "read"
 	},
 	{
@@ -35506,11 +35506,11 @@
 		"page": 152,
 		"year": "2025",
 		"notes": "A-7",
-		"status": "Reading",
-		"newstatus": "n/a",
+		"status": "Read",
+		"newstatus": "updated",
 		"categories": "PsychologyMentalLife",
-		"reread": "n/a",
-		"tbr": "reading"
+		"reread": "yes",
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 3220,
