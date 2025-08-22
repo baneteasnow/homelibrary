@@ -32579,10 +32579,10 @@
 		"year": "2020",
 		"notes": "G-8",
 		"status": "Reading",
-		"newstatus": "n/a",
+		"newstatus": "updated",
 		"categories": "SimpleLivingEverydayComforts",
-		"reread": "n/a",
-		"tbr": "yes"
+		"reread": "no",
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 3037,
@@ -32886,7 +32886,7 @@
 		"newstatus": "n/a",
 		"categories": "TechnologyTheDigitalWorld",
 		"reread": "n/a",
-		"tbr": "yes"
+		"tbr": "reading"
 	},
 	{
 		"bookshelf": 3056,
@@ -35638,7 +35638,7 @@
 		"newstatus": "n/a",
 		"categories": "ConsumerMarketing",
 		"reread": "n/a",
-		"tbr": "yes"
+		"tbr": "reading"
 	},
 	{
 		"bookshelf": 3228,
