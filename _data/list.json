@@ -297,11 +297,11 @@
 		"page": 208,
 		"year": "2004",
 		"notes": "B-3",
-		"status": "UnRead",
+		"status": "Reading",
 		"newstatus": "n/a",
-		"categories": "n/a",
+		"categories": "BiographyLifeStories",
 		"reread": "n/a",
-		"tbr": "no"
+		"tbr": "Reading"
 	},
 	{
 		"bookshelf": 1020,
@@ -14841,11 +14841,11 @@
 		"page": 176,
 		"year": "2008",
 		"notes": "G-8",
-		"status": "UnRead",
-		"newstatus": "n/a",
-		"categories": "n/a",
-		"reread": "n/a",
-		"tbr": "no"
+		"status": "Read",
+		"newstatus": "updated",
+		"categories": "ConsumerMarketing",
+		"reread": "no",
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 1929,
@@ -14937,11 +14937,11 @@
 		"page": 128,
 		"year": "2015",
 		"notes": "G-8",
-		"status": "UnRead",
+		"status": "Reading",
 		"newstatus": "n/a",
-		"categories": "n/a",
+		"categories": "ConsumerMarketing",
 		"reread": "n/a",
-		"tbr": "no"
+		"tbr": "Reading"
 	},
 	{
 		"bookshelf": 1935,
@@ -22987,11 +22987,11 @@
 		"page": 105,
 		"year": "2006",
 		"notes": "C-9",
-		"status": "UnRead",
+		"status": "Reading",
 		"newstatus": "n/a",
-		"categories": "n/a",
+		"categories": "PersonalGrowthProductivity",
 		"reread": "n/a",
-		"tbr": "yes"
+		"tbr": "Reading"
 	},
 	{
 		"bookshelf": 2438,
@@ -32578,7 +32578,7 @@
 		"page": 240,
 		"year": "2020",
 		"notes": "G-8",
-		"status": "Reading",
+		"status": "Read",
 		"newstatus": "updated",
 		"categories": "SimpleLivingEverydayComforts",
 		"reread": "no",
@@ -32626,11 +32626,11 @@
 		"page": 133,
 		"year": "2025",
 		"notes": "E-7",
-		"status": "UnRead",
+		"status": "Reading",
 		"newstatus": "n/a",
-		"categories": "n/a",
+		"categories": "PsychologyMentalLife",
 		"reread": "n/a",
-		"tbr": "yes"
+		"tbr": "Reading"
 	},
 	{
 		"bookshelf": 3040,
@@ -32882,11 +32882,11 @@
 		"page": 178,
 		"year": "2022",
 		"notes": "E-8",
-		"status": "Reading",
-		"newstatus": "n/a",
+		"status": "Read",
+		"newstatus": "updated",
 		"categories": "TechnologyTheDigitalWorld",
-		"reread": "n/a",
-		"tbr": "reading"
+		"reread": "no",
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 3056,
@@ -35634,11 +35634,11 @@
 		"page": 168,
 		"year": "2020",
 		"notes": "G-8",
-		"status": "Reading",
-		"newstatus": "n/a",
+		"status": "Read",
+		"newstatus": "updated",
 		"categories": "ConsumerMarketing",
-		"reread": "n/a",
-		"tbr": "reading"
+		"reread": "no",
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 3228,
@@ -35778,11 +35778,11 @@
 		"page": 464,
 		"year": "2016",
 		"notes": "B-5",
-		"status": "UnRead",
+		"status": "Reading",
 		"newstatus": "n/a",
-		"categories": "n/a",
+		"categories": "HealthNutrition",
 		"reread": "n/a",
-		"tbr": "yes"
+		"tbr": "Reading"
 	},
 	{
 		"bookshelf": 3237,
