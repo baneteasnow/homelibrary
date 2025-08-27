@@ -297,11 +297,11 @@
 		"page": 208,
 		"year": "2004",
 		"notes": "B-3",
-		"status": "Reading",
-		"newstatus": "n/a",
+		"status": "Read",
+		"newstatus": "updated",
 		"categories": "BiographyLifeStories",
-		"reread": "n/a",
-		"tbr": "Reading"
+		"reread": "no",
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 1020,
