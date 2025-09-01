@@ -14941,7 +14941,7 @@
 		"newstatus": "updated",
 		"categories": "ConsumerMarketing",
 		"reread": "no",
-		"tbr": "Reading"
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 1935,
@@ -35778,11 +35778,11 @@
 		"page": 464,
 		"year": "2016",
 		"notes": "B-5",
-		"status": "Reading",
-		"newstatus": "n/a",
+		"status": "Read",
+		"newstatus": "updated",
 		"categories": "HealthNutrition",
-		"reread": "n/a",
-		"tbr": "Reading"
+		"reread": "no",
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 3237,
