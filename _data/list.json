@@ -32626,11 +32626,11 @@
 		"page": 133,
 		"year": "2025",
 		"notes": "E-7",
-		"status": "Reading",
-		"newstatus": "n/a",
+		"status": "Read",
+		"newstatus": "updated",
 		"categories": "PsychologyMentalLife",
-		"reread": "n/a",
-		"tbr": "Reading"
+		"reread": "no",
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 3040,
