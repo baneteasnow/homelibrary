@@ -35170,11 +35170,11 @@
 		"page": 224,
 		"year": "2017",
 		"notes": "F-7",
-		"status": "UnRead",
+		"status": "Reading",
 		"newstatus": "n/a",
-		"categories": "n/a",
+		"categories": "BiographyLifeStories",
 		"reread": "n/a",
-		"tbr": "yes"
+		"tbr": "Reading"
 	},
 	{
 		"bookshelf": 3199,
@@ -35218,11 +35218,11 @@
 		"page": 136,
 		"year": "2018",
 		"notes": "B-5",
-		"status": "UnRead",
-		"newstatus": "n/a",
-		"categories": "n/a",
-		"reread": "n/a",
-		"tbr": "yes"
+		"status": "Read",
+		"newstatus": "updated",
+		"categories": "BiographyLifeStories",
+		"reread": "yes",
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 3202,
@@ -36146,11 +36146,11 @@
 		"page": 224,
 		"year": "2020",
 		"notes": "F-7",
-		"status": "UnRead",
+		"status": "Reading",
 		"newstatus": "n/a",
-		"categories": "n/a",
+		"categories": "BiographyLifeStories",
 		"reread": "n/a",
-		"tbr": "yes"
+		"tbr": "Reading"
 	},
 	{
 		"bookshelf": 3260,
