@@ -37191,5 +37191,53 @@
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "yes"
+	},
+	{
+		"bookshelf": 3325,
+		"No": 2325,
+		"title": "Türkiye Debelenirken - Psiko-Politik Yuzlesmeler",
+		"publisher": "Istanbul Bilgi Universitesi",
+		"author": "Murat Paker",
+		"lang": "Turkce",
+		"page": 413,
+		"year": "2016",
+		"notes": "A-4",
+		"status": "UnRead",
+		"newstatus": "n/a",
+		"categories": "n/a",
+		"reread": "n/a",
+		"tbr": "yes"
+	},
+	{
+		"bookshelf": 3326,
+		"No": 2326,
+		"title": "Ikinci Beyninizi Kurun - Dijital Yasaminizi Duzenleyip Yaraticiliginizi Artirmanin Kanitlanmis Yontemi",
+		"publisher": "Nepal Kitap",
+		"author": "Tiago Forte",
+		"lang": "Turkce",
+		"page": 320,
+		"year": "2025",
+		"notes": "E-6",
+		"status": "UnRead",
+		"newstatus": "n/a",
+		"categories": "n/a",
+		"reread": "n/a",
+		"tbr": "yes"
+	},
+	{
+		"bookshelf": 3327,
+		"No": 2327,
+		"title": "Oyun ve Gerceklik",
+		"publisher": "Metis Yayinlari",
+		"author": "Donald W. Winnicott",
+		"lang": "Turkce",
+		"page": 208,
+		"year": "2021",
+		"notes": "A-7",
+		"status": "UnRead",
+		"newstatus": "n/a",
+		"categories": "n/a",
+		"reread": "n/a",
+		"tbr": "yes"
 	}
 ]
