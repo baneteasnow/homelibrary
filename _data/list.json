@@ -20891,11 +20891,11 @@
 		"page": 192,
 		"year": "2015",
 		"notes": "G-8",
-		"status": "Reading",
-		"newstatus": "n/a",
-		"categories": "n/a",
-		"reread": "n/a",
-		"tbr": "Reading"
+		"status": "Read",
+		"newstatus": "ToBeUpdated",
+		"categories": "EnvironmentSustainableLiving",
+		"reread": "no",
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 2307,
@@ -36242,11 +36242,11 @@
 		"page": 328,
 		"year": "2025",
 		"notes": "C-9",
-		"status": "UnRead",
-		"newstatus": "n/a",
+		"status": "Read",
+		"newstatus": "ToBeUpdated",
 		"categories": "PsychologyMentalLife",
-		"reread": "n/a",
-		"tbr": "yes"
+		"reread": "no",
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 3266,
@@ -36386,11 +36386,11 @@
 		"page": 136,
 		"year": "2020",
 		"notes": "H-5",
-		"status": "UnRead",
-		"newstatus": "n/a",
+		"status": "Read",
+		"newstatus": "ToBeUpdated",
 		"categories": "EnvironmentSustainableLiving",
-		"reread": "n/a",
-		"tbr": "yes"
+		"reread": "no",
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 3275,
@@ -37252,7 +37252,7 @@
 		"notes": "E-7",
 		"status": "Reading",
 		"newstatus": "n/a",
-		"categories": "n/a",
+		"categories": "EnvironmentSustainableLiving",
 		"reread": "n/a",
 		"tbr": "Reading"
 	},
@@ -37268,7 +37268,7 @@
 		"notes": "E-7",
 		"status": "Reading",
 		"newstatus": "n/a",
-		"categories": "n/a",
+		"categories": "ConsumerMarketing",
 		"reread": "n/a",
 		"tbr": "Reading"
 	},
