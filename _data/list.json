@@ -553,11 +553,11 @@
 		"page": 168,
 		"year": "2018",
 		"notes": "G-8",
-		"status": "UnRead",
+		"status": "Reading",
 		"newstatus": "n/a",
-		"categories": "n/a",
+		"categories": "PersonalGrowthProductivity",
 		"reread": "n/a",
-		"tbr": "yes"
+		"tbr": "Reading"
 	},
 	{
 		"bookshelf": 1036,
@@ -17258,11 +17258,11 @@
 		"page": 312,
 		"year": "2022",
 		"notes": "C-9",
-		"status": "UnRead",
+		"status": "Reading",
 		"newstatus": "n/a",
-		"categories": "n/a",
+		"categories": "BusinessEconomics",
 		"reread": "n/a",
-		"tbr": "yes"
+		"tbr": "Reading"
 	},
 	{
 		"bookshelf": 2080,
@@ -37250,11 +37250,11 @@
 		"page": 240,
 		"year": "2020",
 		"notes": "E-7",
-		"status": "Reading",
-		"newstatus": "n/a",
+		"status": "Read",
+		"newstatus": "ToBeUpdated",
 		"categories": "EnvironmentSustainableLiving",
-		"reread": "n/a",
-		"tbr": "Reading"
+		"reread": "no",
+		"tbr": "read"
 	},
 	{
 		"bookshelf": 3329,
