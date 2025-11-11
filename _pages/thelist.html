@@ -38,23 +38,71 @@ title: "the list"
 		<td>{{ item.year }}</td>
 		<td>{{ item.page }}</td>
 		<td>
-			{%- case item.categories -%} {%- when "BiographyLifeStories" -%}Biography
-			&amp; Life Stories {%- when "BusinessEconomics" -%}Business &amp;
-			Economics {%- when "ConsumerMarketing" -%}Consumer &amp; Marketing {%-
-			when "CreativityExpression" -%}<a
+			{%- case item.categories -%} {%- when "BiographyLifeStories" -%}
+			<a
+				href="{{ site.baseurl }}biography-life-stories"
+				name="{{ item.categories }}"
+				>Biography &amp; Life Stories</a
+			>
+			{%- when "BusinessEconomics" -%}
+			<a
+				href="{{ site.baseurl }}business-economics"
+				name="{{ item.categories }}"
+				>Business &amp; Economics</a
+			>
+			{%- when "ConsumerMarketing" -%}
+			<a
+				href="{{ site.baseurl }}consumer-marketing"
+				name="{{ item.categories }}"
+			>
+				Consumer &amp; Marketing
+			</a>
+			{%- when "CreativityExpression" -%}
+			<a
 				href="{{ site.baseurl }}creativity-expression"
 				name="{{ item.categories }}"
-				>{{ item.title }}Creativity &amp; Expression </a
-			>{%- when "EnvironmentSustainableLiving" -%}Environment &amp; Sustainable
-			Living {%- when "HealthNutrition" -%}Health &amp; Nutrition {%- when
-			"PersonalGrowthProductivity" -%}Personal Growth &amp; Productivity {%-
-			when "PhilosophyMeaning" -%}Philosophy &amp; Meaning {%- when
-			"PsychologyMentalLife" -%}Psychology &amp; Mental Life {%- when
-			"SimpleLivingEverydayComforts" -%}Simple Living &amp; Everyday Comforts
-			{%- when "ScienceDiscovery" -%}Science &amp; Discovery {%- when
-			"SocietyCulture" -%}Society &amp; Culture {%- when
-			"TechnologyTheDigitalWorld" -%}Technology &amp; the Digital World {%- when
-			"WorkCareer" -%}Work &amp; Career {%- else -%}n/a {%- endcase -%}
+				>Creativity &amp; Expression
+			</a>
+			{%- when "EnvironmentSustainableLiving" -%}<a
+				href="{{ site.baseurl }}environment-sustainable-living"
+				name="{{ item.categories }}"
+				>Environment &amp; Sustainable Living
+			</a>
+			{%- when "HealthNutrition" -%}
+			<a
+				href="{{ site.baseurl }}health-nutrition"
+				name="{{ item.categories }}"
+				>Health &amp; Nutrition</a
+			>
+			{%- when "PersonalGrowthProductivity" -%}
+			<a
+				href="{{ site.baseurl }}personal-growth-productivity"
+				name="{{ item.categories }}"
+				>Personal Growth &amp; Productivity</a
+			>
+			{%- when "PhilosophyMeaning" -%}
+			<a href="{{ site.baseurl }}philosophy-meaning"
+				>Philosophy &amp; Meaning</a
+			>
+			{%- when "PsychologyMentalLife" -%}
+			<a href="{{ site.baseurl }}psychology-mentalLife"
+				>Psychology &amp; Mental Life</a
+			>
+			{%- when "SimpleLivingEverydayComforts" -%}
+			<a href="{{ site.baseurl }}simpleLiving-everyday-comforts"
+				>Simple Living &amp; Everyday Comforts</a
+			>
+			{%- when "ScienceDiscovery" -%}
+			<a href="{{ site.baseurl }}science-discovery">Science &amp; Discovery</a>
+			{%- when "SocietyCulture" -%}
+			<a href="{{ site.baseurl }}society-culture">Society &amp; Culture</a>
+			{%- when "TechnologyTheDigitalWorld" -%}
+			<a href="{{ site.baseurl }}technology-the-digital-world"
+				>Technology &amp; the Digital World</a
+			>
+			{%- when "WorkCareer" -%}
+			<a href="{{ site.baseurl }}work-career"> Work &amp; Career</a>
+			{%- else -%}n/a{%- endcase -%}
 		</td>
 		<td>
 			{%- assign tbr_val = item.tbr | downcase | default: "" -%} {%- if tbr_val
