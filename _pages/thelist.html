@@ -108,16 +108,16 @@ title: "the list"
 			>
 			{%- when "WorkCareer" -%}
 			<a href="{{ site.baseurl }}work-career"> Work &amp; Career</a>
-			{%- else -%}n/a{%- endcase -%}
+			{%- else -%}category?{%- endcase -%}
 		</td>
 		<td>
 			{%- assign tbr_val = item.tbr | downcase | default: "" -%} {%- if tbr_val
-			== "yes" or tbr_val == "true" -%}TBR{%- else -%}n/a{%- endif -%}
+			== "yes" or tbr_val == "true" -%}TBR{%- else -%}tbr?{%- endif -%}
 		</td>
 		<td>
 			{%- assign reread_val = item.reread | downcase | default: "" -%} {%- if
-			reread_val == "yes" or reread_val == "true" -%}Reread{%- else -%}n/a{%-
-			endif -%}
+			reread_val == "yes" or reread_val == "true" -%}REREAD{%- else
+			-%}reread?{%- endif -%}
 		</td>
 		<td>{{ item.notes }}</td>
 		<td>
