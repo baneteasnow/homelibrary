@@ -22,34 +22,30 @@ title: "the list"
 
 	{%- for item in items -%}
 	<tr>
-		<td><i>{{ item.bookshelf }}</i></td>
+		<td>{{ item.bookshelf }}</td>
 		<td>{{ item.title }}</td>
-		<td><i>{{ item.author }}</i></td>
-		<td><i>{{ item.year }}</i></td>
+		<td>{{ item.author }}</td>
+		<td>{{ item.year }}</td>
 		<td>{{ item.page }}</td>
 		<td>
-			<i style="font-size: 85%; color: darkgray">
-				{%- case item.categories -%} {%- when "BiographyLifeStories"
-				-%}Biography &amp; Life Stories {%- when "BusinessEconomics" -%}Business
-				&amp; Economics {%- when "ConsumerMarketing" -%}Consumer &amp; Marketing
-				{%- when "CreativityExpression" -%}Creativity &amp; Expression {%- when
-				"EnvironmentSustainableLiving" -%}Environment &amp; Sustainable Living
-				{%- when "HealthNutrition" -%}Health &amp; Nutrition {%- when
-				"PersonalGrowthProductivity" -%}Personal Growth &amp; Productivity {%-
-				when "PhilosophyMeaning" -%}Philosophy &amp; Meaning {%- when
-				"PsychologyMentalLife" -%}Psychology &amp; Mental Life {%- when
-				"SimpleLivingEverydayComforts" -%}Simple Living &amp; Everyday Comforts
-				{%- when "ScienceDiscovery" -%}Science &amp; Discovery {%- when
-				"SocietyCulture" -%}Society &amp; Culture {%- when
-				"TechnologyTheDigitalWorld" -%}Technology &amp; the Digital World {%-
-				when "WorkCareer" -%}Work &amp; Career {%- else -%}n/a {%- endcase -%}
-			</i>
+			{%- case item.categories -%} {%- when "BiographyLifeStories" -%}Biography
+			&amp; Life Stories {%- when "BusinessEconomics" -%}Business &amp;
+			Economics {%- when "ConsumerMarketing" -%}Consumer &amp; Marketing {%-
+			when "CreativityExpression" -%}Creativity &amp; Expression {%- when
+			"EnvironmentSustainableLiving" -%}Environment &amp; Sustainable Living {%-
+			when "HealthNutrition" -%}Health &amp; Nutrition {%- when
+			"PersonalGrowthProductivity" -%}Personal Growth &amp; Productivity {%-
+			when "PhilosophyMeaning" -%}Philosophy &amp; Meaning {%- when
+			"PsychologyMentalLife" -%}Psychology &amp; Mental Life {%- when
+			"SimpleLivingEverydayComforts" -%}Simple Living &amp; Everyday Comforts
+			{%- when "ScienceDiscovery" -%}Science &amp; Discovery {%- when
+			"SocietyCulture" -%}Society &amp; Culture {%- when
+			"TechnologyTheDigitalWorld" -%}Technology &amp; the Digital World {%- when
+			"WorkCareer" -%}Work &amp; Career {%- else -%}n/a {%- endcase -%}
 		</td>
 		<td>
-			<i style="font-size: 85%; color: lightgray">
-				{%- assign tbr_val = item.tbr | downcase | default: "" -%} {%- if
-				tbr_val == "yes" or tbr_val == "true" -%}TBR{%- else -%}n/a{%- endif -%}
-			</i>
+			{%- assign tbr_val = item.tbr | downcase | default: "" -%} {%- if tbr_val
+			== "yes" or tbr_val == "true" -%}TBR{%- else -%}n/a{%- endif -%}
 		</td>
 	</tr>
 	{%- endfor -%}
