@@ -41,9 +41,12 @@ title: "the list"
 			{%- case item.categories -%} {%- when "BiographyLifeStories" -%}Biography
 			&amp; Life Stories {%- when "BusinessEconomics" -%}Business &amp;
 			Economics {%- when "ConsumerMarketing" -%}Consumer &amp; Marketing {%-
-			when "CreativityExpression" -%}Creativity &amp; Expression {%- when
-			"EnvironmentSustainableLiving" -%}Environment &amp; Sustainable Living {%-
-			when "HealthNutrition" -%}Health &amp; Nutrition {%- when
+			when "CreativityExpression" -%}<a
+				href="{{ site.baseurl }}creativity-expression"
+				name="{{ item.categories }}"
+				>{{ item.title }}Creativity &amp; Expression </a
+			>{%- when "EnvironmentSustainableLiving" -%}Environment &amp; Sustainable
+			Living {%- when "HealthNutrition" -%}Health &amp; Nutrition {%- when
 			"PersonalGrowthProductivity" -%}Personal Growth &amp; Productivity {%-
 			when "PhilosophyMeaning" -%}Philosophy &amp; Meaning {%- when
 			"PsychologyMentalLife" -%}Psychology &amp; Mental Life {%- when
