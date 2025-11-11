@@ -1,0 +1,92 @@
+---
+layout: page-6
+published: true
+last_modified_at: 2025-11-11
+title: "the list"
+---
+
+{%-include backtotop.html-%}
+<br />
+<table>
+	<tr>
+		<th style="text-align: left">#</th>
+		ok
+		<th style="text-align: left">name of the book</th>
+		ok
+		<th style="text-align: left">author</th>
+		ok
+		<th style="text-align: left">year</th>ok
+		<th style="text-align: left">page</th>ok
+		<th style="text-align: left">category</th>ok
+		<th style="text-align: left">tbr?</th>
+	</tr>
+	{% for item in site.data.list %}
+	<tr>
+		<td>
+			<center>
+				<i># {{ item.bookshelf }}</i>
+			</center>
+		</td>
+		<td>
+			<div class="link1">
+				<a
+					href="{{ site.baseurl }}booklist#{{ item.bookshelf }}"
+					name="{{ item.bookshelf }}"
+					>{{ item.title }}</a
+				>
+			</div>
+		</td>
+		<td><i>{{ item.author }}</i></td>
+		<td><i>{{ item.year }}</i></td>
+		<td>{{ item.page }} sayfa</td>
+		<td>
+			<i style="font-size: 85%; color: darkgray"
+	>
+		{% if item.categories == "BiographyLifeStories" %}
+		<i>Biography & Life Stories</i>
+		{% elsif item.categories == "BusinessEconomics" %}
+		<i>Business & Economics</i>
+		{% elsif item.categories == "ConsumerMarketing" %}
+		<i>Consumer & Marketing</i>
+		{% elsif item.categories == "CreativityExpression" %}
+		<i>Creativity & Expression</i>
+		{% elsif item.categories == "EnvironmentSustainableLiving" %}
+		<i>Environment & Sustainable Living</i>
+		{% elsif item.categories == "HealthNutrition" %}
+		<i>Health & Nutrition</i>
+		{% elsif item.categories == "PersonalGrowthProductivity" %}
+		<i>Personal Growth & Productivity</i>
+		{% elsif item.categories == "PhilosophyMeaning" %}
+		<i>Philosophy & Meaning</i>
+		{% elsif item.categories == "PsychologyMentalLife" %}
+		<i>Psychology & Mental Life</i>
+		{% elsif item.categories == "SimpleLivingEverydayComforts" %}
+		<i>Science & Discovery</i>
+		{% elsif item.categories == "ScienceDiscovery" %}
+		<i>Simple Living & Everyday Comforts</i>
+		{% elsif item.categories == "SocietyCulture" %}
+		<i>Society & Culture</i>
+		{% elsif item.categories == "TechnologyTheDigitalWorld" %}
+		<i>Technology & the Digital World</i>
+		{% elsif item.categories == "WorkCareer" %}
+		<i>Work & Career</i>
+		{% else %}
+		<i>n/a</i>
+		{% endif %}
+	</div>
+		</td>
+		<td>
+			<i style="font-size: 85%; color: lightgray"
+	>
+		{% if item.tbr == "yes" %}
+		<i>TBR</i>
+		{% else %}
+		<i>n/a</i>
+		{% endif %}
+	</div>
+		</td>
+	</tr>
+	{% endfor %}
+</table>
+<div style="clear: both"></div>
+<br />
