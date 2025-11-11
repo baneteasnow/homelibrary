@@ -20,12 +20,10 @@ title: "the list"
 		<th style="text-align: left">category</th>ok
 		<th style="text-align: left">tbr?</th>
 	</tr>
-	{% for item in site.data.list %}
+	{%- for item in site.data.list -%}
 	<tr>
 		<td>
-			<center>
 				<i># {{ item.bookshelf }}</i>
-			</center>
 		</td>
 		<td>
 			{{ item.title }}
@@ -36,51 +34,51 @@ title: "the list"
 		<td>
 			<i style="font-size: 85%; color: darkgray"
 	>
-		{% if item.categories == "BiographyLifeStories" %}
+		{%- if item.categories == "BiographyLifeStories" -%}
 		<i>Biography & Life Stories</i>
-		{% elsif item.categories == "BusinessEconomics" %}
+		{%- elsif item.categories == "BusinessEconomics" -%}
 		<i>Business & Economics</i>
-		{% elsif item.categories == "ConsumerMarketing" %}
+		{%- elsif item.categories == "ConsumerMarketing" -%}
 		<i>Consumer & Marketing</i>
-		{% elsif item.categories == "CreativityExpression" %}
+		{%- elsif item.categories == "CreativityExpression" -%}
 		<i>Creativity & Expression</i>
-		{% elsif item.categories == "EnvironmentSustainableLiving" %}
+		{%- elsif item.categories == "EnvironmentSustainableLiving" -%}
 		<i>Environment & Sustainable Living</i>
-		{% elsif item.categories == "HealthNutrition" %}
+		{%- elsif item.categories == "HealthNutrition" -%}
 		<i>Health & Nutrition</i>
-		{% elsif item.categories == "PersonalGrowthProductivity" %}
+		{%- elsif item.categories == "PersonalGrowthProductivity" -%}
 		<i>Personal Growth & Productivity</i>
-		{% elsif item.categories == "PhilosophyMeaning" %}
+		{%- elsif item.categories == "PhilosophyMeaning" -%}
 		<i>Philosophy & Meaning</i>
-		{% elsif item.categories == "PsychologyMentalLife" %}
+		{%- elsif item.categories == "PsychologyMentalLife" -%}
 		<i>Psychology & Mental Life</i>
-		{% elsif item.categories == "SimpleLivingEverydayComforts" %}
+		{%- elsif item.categories == "SimpleLivingEverydayComforts" -%}
 		<i>Science & Discovery</i>
-		{% elsif item.categories == "ScienceDiscovery" %}
+		{%- elsif item.categories == "ScienceDiscovery" -%}
 		<i>Simple Living & Everyday Comforts</i>
-		{% elsif item.categories == "SocietyCulture" %}
+		{%- elsif item.categories == "SocietyCulture" -%}
 		<i>Society & Culture</i>
-		{% elsif item.categories == "TechnologyTheDigitalWorld" %}
+		{%- elsif item.categories == "TechnologyTheDigitalWorld" -%}
 		<i>Technology & the Digital World</i>
-		{% elsif item.categories == "WorkCareer" %}
+		{%- elsif item.categories == "WorkCareer" -%}
 		<i>Work & Career</i>
-		{% else %}
+		{%- else -%}
 		<i>n/a</i>
-		{% endif %}
+		{%- endif -%}
 	</div>
 		</td>
 		<td>
 			<i style="font-size: 85%; color: lightgray"
 	>
-		{% if item.tbr == "yes" %}
+		{%- if item.tbr == "yes" -%}
 		<i>TBR</i>
-		{% else %}
+		{%- else -%}
 		<i>n/a</i>
-		{% endif %}
+		{%- endif -%}
 	</div>
 		</td>
 	</tr>
-	{% endfor %}
+	{%- endfor -%}
 </table>
 <div style="clear: both"></div>
 <br />
