@@ -17,9 +17,9 @@ title: "the list"
 		<th style="text-align: left">year</th>
 		<th style="text-align: left">page</th>
 		<th style="text-align: left">category</th>
-		<th style="text-align: left">✅ read?</th>
-		<th style="text-align: left">📋 tbr?</th>
-		<th style="text-align: left">📖 reread?</th>
+		<th style="text-align: left">read?</th>
+		<th style="text-align: left">tbr?</th>
+		<th style="text-align: left">reread?</th>
 		<th style="text-align: left">place</th>
 		<th style="text-align: left">info</th>
 		<th style="text-align: left">image</th>
@@ -113,16 +113,16 @@ title: "the list"
 		</td>
 		<td>
 			{%- assign read_val = item.status | downcase | default: "" -%} {%- if
-			read_val == "Read" or read_val == "JustRead" -%}read{%- else -%}✅❓{%-
+			read_val == "Read" or read_val == "JustRead" -%}✅{%- else -%}read?{%-
 			endif -%}
 		</td>
 		<td>
 			{%- assign tbr_val = item.tbr | downcase | default: "" -%} {%- if tbr_val
-			== "yes" or tbr_val == "true" -%}TBR{%- else -%}📋❓{%- endif -%}
+			== "yes" or tbr_val == "true" -%}📋{%- else -%}tbr?{%- endif -%}
 		</td>
 		<td>
 			{%- assign reread_val = item.reread | downcase | default: "" -%} {%- if
-			reread_val == "yes" or reread_val == "true" -%}reread{%- else -%}📖❓{%-
+			reread_val == "yes" or reread_val == "true" -%}📖{%- else -%}reread?{%-
 			endif -%}
 		</td>
 		<td>{{ item.notes }}</td>
