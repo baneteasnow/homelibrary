@@ -18,6 +18,7 @@ title: "the list"
 		<th style="text-align: left">page</th>
 		<th style="text-align: left">category</th>
 		<th style="text-align: left">read?</th>
+		<th style="text-align: left">reading?</th>
 		<th style="text-align: left">tbr?</th>
 		<th style="text-align: left">reread?</th>
 		<th style="text-align: left">place</th>
@@ -114,6 +115,10 @@ title: "the list"
 		<td>
 			{%- assign read_val = item.status | default: "UnRead" -%} {%- if read_val
 			!= "UnRead" -%}✅{%- else -%}read?{%- endif -%}
+		</td>
+		<td>
+			{%- assign reading_val = item.status | default: "n/a" -%} {%- if read_val
+			== "Reading" -%}Reading{%- else -%}-{%- endif -%}
 		</td>
 		<td>
 			{%- assign tbr_val = item.tbr | downcase | default: "" -%} {%- if tbr_val
