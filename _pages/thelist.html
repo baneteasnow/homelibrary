@@ -112,8 +112,8 @@ title: "the list"
 			{%- else -%}category?{%- endcase -%}
 		</td>
 		<td>
-			{%- assign read_val = item.status | downcase | default: "" -%} {%- if
-			read_val != "UnRead" -%}✅{%- else -%}read?{%- endif -%}
+			{%- assign read_val = item.status | downcase | default: "UnRead" -%} {%-
+			if read_val != "UnRead" -%}✅{%- else -%}read?{%- endif -%}
 		</td>
 		<td>
 			{%- assign tbr_val = item.tbr | downcase | default: "" -%} {%- if tbr_val
