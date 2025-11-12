@@ -113,8 +113,7 @@ title: "the list"
 		</td>
 		<td>
 			{%- assign read_val = item.status | downcase | default: "" -%} {%- if
-			read_val == "Read" or read_val == "JustRead" -%}✅{%- else -%}read?{%-
-			endif -%}
+			read_val != "UnRead" -%}✅{%- else -%}read?{%- endif -%}
 		</td>
 		<td>
 			{%- assign tbr_val = item.tbr | downcase | default: "" -%} {%- if tbr_val
