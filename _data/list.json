@@ -15114,11 +15114,11 @@
 		"page": 184,
 		"year": "2022",
 		"notes": "G-8",
-		"status": "Reading",
+		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "PersonalGrowthProductivity",
 		"reread": "n/a",
-		"tbr": "Reading"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 1946,
@@ -35714,11 +35714,11 @@
 		"page": 289,
 		"year": "2018",
 		"notes": "H-4",
-		"status": "Reading",
+		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "HistoryPoliticalThought",
 		"reread": "n/a",
-		"tbr": "Reading"
+		"tbr": "yes"
 	},
 	{
 		"bookshelf": 3233,
@@ -37266,11 +37266,11 @@
 		"page": 144,
 		"year": "2022",
 		"notes": "E-7",
-		"status": "Reading",
+		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "ConsumerMarketing",
 		"reread": "n/a",
-		"tbr": "Reading"
+		"tbr": "no"
 	},
 	{
 		"bookshelf": 3330,
@@ -37373,7 +37373,7 @@
 		"No": 2336,
 		"title": "Histeri Bugun",
 		"publisher": "Encore Yayinlari",
-		"author": "Darian Leader",
+		"author": "Anouchka Grose (Derleyen)",
 		"lang": "Turkce",
 		"page": 160,
 		"year": "2025",
