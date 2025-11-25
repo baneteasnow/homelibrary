@@ -8,7 +8,11 @@ title: "the list"
 {%- include backtotop.html -%}
 <br />
 {%- assign items = site.data.list.item | default: site.data.list -%}
-
+<style>
+	table.zebra tr:nth-child(n + 2):nth-child(even) {
+		background-color: #f2f2f2;
+	}
+</style>
 <table>
 	<tr>
 		<th style="text-align: left">#</th>
