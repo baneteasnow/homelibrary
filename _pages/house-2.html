@@ -1,0 +1,40 @@
+---
+layout: page-6
+published: true
+last_modified_at: 2025-12-03
+title: "house-2 List"
+---
+
+{%-include backtotop.html-%}
+<br />
+<div><i>house-2 List</i></div>
+
+<br />
+
+<style>
+	table.zebra tr:nth-child(n + 2):nth-child(even) {
+		background-color: #f2f2f2;
+	}
+</style>
+
+<table class="zebra">
+	<tr>
+		<th style="text-align: left">#</th>
+		<th style="text-align: left">name of the book</th>
+		<th style="text-align: left">author</th>
+	</tr>
+
+	{% for item in site.data.list %} {% if item.location == "house-2" %}
+	<tr>
+		<td>{{ item.bookshelf }}</td>
+		<td>
+			<a
+				href="{{ site.baseurl }}booklist#{{ item.bookshelf }}"
+				name="{{ item.bookshelf }}"
+				><b>{{ item.title }}</b></a
+			>
+		</td>
+		<td>{{ item.author }}</td>
+	</tr>
+	{% endif %} {% endfor %}
+</table>
