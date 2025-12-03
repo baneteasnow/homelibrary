@@ -59,12 +59,12 @@
 	})
 
 	function cleanLocations() {
-		const items = document.querySelectorAll("#results-container li.location")
-		items.forEach((li) => {
-			const text = li.textContent.trim()
+		const items = document.querySelectorAll("#results-container span.location")
+		items.forEach((span) => {
+			const text = span.textContent.trim()
 			// Boşsa veya literal {location} ise tamamen kaldır
 			if (!text || text === "{location}") {
-				li.remove()
+				span.remove()
 			}
 		})
 	}
