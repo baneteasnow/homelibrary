@@ -38,7 +38,7 @@
 ></script>
 
 <!-- Configuration -->
-<script type="text/javascript">
+<script>
 	SimpleJekyllSearch({
 		searchInput: document.getElementById("search-input"),
 		resultsContainer: document.getElementById("results-container"),
@@ -57,6 +57,24 @@
 		fuzzy: false,
 		exclude: ["Welcome"],
 	})
+
+	function cleanLocations() {
+		const items = document.querySelectorAll("#results-container li.location")
+		items.forEach((li) => {
+			const text = li.textContent.trim()
+			// Boşsa veya literal {location} ise tamamen kaldır
+			if (!text || text === "{location}") {
+				li.remove()
+			}
+		})
+	}
+
+	// Sonuçlar her değiştiğinde temizle
+	const resultsContainer = document.getElementById("results-container")
+	const observer = new MutationObserver(() => {
+		cleanLocations()
+	})
+	observer.observe(resultsContainer, { childList: true, subtree: true })
 </script>
 
 <style>
