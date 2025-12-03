@@ -4,7 +4,6 @@ layout: null
 [
   {% for item in site.data.list %}
     {
-
       "title"      : "{{ item.title }}",
       "url"        : "{{ site.baseurl }}booklist#{{ item.bookshelf }}",
       "author"     : "{{ item.author }}",
@@ -20,7 +19,6 @@ layout: null
       "categories" : "{{ item.categories }}",
       "tbr"        : "{{ item.tbr }}",
       "location"   : "{{ item.location | default: '' }}"
-
     } {% unless forloop.last %},{% endunless %}
   {% endfor %}
 ]
