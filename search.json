@@ -19,7 +19,7 @@ layout: null
       "status2"    : "{{ item.newstatus }}",
       "categories" : "{{ item.categories }}",
       "tbr"        : "{{ item.tbr }}",
-      "location"   : "{{ item.location }}"
+      "location"   : "{{ item.location | default: '' }}"
 
     } {% unless forloop.last %},{% endunless %}
   {% endfor %}
