@@ -50,7 +50,7 @@
 			'{title} | {author} | <span style="text-transform: uppercase !important">{bookshelf}</span>' +
 			"</a>" +
 			"</li>" +
-			'<span class="location">{location}</span>' +
+			'<li class="location">{location}</li>' +
 			"</div>",
 		noResultsText: "No results found",
 		limit: 3000,
@@ -59,12 +59,12 @@
 	})
 
 	function cleanLocations() {
-		const items = document.querySelectorAll("#results-container span.location")
-		items.forEach((span) => {
-			const text = span.textContent.trim()
+		const items = document.querySelectorAll("#results-container li.location")
+		items.forEach((li) => {
+			const text = li.textContent.trim()
 			// Boşsa veya literal {location} ise tamamen kaldır
 			if (!text || text === "{location}") {
-				span.remove()
+				li.remove()
 			}
 		})
 	}
@@ -78,7 +78,7 @@
 </script>
 
 <style>
-	span.location:empty {
+	li.location:empty {
 		display: none;
 	}
 </style>
