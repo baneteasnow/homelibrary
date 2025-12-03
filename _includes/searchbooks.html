@@ -44,13 +44,14 @@
 		resultsContainer: document.getElementById("results-container"),
 		json: "/search.json",
 		searchResultTemplate:
-			'<div style="text-transform: lowercase">' +
+			'<div class="search-result" style="text-transform: lowercase">' +
 			"<li>" +
 			'<a href="{url}" title="{title}">' +
-			'{title} | {author} | <span style="text-transform: uppercase !important">{bookshelf}</span>' +
+			"{title} | {author} | " +
+			'<span style="text-transform: uppercase !important">{bookshelf}</span>' +
+			'<span class="location"> • {loc}</span>' +
 			"</a>" +
 			"</li>" +
-			'<li class="location">{location}</li>' +
 			"</div>",
 		noResultsText: "No results found",
 		limit: 3000,
