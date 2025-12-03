@@ -7,9 +7,6 @@ title: "house-2 List"
 
 {%-include backtotop.html-%}
 <br />
-<div><i>house-2 List</i></div>
-
-<br />
 
 <style>
 	table.zebra tr:nth-child(n + 2):nth-child(even) {
@@ -22,6 +19,8 @@ title: "house-2 List"
 		<th style="text-align: left">#</th>
 		<th style="text-align: left">name of the book</th>
 		<th style="text-align: left">author</th>
+		<th style="text-align: left">info</th>
+		<th style="text-align: left">image</th>
 	</tr>
 
 	{% for item in site.data.list %} {% if item.location == "house-2" %}
@@ -35,6 +34,28 @@ title: "house-2 List"
 			>
 		</td>
 		<td>{{ item.author }}</td>
+		<td>
+			<a
+				name="{{ item.title }}"
+				title="google search"
+				href="https://www.google.com/search?q={{ item.title }}%20{{ item.author }}"
+				target="_blank"
+				rel="noreferrer,nofollow"
+			>
+				google
+			</a>
+		</td>
+		<td>
+			<a
+				name="{{ item.title }}"
+				title="google search"
+				href="https://www.google.com/search?q={{ item.title }}%20{{ item.author }}&tbm=isch"
+				target="_blank"
+				rel="noreferrer,nofollow"
+			>
+				google images
+			</a>
+		</td>
 	</tr>
 	{% endif %} {% endfor %}
 </table>
