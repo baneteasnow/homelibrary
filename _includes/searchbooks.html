@@ -44,7 +44,7 @@
 		resultsContainer: document.getElementById("results-container"),
 		json: "/search.json",
 		searchResultTemplate:
-			'<div style="text-transform: lowercase"><li><a href="{url}" title="{title}">{title} | {author} |<span style="text-transform: uppercase !important"> {bookshelf}</a></span></li></div>',
+			'<div style="text-transform: lowercase"><li><a href="{url}" title="{title}">{title} | {author} |<span style="text-transform: uppercase !important"> {bookshelf}</a></span></li><li>{location}</li></div>',
 		noResultsText: "No results found",
 		limit: 3000,
 		fuzzy: false,
