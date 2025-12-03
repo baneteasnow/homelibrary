@@ -50,7 +50,7 @@
 			'{title} | {author} | <span style="text-transform: uppercase !important">{bookshelf}</span>' +
 			"</a>" +
 			"</li>" +
-			'<li class="location">{location}</li>' +
+			'<span class="location">{location}</span>' +
 			"</div>",
 		noResultsText: "No results found",
 		limit: 3000,
@@ -78,7 +78,7 @@
 </script>
 
 <style>
-	li.location:empty {
+	span.location:empty {
 		display: none;
 	}
 </style>
