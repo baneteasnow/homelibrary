@@ -18,7 +18,7 @@ layout: null
       "status2"    : "{{ item.newstatus }}",
       "categories" : "{{ item.categories }}",
       "tbr"        : "{{ item.tbr }}",
-      "location"   : "{% if item.location and item.location != '{location}' %}{{ item.location }}{% endif %}"
+      "secondline" : "{% if item.location %}<li class=\"location\">{{ item.location }}</li>{% endif %}"
     } {% unless forloop.last %},{% endunless %}
   {% endfor %}
 ]
