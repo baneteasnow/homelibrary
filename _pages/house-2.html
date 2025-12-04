@@ -63,9 +63,12 @@ title: "house-2 List"
 	</tr>
 	{% endif %} {% endfor %}
 </table>
-
-<!-- read size -->
-{% assign read_data = site.data.list %} {% assign status_read = read_data |
-where: "status", "Read" | size %}
+<br />
+<div style="clear: both"></div>
+<!-- house-2 size -->
+{% assign loc_data = site.data.list %} {% assign status_house2 = loc_data |
+where: "location", "house-2" | size %}
 <!-- {{ }} -->
-<i>read: {{ status_read }} </i>
+<i> {{ status_house2 }} in house-2</i>
+<br />
+<div style="clear: both"></div>
