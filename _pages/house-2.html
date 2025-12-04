@@ -19,6 +19,8 @@ title: "house-2 List"
 		<th style="text-align: left">#</th>
 		<th style="text-align: left">name of the book</th>
 		<th style="text-align: left">author</th>
+		<th style="text-align: left">year</th>
+		<th style="text-align: left">page</th>
 		<th style="text-align: left">info</th>
 		<th style="text-align: left">image</th>
 	</tr>
@@ -45,6 +47,8 @@ title: "house-2 List"
 				google
 			</a>
 		</td>
+		<td>{{ item.year }}</td>
+		<td>{{ item.page }}</td>
 		<td>
 			<a
 				name="{{ item.title }}"
@@ -59,3 +63,9 @@ title: "house-2 List"
 	</tr>
 	{% endif %} {% endfor %}
 </table>
+
+<!-- read size -->
+{% assign read_data = site.data.list %} {% assign status_read = read_data |
+where: "status", "Read" | size %}
+<!-- {{ }} -->
+<i>read: {{ status_read }} </i>
