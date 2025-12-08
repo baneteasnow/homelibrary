@@ -37567,5 +37567,39 @@
 		"categories": "SocietyCulture",
 		"reread": "no",
 		"tbr": "read"
+	},
+	{
+		"bookshelf": 3340,
+		"No": 2340,
+		"title": "Kalp Saati - Burada ve Simdi Baglanti Kurmak",
+		"publisher": "Pegasus Yayinlari",
+		"author": "Irvin D. Yalom",
+		"lang": "Turkce",
+		"page": 304,
+		"year": "2025",
+		"notes": "B-8",
+		"status": "UnRead",
+		"newstatus": "n/a",
+		"categories": "n/a",
+		"reread": "n/a",
+		"tbr": "yes",
+		"location": "house-2"
+	},
+	{
+		"bookshelf": 3341,
+		"No": 2341,
+		"title": "Anlam, Cesaret, Olum, Hiclik",
+		"publisher": "Epsilon Yayinevi",
+		"author": "Ferhat Jak Icoz",
+		"lang": "Turkce",
+		"page": 464,
+		"year": "2025",
+		"notes": "A-7",
+		"status": "UnRead",
+		"newstatus": "n/a",
+		"categories": "n/a",
+		"reread": "n/a",
+		"tbr": "yes",
+		"location": "house-2"
 	}
 ]
