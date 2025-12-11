@@ -23,6 +23,10 @@ published: true
 	#results-container {
 		margin: .5rem 0;
 	}
+	#results-container .location {
+	font-size: 0.8em;
+	color: #888;
+  }
 </style>
 
 <!-- Html Elements for Search -->

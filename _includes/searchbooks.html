@@ -18,6 +18,10 @@
 	#results-container {
 		margin: 0.5rem 0;
 	}
+	#results-container .location {
+		font-size: 0.8em;
+		color: #888;
+	}
 </style>
 
 <!-- Html Elements for  Search -->
@@ -38,38 +42,30 @@
 ></script>
 
 <!-- Configuration -->
-<script>
+
+	<script type="text/javascript">
 	SimpleJekyllSearch({
 		searchInput: document.getElementById("search-input"),
 		resultsContainer: document.getElementById("results-container"),
 		json: "/search.json",
 		searchResultTemplate:
 			'<div style="text-transform: lowercase">' +
-			"<li>" +
-			'<a href="{url}" title="{title}">' +
-			'{title} | {author} | <span style="text-transform: uppercase !important">{bookshelf}</span>' +
-			"</a>" +
-			"</li>" +
-			'<li class="location">{location}</li>' +
-			"</div>",
+				'<li>' +
+					'<a href="{url}" title="{title}">' +
+						'{title} | {author} | ' +
+						'<span style="text-transform: uppercase !important">{bookshelf}</span>' +
+						' | <span class="location {location}">{location}</span>' +
+					'</a>' +
+				'</li>' +
+			'</div>',
 		noResultsText: "No results found",
 		limit: 3000,
 		fuzzy: false,
 		exclude: ["Welcome"],
 	})
+</script>
 
-	function cleanLocations() {
-		const items = document.querySelectorAll("#results-container li.location")
-		items.forEach((li) => {
-			const text = li.textContent.trim()
-			// Boşsa veya literal {location} ise tamamen kaldır
-			if (!text || text === "{location}") {
-				li.remove()
-			}
-		})
-	}
-
-	// Sonuçlar her değiştiğinde temizle
+	// clean locations each time results have changed
 	const resultsContainer = document.getElementById("results-container")
 	const observer = new MutationObserver(() => {
 		cleanLocations()
@@ -81,6 +77,9 @@
 	li.location:empty {
 		display: none;
 	}
+	.location.homelibrary {
+	color: #888;
+}
 </style>
 <br />
 <br />
