@@ -43,21 +43,21 @@
 
 <!-- Configuration -->
 
-	<script type="text/javascript">
+<script type="text/javascript">
 	SimpleJekyllSearch({
 		searchInput: document.getElementById("search-input"),
 		resultsContainer: document.getElementById("results-container"),
 		json: "/search.json",
 		searchResultTemplate:
 			'<div style="text-transform: lowercase">' +
-				'<li>' +
-					'<a href="{url}" title="{title}">' +
-						'{title} | {author} | ' +
-						'<span style="text-transform: uppercase !important">{bookshelf}</span>' +
-						' | <span class="location {location}">{location}</span>' +
-					'</a>' +
-				'</li>' +
-			'</div>',
+			"<li>" +
+			'<a href="{url}" title="{title}">' +
+			"{title} | {author} | " +
+			'<span style="text-transform: uppercase !important">{bookshelf}</span>' +
+			'<span class="location {location}"> | {location}</span>' +
+			"</a>" +
+			"</li>" +
+			"</div>",
 		noResultsText: "No results found",
 		limit: 3000,
 		fuzzy: false,
@@ -65,21 +65,16 @@
 	})
 </script>
 
-	// clean locations each time results have changed
-	const resultsContainer = document.getElementById("results-container")
-	const observer = new MutationObserver(() => {
-		cleanLocations()
-	})
-	observer.observe(resultsContainer, { childList: true, subtree: true })
-</script>
-
 <style>
 	li.location:empty {
 		display: none;
 	}
 	.location.homelibrary {
-	color: #888;
-}
+		color: #888;
+	}
+	.location:empty {
+		display: none;
+	}
 </style>
 <br />
 <br />

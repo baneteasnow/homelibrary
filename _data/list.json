@@ -10158,7 +10158,8 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "no"
+		"tbr": "no",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1599,
@@ -10174,7 +10175,8 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "no"
+		"tbr": "no",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1600,
@@ -10190,7 +10192,8 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "no"
+		"tbr": "no",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1601,
@@ -10207,7 +10210,8 @@
 		"categories": "n/a",
 		"reread": "n/a",
 		"note": "reading through the year",
-		"tbr": "no"
+		"tbr": "no",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1602,
@@ -10223,7 +10227,8 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "no"
+		"tbr": "no",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1603,
@@ -10239,7 +10244,8 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "yes"
+		"tbr": "yes",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1604,
@@ -10255,7 +10261,8 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "no"
+		"tbr": "no",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1605,
@@ -10271,7 +10278,8 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "yes"
+		"tbr": "yes",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1606,
@@ -10287,7 +10295,8 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "yes"
+		"tbr": "yes",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1607,
@@ -10303,7 +10312,8 @@
 		"reread": "yes",
 		"newstatus": "updated",
 		"categories": "n/a",
-		"tbr": "read"
+		"tbr": "read",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1608,
@@ -10319,7 +10329,8 @@
 		"reread": "yes",
 		"newstatus": "updated",
 		"categories": "TechnologyTheDigitalWorld",
-		"tbr": "read"
+		"tbr": "read",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1609,
@@ -10335,7 +10346,8 @@
 		"newstatus": "ToBeUpdated",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "read"
+		"tbr": "read",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1610,
@@ -10351,7 +10363,8 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "no"
+		"tbr": "no",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1611,
@@ -22131,7 +22144,8 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "no"
+		"tbr": "no",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 2345,
@@ -22147,7 +22161,8 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "yes"
+		"tbr": "yes",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 2346,
@@ -22163,7 +22178,8 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "yes"
+		"tbr": "yes",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 2347,
@@ -22179,7 +22195,8 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "no"
+		"tbr": "no",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 2348,
@@ -22195,7 +22212,8 @@
 		"reread": "yes",
 		"newstatus": "updated",
 		"categories": "n/a",
-		"tbr": "read"
+		"tbr": "read",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 2349,
