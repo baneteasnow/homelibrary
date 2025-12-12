@@ -22,6 +22,9 @@ reading_data | where: "status", "Reading" | size %}
 <!-- tbr_yes -->
 {% assign tbr_data = site.data.list %} {% assign tbr_yes = tbr_data | where:
 "tbr", "yes" | size %}
+<!-- location house-2 -->
+{% assign loc_data = site.data.list %} {% assign status_house2 = loc_data |
+where: "location", "house-2" | size %}
 <!-- plus: '50' = read as ebook - - - includes and comes from: reread.html & tobeupdated.html -->
 <div style="color: #b7b2b2">
 	<i>read: {{ status_read | plus: gaveaway_yes | plus: '50' }}</i>
@@ -87,7 +90,7 @@ reading_data | where: "status", "Reading" | size %}
 		>{{ tbr_yes }}
 	</i>
 </div>
-
+<i> {{ status_house2 }} in house-2</i>
 <!-- <br />
 <div>reread_yes {{ reread_yes }}</div>
 <div>ereread_yes {{ ereread_yes }}</div>
