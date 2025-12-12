@@ -71,11 +71,3 @@ where: "location", "house-2" | size %}
 <!-- {{ }} -->
 <i> {{ status_house2 }} in house-2</i>
 <br />
-<div style="clear: both"></div>
-{% for item in site.data.list %} {% if item.location != "house-2" and
-item.location != "homelibrary" %} {{ item.title }} {% endif %} {% endfor %}
-<br />
-<div style="clear: both"></div>
-{% assign loc_data1 = site.data.list %} {% assign status1_house2 = loc_data1 |
-where: "location", "house-2" | size %}
-<i> {{ status1_house2 }} in house-2</i>

@@ -1203,7 +1203,8 @@
 		"reread": "yes",
 		"newstatus": "n/a",
 		"categories": "n/a",
-		"tbr": "read"
+		"tbr": "read",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1072,
@@ -8663,7 +8664,8 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "no"
+		"tbr": "no",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1511,
@@ -16621,7 +16623,8 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "yes"
+		"tbr": "yes",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1979,
@@ -16637,7 +16640,8 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "no"
+		"tbr": "no",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1980,
@@ -16653,7 +16657,8 @@
 		"reread": "yes",
 		"newstatus": "ToBeUpdated",
 		"categories": "n/a",
-		"tbr": "read"
+		"tbr": "read",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1981,
@@ -16686,7 +16691,8 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "yes"
+		"tbr": "yes",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1983,
@@ -16702,7 +16708,8 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "no"
+		"tbr": "no",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1984,
@@ -16718,7 +16725,8 @@
 		"reread": "yes",
 		"newstatus": "ToBeUpdated",
 		"categories": "n/a",
-		"tbr": "read"
+		"tbr": "read",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1985,
