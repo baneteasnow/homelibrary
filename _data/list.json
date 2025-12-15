@@ -39804,5 +39804,22 @@
 		"reread": "n/a",
 		"tbr": "yes",
 		"location": "house-2"
+	},
+	{
+		"bookshelf": 3342,
+		"No": 2342,
+		"title": "Kaosu Anlamlandirmak - Daha Iyi Bir Dunya Icin Daha Iyi Bir Ekonomi",
+		"publisher": "Scala Yayincilik",
+		"author": "J. Doyne Farmer",
+		"lang": "Turkce",
+		"page": 448,
+		"year": "2025",
+		"notes": "A-7",
+		"status": "UnRead",
+		"newstatus": "n/a",
+		"categories": "n/a",
+		"reread": "n/a",
+		"tbr": "yes",
+		"location": "house-2"
 	}
 ]
