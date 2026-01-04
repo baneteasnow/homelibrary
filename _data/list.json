@@ -39923,5 +39923,22 @@
 		"reread": "n/a",
 		"tbr": "yes",
 		"location": "house-2"
+	},
+	{
+		"bookshelf": 3348,
+		"No": 2348,
+		"title": "Hikayeni Yeniden Yaz",
+		"publisher": "Alfa Yayinlari",
+		"author": "Ortamlarda Satilacak Bilgi",
+		"lang": "Turkce",
+		"page": 264,
+		"year": "2025",
+		"notes": "F-7",
+		"status": "UnRead",
+		"newstatus": "n/a",
+		"categories": "n/a",
+		"reread": "n/a",
+		"tbr": "yes",
+		"location": "house-2"
 	}
 ]
