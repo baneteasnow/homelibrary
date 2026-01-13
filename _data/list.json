@@ -39951,10 +39951,10 @@
 		"page": 192,
 		"year": "2025",
 		"notes": "D-5",
-		"status": "UnRead",
-		"newstatus": "n/a",
+		"status": "Read",
+		"newstatus": "ToBeUpdated",
 		"categories": "n/a",
-		"reread": "n/a",
+		"reread": "no",
 		"tbr": "yes",
 		"location": "house-2"
 	},
