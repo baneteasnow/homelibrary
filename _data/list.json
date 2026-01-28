@@ -927,11 +927,11 @@
 		"page": 312,
 		"year": "2017",
 		"notes": "G-5",
-		"status": "Reading",
+		"status": "Read",
 		"newstatus": "n/a",
 		"categories": "SocietyCulture",
 		"reread": "n/a",
-		"tbr": "Reading",
+		"tbr": "read",
 		"location": "house-2"
 	},
 	{
@@ -38557,11 +38557,11 @@
 		"page": 208,
 		"year": "2025",
 		"notes": "B-7",
-		"status": "UnRead",
+		"status": "Reading",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "yes",
+		"tbr": "Reading",
 		"location": "house-2"
 	},
 	{
