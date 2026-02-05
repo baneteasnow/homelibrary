@@ -37044,11 +37044,11 @@
 		"page": 240,
 		"year": "2021",
 		"notes": "H-5",
-		"status": "UnRead",
+		"status": "Reading",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "yes",
+		"tbr": "Reading",
 		"location": "house-2"
 	},
 	{
@@ -38557,11 +38557,11 @@
 		"page": 208,
 		"year": "2025",
 		"notes": "B-7",
-		"status": "Reading",
-		"newstatus": "n/a",
+		"status": "Read",
+		"newstatus": "ToBeUpdated",
 		"categories": "n/a",
-		"reread": "n/a",
-		"tbr": "Reading",
+		"reread": "no",
+		"tbr": "read",
 		"location": "house-2"
 	},
 	{
@@ -39689,18 +39689,18 @@
 	{
 		"bookshelf": 3335,
 		"No": 2335,
-		"title": "Terapistime Anlatamadiklarim Kendimizi Iyilestirmek Icin Anlattigimiz Gercekler",
+		"title": "Terapistime Anlatamadiklarim - Kendimizi Iyilestirmek Icin Anlattigimiz Gercekler",
 		"publisher": "Eksik Parca Yayinlari",
 		"author": "Michelle M. May",
 		"lang": "Turkce",
 		"page": 280,
 		"year": "2025",
 		"notes": "B-9",
-		"status": "UnRead",
+		"status": "Reading",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
-		"tbr": "yes",
+		"tbr": "Reading",
 		"location": "house-2"
 	},
 	{
