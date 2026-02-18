@@ -40025,5 +40025,22 @@
 		"reread": "n/a",
 		"tbr": "yes",
 		"location": "house-2"
+	},
+	{
+		"bookshelf": 3355,
+		"No": 2355,
+		"title": "Yedi Olumcul Gunah ve Kadin",
+		"publisher": "Kairos Kitap",
+		"author": "Elise Loehnen",
+		"lang": "Turkce",
+		"page": 408,
+		"year": "2025",
+		"notes": "C-4",
+		"status": "UnRead",
+		"newstatus": "n/a",
+		"categories": "n/a",
+		"reread": "n/a",
+		"tbr": "yes",
+		"location": "house-2"
 	}
 ]
