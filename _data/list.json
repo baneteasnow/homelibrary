@@ -30785,11 +30785,11 @@
 		"page": 208,
 		"year": "2024",
 		"notes": "C-10",
-		"status": "Reading",
-		"newstatus": "n/a",
+		"status": "Read",
+		"newstatus": "ToBeUpdated",
 		"categories": "HistoryPoliticalThought",
-		"reread": "n/a",
-		"tbr": "Reading",
+		"reread": "no",
+		"tbr": "read",
 		"location": "house-2"
 	},
 	{
@@ -37401,11 +37401,11 @@
 		"page": 264,
 		"year": "2025",
 		"notes": "B-6",
-		"status": "Reading",
-		"newstatus": "n/a",
+		"status": "Read",
+		"newstatus": "ToBeUpdated",
 		"categories": "PhilosophyMeaning",
-		"reread": "n/a",
-		"tbr": "Reading",
+		"reread": "no",
+		"tbr": "read",
 		"location": "house-2"
 	},
 	{
@@ -38982,11 +38982,11 @@
 		"page": 288,
 		"year": "2025",
 		"notes": "C-7",
-		"status": "Reading",
-		"newstatus": "n/a",
+		"status": "Read",
+		"newstatus": "ToBeUpdated",
 		"categories": "TechnologyTheDigitalWorld",
-		"reread": "n/a",
-		"tbr": "Reading",
+		"reread": "no",
+		"tbr": "read",
 		"location": "house-2"
 	},
 	{
@@ -40053,11 +40053,11 @@
 		"page": 136,
 		"year": "2024",
 		"notes": "C-4",
-		"status": "UnRead",
+		"status": "Reading",
 		"newstatus": "n/a",
-		"categories": "n/a",
+		"categories": "SocietyCulture",
 		"reread": "n/a",
-		"tbr": "yes",
+		"tbr": "Reading",
 		"location": "house-2"
 	},
 	{
@@ -40070,11 +40070,11 @@
 		"page": 432,
 		"year": "2026",
 		"notes": "C-4",
-		"status": "UnRead",
+		"status": "Reading",
 		"newstatus": "n/a",
-		"categories": "n/a",
+		"categories": "BiographyLifeStories",
 		"reread": "n/a",
-		"tbr": "yes",
+		"tbr": "Reading",
 		"location": "house-2"
 	},
 	{
@@ -40087,11 +40087,11 @@
 		"page": 128,
 		"year": "2025",
 		"notes": "C-4",
-		"status": "UnRead",
+		"status": "Reading",
 		"newstatus": "n/a",
-		"categories": "n/a",
+		"categories": "SocietyCulture",
 		"reread": "n/a",
-		"tbr": "yes",
+		"tbr": "Reading",
 		"location": "house-2"
 	}
 ]
