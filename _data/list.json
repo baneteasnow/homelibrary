@@ -38985,7 +38985,7 @@
 		"status": "Read",
 		"newstatus": "ToBeUpdated",
 		"categories": "TechnologyTheDigitalWorld",
-		"reread": "no",
+		"reread": "yes",
 		"tbr": "read",
 		"location": "house-2"
 	},
@@ -39955,7 +39955,7 @@
 		"newstatus": "ToBeUpdated",
 		"categories": "CreativityExpression",
 		"reread": "no",
-		"tbr": "yes",
+		"tbr": "read",
 		"location": "house-2"
 	},
 	{
@@ -40070,11 +40070,11 @@
 		"page": 432,
 		"year": "2026",
 		"notes": "C-4",
-		"status": "Reading",
-		"newstatus": "n/a",
+		"status": "Read",
+		"newstatus": "ToBeUpdated",
 		"categories": "BiographyLifeStories",
-		"reread": "n/a",
-		"tbr": "Reading",
+		"reread": "no",
+		"tbr": "read",
 		"location": "house-2"
 	},
 	{
