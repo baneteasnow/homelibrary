@@ -11,7 +11,7 @@ title: "Home Library Book List"
 </i> -->
 {%-include backtotop.html-%}
 <br />
-{% for item in site.data.list %}
+{% for item in site.data.list reversed %}
 <h4>
 	<a
 		href="{{ site.baseurl }}booklist#{{ item.bookshelf }}"
@@ -112,7 +112,7 @@ title: "Home Library Book List"
 		<i>Environment & Sustainable Living</i>
 		{% elsif item.categories == "HealthNutrition" %}
 		<i>Health & Nutrition </i>
-		{% elsif item.categories == "HealthNutrition" %}
+		{% elsif item.categories == "HistoryPoliticalThought" %}
 		<i>History & Political Thought</i>
 		{% elsif item.categories == "PersonalGrowthProductivity" %}
 		<i>Personal Growth & Productivity</i>
