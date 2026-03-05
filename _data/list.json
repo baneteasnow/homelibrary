@@ -40246,5 +40246,22 @@
 		"reread": "n/a",
 		"tbr": "yes",
 		"location": "house-2"
+	},
+	{
+		"bookshelf": 3368,
+		"No": 2368,
+		"title": "Toplumsal Cinsiyet ve Bilim",
+		"publisher": "Metis Yayinlari",
+		"author": "Evelyn Fox Keller",
+		"lang": "Turkce",
+		"page": 232,
+		"year": "2007",
+		"notes": "C-4",
+		"status": "UnRead",
+		"newstatus": "n/a",
+		"categories": "n/a",
+		"reread": "n/a",
+		"tbr": "yes",
+		"location": "house-2"
 	}
 ]
