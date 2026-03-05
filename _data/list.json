@@ -40263,5 +40263,39 @@
 		"reread": "n/a",
 		"tbr": "yes",
 		"location": "house-2"
+	},
+	{
+		"bookshelf": 3369,
+		"No": 2369,
+		"title": "Sevmek Sevilmek Cinsellik",
+		"publisher": "Okuyan Us Yayincilik",
+		"author": "Nihan Kaya",
+		"lang": "Turkce",
+		"page": 320,
+		"year": "2026",
+		"notes": "C-4",
+		"status": "UnRead",
+		"newstatus": "n/a",
+		"categories": "n/a",
+		"reread": "n/a",
+		"tbr": "yes",
+		"location": "house-2"
+	},
+	{
+		"bookshelf": 3370,
+		"No": 2370,
+		"title": "Feminizm Herkes Icindir - Tutkulu Politika",
+		"publisher": "BGST Yayinlari",
+		"author": "Bell Hooks",
+		"lang": "Turkce",
+		"page": 146,
+		"year": "2026",
+		"notes": "C-4",
+		"status": "UnRead",
+		"newstatus": "n/a",
+		"categories": "n/a",
+		"reread": "n/a",
+		"tbr": "yes",
+		"location": "house-2"
 	}
 ]
