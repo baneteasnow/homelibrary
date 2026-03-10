@@ -40433,5 +40433,22 @@
 		"reread": "n/a",
 		"tbr": "Reading",
 		"location": "house-2"
+	},
+	{
+		"bookshelf": 3379,
+		"No": 2379,
+		"title": "Jacques Lacan’in Kurami Uzerine Bes Ders",
+		"publisher": "Livera Yayinevi",
+		"author": "J. D. Nasio",
+		"lang": "Turkce",
+		"page": 256,
+		"year": "2025",
+		"notes": "C-4",
+		"status": "UnRead",
+		"newstatus": "n/a",
+		"categories": "n/a",
+		"reread": "n/a",
+		"tbr": "yes",
+		"location": "house-2"
 	}
 ]
