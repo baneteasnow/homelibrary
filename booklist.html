@@ -138,9 +138,7 @@ title: "Home Library Book List"
 		class="decorated"
 		style="font-size: 85%; color: darkgray"
 	>
-		{% if item.image == "n/a" %}
-		<div style="visibility: hidden"></div>
-		{% else %}
+		{% if item.image != "n/a" %}
 		<i
 			><a
 				name="{{ item.title }}"
@@ -152,6 +150,9 @@ title: "Home Library Book List"
 				image
 			</a></i
 		>
+		{% else %}
+		<div style="visibility: hidden"></div>
+		{% endif %}
 	</div>
 	<span
 		class="decorated"
