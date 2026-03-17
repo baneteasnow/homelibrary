@@ -40433,7 +40433,7 @@
 		"reread": "n/a",
 		"tbr": "Reading",
 		"location": "house-2",
-		"img": "https://www.next52books.com/assets/now/prozac-nation.jpg"
+		"image": "https://www.next52books.com/assets/now/prozac-nation.jpg"
 	},
 	{
 		"bookshelf": 3379,
@@ -40518,7 +40518,8 @@
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "yes",
-		"location": "house-2"
+		"location": "house-2",
+		"image": "n/a"
 	},
 	{
 		"bookshelf": 3384,
@@ -40535,7 +40536,8 @@
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "yes",
-		"location": "house-2"
+		"location": "house-2",
+		"image": "n/a"
 	},
 	{
 		"bookshelf": 3385,
@@ -40552,6 +40554,7 @@
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "yes",
-		"location": "house-2"
+		"location": "house-2",
+		"image": "n/a"
 	}
 ]

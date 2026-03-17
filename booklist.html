@@ -134,22 +134,25 @@ title: "Home Library Book List"
 		<div style="visibility: hidden"></div>
 		{% endif %}
 	</div>
-	<span
+	<div
 		class="decorated"
-		style="font-size: 85%"
+		style="font-size: 85%; color: darkgray"
 	>
+		{% if item.image == "n/a" %}
+		<div style="visibility: hidden"></div>
+		{% else %}
 		<i
 			><a
 				name="{{ item.title }}"
 				title="image"
-				href="{{ item.img }}"
+				href="{{ item.image }}"
 				target="_blank"
 				rel="noreferrer,nofollow"
 			>
 				image
 			</a></i
 		>
-	</span>
+	</div>
 	<span
 		class="decorated"
 		style="font-size: 85%"
