@@ -1,0 +1,25 @@
+---
+layout: page
+title: "books"
+published: true
+last_modified_at: 2026-03-23
+---
+
+{% for item in site.data.list reversed %} {% if item.image !=
+"https://www.next52books.com" %}
+<a href="{{ item.image }}"
+	><img
+		src="{{ item.image }}"
+		style="float: left; height: 64%; margin: 0 0 1% 1%; width: 17%"
+		title="{{ item.title }}"
+/></a>
+{% endif %} {% endfor %}
+<br />
+<div style="clear: both"></div>
+<br />
+<div
+	class="link1"
+	style="position: fixed; right: 3%; top: 85%"
+>
+	<a href="#"><i>yukarı</i> &#8593;</a>
+</div>

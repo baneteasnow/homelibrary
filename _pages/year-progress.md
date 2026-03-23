@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Year Progress
+published: true
+last_modified_at: 2026-03-23
 ---
 
 <div class="year-progress-wrapper">
