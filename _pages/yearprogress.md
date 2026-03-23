@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Year Progress
+title: ""
 published: true
 last_modified_at: 2026-03-23
 ---
