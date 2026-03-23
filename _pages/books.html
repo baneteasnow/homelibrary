@@ -23,3 +23,24 @@ last_modified_at: 2026-03-23
 >
 	<a href="#"><i>yukarı</i> &#8593;</a>
 </div>
+
+<div style="clear: both"></div>
+{% assign image_count = 0 %} {% for item in site.data.list reversed %} {% if
+item.image != "https://www.next52books.com" %} {% assign image_count =
+image_count | plus: 1 %}
+
+<a href="{{ item.image }}">
+	<img
+		src="{{ item.image }}"
+		style="float: left; height: 64%; margin: 0 0 1% 1%; width: 17%"
+		title="{{ item.title }}"
+	/>
+</a>
+
+{% endif %} {% endfor %}
+
+<p style="margin-top: 20px">Total images: {{ image_count }}</p>
+<div style="clear: both"></div>
+{% assign filtered = site.data.list | where_exp: "item", "item.image !=
+'https://www.next52books.com'" %} {{ filtered.size }}
+<div style="clear: both"></div>
