@@ -9,16 +9,19 @@ title: "Home Library Book List"
 <!-- <i>
 	<a href="/">Search</a>
 </i> -->
-{%-include backtotop.html-%}
+{%- include backtotop.html -%}
 <br />
+
 {% for item in site.data.list reversed %}
 <h4>
 	<a
 		href="{{ site.baseurl }}booklist#{{ item.bookshelf }}"
 		name="{{ item.bookshelf }}"
-		>{{ item.title }}</a
 	>
+		{{ item.title }}
+	</a>
 </h4>
+
 <div style="margin-left: 5%">
 	<div
 		class="decorated"
@@ -26,36 +29,42 @@ title: "Home Library Book List"
 	>
 		<i>{{ item.notes }}</i>
 	</div>
+
 	<div
 		class="decorated"
 		style="font-size: 85%"
 	>
 		<i>{{ item.author }}</i>
 	</div>
+
 	<div
 		class="decorated"
 		style="font-size: 85%"
 	>
 		<i>{{ item.year }}</i>
 	</div>
+
 	<div
 		class="decorated"
 		style="font-size: 85%"
 	>
 		<i>{{ item.publisher }}</i>
 	</div>
+
 	<div
 		class="decorated"
 		style="font-size: 85%"
 	>
 		<i>{{ item.page }} sayfa</i>
 	</div>
+
 	<div
 		class="decorated"
 		style="font-size: 85%"
 	>
 		<i># {{ item.bookshelf }}</i>
 	</div>
+
 	<div
 		class="decorated"
 		style="font-size: 85%; color: lightgray"
@@ -66,6 +75,7 @@ title: "Home Library Book List"
 		<i>{{ item.status }}</i>
 		{% endif %}
 	</div>
+
 	<div
 		class="decorated"
 		style="font-size: 85%; color: lightgray"
@@ -76,6 +86,7 @@ title: "Home Library Book List"
 		<i>to be updated</i>
 		{% endif %}
 	</div>
+
 	<div
 		class="decorated"
 		style="font-size: 85%; color: lightgray"
@@ -86,6 +97,7 @@ title: "Home Library Book List"
 		<i>reread</i>
 		{% endif %}
 	</div>
+
 	<div
 		class="decorated"
 		style="font-size: 85%; color: lightgray"
@@ -96,6 +108,7 @@ title: "Home Library Book List"
 		<div style="visibility: hidden"></div>
 		{% endif %}
 	</div>
+
 	<div
 		class="decorated"
 		style="font-size: 85%; color: darkgray"
@@ -111,7 +124,7 @@ title: "Home Library Book List"
 		{% elsif item.categories == "EnvironmentSustainableLiving" %}
 		<i>Environment & Sustainable Living</i>
 		{% elsif item.categories == "HealthNutrition" %}
-		<i>Health & Nutrition </i>
+		<i>Health & Nutrition</i>
 		{% elsif item.categories == "HistoryPoliticalThought" %}
 		<i>History & Political Thought</i>
 		{% elsif item.categories == "PersonalGrowthProductivity" %}
@@ -134,13 +147,14 @@ title: "Home Library Book List"
 		<div style="visibility: hidden"></div>
 		{% endif %}
 	</div>
+
 	<div
 		class="decorated"
 		style="font-size: 85%; color: darkgray"
 	>
-		{% if item.image != "n/a" %}
-		<i
-			><a
+		{% if item.image != "https://www.next52books.com" %}
+		<i>
+			<a
 				name="{{ item.title }}"
 				title="image"
 				href="{{ item.image }}"
@@ -148,18 +162,19 @@ title: "Home Library Book List"
 				rel="noreferrer,nofollow"
 			>
 				image
-			</a></i
-		>
+			</a>
+		</i>
 		{% else %}
 		<div style="visibility: hidden"></div>
 		{% endif %}
 	</div>
+
 	<span
 		class="decorated"
 		style="font-size: 85%"
 	>
-		<i
-			><a
+		<i>
+			<a
 				name="{{ item.title }}"
 				title="google search"
 				href="https://www.google.com/search?q={{ item.title }}%20{{ item.author }}"
@@ -167,16 +182,18 @@ title: "Home Library Book List"
 				rel="noreferrer,nofollow"
 			>
 				google
-			</a></i
-		>
+			</a>
+		</i>
 	</span>
+
 	|
+
 	<span
 		class="decorated"
 		style="font-size: 85%"
 	>
-		<i
-			><a
+		<i>
+			<a
 				name="{{ item.title }}"
 				title="google search"
 				href="https://www.google.com/search?q={{ item.title }}%20{{ item.author }}&tbm=isch"
@@ -184,10 +201,11 @@ title: "Home Library Book List"
 				rel="noreferrer,nofollow"
 			>
 				google images
-			</a></i
-		>
+			</a>
+		</i>
 	</span>
 </div>
 {% endfor %}
+
 <br />
 <br />
