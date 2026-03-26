@@ -1,13 +1,13 @@
 ---
 layout: page
-title: ""
+title: "2026 year progress bar"
 published: true
 last_modified_at: 2026-03-23
 ---
 
 <div class="year-progress-wrapper">
   <div class="year-progress-text" id="yearText"></div>
-  <div class="year-progress-bar">
+  <div class="year-progress-bar" title="2026">
     <div class="year-progress-fill" id="yearFill"></div>
   </div>
 </div>
