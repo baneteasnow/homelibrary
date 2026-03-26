@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: page-6
 title: "2026 year progress bar"
 published: true
 last_modified_at: 2026-03-23
