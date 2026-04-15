@@ -43027,5 +43027,23 @@
 		"tbr": "yes",
 		"image": "https://www.next52books.com",
 		"location": "house-2"
+	},
+	{
+		"bookshelf": 3391,
+		"No": 2391,
+		"title": "Freud - Goruntunun Ortasindaki Karanlik",
+		"publisher": "Yapi Kredi Yayinlari",
+		"author": "Louis Breger",
+		"lang": "Turkce",
+		"page": 636,
+		"year": "2016",
+		"notes": "C-4",
+		"status": "UnRead",
+		"newstatus": "n/a",
+		"categories": "n/a",
+		"reread": "n/a",
+		"tbr": "yes",
+		"image": "https://www.next52books.com",
+		"location": "house-2"
 	}
 ]
