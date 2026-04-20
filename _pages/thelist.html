@@ -25,7 +25,8 @@ title: "the list"
 		<th style="text-align: left">reading?</th>
 		<th style="text-align: left">tbr?</th>
 		<th style="text-align: left">reread?</th>
-		<th style="text-align: left">place</th>
+		<th style="text-align: left">shelf</th>
+		<th style="text-align: left">location</th>
 		<th style="text-align: left">info</th>
 		<th style="text-align: left">image</th>
 	</tr>
@@ -134,6 +135,7 @@ title: "the list"
 			endif -%}
 		</td>
 		<td>{{ item.notes }}</td>
+		<td>{{ item.location }}</td>
 		<td>
 			<a
 				name="{{ item.title }}"
