@@ -1,0 +1,40 @@
+---
+layout: null
+published: true
+permalink: /the-list.csv
+---
+
+{% assign items = site.data.list.item | default: site.data.list %} #,"name of
+the
+book",author,year,page,category,read?,reading?,tbr?,reread?,shelf,location,info,image
+{% for item in items reversed %} {% assign read_val = item.status | default:
+"UnRead" %} {% assign tbr_val = item.tbr | default: "" | downcase %} {% assign
+reread_val = item.reread | default: "" | downcase %} {% capture category_name %}
+{% case item.categories %} {% when "BiographyLifeStories" %}Biography & Life
+Stories {% when "BusinessEconomics" %}Business & Economics {% when
+"ConsumerMarketing" %}Consumer & Marketing {% when "CreativityExpression"
+%}Creativity & Expression {% when "EnvironmentSustainableLiving" %}Environment &
+Sustainable Living {% when "HealthNutrition" %}Health & Nutrition {% when
+"HistoryPoliticalThought" %}History & Political Thought {% when
+"PersonalGrowthProductivity" %}Personal Growth & Productivity {% when
+"PhilosophyMeaning" %}Philosophy & Meaning {% when "PsychologyMentalLife"
+%}Psychology & Mental Life {% when "SimpleLivingEverydayComforts" %}Simple
+Living & Everyday Comforts {% when "ScienceDiscovery" %}Science & Discovery {%
+when "SocietyCulture" %}Society & Culture {% when "TechnologyTheDigitalWorld"
+%}Technology & the Digital World {% when "WorkCareer" %}Work & Career {% else
+%}category? {% endcase %} {% endcapture %} {% capture read_text %}{% if read_val
+!= "UnRead" %}yes{% else %}no{% endif %}{% endcapture %} {% capture reading_text
+%}{% if read_val == "Reading" %}yes{% else %}no{% endif %}{% endcapture %} {%
+capture tbr_text %}{% if tbr_val == "yes" or tbr_val == "true" %}yes{% else
+%}no{% endif %}{% endcapture %} {% capture reread_text %}{% if reread_val ==
+"yes" or reread_val == "true" %}yes{% else %}no{% endif %}{% endcapture %} {{
+item.bookshelf | jsonify }},{{ item.title | default: "" | jsonify }},{{
+item.author | default: "" | jsonify }},{{ item.year | default: "" | jsonify
+}},{{ item.page | default: "" | jsonify }},{{ category_name | strip | jsonify
+}},{{ read_text | strip | jsonify }},{{ reading_text | strip | jsonify }},{{
+tbr_text | strip | jsonify }},{{ reread_text | strip | jsonify }},{{ item.notes
+| default: "" | jsonify }},{{ item.location | default: "" | jsonify }},{{
+"https://www.google.com/search?q=" | append: item.title | append: " " | append:
+item.author | jsonify }},{{ "https://www.google.com/search?q=" | append:
+item.title | append: " " | append: item.author | append: "&tbm=isch" | jsonify
+}} {% endfor %}
