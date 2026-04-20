@@ -184,12 +184,26 @@ title: "the list"
 		return `"${text}"`
 	}
 
-	function getCellValue(cell) {
+	function getCellValue(cell, columnIndex) {
 		const link = cell.querySelector("a")
-		if (link && link.href) {
+
+		if (!link) {
+			return cell.textContent || ""
+		}
+
+		if (columnIndex === 1) {
+			return link.textContent || cell.textContent || ""
+		}
+
+		if (columnIndex === 5) {
+			return link.textContent || cell.textContent || ""
+		}
+
+		if (columnIndex === 12 || columnIndex === 13) {
 			return link.href
 		}
-		return cell.textContent || ""
+
+		return link.textContent || cell.textContent || ""
 	}
 
 	function downloadCSV() {
@@ -199,8 +213,8 @@ title: "the list"
 
 		rows.forEach((row) => {
 			const cells = row.querySelectorAll("th, td")
-			const values = Array.from(cells).map((cell) =>
-				csvEscape(getCellValue(cell)),
+			const values = Array.from(cells).map((cell, columnIndex) =>
+				csvEscape(getCellValue(cell, columnIndex)),
 			)
 			csvRows.push(values.join(","))
 		})
