@@ -1,11 +1,11 @@
 ---
 layout: none
-published: true
-permalink: /the-list.txt
+permalink: /the-list.csv
 ---
 
-{% assign items = site.data.list.item | default: site.data.list %} # name of the
-book author year page category read reading tbr reread shelf location info image
+{% assign items = site.data.list.item | default: site.data.list %} "#","name of
+the
+book","author","year","page","category","read","reading","tbr","reread","shelf","location","info","image"
 {% for item in items reversed %} {% assign read_val = item.status | default:
 "UnRead" %} {% assign tbr_val = item.tbr | default: "" | downcase %} {% assign
 reread_val = item.reread | default: "" | downcase %} {% capture category_name %}
@@ -21,15 +21,15 @@ Sustainable Living {% when "HealthNutrition" %}Health & Nutrition {% when
 Living & Everyday Comforts {% when "ScienceDiscovery" %}Science & Discovery {%
 when "SocietyCulture" %}Society & Culture {% when "TechnologyTheDigitalWorld"
 %}Technology & the Digital World {% when "WorkCareer" %}Work & Career {% else
-%}category? {% endcase %} {% endcapture %} {{ item.bookshelf }} {{ item.title |
-strip_newlines | replace: " ", " " }} {{ item.author | strip_newlines | replace:
-" ", " " }} {{ item.year }} {{ item.page }} {{ category_name | strip |
-strip_newlines | replace: " ", " " }} {% if read_val != "UnRead" %}yes{% else
-%}no{% endif %} {% if read_val == "Reading" %}yes{% else %}no{% endif %} {% if
-tbr_val == "yes" or tbr_val == "true" %}yes{% else %}no{% endif %} {% if
-reread_val == "yes" or reread_val == "true" %}yes{% else %}no{% endif %} {{
-item.notes | strip_newlines | replace: " ", " " }} {{ item.location |
-strip_newlines | replace: " ", " " }} https://www.google.com/search?q={{
-item.title | uri_escape }}%20{{ item.author | uri_escape }}
-https://www.google.com/search?q={{ item.title | uri_escape }}%20{{ item.author |
-uri_escape }}&tbm=isch {% endfor %}
+%}category? {% endcase %} {% endcapture %} "{{ item.bookshelf }}","{{ item.title
+| strip_newlines | replace: '"', '""' }}","{{ item.author | strip_newlines |
+replace: '"', '""' }}","{{ item.year }}","{{ item.page }}","{{ category_name |
+strip | strip_newlines | replace: '"', '""' }}","{% if read_val != "UnRead"
+%}yes{% else %}no{% endif %}","{% if read_val == "Reading" %}yes{% else %}no{%
+endif %}","{% if tbr_val == "yes" or tbr_val == "true" %}yes{% else %}no{% endif
+%}","{% if reread_val == "yes" or reread_val == "true" %}yes{% else %}no{% endif
+%}","{{ item.notes | strip_newlines | replace: '"', '""' }}","{{ item.location |
+strip_newlines | replace: '"', '""' }}","https://www.google.com/search?q={{
+item.title | uri_escape }}%20{{ item.author | uri_escape
+}}","https://www.google.com/search?q={{ item.title | uri_escape }}%20{{
+item.author | uri_escape }}&tbm=isch" {% endfor %}
