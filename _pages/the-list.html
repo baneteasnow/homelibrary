@@ -1,36 +1,220 @@
 ---
-layout: none
-permalink: /the-list.csv
+layout: page-6
 published: true
+last_modified_at: 2025-11-11
+title: "the list"
 ---
 
-{% assign items = site.data.list.item | default: site.data.list %} "#","name of
-the
-book","author","year","page","category","read","reading","tbr","reread","shelf","location","info","image"
-{% for item in items reversed %} {% assign read_val = item.status | default:
-"UnRead" %} {% assign tbr_val = item.tbr | default: "" | downcase %} {% assign
-reread_val = item.reread | default: "" | downcase %} {% capture category_name %}
-{% case item.categories %} {% when "BiographyLifeStories" %}Biography & Life
-Stories {% when "BusinessEconomics" %}Business & Economics {% when
-"ConsumerMarketing" %}Consumer & Marketing {% when "CreativityExpression"
-%}Creativity & Expression {% when "EnvironmentSustainableLiving" %}Environment &
-Sustainable Living {% when "HealthNutrition" %}Health & Nutrition {% when
-"HistoryPoliticalThought" %}History & Political Thought {% when
-"PersonalGrowthProductivity" %}Personal Growth & Productivity {% when
-"PhilosophyMeaning" %}Philosophy & Meaning {% when "PsychologyMentalLife"
-%}Psychology & Mental Life {% when "SimpleLivingEverydayComforts" %}Simple
-Living & Everyday Comforts {% when "ScienceDiscovery" %}Science & Discovery {%
-when "SocietyCulture" %}Society & Culture {% when "TechnologyTheDigitalWorld"
-%}Technology & the Digital World {% when "WorkCareer" %}Work & Career {% else
-%}category? {% endcase %} {% endcapture %} "{{ item.bookshelf }}","{{ item.title
-| strip_newlines | replace: '"', '""' }}","{{ item.author | strip_newlines |
-replace: '"', '""' }}","{{ item.year }}","{{ item.page }}","{{ category_name |
-strip | strip_newlines | replace: '"', '""' }}","{% if read_val != "UnRead"
-%}yes{% else %}no{% endif %}","{% if read_val == "Reading" %}yes{% else %}no{%
-endif %}","{% if tbr_val == "yes" or tbr_val == "true" %}yes{% else %}no{% endif
-%}","{% if reread_val == "yes" or reread_val == "true" %}yes{% else %}no{% endif
-%}","{{ item.notes | strip_newlines | replace: '"', '""' }}","{{ item.location |
-strip_newlines | replace: '"', '""' }}","https://www.google.com/search?q={{
-item.title | uri_escape }}%20{{ item.author | uri_escape
-}}","https://www.google.com/search?q={{ item.title | uri_escape }}%20{{
-item.author | uri_escape }}&tbm=isch" {% endfor %}
+{%- include backtotop.html -%}
+<br />
+{%- assign items = site.data.list.item | default: site.data.list -%}
+
+<button
+	onclick="downloadCSV()"
+	style="margin: 12px 0; padding: 8px 12px; cursor: pointer"
+>
+	Download CSV
+</button>
+
+<style>
+	table.zebra tr:nth-child(n + 2):nth-child(even) {
+		background-color: #f2f2f2;
+	}
+</style>
+
+<table
+	id="bookTable"
+	class="zebra"
+>
+	<tr>
+		<th style="text-align: left">#</th>
+		<th style="text-align: left">name of the book</th>
+		<th style="text-align: left">author</th>
+		<th style="text-align: left">year</th>
+		<th style="text-align: left">page</th>
+		<th style="text-align: left">category</th>
+		<th style="text-align: left">read?</th>
+		<th style="text-align: left">reading?</th>
+		<th style="text-align: left">tbr?</th>
+		<th style="text-align: left">reread?</th>
+		<th style="text-align: left">shelf</th>
+		<th style="text-align: left">location</th>
+		<th style="text-align: left">info</th>
+		<th style="text-align: left">image</th>
+	</tr>
+
+	{%- for item in items reversed -%}
+	<tr>
+		<td>{{ item.bookshelf }}</td>
+		<td>
+			<a
+				href="{{ site.baseurl }}booklist#{{ item.bookshelf }}"
+				name="{{ item.bookshelf }}"
+				><b>{{ item.title }}</b></a
+			>
+		</td>
+		<td>{{ item.author }}</td>
+		<td>{{ item.year }}</td>
+		<td>{{ item.page }}</td>
+		<td>
+			{%- case item.categories -%} {%- when "BiographyLifeStories" -%}
+			<a
+				href="{{ site.baseurl }}biography-life-stories"
+				name="{{ item.categories }}"
+				>Biography &amp; Life Stories</a
+			>
+			{%- when "BusinessEconomics" -%}
+			<a
+				href="{{ site.baseurl }}business-economics"
+				name="{{ item.categories }}"
+				>Business &amp; Economics</a
+			>
+			{%- when "ConsumerMarketing" -%}
+			<a
+				href="{{ site.baseurl }}consumer-marketing"
+				name="{{ item.categories }}"
+				>Consumer &amp; Marketing</a
+			>
+			{%- when "CreativityExpression" -%}
+			<a
+				href="{{ site.baseurl }}creativity-expression"
+				name="{{ item.categories }}"
+				>Creativity &amp; Expression</a
+			>
+			{%- when "EnvironmentSustainableLiving" -%}
+			<a
+				href="{{ site.baseurl }}environment-sustainable-living"
+				name="{{ item.categories }}"
+				>Environment &amp; Sustainable Living</a
+			>
+			{%- when "HealthNutrition" -%}
+			<a
+				href="{{ site.baseurl }}health-nutrition"
+				name="{{ item.categories }}"
+				>Health &amp; Nutrition</a
+			>
+			{%- when "HistoryPoliticalThought" -%}
+			<a
+				href="{{ site.baseurl }}history-political-thought"
+				name="{{ item.categories }}"
+				>History &amp; Political Thought</a
+			>
+			{%- when "PersonalGrowthProductivity" -%}
+			<a
+				href="{{ site.baseurl }}personal-growth-productivity"
+				name="{{ item.categories }}"
+				>Personal Growth &amp; Productivity</a
+			>
+			{%- when "PhilosophyMeaning" -%}
+			<a href="{{ site.baseurl }}philosophy-meaning"
+				>Philosophy &amp; Meaning</a
+			>
+			{%- when "PsychologyMentalLife" -%}
+			<a href="{{ site.baseurl }}psychology-mental-life"
+				>Psychology &amp; Mental Life</a
+			>
+			{%- when "SimpleLivingEverydayComforts" -%}
+			<a href="{{ site.baseurl }}simple-living-everyday-comforts"
+				>Simple Living &amp; Everyday Comforts</a
+			>
+			{%- when "ScienceDiscovery" -%}
+			<a href="{{ site.baseurl }}science-discovery">Science &amp; Discovery</a>
+			{%- when "SocietyCulture" -%}
+			<a href="{{ site.baseurl }}society-culture">Society &amp; Culture</a>
+			{%- when "TechnologyTheDigitalWorld" -%}
+			<a href="{{ site.baseurl }}technology-the-digital-world"
+				>Technology &amp; the Digital World</a
+			>
+			{%- when "WorkCareer" -%}
+			<a href="{{ site.baseurl }}work-career">Work &amp; Career</a>
+			{%- else -%} category? {%- endcase -%}
+		</td>
+		<td>
+			{%- assign read_val = item.status | default: "UnRead" -%} {%- if read_val
+			!= "UnRead" -%}✅{%- else -%}read?{%- endif -%}
+		</td>
+		<td>
+			{%- assign reading_val = item.status | default: "n/a" -%} {%- if read_val
+			== "Reading" -%}Reading{%- else -%}-{%- endif -%}
+		</td>
+		<td>
+			{%- assign tbr_val = item.tbr | downcase | default: "" -%} {%- if tbr_val
+			== "yes" or tbr_val == "true" -%}📋{%- else -%}tbr?{%- endif -%}
+		</td>
+		<td>
+			{%- assign reread_val = item.reread | downcase | default: "" -%} {%- if
+			reread_val == "yes" or reread_val == "true" -%}📖{%- else -%}reread?{%-
+			endif -%}
+		</td>
+		<td>{{ item.notes }}</td>
+		<td>{{ item.location }}</td>
+		<td>
+			<a
+				name="{{ item.title }}"
+				title="google search"
+				href="https://www.google.com/search?q={{ item.title }}%20{{ item.author }}"
+				target="_blank"
+				rel="noreferrer,nofollow"
+			>
+				google
+			</a>
+		</td>
+		<td>
+			<a
+				name="{{ item.title }}"
+				title="google search"
+				href="https://www.google.com/search?q={{ item.title }}%20{{ item.author }}&tbm=isch"
+				target="_blank"
+				rel="noreferrer,nofollow"
+			>
+				google images
+			</a>
+		</td>
+	</tr>
+	{%- endfor -%}
+</table>
+
+<div style="clear: both"></div>
+<br />
+
+<script>
+	function csvEscape(value) {
+		if (value === null || value === undefined) return '""'
+		const text = String(value).replace(/\s+/g, " ").trim().replace(/"/g, '""')
+		return `"${text}"`
+	}
+
+	function getCellValue(cell) {
+		const link = cell.querySelector("a")
+		if (link && link.href) {
+			return link.href
+		}
+		return cell.textContent || ""
+	}
+
+	function downloadCSV() {
+		const table = document.getElementById("bookTable")
+		const rows = table.querySelectorAll("tr")
+		const csvRows = []
+
+		rows.forEach((row) => {
+			const cells = row.querySelectorAll("th, td")
+			const values = Array.from(cells).map((cell) =>
+				csvEscape(getCellValue(cell)),
+			)
+			csvRows.push(values.join(","))
+		})
+
+		const csvContent = "\uFEFF" + csvRows.join("\n")
+		const blob = new Blob([csvContent], { type: "text/csv;charset=utf-8;" })
+		const url = URL.createObjectURL(blob)
+		const link = document.createElement("a")
+
+		link.href = url
+		link.download = "the-list.csv"
+		document.body.appendChild(link)
+		link.click()
+		document.body.removeChild(link)
+		URL.revokeObjectURL(url)
+	}
+</script>
