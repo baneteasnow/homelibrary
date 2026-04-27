@@ -1,0 +1,133 @@
+---
+layout: page-6
+published: true
+last_modified_at: 2026-04-27
+title: "the list estra"
+---
+
+{%- include backtotop.html -%}
+<br />
+{%- assign items = site.data.list.item | default: site.data.list -%}
+
+<button
+	onclick="downloadCSV()"
+	style="margin: 12px 0; padding: 8px 12px; cursor: pointer"
+>
+	Download CSV
+</button>
+
+<style>
+	table.zebra tr:nth-child(n + 2):nth-child(even) {
+		background-color: #f2f2f2;
+	}
+</style>
+
+<table
+	id="bookTable"
+	class="zebra"
+>
+	<tr>
+		<th style="text-align: left">#</th>
+		<th style="text-align: left">title</th>
+		<th style="text-align: left">author</th>
+		<th style="text-align: left">publisher</th>
+		<th style="text-align: left">lang</th>
+		<th style="text-align: left">page</th>
+		<th style="text-align: left">year</th>
+		<th style="text-align: left">status</th>
+	</tr>
+
+	{%- for item in items reversed -%}
+	<tr>
+		<td>{{ item.bookshelf }}</td>
+		<td>
+			<a
+				href="{{ site.baseurl }}booklist#{{ item.bookshelf }}"
+				name="{{ item.bookshelf }}"
+				><b>{{ item.title }}</b></a
+			>
+		</td>
+		<td>{{ item.author }}</td>
+		<td>{{ item.publisher }}</td>
+		<td>{{ item.lang }}</td>
+		<td>{{ item.page }}</td>
+		<td>{{ item.year }}</td>
+		<td>
+			{%- assign read_val = item.status | default: "UnRead" -%} {%- if read_val
+			!= "UnRead" -%}✅{%- else -%}read?{%- endif -%}
+		</td>
+		<td>
+			{%- assign reading_val = item.status | default: "n/a" -%} {%- if read_val
+			== "Reading" -%}Reading{%- else -%}-{%- endif -%}
+		</td>
+		<td>
+			{%- assign tbr_val = item.tbr | downcase | default: "" -%} {%- if tbr_val
+			== "yes" or tbr_val == "true" -%}📋{%- else -%}tbr?{%- endif -%}
+		</td>
+		<td>
+			{%- assign reread_val = item.reread | downcase | default: "" -%} {%- if
+			reread_val == "yes" or reread_val == "true" -%}📖{%- else -%}reread?{%-
+			endif -%}
+		</td>
+	</tr>
+	{%- endfor -%}
+</table>
+
+<div style="clear: both"></div>
+<br />
+
+<script>
+	function csvEscape(value) {
+		if (value === null || value === undefined) return '""'
+		const text = String(value).replace(/\s+/g, " ").trim().replace(/"/g, '""')
+		return `"${text}"`
+	}
+
+	function getCellValue(cell, columnIndex) {
+		const link = cell.querySelector("a")
+
+		if (!link) {
+			return cell.textContent || ""
+		}
+
+		if (columnIndex === 1) {
+			return link.textContent || cell.textContent || ""
+		}
+
+		if (columnIndex === 5) {
+			return link.textContent || cell.textContent || ""
+		}
+
+		if (columnIndex === 12 || columnIndex === 13) {
+			return link.href
+		}
+
+		return link.textContent || cell.textContent || ""
+	}
+
+	function downloadCSV() {
+		const table = document.getElementById("bookTable")
+		const rows = table.querySelectorAll("tr")
+		const csvRows = []
+
+		rows.forEach((row) => {
+			const cells = row.querySelectorAll("th, td")
+			const values = Array.from(cells).map((cell, columnIndex) =>
+				csvEscape(getCellValue(cell, columnIndex)),
+			)
+			csvRows.push(values.join(","))
+		})
+
+		const csvContent = "\uFEFF" + csvRows.join("\n")
+		const blob = new Blob([csvContent], { type: "text/csv;charset=utf-8;" })
+		const url = URL.createObjectURL(blob)
+		const link = document.createElement("a")
+
+		link.href = url
+		link.download = "the-list.csv"
+		document.body.appendChild(link)
+		link.click()
+		document.body.removeChild(link)
+		URL.revokeObjectURL(url)
+	}
+</script>
