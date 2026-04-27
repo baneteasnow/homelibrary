@@ -56,19 +56,6 @@ title: "the list estra"
 			{%- assign read_val = item.status | default: "UnRead" -%} {%- if read_val
 			!= "UnRead" -%}✅{%- else -%}read?{%- endif -%}
 		</td>
-		<td>
-			{%- assign reading_val = item.status | default: "n/a" -%} {%- if read_val
-			== "Reading" -%}Reading{%- else -%}-{%- endif -%}
-		</td>
-		<td>
-			{%- assign tbr_val = item.tbr | downcase | default: "" -%} {%- if tbr_val
-			== "yes" or tbr_val == "true" -%}📋{%- else -%}tbr?{%- endif -%}
-		</td>
-		<td>
-			{%- assign reread_val = item.reread | downcase | default: "" -%} {%- if
-			reread_val == "yes" or reread_val == "true" -%}📖{%- else -%}reread?{%-
-			endif -%}
-		</td>
 	</tr>
 	{%- endfor -%}
 </table>
