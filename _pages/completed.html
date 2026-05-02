@@ -14,11 +14,11 @@ title: "Completed List"
 	<i>read: {{ status_read }} </i>
 </div>
 <!--justread size-->
-<div>
+<!--<div>
 	{% assign justread_data = site.data.list %} {% assign status_justread =
 	justread_data | where: "status", "JustRead" | size %}
 	<i>justread: {{ status_justread }} </i>
-</div>
+</div>-->
 
 <!--reading size-->
 <div>
@@ -73,7 +73,7 @@ where: "status", "Read" | size %}
 <i>read: {{ status_read }} </i>
 <br />
 <!-- justread -->
-<h4><i>Just Read</i></h4>
+<!--<h4><i>Just Read</i></h4>
 {% for item in site.data.list %} {% if item.status == "JustRead" %}
 <div>
 	<i
@@ -83,16 +83,16 @@ where: "status", "Read" | size %}
 			>{{ item.title }} | {{ item.author }}</a
 		>
 	</i>
-</div>
+</div>-->
 {% else %}
 <div style="visibility: hidden"></div>
 {% endif %} {% endfor %}
 <br />
 <!-- justread size -->
-{% assign justread_data = site.data.list %} {% assign status_justread =
-justread_data | where: "status", "JustRead" | size %}
+<!--{% assign justread_data = site.data.list %} {% assign status_justread =
+justread_data | where: "status", "JustRead" | size %}-->
 <!-- {{ }} -->
-<i>justread: {{ status_justread }} </i>
+<!--<i>justread: {{ status_justread }} </i>-->
 <br />
 <h4><i>Read as an E-Book</i></h4>
 <br />
@@ -169,8 +169,8 @@ justread_data | where: "status", "JustRead" | size %}
 {% assign ereadread_data = site.data.eread %} {% assign status_ereadread =
 ereadread_data | where: "status", "Read" | size %}
 <!-- justread eread -->
-{% assign ereadjustread_data = site.data.eread %} {% assign status_ereadjustread
-= ereadjustread_data | where: "status", "JustRead" | size %}
+<!--{% assign ereadjustread_data = site.data.eread %} {% assign status_ereadjustread
+= ereadjustread_data | where: "status", "JustRead" | size %}-->
 <!-- reading eread-->
 {% assign ereadreading_data = site.data.eread %} {% assign status_ereadreading =
 ereadreading_data | where: "status", "Reading" | size %}
