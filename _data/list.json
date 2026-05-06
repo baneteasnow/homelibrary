@@ -38994,5 +38994,41 @@
 		"tbr": "yes",
 		"image": "https://www.next52books.com",
 		"location": "house-2"
+	},
+	{
+		"bookshelf": 3167,
+		"No": 2167,
+		"title": "Soyu Yeniden Dusunmek - Genetik Etnisite Mitinin Çurutulmesi",
+		"publisher": "Metis Yayinlari",
+		"author": "Kostas Kampourakis",
+		"lang": "Turkce",
+		"page": 280,
+		"year": "2025",
+		"notes": "A-4",
+		"status": "UnRead",
+		"newstatus": "n/a",
+		"categories": "n/a",
+		"reread": "n/a",
+		"tbr": "yes",
+		"image": "https://www.next52books.com",
+		"location": "house-2"
+	},
+	{
+		"bookshelf": 3168,
+		"No": 2168,
+		"title": "Genin Yuzyili",
+		"publisher": "Metis Yayinlari",
+		"author": "Evelyn Fox Keller",
+		"lang": "Turkce",
+		"page": 192,
+		"year": "2004",
+		"notes": "A-4",
+		"status": "UnRead",
+		"newstatus": "n/a",
+		"categories": "n/a",
+		"reread": "n/a",
+		"tbr": "yes",
+		"image": "https://www.next52books.com",
+		"location": "house-2"
 	}
 ]
