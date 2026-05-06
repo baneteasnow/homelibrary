@@ -4,6 +4,8 @@ title: bookshelves
 published: true
 ---
 
+{%-include fnew.html-%}
+
 {%-include f.html-%}
 
 {%-include s.html-%}
