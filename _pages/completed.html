@@ -48,14 +48,10 @@ ereadread_data | where: "status", "Read" | size %}
 
 <br />
 <!-- read size -->
-{% assign read_data = site.data.list %} {% assign status_read = read_data |
-where: "status", "Read" | size %}
-<!-- {{ }} -->
-<i>read: {{ status_read }} </i>
+{% assign status_read = site.data.list | where: "status", "Read" | size %}
+
+<i>read: {{ status_read }}</i>
 <br />
-{% else %}
-<div style="visibility: hidden"></div>
-{% endif %} {% endfor %}
 <br />
 <h4><i>Read as an E-Book</i></h4>
 <br />
