@@ -10,12 +10,6 @@ where: "status", "Read" | size %}
 <!-- gaveaway_yes -->
 {% assign gaveaway_data = site.data.gaveaway %} {% assign gaveaway_yes =
 gaveaway_data | size %}
-<!-- status_justread -->
-<!--{% assign justread_data = site.data.list %} {% assign status_justread =
-justread_data | where: "status", "JustRead" | size %}-->
-<!-- status_tobeupdated -->
-{% assign tobeupdated_data = site.data.list %} {% assign status_tobeupdated =
-tobeupdated_data | where: "newstatus", "ToBeUpdated" | size %}
 <!-- reading_yes -->
 {% assign reading_data = site.data.list %} {% assign status_reading =
 reading_data | where: "status", "Reading" | size %}
@@ -31,14 +25,8 @@ where: "location", "house-2" | size %}
 </div>
 <!-- adding +? to just finished because of ereads of the year-->
 <div style="color: #b7b2b2">
-	<i>just finished: {{ status_justread }}</i>
-</div>
-<div style="color: #b7b2b2">
 	<b>
-		<i
-			>total read: {{ status_read | plus: gaveaway_yes | plus: '50' | plus:
-			status_justread }}</i
-		>
+		<i>total read: {{ status_read | plus: gaveaway_yes | plus: '50' }}</i>
 	</b>
 </div>
 <div style="color: #b7b2b2">
@@ -49,16 +37,6 @@ where: "location", "house-2" | size %}
 			>gaveaway:
 		</a>
 		{{ gaveaway_yes }}
-	</i>
-</div>
-<div style="color: #b7b2b2">
-	<i>
-		<a
-			href="https://homelibrary.next52books.com/tobeupdated"
-			style="color: #b7b2b2"
-			>to be updated (incl. just finished):
-		</a>
-		{{ status_tobeupdated }}
 	</i>
 </div>
 <div style="color: #b7b2b2">
@@ -93,11 +71,3 @@ where: "location", "house-2" | size %}
 <div style="color: #b7b2b2">
 	<i>house-2: {{ status_house2 }}</i>
 </div>
-
-<!-- <br />
-<div>reread_yes {{ reread_yes }}</div>
-<div>ereread_yes {{ ereread_yes }}</div>
-<br />
-<div>status_read {{ status_read }}</div>
-<div>gaveaway {{ gaveaway_yes }}</div>
-<div>justread 22</div> -->
