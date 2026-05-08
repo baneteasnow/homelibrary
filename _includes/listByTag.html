@@ -13,9 +13,6 @@ gaveaway_data | size %}
 <!-- reading_yes -->
 {% assign reading_data = site.data.list %} {% assign status_reading =
 reading_data | where: "status", "Reading" | size %}
-<!-- tbr_yes -->
-{% assign tbr_data = site.data.list %} {% assign tbr_yes = tbr_data | where:
-"tbr", "yes" | size %}
 <!-- location house-2 -->
 {% assign loc_data = site.data.list %} {% assign status_house2 = loc_data |
 where: "location", "house-2" | size %}
@@ -58,15 +55,6 @@ where: "location", "house-2" | size %}
 			style="color: #b7b2b2"
 			>reread (incl. e-reads): </a
 		>{{ reread_yes | plus: ereread_yes }}
-	</i>
-</div>
-<div style="color: #b7b2b2">
-	<i>
-		<a
-			href="https://homelibrary.next52books.com/tbr"
-			style="color: #b7b2b2"
-			>TBR: </a
-		>{{ tbr_yes }}
 	</i>
 </div>
 <div style="color: #b7b2b2">
