@@ -35,19 +35,17 @@ ereadread_data | where: "status", "Read" | size %}
 <br />
 <!-- read -->
 <h4><i>Read</i></h4>
+
 {% for item in site.data.list %} {% if item.status == "Read" %}
 <div>
-	<i
-		><a
-			href="{{ site.baseurl }}booklist#{{ item.bookshelf }}"
-			name="{{ item.bookshelf }}"
-			>{{ item.title }} | {{ item.author }}</a
-		>
+	<i>
+		<a href="{{ site.baseurl }}booklist#{{ item.bookshelf }}">
+			{{ item.title }} | {{ item.author }}
+		</a>
 	</i>
 </div>
-{% else %}
-<div style="visibility: hidden"></div>
 {% endif %} {% endfor %}
+
 <br />
 <!-- read size -->
 {% assign read_data = site.data.list %} {% assign status_read = read_data |
@@ -205,214 +203,214 @@ ereadreading_data | where: "status", "Reading" | size %}
 	Stressiz Yatirim Sanati - Stressiz Bir Finansal Hayat Nasil Yasanir? | Jared
 	Dillian
 </div>
-<div>Sifirdan Milyonerlige - Borsaya Yatirim Yapmanin Basit, Etkili ve Stressiz Bir
-Yolu | Nicolas Berube </div>
-<div>Moda Psikolojisi | Rana Kutvan</div> 
-<div>Evim Temiz Mutluyum | Mrs
-Hinch (Sophie Hinchliffe)</div>
-<div>Esaret Altindaki Iliskiler - Tutkunun Anahtari | Esther
-Perel</div>
-<div>Mafya, Eroin, Devlet - Turkiye’nin Alacakaranligi | Ryan Gingeras </div>
-<div>Buyurun
-Ziyafete | Vedat Milor, Besim Hatinoğlu</div>
-<div>Borsadan Gecinmenin Yollari | Alexander
-Elder </div>
-<div>Gorsel Yatirimci - Borsada Teknik Analiz | John J. Murphy </div>
-<div>Bollinger
-Bantlari | John Bollinger </div>
-<div>Alfa Trader - Profesyonel Alim Satim Islemlerinin Zihin
-Yapisi, Yontemleri ve Matematigi | Brent Donnelly</div>
-<div>Merdiven Alti Terapi | Deniz
-Dulgeroglu</div>
-<div>Pazartesi Mektuplari | Ege Soley</div> 
-<div>Once Babam Oldu Sonra Hayallerim |
-Basak Kablan</div> 
-<div>Yeni Dunya Yeni Kurallar - Yasam Zevkine Ulasmanin Bugunku Yollari |
-Vedat Milor, Yenal Bilgici</div>
-<div>Darwin’le Aksam Yemegi - Evrim Yeme Icmeyi Nasil
-Etkiler? | Jonathan Silvertown</div>
+<div>
+	Sifirdan Milyonerlige - Borsaya Yatirim Yapmanin Basit, Etkili ve Stressiz Bir
+	Yolu | Nicolas Berube
+</div>
+<div>Moda Psikolojisi | Rana Kutvan</div>
+<div>Evim Temiz Mutluyum | Mrs Hinch (Sophie Hinchliffe)</div>
+<div>Esaret Altindaki Iliskiler - Tutkunun Anahtari | Esther Perel</div>
+<div>Mafya, Eroin, Devlet - Turkiye’nin Alacakaranligi | Ryan Gingeras</div>
+<div>Buyurun Ziyafete | Vedat Milor, Besim Hatinoğlu</div>
+<div>Borsadan Gecinmenin Yollari | Alexander Elder</div>
+<div>Gorsel Yatirimci - Borsada Teknik Analiz | John J. Murphy</div>
+<div>Bollinger Bantlari | John Bollinger</div>
+<div>
+	Alfa Trader - Profesyonel Alim Satim Islemlerinin Zihin Yapisi, Yontemleri ve
+	Matematigi | Brent Donnelly
+</div>
+<div>Merdiven Alti Terapi | Deniz Dulgeroglu</div>
+<div>Pazartesi Mektuplari | Ege Soley</div>
+<div>Once Babam Oldu Sonra Hayallerim | Basak Kablan</div>
+<div>
+	Yeni Dunya Yeni Kurallar - Yasam Zevkine Ulasmanin Bugunku Yollari | Vedat
+	Milor, Yenal Bilgici
+</div>
+<div>
+	Darwin’le Aksam Yemegi - Evrim Yeme Icmeyi Nasil Etkiler? | Jonathan
+	Silvertown
+</div>
 <div>Yeniden | Zeyneb Uras</div>
-<div>Teknik Analiz 101 - Grafik ve
-Mum Formasyonlari | Tunc Safa Altunsaray, Huseyin Cetin </div>
+<div>
+	Teknik Analiz 101 - Grafik ve Mum Formasyonlari | Tunc Safa Altunsaray,
+	Huseyin Cetin
+</div>
 <div>Kendimle Kahve Sohbeti | Kristen Helmstetter</div>
-<div>Terapistin Ikilemi - Iliskisel Psikoterapinin Sifreleri |
-Elvin Aydin Keles</div>
-<div>The Family - Amerikan Iktidarinin Kalbindeki Gizli
-Fundamentalizm | Jeff Sharlet</div>
-<div>Asapscience - Dunyanin En Garip Sorularina, En
-Meshur Soylentilerine ve Aciklanmamis Olaylarina Cevaplar | Mitchell Moffit, Greg
-Brown</div>
-<div>Hesap Lutfen! - Ozgun, Dengeli ve Lezzetli Bir Yasamin Pesinde | Vedat
-Milor, Nurhak Kaya</div>
+<div>
+	Terapistin Ikilemi - Iliskisel Psikoterapinin Sifreleri | Elvin Aydin Keles
+</div>
+<div>
+	The Family - Amerikan Iktidarinin Kalbindeki Gizli Fundamentalizm | Jeff
+	Sharlet
+</div>
+<div>
+	Asapscience - Dunyanin En Garip Sorularina, En Meshur Soylentilerine ve
+	Aciklanmamis Olaylarina Cevaplar | Mitchell Moffit, Greg Brown
+</div>
+<div>
+	Hesap Lutfen! - Ozgun, Dengeli ve Lezzetli Bir Yasamin Pesinde | Vedat Milor,
+	Nurhak Kaya
+</div>
 <div>80 Trenle Dunya Turu | Monisha Rajesh</div>
-<div>Catalin Neden Tadi
-Yoktur? - Ve Bilimi Sevdiren Bircok Ilginc Soru, Hem de Evden Cikmadan!. Devis
-Bellucci</div> 
-<div>Yuz Yogasi - Dogal Yuz Gerdirme ile Kirisikliklardan Kurtulma | Annelise
-Hagen</div>
+<div>
+	Catalin Neden Tadi Yoktur? - Ve Bilimi Sevdiren Bircok Ilginc Soru, Hem de
+	Evden Cikmadan!. Devis Bellucci
+</div>
+<div>
+	Yuz Yogasi - Dogal Yuz Gerdirme ile Kirisikliklardan Kurtulma | Annelise Hagen
+</div>
 <div>Deha - Steve Jobs’in Kisa Tarihi | Anthony C. Brown</div>
-<div>Orneklerle Kolay
-Ekonomi | Mahfi Egilmez</div>
-<div>Hedge Cambazlari | Barton Biggs</div> 
-<div>Erkek Beyni | Louann
-Brizendine</div> 
-<div>Orta Yas ve Sonrasinda Kadin Beyni | Louann Brizendine</div> 
-<div>Kadin Beyni |
-Louann Brizendine</div> 
-<div>Yetiskin Olmak - Buyumek ve Duygusal Olgunluga Erismek | Lara
-A. Fielding</div>
+<div>Orneklerle Kolay Ekonomi | Mahfi Egilmez</div>
+<div>Hedge Cambazlari | Barton Biggs</div>
+<div>Erkek Beyni | Louann Brizendine</div>
+<div>Orta Yas ve Sonrasinda Kadin Beyni | Louann Brizendine</div>
+<div>Kadin Beyni | Louann Brizendine</div>
+<div>
+	Yetiskin Olmak - Buyumek ve Duygusal Olgunluga Erismek | Lara A. Fielding
+</div>
 <div>Ruhsal Astroloji | Jan Spiller</div>
-<div>Astroloji 101 - Gunes Burclarindan, Ay
-Burclarina Astroloji Hakkinda Bilmeniz Gereken Her Sey | Kathleen Sears</div>
-<div>Blockbusters Hit Yapim Stratejileri ve Riskler - Eglencenin Buyuk Ekonomisi |
-Anita Elberse</div>
+<div>
+	Astroloji 101 - Gunes Burclarindan, Ay Burclarina Astroloji Hakkinda Bilmeniz
+	Gereken Her Sey | Kathleen Sears
+</div>
+<div>
+	Blockbusters Hit Yapim Stratejileri ve Riskler - Eglencenin Buyuk Ekonomisi |
+	Anita Elberse
+</div>
 <div>Zenginler Yoksullar ve Robotlor | Deniz Can Saner</div>
-<div>Zeki Oldugunu
-Hala Dusunuyor musun? | John Farndon</div>
+<div>Zeki Oldugunu Hala Dusunuyor musun? | John Farndon</div>
 <div>Zeki Oldugunu Dusunuyor musun? | John Farndon</div>
-<div>Zehirsiz Ev - Yasaminizdan Zararli Kimyasallari Eksiltmenin Basit Yollari |
-Mercan Yurdakuler Uluengin</div>
-<div>Y’leri Anla, Degistirme - Kurumsal Hayatta Milenyum
-Kusagi ve Iletisim | Elif Basak Sarioglu</div>
-<div>Yonetimin Gelecegi. Gary Hamel</div> 
-<div>Yeniligin
-3M Yolu | Ernest Gundling </div>
+<div>
+	Zehirsiz Ev - Yasaminizdan Zararli Kimyasallari Eksiltmenin Basit Yollari |
+	Mercan Yurdakuler Uluengin
+</div>
+<div>
+	Y’leri Anla, Degistirme - Kurumsal Hayatta Milenyum Kusagi ve Iletisim | Elif
+	Basak Sarioglu
+</div>
+<div>Yonetimin Gelecegi. Gary Hamel</div>
+<div>Yeniligin 3M Yolu | Ernest Gundling</div>
 <div>Yenile | Satya Nadella</div>
 <div>Yeni Onculer | Thomas Petzinger</div>
 <div>Yeni Liderler | Daniel Goleman, Richard Boyatzis, Annie Mckee</div>
-<div>Yasayan Sirket |
-Arie De Geus</div>
+<div>Yasayan Sirket | Arie De Geus</div>
 <div>Yaptigimiz Seyleri Neden Yapariz? | Joel Levy</div>
-<div>Yalnizca Eglenmek
-Icin | Linus Torvalds</div>
+<div>Yalnizca Eglenmek Icin | Linus Torvalds</div>
 <div>Yalniz Yasama Egzersizleri | Bahar Ozturk</div>
-<div>Yakin Iliski -
-Yeniden Kadin ve Erkek Olabilmek | David Deida</div>
-<div>Vesikali Yurttas - Gozetim Araci
-Olarak Kimlik Kartlari | David Lyon</div>
-<div>Veri Stratejisi | Bernard Marr</div> 
-<div>Vegan Saglik |
-Murat Kinikoglu</div> 
-<div>Vegan Beslenme | Murat Kinikoglu</div> 
-<div>Ustalik Gerektiren Kafaya
-Takmama Sanati | Mark Manson</div> 
-<div>Unilever'i Yenilemek | Geoffrey Jones</div> 
-<div>Uluslararasi Pazarlama Ilkeler ve Uygulamalar | Cem Kozlu</div> <div>Twitter ve Toplum | Katrin Weller,
-Axel Bruns, Jean Burgess, Merja Mahrt, Cornelius Puschmann</div> 
-<div>Tuketim Toplumu,
-Nevrotik Kultur ve Dovus Kulubu | Hakan Ovunc Ongur</div> 
-<div>Tuketicinin Zekasini Asla
-Kucumsemeyen Buyuk Bir Usta | David Ogilvy</div> 
-<div>Tuketici Nasil Dusunur? | Gerald
-Zaltman</div> 
-<div>Tuketici Kralliginin Fethi | Michael R. Solomon</div> 
-<div>Trend Avcisi - Bildigimiz
-Her Sey Yanlis | Magnus Lindkvist</div> 
-<div>Toyota Kulturu | Jeffrey K. Liker, Michael
-Hoseus</div> 
+<div>Yakin Iliski - Yeniden Kadin ve Erkek Olabilmek | David Deida</div>
+<div>Vesikali Yurttas - Gozetim Araci Olarak Kimlik Kartlari | David Lyon</div>
+<div>Veri Stratejisi | Bernard Marr</div>
+<div>Vegan Saglik | Murat Kinikoglu</div>
+<div>Vegan Beslenme | Murat Kinikoglu</div>
+<div>Ustalik Gerektiren Kafaya Takmama Sanati | Mark Manson</div>
+<div>Unilever'i Yenilemek | Geoffrey Jones</div>
+<div>Uluslararasi Pazarlama Ilkeler ve Uygulamalar | Cem Kozlu</div>
+<div>
+	Twitter ve Toplum | Katrin Weller, Axel Bruns, Jean Burgess, Merja Mahrt,
+	Cornelius Puschmann
+</div>
+<div>Tuketim Toplumu, Nevrotik Kultur ve Dovus Kulubu | Hakan Ovunc Ongur</div>
+<div>Tuketicinin Zekasini Asla Kucumsemeyen Buyuk Bir Usta | David Ogilvy</div>
+<div>Tuketici Nasil Dusunur? | Gerald Zaltman</div>
+<div>Tuketici Kralliginin Fethi | Michael R. Solomon</div>
+<div>Trend Avcisi - Bildigimiz Her Sey Yanlis | Magnus Lindkvist</div>
+<div>Toyota Kulturu | Jeffrey K. Liker, Michael Hoseus</div>
 <div>Toplumsal Cinsiyet - Sosyal Psikolojik Aciklamalar | Zehra Y. Dokmen</div>
-<div>Tibbin Gelecegine Yolculuk | Bertalan Mesko</div> 
-<div>Thrive - Basari Icinizdedir | Arianna
-Huffington</div> 
-<div>Tercih Sizin (Yetiskinler Icin) | Al Gore</div> 
-<div>Telgraftan Tablete | Evrim
-Kuran</div> 
-<div>Televizyon ve Icimizdeki Siddet | Nilgun Tutal Cheviron</div> 
-<div>Tek Yol
-Permakultur | Graham Bell</div> 
-<div>TED Konusmalari | Chris J. Anderson </div> 
-<div>TED Gibi Konus -
-Dunyanin En Iyi Beyinlerine Gore Topluluk Onunde Konusmanin 9 Sirri | Carmine
-Gallo</div>
-<div>Taslar Yerinden Oynarken - Dijital Pazarlamanin Kurallari | Fatos Karahasan</div>
-<div>Switch Degistir! | Chip Heath, Dan Heath</div> 
-<div>Sutlu mu? Kopuklu mu? Hayatinizi
-Degistirecek 120 Karar | Hilly Janes</div> 
+<div>Tibbin Gelecegine Yolculuk | Bertalan Mesko</div>
+<div>Thrive - Basari Icinizdedir | Arianna Huffington</div>
+<div>Tercih Sizin (Yetiskinler Icin) | Al Gore</div>
+<div>Telgraftan Tablete | Evrim Kuran</div>
+<div>Televizyon ve Icimizdeki Siddet | Nilgun Tutal Cheviron</div>
+<div>Tek Yol Permakultur | Graham Bell</div>
+<div>TED Konusmalari | Chris J. Anderson</div>
+<div>
+	TED Gibi Konus - Dunyanin En Iyi Beyinlerine Gore Topluluk Onunde Konusmanin 9
+	Sirri | Carmine Gallo
+</div>
+<div>
+	Taslar Yerinden Oynarken - Dijital Pazarlamanin Kurallari | Fatos Karahasan
+</div>
+<div>Switch Degistir! | Chip Heath, Dan Heath</div>
+<div>Sutlu mu? Kopuklu mu? Hayatinizi Degistirecek 120 Karar | Hilly Janes</div>
 <div>Surdurulebilir Moda | Solen Kipoz (Editör)</div>
 <div>Super Sirket | Rosabeth Moss Kanter</div>
-<div>Suc II - Bir Ceza Avukatindan Gercek
-Hikayeler | Ferdinand von Schirach</div>
-<div>Suc - Bir Ceza Avukatindan Gercek Hikayeler |
-Ferdinand von Schirach</div>
+<div>
+	Suc II - Bir Ceza Avukatindan Gercek Hikayeler | Ferdinand von Schirach
+</div>
+<div>Suc - Bir Ceza Avukatindan Gercek Hikayeler | Ferdinand von Schirach</div>
 <div>Stres Yogasi | Neslihan Iskit</div>
-<div>Strateji Yasalari | Michael
-A. Cusumano, David B. Yoffie</div>
+<div>Strateji Yasalari | Michael A. Cusumano, David B. Yoffie</div>
 <div>Stoacinin Gunlugu | Ryan Holiday, Stephen Hanselman</div>
 <div>Starbucks Hayatimi Nasil Kurtardi | Michael Gates Gill</div>
-<div>Starbucks Deneyimi
-(Mucizesi) | Joseph A. Michelli</div> 
-<div>Sosyalizm 101 - Bolsevikler Ve Karl Marx’tan
-Demokratik Sosyalistlere Kadar Sosyalizm Hakkinda Bilmeniz Gereken Her Sey |
-Kathleen Sears</div>
-<div>Sosyal Sebekelerin Sakli Gucu | Rob Cross, Andrew Parker </div>
+<div>Starbucks Deneyimi (Mucizesi) | Joseph A. Michelli</div>
+<div>
+	Sosyalizm 101 - Bolsevikler Ve Karl Marx’tan Demokratik Sosyalistlere Kadar
+	Sosyalizm Hakkinda Bilmeniz Gereken Her Sey | Kathleen Sears
+</div>
+<div>Sosyal Sebekelerin Sakli Gucu | Rob Cross, Andrew Parker</div>
 Sosyal
 <div>Psikolojide Tutumlar ve Tutum Degisimi | Nuray Sakalli</div>
-<div>Sosyal Etkiler - Kim Kimi
-Nasil Etkiler? | Nuray Sakalli</div>
+<div>Sosyal Etkiler - Kim Kimi Nasil Etkiler? | Nuray Sakalli</div>
 <div>Sokrates'le Bir Aksam Yemegi | Steve Jobs</div>
-<div>Sirket
-Ittifaklari | Yves L. Doz, Gary Hamel</div>
+<div>Sirket Ittifaklari | Yves L. Doz, Gary Hamel</div>
 <div>Simdi Ne Yapiyoruz | Gary Hamel</div>
-<div>Simdi
-Anladim! - Perakende ve Kisitlar Teorisi | Eliyahu M. Goldratt</div>
-<div>Sifirdan Bire |
-Peter Thiel, Blake Masters</div>
+<div>Simdi Anladim! - Perakende ve Kisitlar Teorisi | Eliyahu M. Goldratt</div>
+<div>Sifirdan Bire | Peter Thiel, Blake Masters</div>
 <div>Sifir Atik Icin 101 Yol | Kathryn Kellogg</div>
-<div>Siber Savas |
-Richard A. Clarke, Robert K. Knake</div>
-<div>Siber Guvenlik ve Siber Savas | P. W. Singer,
-Allan Friedman</div>
+<div>Siber Savas | Richard A. Clarke, Robert K. Knake</div>
+<div>Siber Guvenlik ve Siber Savas | P. W. Singer, Allan Friedman</div>
 <div>Sensiz Ben | Lisa Swerling, Ralph Lazar</div>
-<div>Sen Basla Gerisi Gelir |
-Ben Casnocha, Reid Hoffman</div>
+<div>Sen Basla Gerisi Gelir | Ben Casnocha, Reid Hoffman</div>
 <div>Savas Bulmacasi | John A. Vasquez</div>
-<div>Satisin Yeni
-Kurallari - Insanlari Harekete Gecirmenin Sirlari | Daniel H. Pink</div> 
-<div>Satin Alma
-Translari - Satis ve Pazarlamanin Yeni Psikolojisi | Joe Vitale</div> 
-<div>Rus Ruletinde
-Nasil Kazanirsiniz ve Diger Olumcul Mantik Sorulari | Thomas Byrne, Tom Cassidy</div>
-<div>Reklamin Dili | Ugur Bati </div>
+<div>
+	Satisin Yeni Kurallari - Insanlari Harekete Gecirmenin Sirlari | Daniel H.
+	Pink
+</div>
+<div>
+	Satin Alma Translari - Satis ve Pazarlamanin Yeni Psikolojisi | Joe Vitale
+</div>
+<div>
+	Rus Ruletinde Nasil Kazanirsiniz ve Diger Olumcul Mantik Sorulari | Thomas
+	Byrne, Tom Cassidy
+</div>
+<div>Reklamin Dili | Ugur Bati</div>
 <div>Reklam Dunyasinin Krali David Ogilvy | Kenneth Roman</div>
 <div>Rekabet Ustu | Edward de Bono</div>
-<div>Psikolojide Insan Modelleri ve Yerel Insan
-Modellerimiz | Sibel Aysen Arkonac</div>
-<div>Psikoloji 101 - Yasantimizi Bicimlendirmis 101
-Fikir, Kavram ve Kuram | Adrian Furnham</div>
+<div>
+	Psikolojide Insan Modelleri ve Yerel Insan Modellerimiz | Sibel Aysen Arkonac
+</div>
+<div>
+	Psikoloji 101 - Yasantimizi Bicimlendirmis 101 Fikir, Kavram ve Kuram | Adrian
+	Furnham
+</div>
 <div>Post Imaj Devri | John Grant</div>
-<div>Pomodoro
-Teknigi - Hayat Kurtaran Zaman Yonetimi Sistemi | Francesco Cirillo</div>
-<div>Peynirimi Kim
-Kapti? | Spencer Johnson</div>
+<div>
+	Pomodoro Teknigi - Hayat Kurtaran Zaman Yonetimi Sistemi | Francesco Cirillo
+</div>
+<div>Peynirimi Kim Kapti? | Spencer Johnson</div>
 <div>Pembe Fili Dusunme | Zeynep Selvili Carmikli</div>
-<div>Pazarlama
-Metaforlari | Gerald Zaltman, Lindsay Zaltman</div>
-<div>Pazarlama 3.0 | Philip Kotler,
-Hermawan Kartajaya, Iwan Setiawan</div>
-<div>P&G'nin 165 Yillik Seruveni | Davis Dyer,
-Frederick Dalzell, Rowena Olegario</div>
+<div>Pazarlama Metaforlari | Gerald Zaltman, Lindsay Zaltman</div>
+<div>Pazarlama 3.0 | Philip Kotler, Hermawan Kartajaya, Iwan Setiawan</div>
+<div>
+	P&G'nin 165 Yillik Seruveni | Davis Dyer, Frederick Dalzell, Rowena Olegario
+</div>
 <div>O Kadar Basit ki! | Ken Segall</div>
-<div>Nefesin Sifa
-Veren Gucu | Richard P. Brown, Patricia L. Gerbarg</div>
+<div>Nefesin Sifa Veren Gucu | Richard P. Brown, Patricia L. Gerbarg</div>
 <div>Nbr Gnclk | Ayse Onursal</div>
-<div>Nasil
-Steve Jobs Olunur? | Leander Kahney</div>
-<div>Mutluluk… - Mutlu Olunacak 500 Sey | Lisa
-Swerling, Ralph Lazar</div>
-<div>Mukemmeli Secmek | Jim Collins, Morten T. Hansen </div>
-<div>Modanin
-Iktidari | Arzu Suzmen</div>
+<div>Nasil Steve Jobs Olunur? | Leander Kahney</div>
+<div>Mutluluk… - Mutlu Olunacak 500 Sey | Lisa Swerling, Ralph Lazar</div>
+<div>Mukemmeli Secmek | Jim Collins, Morten T. Hansen</div>
+<div>Modanin Iktidari | Arzu Suzmen</div>
 <div>Moda Sistemi | Roland Barthes</div>
-<div>Moda Moda Dedikleri | Melis
-Alphan</div> 
-<div>Moda Donek Bir Tanricadir. Aysun Kaba</div> 
-<div>Masal Terapi | Judith Malika Liberman</div> 
-<div>Marka Yonetimi | Ugur Bati </div>
-<div>Marka Akli | Duanne E. Knapp </div>
-<div>Lean In
-Sinirlarini Zorla - Kadinlar, Is ve Liderlik Istegi | Sheryl Sandberg </div>
-<div>Kuresel
-Dusler | Richard J. Barnet, John Cavanagh </div>
+<div>Moda Moda Dedikleri | Melis Alphan</div>
+<div>Moda Donek Bir Tanricadir. Aysun Kaba</div>
+<div>Masal Terapi | Judith Malika Liberman</div>
+<div>Marka Yonetimi | Ugur Bati</div>
+<div>Marka Akli | Duanne E. Knapp</div>
+<div>
+	Lean In Sinirlarini Zorla - Kadinlar, Is ve Liderlik Istegi | Sheryl Sandberg
+</div>
+<div>Kuresel Dusler | Richard J. Barnet, John Cavanagh</div>
 <div>Kucuk Mavi Kus Dedi ki | Biz Stone</div>
 <div>
 	Kucuk Insanlardan Buyuk Sorular Hayli Muhim Insanlardan Basit Cevaplar |
