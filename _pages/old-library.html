@@ -11,15 +11,14 @@ published: true
 <input
 	type="text"
 	id="searchInput"
-	placeholder="Search by title, author, shelf..."
+	placeholder="Search books..."
 	style="width: 100%; padding: 10px; margin-bottom: 20px"
 />
 
 <table
 	id="libraryTable"
 	border="1"
-	cellpadding="8"
-	cellspacing="0"
+	cellpadding="6"
 >
 	<thead></thead>
 	<tbody></tbody>
@@ -32,8 +31,15 @@ published: true
 		download: true,
 		header: true,
 		skipEmptyLines: true,
+
 		complete: function (results) {
 			const data = results.data
+
+			if (!data.length) {
+				document.body.innerHTML += "<p>CSV could not be loaded.</p>"
+				return
+			}
+
 			const headers = Object.keys(data[0])
 
 			const thead = document.querySelector("#libraryTable thead")
@@ -41,15 +47,15 @@ published: true
 
 			thead.innerHTML = `
       <tr>
-        ${headers.map((header) => `<th>${header}</th>`).join("")}
+        ${headers.map((h) => `<th>${h}</th>`).join("")}
       </tr>
     `
 
 			tbody.innerHTML = data
 				.map(
-					(item) => `
+					(row) => `
       <tr>
-        ${headers.map((header) => `<td>${item[header] || ""}</td>`).join("")}
+        ${headers.map((h) => `<td>${row[h] || ""}</td>`).join("")}
       </tr>
     `,
 				)
@@ -58,11 +64,12 @@ published: true
 			document
 				.getElementById("searchInput")
 				.addEventListener("input", function () {
-					const searchTerm = this.value.toLowerCase()
+					const term = this.value.toLowerCase()
 
 					document.querySelectorAll("#libraryTable tbody tr").forEach((row) => {
-						const text = row.innerText.toLowerCase()
-						row.style.display = text.includes(searchTerm) ? "" : "none"
+						row.style.display = row.innerText.toLowerCase().includes(term)
+							? ""
+							: "none"
 					})
 				})
 		},
