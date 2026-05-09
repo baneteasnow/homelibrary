@@ -17,6 +17,7 @@ published: true
 	id="libraryTable"
 	border="1"
 	cellpadding="6"
+	style="width: 100%; border-collapse: collapse"
 >
 	<thead></thead>
 	<tbody></tbody>
@@ -44,18 +45,32 @@ published: true
 			const tbody = document.querySelector("#libraryTable tbody")
 
 			thead.innerHTML = `
-      <tr>
-        ${headers.map((h) => `<th>${h}</th>`).join("")}
-      </tr>
-    `
+        <tr>
+          ${headers.map((h) => `<th>${h}</th>`).join("")}
+        </tr>
+      `
 
 			tbody.innerHTML = data
 				.map(
 					(row) => `
-      <tr>
-        ${headers.map((h) => `<td>${row[h] || ""}</td>`).join("")}
-      </tr>
-    `,
+          <tr>
+            ${headers
+							.map((h) => {
+								const value = row[h] || ""
+
+								if (value.startsWith("http")) {
+									if (h.toLowerCase().includes("image")) {
+										return `<td><a href="${value}" target="_blank" rel="noopener noreferrer">image</a></td>`
+									}
+
+									return `<td><a href="${value}" target="_blank" rel="noopener noreferrer">search</a></td>`
+								}
+
+								return `<td>${value}</td>`
+							})
+							.join("")}
+          </tr>
+        `,
 				)
 				.join("")
 
