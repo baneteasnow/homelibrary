@@ -1,0 +1,70 @@
+---
+layout: page
+title: "Old Library"
+last_modified_at: 2026-05-08
+permalink: /old-library/
+published: true
+---
+
+<h1>Old Library</h1>
+
+<input
+	type="text"
+	id="searchInput"
+	placeholder="Search by title, author, shelf..."
+	style="width: 100%; padding: 10px; margin-bottom: 20px"
+/>
+
+<table
+	id="libraryTable"
+	border="1"
+	cellpadding="8"
+	cellspacing="0"
+>
+	<thead></thead>
+	<tbody></tbody>
+</table>
+
+<script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+
+<script>
+	Papa.parse("/assets/data/old-library.csv", {
+		download: true,
+		header: true,
+		skipEmptyLines: true,
+		complete: function (results) {
+			const data = results.data
+			const headers = Object.keys(data[0])
+
+			const thead = document.querySelector("#libraryTable thead")
+			const tbody = document.querySelector("#libraryTable tbody")
+
+			thead.innerHTML = `
+      <tr>
+        ${headers.map((header) => `<th>${header}</th>`).join("")}
+      </tr>
+    `
+
+			tbody.innerHTML = data
+				.map(
+					(item) => `
+      <tr>
+        ${headers.map((header) => `<td>${item[header] || ""}</td>`).join("")}
+      </tr>
+    `,
+				)
+				.join("")
+
+			document
+				.getElementById("searchInput")
+				.addEventListener("input", function () {
+					const searchTerm = this.value.toLowerCase()
+
+					document.querySelectorAll("#libraryTable tbody tr").forEach((row) => {
+						const text = row.innerText.toLowerCase()
+						row.style.display = text.includes(searchTerm) ? "" : "none"
+					})
+				})
+		},
+	})
+</script>
