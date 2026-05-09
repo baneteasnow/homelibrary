@@ -10,8 +10,17 @@ published: true
 	type="text"
 	id="searchInput"
 	placeholder="Search books..."
-	style="width: 100%; padding: 10px; margin-bottom: 20px"
+	style="width: 100%; padding: 10px; margin-bottom: 12px"
 />
+
+<select
+	id="releasedFilter"
+	style="width: 100%; padding: 10px; margin-bottom: 20px"
+>
+	<option value="">All books</option>
+	<option value="yes">Released: yes</option>
+	<option value="no">Released: no</option>
+</select>
 
 <table
 	id="libraryTable"
@@ -45,46 +54,64 @@ published: true
 			const tbody = document.querySelector("#libraryTable tbody")
 
 			thead.innerHTML = `
-        <tr>
-          ${headers.map((h) => `<th>${h}</th>`).join("")}
-        </tr>
-      `
+				<tr>
+					${headers.map((h) => `<th>${h}</th>`).join("")}
+				</tr>
+			`
 
 			tbody.innerHTML = data
 				.map(
 					(row) => `
-          <tr>
-            ${headers
-							.map((h) => {
-								const value = row[h] || ""
+						<tr>
+							${headers
+								.map((h) => {
+									const value = row[h] || ""
 
-								if (value.startsWith("http")) {
-									if (h.toLowerCase().includes("image")) {
-										return `<td><a href="${value}" target="_blank" rel="noopener noreferrer">image</a></td>`
+									if (value.startsWith("http")) {
+										if (h.toLowerCase().includes("image")) {
+											return `<td><a href="${value}" target="_blank" rel="noopener noreferrer">image</a></td>`
+										}
+
+										return `<td><a href="${value}" target="_blank" rel="noopener noreferrer">search</a></td>`
 									}
 
-									return `<td><a href="${value}" target="_blank" rel="noopener noreferrer">search</a></td>`
-								}
-
-								return `<td>${value}</td>`
-							})
-							.join("")}
-          </tr>
-        `,
+									return `<td>${value}</td>`
+								})
+								.join("")}
+						</tr>
+					`,
 				)
 				.join("")
 
-			document
-				.getElementById("searchInput")
-				.addEventListener("input", function () {
-					const term = this.value.toLowerCase()
+			const searchInput = document.getElementById("searchInput")
+			const releasedFilter = document.getElementById("releasedFilter")
 
-					document.querySelectorAll("#libraryTable tbody tr").forEach((row) => {
-						row.style.display = row.innerText.toLowerCase().includes(term)
-							? ""
-							: "none"
-					})
+			function filterTable() {
+				const term = searchInput.value.toLowerCase()
+				const releasedValue = releasedFilter.value.toLowerCase()
+
+				const releasedIndex = headers.findIndex(
+					(h) => h.toLowerCase().trim() === "released?",
+				)
+
+				document.querySelectorAll("#libraryTable tbody tr").forEach((row) => {
+					const textMatch = row.innerText.toLowerCase().includes(term)
+
+					const cells = row.querySelectorAll("td")
+
+					const releasedCell =
+						releasedIndex >= 0
+							? cells[releasedIndex].innerText.toLowerCase().trim()
+							: ""
+
+					const releasedMatch = !releasedValue || releasedCell === releasedValue
+
+					row.style.display = textMatch && releasedMatch ? "" : "none"
 				})
+			}
+
+			searchInput.addEventListener("input", filterTable)
+			releasedFilter.addEventListener("change", filterTable)
 		},
 	})
 </script>
