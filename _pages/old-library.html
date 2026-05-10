@@ -13,21 +13,37 @@ published: true
 	style="width: 100%; padding: 10px; margin-bottom: 12px"
 />
 
-<select
-	id="releasedFilter"
-	style="
-		width: 220px;
-		padding: 8px 12px;
-		margin-bottom: 20px;
-		border: 1px solid #ccc;
-		border-radius: 6px;
-		background: white;
-	"
->
-	<option value="">All books</option>
-	<option value="yes">Released: yes</option>
-	<option value="no">Released: no</option>
-</select>
+<div style="display: flex; gap: 12px; margin-bottom: 20px; flex-wrap: wrap">
+	<select
+		id="releasedFilter"
+		style="
+			width: 220px;
+			padding: 8px 12px;
+			border: 1px solid #ccc;
+			border-radius: 6px;
+			background: white;
+		"
+	>
+		<option value="">All released</option>
+		<option value="yes">Released: yes</option>
+		<option value="no">Released: no</option>
+	</select>
+
+	<select
+		id="moveFilter"
+		style="
+			width: 220px;
+			padding: 8px 12px;
+			border: 1px solid #ccc;
+			border-radius: 6px;
+			background: white;
+		"
+	>
+		<option value="">All move</option>
+		<option value="yes">Move: yes</option>
+		<option value="no">Move: no</option>
+	</select>
+</div>
 
 <table
 	id="libraryTable"
@@ -92,18 +108,24 @@ published: true
 
 			const searchInput = document.getElementById("searchInput")
 			const releasedFilter = document.getElementById("releasedFilter")
+			const moveFilter = document.getElementById("moveFilter")
+
+			function getColumnIndex(columnName) {
+				return headers.findIndex(
+					(h) => h.toLowerCase().trim() === columnName,
+				)
+			}
 
 			function filterTable() {
 				const term = searchInput.value.toLowerCase()
 				const releasedValue = releasedFilter.value.toLowerCase()
+				const moveValue = moveFilter.value.toLowerCase()
 
-				const releasedIndex = headers.findIndex(
-					(h) => h.toLowerCase().trim() === "released?",
-				)
+				const releasedIndex = getColumnIndex("released?")
+				const moveIndex = getColumnIndex("move?")
 
 				document.querySelectorAll("#libraryTable tbody tr").forEach((row) => {
 					const textMatch = row.innerText.toLowerCase().includes(term)
-
 					const cells = row.querySelectorAll("td")
 
 					const releasedCell =
@@ -111,14 +133,24 @@ published: true
 							? cells[releasedIndex].innerText.toLowerCase().trim()
 							: ""
 
-					const releasedMatch = !releasedValue || releasedCell === releasedValue
+					const moveCell =
+						moveIndex >= 0
+							? cells[moveIndex].innerText.toLowerCase().trim()
+							: ""
 
-					row.style.display = textMatch && releasedMatch ? "" : "none"
+					const releasedMatch =
+						!releasedValue || releasedCell === releasedValue
+
+					const moveMatch = !moveValue || moveCell === moveValue
+
+					row.style.display =
+						textMatch && releasedMatch && moveMatch ? "" : "none"
 				})
 			}
 
 			searchInput.addEventListener("input", filterTable)
 			releasedFilter.addEventListener("change", filterTable)
+			moveFilter.addEventListener("change", filterTable)
 		},
 	})
 </script>
