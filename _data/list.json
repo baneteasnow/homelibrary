@@ -39282,5 +39282,23 @@
 		"tbr": "yes",
 		"image": "https://www.next52books.com",
 		"location": "house-2"
+	},
+	{
+		"bookshelf": 3182,
+		"No": 2182,
+		"title": "Ruhun Yarali Sifacisi - Carl Jung",
+		"publisher": "Dogan Novus",
+		"author": "Claire Dunne",
+		"lang": "Turkce",
+		"page": 320,
+		"year": "2024",
+		"notes": "A-4",
+		"status": "Reading",
+		"newstatus": "n/a",
+		"categories": "BiographyLifeStories",
+		"reread": "n/a",
+		"tbr": "Reading",
+		"image": "https://www.next52books.com",
+		"location": "house-2"
 	}
 ]
