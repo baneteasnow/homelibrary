@@ -3626,11 +3626,11 @@
 		"page": 480,
 		"year": "2026",
 		"notes": "C-4",
-		"status": "UnRead",
+		"status": "Reading",
 		"newstatus": "n/a",
-		"categories": "n/a",
+		"categories": "SocietyCulture",
 		"reread": "n/a",
-		"tbr": "yes",
+		"tbr": "Reading",
 		"image": "https://www.next52books.com",
 		"location": "house-2"
 	},
@@ -26349,7 +26349,7 @@
 		"categories": "CreativityExpression",
 		"reread": "yes",
 		"tbr": "read",
-		"image": "https://www.next52books.com",
+		"image": "https://www.next52books.com/assets/new/yazma-cesareti.jpg",
 		"location": "homelibrary"
 	},
 	{
@@ -39298,7 +39298,7 @@
 		"categories": "BiographyLifeStories",
 		"reread": "n/a",
 		"tbr": "Reading",
-		"image": "https://www.next52books.com",
+		"image": "https://www.next52books.com/assets/new/carl-jung-wounded-healer-of-the-soul.jpg",
 		"location": "house-2"
 	}
 ]
