@@ -39284,8 +39284,8 @@
 		"location": "house-2"
 	},
 	{
-		"bookshelf": 3182,
-		"No": 2182,
+		"bookshelf": 3183,
+		"No": 2183,
 		"title": "Ruhun Yarali Sifacisi - Carl Jung",
 		"publisher": "Dogan Novus",
 		"author": "Claire Dunne",
@@ -39299,6 +39299,42 @@
 		"reread": "n/a",
 		"tbr": "Reading",
 		"image": "https://www.next52books.com/assets/new/carl-jung-wounded-healer-of-the-soul.jpg",
+		"location": "house-2"
+	},
+	{
+		"bookshelf": 3184,
+		"No": 2184,
+		"title": "Imkansiz Vaka - Iflah Olmaz Erkeklik Terapi Odasinda",
+		"publisher": "Kolektif Kitap",
+		"author": "Katharina Linnepe",
+		"lang": "Turkce",
+		"page": 240,
+		"year": "2026",
+		"notes": "A-4",
+		"status": "UnRead",
+		"newstatus": "n/a",
+		"categories": "n/a",
+		"reread": "n/a",
+		"tbr": "yes",
+		"image": "https://www.next52books.com",
+		"location": "house-2"
+	},
+	{
+		"bookshelf": 3185,
+		"No": 2185,
+		"title": "Ilerlemeye Karsi",
+		"publisher": "Is Bankasi Kultur Yayinlari",
+		"author": "Slavoj Zizek",
+		"lang": "Turkce",
+		"page": 128,
+		"year": "2026",
+		"notes": "A-4",
+		"status": "UnRead",
+		"newstatus": "n/a",
+		"categories": "n/a",
+		"reread": "n/a",
+		"tbr": "yes",
+		"image": "https://www.next52books.com",
 		"location": "house-2"
 	}
 ]
