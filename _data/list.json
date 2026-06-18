@@ -39336,5 +39336,41 @@
 		"tbr": "yes",
 		"image": "https://www.next52books.com",
 		"location": "house-2"
+	},
+	{
+		"bookshelf": 3186,
+		"No": 2186,
+		"title": "The Madwoman in the Attic - The Woman Writer and the Nineteenth-Century Literary Imagination",
+		"publisher": "Yale University Press",
+		"author": "Sandra M. Gilbert",
+		"lang": "English",
+		"page": 744,
+		"year": "2020",
+		"notes": "A-4",
+		"status": "UnRead",
+		"newstatus": "n/a",
+		"categories": "n/a",
+		"reread": "n/a",
+		"tbr": "yes",
+		"image": "https://www.next52books.com",
+		"location": "house-2"
+	},
+	{
+		"bookshelf": 3187,
+		"No": 2187,
+		"title": "Plato’dan Freud’a Terapi Divaninin Gizli Tarihi",
+		"publisher": "Sola Unitas",
+		"author": "Nathan Kravis",
+		"lang": "Turkce",
+		"page": 216,
+		"year": "2018",
+		"notes": "A-4",
+		"status": "UnRead",
+		"newstatus": "n/a",
+		"categories": "n/a",
+		"reread": "n/a",
+		"tbr": "yes",
+		"image": "https://www.next52books.com",
+		"location": "house-2"
 	}
 ]
