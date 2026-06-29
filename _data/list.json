@@ -11856,10 +11856,10 @@
 		"status": "Read",
 		"reread": "yes",
 		"newstatus": "n/a",
-		"categories": "n/a",
+		"categories": "PhilosophyMeaning",
 		"tbr": "read",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://www.next52books.com/assets/old/eat-like-you-care.jpg",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1660,
@@ -19671,7 +19671,7 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"tbr": "read",
-		"image": "https://www.next52books.com",
+		"image": "https://www.next52books.com/assets/new/the-cheese-trap.jpg",
 		"location": ""
 	},
 	{
@@ -21627,14 +21627,14 @@
 		"lang": "Turkce",
 		"page": 392,
 		"year": "2019",
-		"notes": "",
+		"notes": "1-A",
 		"status": "Read",
 		"reread": "yes",
 		"newstatus": "n/a",
-		"categories": "n/a",
+		"categories": "PhilosophyMeaning",
 		"tbr": "read",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://www.next52books.com/assets/new/how-to-create-a-vegan-world.jpg",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 2203,
@@ -25389,14 +25389,14 @@
 		"lang": "Turkce",
 		"page": 216,
 		"year": "2019",
-		"notes": "",
+		"notes": "1-A",
 		"status": "Read",
 		"reread": "yes",
 		"newstatus": "n/a",
-		"categories": "n/a",
+		"categories": "PhilosophyMeaning",
 		"tbr": "read",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://www.next52books.com/assets/new/how-to-create-a-vegan-world.jpg",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 2412,
@@ -25461,14 +25461,14 @@
 		"lang": "Turkce",
 		"page": 280,
 		"year": "2020",
-		"notes": "",
+		"notes": "1-A",
 		"status": "UnRead",
 		"newstatus": "n/a",
-		"categories": "n/a",
+		"categories": "PhilosophyMeaning",
 		"reread": "n/a",
 		"tbr": "yes",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://homelibrary.next52books.com/assets/shelves/1-A.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 2416,
@@ -35421,14 +35421,14 @@
 		"lang": "Turkce",
 		"page": 192,
 		"year": "2024",
-		"notes": "",
+		"notes": "1-A",
 		"status": "UnRead",
 		"newstatus": "n/a",
-		"categories": "n/a",
+		"categories": "PhilosophyMeaning",
 		"reread": "n/a",
 		"tbr": "yes",
 		"image": "https://www.next52books.com",
-		"location": ""
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 2969,
