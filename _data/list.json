@@ -242,14 +242,14 @@
 		"lang": "Turkce",
 		"page": 280,
 		"year": "2020",
-		"notes": "",
+		"notes": "6-A",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "no",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://homelibrary.next52books.com/assets/shelves/6-A.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1015,
@@ -1664,13 +1664,13 @@
 		"lang": "Turkce",
 		"page": 400,
 		"year": "2022",
-		"notes": "",
+		"notes": "6-A",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"tbr": "yes",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://homelibrary.next52books.com/assets/shelves/6-A.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1094,
@@ -4543,14 +4543,14 @@
 		"lang": "Turkce",
 		"page": 344,
 		"year": "2021",
-		"notes": "",
+		"notes": "6-A",
 		"status": "Read",
 		"reread": "yes",
 		"newstatus": "ToBeUpdated",
 		"categories": "n/a",
 		"tbr": "read",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://www.next52books.com/assets/new/a-world-without-work.jpg",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1254,
@@ -4705,14 +4705,14 @@
 		"lang": "Turkce",
 		"page": 368,
 		"year": "2025",
-		"notes": "",
+		"notes": "6-A",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "yes",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://homelibrary.next52books.com/assets/shelves/6-A.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1263,
@@ -7189,14 +7189,14 @@
 		"lang": "Turkce",
 		"page": 488,
 		"year": "2025",
-		"notes": "",
+		"notes": "6-A",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "yes",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://homelibrary.next52books.com/assets/shelves/6-A.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1401,
@@ -8689,8 +8689,8 @@
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"tbr": "read",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://www.next52books.com/assets/old/the-industries-of-the-future.jpg",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1484,
@@ -12230,14 +12230,14 @@
 		"lang": "Turkce",
 		"page": 720,
 		"year": "2018",
-		"notes": "",
+		"notes": "6-A",
 		"status": "Read",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "read",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://www.next52books.com/assets/old/the-singularity-is-near.jpg",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1681,
@@ -13743,14 +13743,14 @@
 		"lang": "Turkce",
 		"page": 344,
 		"year": "2018",
-		"notes": "",
+		"notes": "6-A",
 		"status": "Read",
 		"reread": "yes",
 		"newstatus": "updated",
 		"categories": "TechnologyTheDigitalWorld",
 		"tbr": "read",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://homelibrary.next52books.com/assets/shelves/6-A.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1765,
@@ -15705,14 +15705,14 @@
 		"lang": "Turkce",
 		"page": 272,
 		"year": "2018",
-		"notes": "",
+		"notes": "6-A",
 		"status": "Read",
 		"newstatus": "ToBeUpdated",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "read",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://www.next52books.com/assets/new/to-be-a-machine.jpg",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1874,
@@ -15723,14 +15723,14 @@
 		"lang": "Turkce",
 		"page": 424,
 		"year": "2018",
-		"notes": "",
+		"notes": "6-A",
 		"status": "Read",
 		"reread": "yes",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"tbr": "read",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://www.next52books.com/assets/old/machine-platform-crowd.jpg",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1875,
@@ -15741,14 +15741,14 @@
 		"lang": "Turkce",
 		"page": 271,
 		"year": "2019",
-		"notes": "",
+		"notes": "6-A",
 		"status": "Read",
 		"newstatus": "ToBeUpdated",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "read",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://www.next52books.com/assets/new/what-to-do-when-machines-do-everything.jpg",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1876,
@@ -15759,14 +15759,14 @@
 		"lang": "Turkce",
 		"page": 280,
 		"year": "2022",
-		"notes": "",
+		"notes": "6-A",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "yes",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://homelibrary.next52books.com/assets/shelves/6-A.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1877,
@@ -16191,14 +16191,14 @@
 		"lang": "Turkce",
 		"page": 276,
 		"year": "2021",
-		"notes": "",
+		"notes": "6-A",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "no",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://homelibrary.next52books.com/assets/shelves/6-A.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1901,
@@ -16299,14 +16299,14 @@
 		"lang": "Turkce",
 		"page": 256,
 		"year": "2019",
-		"notes": "",
+		"notes": "6-A",
 		"status": "Read",
 		"reread": "yes",
 		"newstatus": "ToBeUpdated",
 		"categories": "n/a",
 		"tbr": "read",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://homelibrary.next52books.com/assets/shelves/6-A.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1907,
@@ -18964,14 +18964,14 @@
 		"lang": "Turkce",
 		"page": 268,
 		"year": "2017",
-		"notes": "",
+		"notes": "6-A",
 		"status": "Read",
 		"reread": "yes",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"tbr": "read",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://homelibrary.next52books.com/assets/shelves/6-A.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 2055,
@@ -20548,14 +20548,14 @@
 		"lang": "Turkce",
 		"page": 288,
 		"year": "2022",
-		"notes": "",
+		"notes": "6-A",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "yes",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://homelibrary.next52books.com/assets/shelves/6-A.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 2143,
@@ -20566,14 +20566,14 @@
 		"lang": "Turkce",
 		"page": 336,
 		"year": "2022",
-		"notes": "",
+		"notes": "6-A",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "yes",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://homelibrary.next52books.com/assets/shelves/6-A.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 2144,
@@ -20584,14 +20584,14 @@
 		"lang": "Turkce",
 		"page": 336,
 		"year": "2018",
-		"notes": "",
+		"notes": "6-A",
 		"status": "Read",
 		"reread": "yes",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"tbr": "read",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://homelibrary.next52books.com/assets/shelves/6-A.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 2145,
@@ -22672,14 +22672,14 @@
 		"lang": "Turkce",
 		"page": 336,
 		"year": "2020",
-		"notes": "",
+		"notes": "6-A",
 		"status": "Read",
 		"reread": "yes",
 		"newstatus": "ToBeUpdated",
 		"categories": "n/a",
 		"tbr": "read",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://www.next52books.com/assets/new/our-final-invention.jpg",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 2261,
@@ -23392,14 +23392,14 @@
 		"lang": "Turkce",
 		"page": 420,
 		"year": "2019",
-		"notes": "",
+		"notes": "6-A",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "yes",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://homelibrary.next52books.com/assets/shelves/6-A.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 2301,
@@ -24544,14 +24544,14 @@
 		"lang": "Turkce",
 		"page": 192,
 		"year": "2023",
-		"notes": "",
+		"notes": "6-A",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "yes",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://homelibrary.next52books.com/assets/shelves/6-A.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 2365,
@@ -25606,14 +25606,14 @@
 		"lang": "Turkce",
 		"page": 368,
 		"year": "2017",
-		"notes": "",
+		"notes": "6-A",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "yes",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://homelibrary.next52books.com/assets/shelves/6-A.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 2424,
@@ -25930,14 +25930,14 @@
 		"lang": "Turkce",
 		"page": 360,
 		"year": "2022",
-		"notes": "",
+		"notes": "6-A",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "yes",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://homelibrary.next52books.com/assets/shelves/6-A.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 2442,
@@ -25948,14 +25948,14 @@
 		"lang": "Turkce",
 		"page": 376,
 		"year": "2022",
-		"notes": "",
+		"notes": "6-A",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "no",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://homelibrary.next52books.com/assets/shelves/6-A.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 2443,
@@ -26218,14 +26218,14 @@
 		"lang": "Turkce",
 		"page": 464,
 		"year": "2019",
-		"notes": "",
+		"notes": "6-A",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "yes",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://homelibrary.next52books.com/assets/shelves/6-A.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 2458,
@@ -26776,14 +26776,14 @@
 		"lang": "Turkce",
 		"page": 400,
 		"year": "2021",
-		"notes": "",
+		"notes": "6-A",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "yes",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://homelibrary.next52books.com/assets/shelves/6-A.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 2489,
