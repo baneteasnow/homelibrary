@@ -39373,5 +39373,24 @@
 		"tbr": "yes",
 		"image": "https://homelibrary.next52books.com/assets/shelves/2-C.png",
 		"location": "homelibrary"
+	},
+	{
+		"bookshelf": 3188,
+		"No": 2188,
+		"title": "Kazanma Sanati Moneyball",
+		"publisher": "Nova Kitap",
+		"author": "Michael Lewis",
+		"lang": "Turkce",
+		"page": 312,
+		"year": "2024",
+		"notes": "5-A",
+		"note": "add a photo",
+		"status": "UnRead",
+		"newstatus": "n/a",
+		"categories": "n/a",
+		"reread": "n/a",
+		"tbr": "yes",
+		"image": "https://homelibrary.next52books.com/assets/shelves/5-A.png",
+		"location": "homelibrary"
 	}
 ]
