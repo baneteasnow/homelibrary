@@ -278,14 +278,14 @@
 		"lang": "Turkce",
 		"page": 336,
 		"year": "2018",
-		"notes": "",
+		"notes": "7-E",
 		"status": "Read",
 		"newstatus": "ToBeUpdated",
 		"categories": "n/a",
 		"reread": "yes",
 		"tbr": "read",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://www.next52books.com/assets/new/21-lessons-for-the-21st-century.jpg",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1017,
@@ -1160,14 +1160,14 @@
 		"lang": "Turkce",
 		"page": 352,
 		"year": "2019",
-		"notes": "",
+		"notes": "7-E",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "yes",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://homelibrary.next52books.com/assets/shelves/7-E.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1066,
@@ -1538,14 +1538,14 @@
 		"lang": "Turkce",
 		"page": 608,
 		"year": "2016",
-		"notes": "",
+		"notes": "7-E",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "yes",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://homelibrary.next52books.com/assets/shelves/7-E.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1087,
@@ -3769,14 +3769,14 @@
 		"lang": "Turkce",
 		"page": 284,
 		"year": "2014",
-		"notes": "",
+		"notes": "7-E",
 		"status": "Read",
 		"reread": "yes",
 		"newstatus": "updated",
 		"categories": "n/a",
 		"tbr": "read",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://www.next52books.com/assets/old/blink.jpg",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1211,
@@ -5461,14 +5461,14 @@
 		"lang": "Turkce",
 		"page": 276,
 		"year": "2014",
-		"notes": "",
+		"notes": "7-E",
 		"status": "Read",
 		"reread": "yes",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"tbr": "read",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://www.next52books.com/assets/new/david-and-goliath.jpg",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1305,
@@ -6397,14 +6397,14 @@
 		"lang": "Turkce",
 		"page": 438,
 		"year": "2003",
-		"notes": "",
+		"notes": "7-E",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "no",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://homelibrary.next52books.com/assets/shelves/7-E.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1357,
@@ -9835,14 +9835,14 @@
 		"lang": "Turkce",
 		"page": 413,
 		"year": "2016",
-		"notes": "",
+		"notes": "7-E",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "yes",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://homelibrary.next52books.com/assets/shelves/7-E.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1548,
@@ -10609,14 +10609,14 @@
 		"lang": "Turkce",
 		"page": 412,
 		"year": "2016",
-		"notes": "",
+		"notes": "7-E",
 		"status": "Read",
 		"newstatus": "ToBeUpdated",
 		"categories": "n/a",
 		"reread": "yes",
 		"tbr": "read",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://www.next52books.com/assets/new/21-lessons-for-the-21st-century.jpg",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1591,
@@ -11077,14 +11077,14 @@
 		"lang": "Turkce",
 		"page": 456,
 		"year": "2016",
-		"notes": "",
+		"notes": "7-E",
 		"status": "Read",
 		"newstatus": "ToBeUpdated",
 		"categories": "n/a",
 		"reread": "yes",
 		"tbr": "read",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://www.next52books.com/assets/new/homo-deus.jpg",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1617,
@@ -14577,8 +14577,8 @@
 		"newstatus": "updated",
 		"categories": "n/a",
 		"tbr": "read",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://www.next52books.com/assets/old/the-tipping-point.jpg",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1811,
@@ -16371,14 +16371,14 @@
 		"lang": "English",
 		"page": 403,
 		"year": "2012",
-		"notes": "",
+		"notes": "7-E",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "no",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://homelibrary.next52books.com/assets/shelves/7-E.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1911,
@@ -17866,14 +17866,14 @@
 		"lang": "Turkce",
 		"page": 328,
 		"year": "2025",
-		"notes": "",
+		"notes": "7-E",
 		"status": "Read",
 		"newstatus": "updated",
 		"categories": "PsychologyMentalLife",
 		"reread": "yes",
 		"tbr": "read",
 		"image": "https://www.next52books.com/assets/new/revenge-of-the-tipping-point.jpg",
-		"location": ""
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1994,
@@ -17974,14 +17974,14 @@
 		"lang": "Turkce",
 		"page": 240,
 		"year": "2017",
-		"notes": "",
+		"notes": "7-E",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "no",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://homelibrary.next52books.com/assets/shelves/7-E.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 2000,
@@ -19018,14 +19018,14 @@
 		"lang": "Turkce",
 		"page": 224,
 		"year": "2011",
-		"notes": "",
+		"notes": "7-E",
 		"status": "Read",
 		"reread": "yes",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"tbr": "read",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://www.next52books.com/assets/new/outliers.jpg",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 2058,
@@ -22402,14 +22402,14 @@
 		"lang": "Turkce",
 		"page": 511,
 		"year": "2011",
-		"notes": "",
+		"notes": "7-E",
 		"status": "Read",
 		"reread": "yes",
 		"newstatus": "updated",
 		"categories": "n/a",
 		"tbr": "read",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://www.next52books.com/assets/old/the-black-swan.jpg",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 2246,
@@ -23608,14 +23608,14 @@
 		"lang": "English",
 		"page": 112,
 		"year": "2010",
-		"notes": "",
+		"notes": "7-E",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "yes",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://homelibrary.next52books.com/assets/shelves/7-E.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 2313,
@@ -23860,14 +23860,14 @@
 		"lang": "Turkce",
 		"page": 344,
 		"year": "2018",
-		"notes": "",
+		"notes": "7-E",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "yes",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://homelibrary.next52books.com/assets/shelves/7-E.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 2327,
@@ -25750,14 +25750,14 @@
 		"lang": "Turkce",
 		"page": 440,
 		"year": "2011",
-		"notes": "",
+		"notes": "7-E",
 		"status": "Read",
 		"reread": "yes",
 		"newstatus": "updated",
 		"categories": "n/a",
 		"tbr": "read",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "hhttps://www.next52books.com/assets/old/what-the-dog-saw.jpg",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 2432,
@@ -29656,14 +29656,14 @@
 		"lang": "Turkce",
 		"page": 208,
 		"year": "2015",
-		"notes": "",
+		"notes": "7-E",
 		"status": "Read",
 		"newstatus": "ToBeUpdated",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "read",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://www.next52books.com/assets/new/what-does-europe-want.jpg",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 2649,
@@ -31748,14 +31748,14 @@
 		"lang": "Turkce",
 		"page": 260,
 		"year": "2023",
-		"notes": "",
+		"notes": "7-E",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "yes",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://homelibrary.next52books.com/assets/shelves/7-E.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 2765,
@@ -31766,14 +31766,14 @@
 		"lang": "Turkce",
 		"page": 208,
 		"year": "2023",
-		"notes": "",
+		"notes": "7-E",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "yes",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://homelibrary.next52books.com/assets/shelves/7-E.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 2766,
@@ -32054,14 +32054,14 @@
 		"lang": "Turkce",
 		"page": 425,
 		"year": "2022",
-		"notes": "",
+		"notes": "7-E",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "yes",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://homelibrary.next52books.com/assets/shelves/7-E.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 2782,
@@ -32072,14 +32072,14 @@
 		"lang": "Turkce",
 		"page": 328,
 		"year": "2019",
-		"notes": "",
+		"notes": "7-E",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "yes",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://homelibrary.next52books.com/assets/shelves/7-E.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 2783,
@@ -34756,14 +34756,14 @@
 		"lang": "Turkce",
 		"page": 448,
 		"year": "2024",
-		"notes": "",
+		"notes": "7-E",
 		"status": "Read",
 		"newstatus": "ToBeUpdated",
 		"categories": "n/a",
 		"reread": "yes",
 		"tbr": "read",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://www.next52books.com/assets/new/nexus.jpg",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 2932,
@@ -35098,14 +35098,14 @@
 		"lang": "Turkce",
 		"page": 392,
 		"year": "2021",
-		"notes": "",
+		"notes": "7-E",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "no",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://www.next52books.com/assets/new/talking-to-strangers.jpg",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 2951,
