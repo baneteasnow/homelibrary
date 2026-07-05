@@ -2491,14 +2491,14 @@
 		"lang": "Turkce",
 		"page": 224,
 		"year": "2018",
-		"notes": "",
+		"notes": "7-B",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "yes",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://homelibrary.next52books.com/assets/shelves/7-B.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1140,
@@ -2527,14 +2527,14 @@
 		"lang": "Turkce",
 		"page": 244,
 		"year": "2019",
-		"notes": "",
+		"notes": "7-B",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "yes",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://homelibrary.next52books.com/assets/shelves/7-B.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1142,
@@ -3121,14 +3121,14 @@
 		"lang": "Turkce",
 		"page": 240,
 		"year": "2024",
-		"notes": "",
+		"notes": "7-B",
 		"status": "Read",
 		"newstatus": "ToBeUpdated",
 		"categories": "PsychologyMentalLife",
 		"reread": "yes",
 		"tbr": "read",
 		"image": "https://www.next52books.com/assets/new/fildisi-kuyu-2.jpg",
-		"location": ""
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1175,
@@ -3211,14 +3211,14 @@
 		"lang": "Turkce",
 		"page": 168,
 		"year": "2021",
-		"notes": "",
+		"notes": "7-B",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "yes",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://homelibrary.next52books.com/assets/shelves/7-B.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1180,
@@ -3355,14 +3355,14 @@
 		"lang": "Turkce",
 		"page": 240,
 		"year": "2024",
-		"notes": "",
+		"notes": "7-B",
 		"status": "Read",
 		"newstatus": "ToBeUpdated",
 		"categories": "PsychologyMentalLife",
 		"reread": "yes",
 		"tbr": "read",
 		"image": "https://www.next52books.com/assets/new/fildisi-kuyu-1.jpg",
-		"location": ""
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1188,
@@ -3373,14 +3373,14 @@
 		"lang": "Turkce",
 		"page": 228,
 		"year": "2024",
-		"notes": "",
+		"notes": "7-B",
 		"status": "Read",
 		"newstatus": "ToBeUpdated",
 		"categories": "PsychologyMentalLife",
 		"reread": "no",
 		"tbr": "read",
 		"image": "https://www.next52books.com/assets/new/beni-zorla-sagma-birak-ben-emzireyim-seni.jpg",
-		"location": ""
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1189,
@@ -4165,14 +4165,14 @@
 		"lang": "Turkce",
 		"page": 72,
 		"year": "2020",
-		"notes": "",
+		"notes": "7-B",
 		"status": "Read",
 		"reread": "yes",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"tbr": "read",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://www.next52books.com/assets/new/butun-cocuklar-iyidir.jpg",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1233,
@@ -4723,14 +4723,14 @@
 		"lang": "Turkce",
 		"page": 279,
 		"year": "2021",
-		"notes": "",
+		"notes": "7-B",
 		"status": "Read",
 		"newstatus": "ToBeUpdated",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "read",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://www.next52books.com/assets/new/cehenneme-ovgu.jpg",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1264,
@@ -4759,14 +4759,14 @@
 		"lang": "Turkce",
 		"page": 251,
 		"year": "2015",
-		"notes": "",
+		"notes": "7-B",
 		"status": "Read",
 		"newstatus": "ToBeUpdated",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "read",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://www.next52books.com/assets/new/cennetin-dibi.jpg",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1266,
@@ -4885,14 +4885,14 @@
 		"lang": "Turkce",
 		"page": 320,
 		"year": "2026",
-		"notes": "",
+		"notes": "7-B",
 		"status": "Read",
 		"newstatus": "ToBeUpdated",
 		"categories": "PsychologyMentalLife",
 		"reread": "yes",
 		"tbr": "read",
 		"image": "https://www.next52books.com/assets/new/sevmek-sevilmek-cinsellik.jpg",
-		"location": ""
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1273,
@@ -7729,14 +7729,14 @@
 		"lang": "Turkce",
 		"page": 200,
 		"year": "2023",
-		"notes": "",
+		"notes": "7-B",
 		"status": "Read",
 		"reread": "yes",
 		"newstatus": "ToBeUpdated",
 		"categories": "n/a",
 		"tbr": "read",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://www.next52books.com/assets/new/erteleme.jpg",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1431,
@@ -8611,14 +8611,14 @@
 		"lang": "Turkce",
 		"page": 464,
 		"year": "2025",
-		"notes": "",
+		"notes": "7-B",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "yes",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://homelibrary.next52books.com/assets/shelves/7-B.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1480,
@@ -10105,14 +10105,14 @@
 		"lang": "Turkce",
 		"page": 152,
 		"year": "2019",
-		"notes": "",
+		"notes": "7-B",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "yes",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://homelibrary.next52books.com/assets/shelves/7-B.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1563,
@@ -10267,14 +10267,14 @@
 		"lang": "Turkce",
 		"page": 360,
 		"year": "2022",
-		"notes": "",
+		"notes": "7-B",
 		"status": "Read",
 		"newstatus": "ToBeUpdated",
 		"categories": "n/a",
 		"reread": "yes",
 		"tbr": "read",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://www.next52books.com/assets/new/hayat-ve-diger-hastaliklar.jpg",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1572,
@@ -11294,14 +11294,14 @@
 		"lang": "Turkce",
 		"page": 136,
 		"year": "2021",
-		"notes": "",
+		"notes": "7-B",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "yes",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://homelibrary.next52books.com/assets/shelves/7-B.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1629,
@@ -12771,14 +12771,14 @@
 		"lang": "Turkce",
 		"page": 296,
 		"year": "2021",
-		"notes": "",
+		"notes": "7-B",
 		"status": "Read",
 		"reread": "yes",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"tbr": "read",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://www.next52books.com/assets/new/iyi-aile-yoktur.jpg",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1711,
@@ -12843,14 +12843,14 @@
 		"lang": "Turkce",
 		"page": 168,
 		"year": "2019",
-		"notes": "",
+		"notes": "7-B",
 		"status": "Read",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "yes",
 		"tbr": "read",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://www.next52books.com/assets/new/iyi-toplum-yoktur.jpg",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1715,
@@ -13671,14 +13671,14 @@
 		"lang": "Turkce",
 		"page": 336,
 		"year": "2014",
-		"notes": "",
+		"notes": "7-B",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "yes",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://homelibrary.next52books.com/assets/shelves/7-B.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1761,
@@ -14625,14 +14625,14 @@
 		"lang": "Turkce",
 		"page": 176,
 		"year": "2020",
-		"notes": "",
+		"notes": "7-B",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "yes",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://homelibrary.next52books.com/assets/shelves/7-B.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1814,
@@ -18460,14 +18460,14 @@
 		"lang": "Turkce",
 		"page": 186,
 		"year": "2022",
-		"notes": "",
+		"notes": "7-B",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "yes",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://homelibrary.next52books.com/assets/shelves/7-B.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 2027,
@@ -21592,14 +21592,14 @@
 		"lang": "Turkce",
 		"page": 302,
 		"year": "2021",
-		"notes": "",
+		"notes": "7-B",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "yes",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://homelibrary.next52books.com/assets/shelves/7-B.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 2201,
@@ -24472,14 +24472,14 @@
 		"lang": "Turkce",
 		"page": 414,
 		"year": "2022",
-		"notes": "",
+		"notes": "7-B",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "yes",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://homelibrary.next52books.com/assets/shelves/7-B.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 2361,
@@ -26344,14 +26344,14 @@
 		"lang": "Turkce",
 		"page": 336,
 		"year": "2019",
-		"notes": "",
+		"notes": "7-B",
 		"status": "Read",
 		"newstatus": "ToBeUpdated",
 		"categories": "CreativityExpression",
 		"reread": "yes",
 		"tbr": "read",
 		"image": "https://www.next52books.com/assets/new/yazma-cesareti.jpg",
-		"location": ""
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 2465,
@@ -27046,14 +27046,14 @@
 		"lang": "Turkce",
 		"page": 144,
 		"year": "2021",
-		"notes": "",
+		"notes": "7-B",
 		"status": "Read",
 		"reread": "yes",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"tbr": "read",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://www.next52books.com/assets/new/the-drama-of-the-gifted-child.jpg",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 2504,
@@ -27406,14 +27406,14 @@
 		"lang": "Turkce",
 		"page": 144,
 		"year": "2022",
-		"notes": "",
+		"notes": "7-B",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "yes",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://homelibrary.next52books.com/assets/shelves/7-B.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 2524,
@@ -27424,14 +27424,14 @@
 		"lang": "Turkce",
 		"page": 272,
 		"year": "2022",
-		"notes": "",
+		"notes": "7-B",
 		"status": "Read",
 		"reread": "yes",
 		"newstatus": "ToBeUpdated",
 		"categories": "n/a",
 		"tbr": "read",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://www.next52books.com/assets/new/yuzmek-yasamak-ve-olma-arzusu.jpg",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 2525,
@@ -29476,14 +29476,14 @@
 		"lang": "Turkce",
 		"page": 160,
 		"year": "2023",
-		"notes": "",
+		"notes": "7-B",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "yes",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://homelibrary.next52books.com/assets/shelves/7-B.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 2639,
@@ -29494,14 +29494,14 @@
 		"lang": "Turkce",
 		"page": 156,
 		"year": "2021",
-		"notes": "",
+		"notes": "7-B",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "yes",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://homelibrary.next52books.com/assets/shelves/7-B.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 2640,
@@ -29638,14 +29638,14 @@
 		"lang": "Turkce",
 		"page": 240,
 		"year": "2022",
-		"notes": "",
+		"notes": "7-B",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "yes",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://homelibrary.next52books.com/assets/shelves/7-B.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 2648,
@@ -30377,14 +30377,14 @@
 		"lang": "Turkce",
 		"page": 240,
 		"year": "2024",
-		"notes": "",
+		"notes": "7-B",
 		"status": "Read",
 		"newstatus": "ToBeUpdated",
 		"categories": "n/a",
 		"reread": "yes",
 		"tbr": "read",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://www.next52books.com/assets/new/kendin-olmanin-dayanilmaz-hafifligi.jpg",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 2689,
@@ -30828,14 +30828,14 @@
 		"lang": "Turkce",
 		"page": 408,
 		"year": "2022",
-		"notes": "",
+		"notes": "7-B",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "yes",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://homelibrary.next52books.com/assets/shelves/7-B.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 2714,
@@ -31531,14 +31531,14 @@
 		"lang": "Turkce",
 		"page": 320,
 		"year": "2024",
-		"notes": "",
+		"notes": "7-B",
 		"status": "Read",
 		"newstatus": "ToBeUpdated",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "read",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://www.next52books.com/assets/new/hayat-bilgisi.jpg",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 2753,
@@ -31549,14 +31549,14 @@
 		"lang": "Turkce",
 		"page": 240,
 		"year": "2022",
-		"notes": "",
+		"notes": "7-B",
 		"status": "Read",
 		"newstatus": "ToBeUpdated",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "read",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://homelibrary.next52books.com/assets/shelves/7-B.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 2754,
@@ -31567,14 +31567,14 @@
 		"lang": "Turkce",
 		"page": 240,
 		"year": "2022",
-		"notes": "",
+		"notes": "7-B",
 		"status": "Read",
 		"newstatus": "ToBeUpdated",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "read",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://www.next52books.com/assets/new/bir-terapistin-arka-bahcesi.jpg",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 2755,
@@ -31585,14 +31585,14 @@
 		"lang": "Turkce",
 		"page": 216,
 		"year": "2022",
-		"notes": "",
+		"notes": "7-B",
 		"status": "Read",
 		"newstatus": "ToBeUpdated",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "read",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://www.next52books.com/assets/new/askin-halleri.jpg",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 2756,
@@ -31856,14 +31856,14 @@
 		"lang": "Turkce",
 		"page": 176,
 		"year": "2020",
-		"notes": "",
+		"notes": "7-B",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "yes",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://homelibrary.next52books.com/assets/shelves/7-B.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 2771,
@@ -32018,14 +32018,14 @@
 		"lang": "Turkce",
 		"page": 144,
 		"year": "2020",
-		"notes": "",
+		"notes": "7-B",
 		"status": "Read",
 		"newstatus": "updated",
 		"categories": "PhilosophyMeaning",
 		"reread": "no",
 		"tbr": "read",
 		"image": "https://www.next52books.com/assets/new/bir-seyler-eksik.jpg",
-		"location": ""
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 2780,
@@ -36503,14 +36503,14 @@
 		"lang": "Turkce",
 		"page": 144,
 		"year": "2021",
-		"notes": "",
+		"notes": "7-B",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "yes",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://homelibrary.next52books.com/assets/shelves/7-B.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 3029,
@@ -37421,14 +37421,14 @@
 		"lang": "Turkce",
 		"page": 364,
 		"year": "2024",
-		"notes": "",
+		"notes": "7-B",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "yes",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://homelibrary.next52books.com/assets/shelves/7-B.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 3080,
@@ -38231,14 +38231,14 @@
 		"lang": "Turkce",
 		"page": 224,
 		"year": "2021",
-		"notes": "",
+		"notes": "7-B",
 		"status": "Read",
 		"newstatus": "updated",
 		"categories": "PsychologyMentalLife",
 		"reread": "no",
 		"tbr": "read",
 		"image": "https://www.next52books.com/assets/new/kendine-yabanci.jpg",
-		"location": ""
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 3125,
@@ -38429,14 +38429,14 @@
 		"lang": "Turkce",
 		"page": 144,
 		"year": "2025",
-		"notes": "",
+		"notes": "7-B",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "yes",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://homelibrary.next52books.com/assets/shelves/7-B.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 3136,
@@ -38609,14 +38609,14 @@
 		"lang": "Turkce",
 		"page": 320,
 		"year": "2026",
-		"notes": "",
+		"notes": "7-B",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "yes",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://homelibrary.next52books.com/assets/shelves/7-B.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 3146,
@@ -38699,14 +38699,14 @@
 		"lang": "Turkce",
 		"page": 208,
 		"year": "2023",
-		"notes": "",
+		"notes": "7-B",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "yes",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://homelibrary.next52books.com/assets/shelves/7-B.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 3151,
@@ -38753,14 +38753,14 @@
 		"lang": "Turkce",
 		"page": 164,
 		"year": "2019",
-		"notes": "",
+		"notes": "7-B",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "yes",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://homelibrary.next52books.com/assets/shelves/7-B.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 3154,
@@ -38771,14 +38771,14 @@
 		"lang": "Turkce",
 		"page": 160,
 		"year": "2024",
-		"notes": "",
+		"notes": "7-B",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "yes",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://homelibrary.next52books.com/assets/shelves/7-B.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 3155,
@@ -38843,14 +38843,14 @@
 		"lang": "Turkce",
 		"page": 147,
 		"year": "2019",
-		"notes": "",
+		"notes": "7-B",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "yes",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://homelibrary.next52books.com/assets/shelves/7-B.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 3159,
@@ -38861,14 +38861,14 @@
 		"lang": "Turkce",
 		"page": 292,
 		"year": "2019",
-		"notes": "",
+		"notes": "7-B",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "yes",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://homelibrary.next52books.com/assets/shelves/7-B.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 3160,
@@ -38879,14 +38879,14 @@
 		"lang": "Turkce",
 		"page": 146,
 		"year": "2017",
-		"notes": "",
+		"notes": "7-B",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "yes",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://homelibrary.next52books.com/assets/shelves/7-B.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 3161,
@@ -38897,14 +38897,14 @@
 		"lang": "Turkce",
 		"page": 160,
 		"year": "2025",
-		"notes": "",
+		"notes": "7-B",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "yes",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://homelibrary.next52books.com/assets/shelves/7-B.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 3162,
@@ -38987,14 +38987,14 @@
 		"lang": "Turkce",
 		"page": 152,
 		"year": "2026",
-		"notes": "",
+		"notes": "7-B",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "yes",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://homelibrary.next52books.com/assets/shelves/7-B.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 3167,
@@ -39041,14 +39041,14 @@
 		"lang": "Turkce",
 		"page": 142,
 		"year": "2014",
-		"notes": "",
+		"notes": "7-B",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "yes",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://homelibrary.next52books.com/assets/shelves/7-B.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 3170,
@@ -39149,14 +39149,14 @@
 		"lang": "Turkce",
 		"page": 168,
 		"year": "2013",
-		"notes": "",
+		"notes": "7-B",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "yes",
-		"image": "https://www.next52books.com",
-		"location": ""
+		"image": "https://homelibrary.next52books.com/assets/shelves/7-B.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 3176,
