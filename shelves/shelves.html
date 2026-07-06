@@ -8,11 +8,11 @@ title: "shelves"
 shelves = items | group_by: "notes" | sort: "name" -%}
 
 <ul>
-	{%- for shelf in shelves -%} {%- if shelf.name != "" -%}
+	{%- for shelf in shelves -%} {%- if shelf.name != "" -%} {%- assign shelf_slug
+	= shelf.name | slugify -%} {%- assign shelf_url = "/shelves/" | append:
+	shelf_slug -%}
 	<li>
-		<a href="{{ site.baseurl }}/shelves/{{ shelf.name | slugify }}">
-			{{ shelf.name }}
-		</a>
+		<a href="{{ shelf_url | relative_url }}"> {{ shelf.name }} </a>
 		({{ shelf.items | size }})
 	</li>
 	{%- endif -%} {%- endfor -%}
