@@ -10688,7 +10688,7 @@
 		"reread": "n/a",
 		"tbr": "no",
 		"image": "https://homelibrary.next52books.com/assets/shelves/5-F.png",
-		"location": "homelibrary"
+		"location": "archived"
 	},
 	{
 		"bookshelf": 1595,
@@ -11852,7 +11852,7 @@
 		"lang": "Turkce",
 		"page": 136,
 		"year": "2016",
-		"notes": "archived",
+		"notes": "1-A",
 		"status": "Read",
 		"reread": "yes",
 		"newstatus": "n/a",
@@ -14571,7 +14571,7 @@
 		"lang": "Turkce",
 		"page": 304,
 		"year": "2006",
-		"notes": "archived",
+		"notes": "7-E",
 		"status": "Read",
 		"reread": "yes",
 		"newstatus": "updated",
@@ -22114,7 +22114,7 @@
 		"lang": "Turkce",
 		"page": 464,
 		"year": "2023",
-		"notes": "archived",
+		"notes": "6-B",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
