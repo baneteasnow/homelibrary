@@ -1,8 +1,8 @@
 ---
 layout: page-6
 published: true
-title: "Shelf 6-A"
-shelf: "6-A"
+title: "Shelf archived"
+shelf: "archived"
 ---
 
 {%- assign items = site.data.list.item | default: site.data.list -%} {%- assign
