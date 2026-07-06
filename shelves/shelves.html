@@ -7,8 +7,6 @@ title: "shelves"
 {%- assign items = site.data.list.item | default: site.data.list -%} {%- assign
 shelves = items | group_by: "notes" | sort: "name" -%}
 
-<h1>Shelves</h1>
-
 <ul>
 	{%- for shelf in shelves -%} {%- if shelf.name != "" -%}
 	<li>
