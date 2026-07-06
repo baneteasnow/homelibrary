@@ -1,0 +1,33 @@
+---
+layout: page-6
+published: true
+title: "Shelf 1-A"
+shelf: "1-A"
+---
+
+{%- assign items = site.data.list.item | default: site.data.list -%} {%- assign
+shelf_items = items | where: "notes", page.shelf -%}
+
+<h1>Shelf {{ page.shelf }}</h1>
+
+<table class="zebra">
+	<tr>
+		<th style="text-align: left">#</th>
+		<th style="text-align: left">name of the book</th>
+		<th style="text-align: left">author</th>
+		<th style="text-align: left">location</th>
+	</tr>
+
+	{%- for item in shelf_items -%}
+	<tr>
+		<td>{{ item.bookshelf }}</td>
+		<td>
+			<a href="{{ site.baseurl }}/booklist#{{ item.bookshelf }}">
+				<b>{{ item.title }}</b>
+			</a>
+		</td>
+		<td>{{ item.author }}</td>
+		<td>{{ item.location }}</td>
+	</tr>
+	{%- endfor -%}
+</table>
