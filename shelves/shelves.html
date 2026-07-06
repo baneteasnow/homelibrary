@@ -10,7 +10,7 @@ shelves = items | group_by: "notes" | sort: "name" -%}
 <ul>
 	{%- for shelf in shelves -%} {%- if shelf.name != "" -%}
 	<li>
-		<a href="{{ site.baseurl }}/shelves/{{ shelf.name | slugify }}/">
+		<a href="{{ site.baseurl }}/shelves/{{ shelf.name | slugify }}">
 			{{ shelf.name }}
 		</a>
 		({{ shelf.items | size }})
