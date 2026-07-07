@@ -1,7 +1,7 @@
 ---
 layout: page-6
 published: true
-title: "Category BiographyLifeStories"
+title: "category BiographyLifeStories"
 category: "BiographyLifeStories"
 ---
 
@@ -19,8 +19,6 @@ category: "BiographyLifeStories"
 		<th style="text-align: left">author</th>
 		<th style="text-align: left">shelf</th>
 		<th style="text-align: left">location</th>
-		<th style="text-align: left">info</th>
-		<th style="text-align: left">image</th>
 	</tr>
 
     {%- for item in category_items -%}
