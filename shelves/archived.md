@@ -5,6 +5,10 @@ title: "Shelf archived"
 shelf: "archived"
 ---
 
+{%- include backtotop.html -%}
+<br />
+
+<div style="clear: both"></div>
 {%- assign items = site.data.list.item | default: site.data.list -%} {%- assign
 shelf_items = items | where: "notes", page.shelf -%}
 

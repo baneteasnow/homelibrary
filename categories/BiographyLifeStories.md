@@ -1,8 +1,8 @@
 ---
 layout: page-6
 published: true
-title: "Shelf 3-B"
-shelf: "3-B"
+title: "Category BiographyLifeStories"
+category: "BiographyLifeStories"
 ---
 
 {%- include backtotop.html -%}
@@ -10,35 +10,18 @@ shelf: "3-B"
 
 <div style="clear: both"></div>
 {%- assign items = site.data.list.item | default: site.data.list -%} {%- assign
-shelf_items = items | where: "notes", page.shelf -%}
+category_items = items | where: "categories", page.category -%}
 
 <table class="zebra">
 	<tr>
 		<th style="text-align: left">#</th>
 		<th style="text-align: left">name of the book</th>
 		<th style="text-align: left">author</th>
-		<th style="text-align: left">category</th>
 		<th style="text-align: left">location</th>
 	</tr>
 
-    {%- for item in shelf_items -%}
-    <tr>
-    	<td>{{ item.bookshelf }}</td>
-    	<td>
-    		<a href="{{ site.baseurl }}/booklist#{{ item.bookshelf }}">
-    			<b>{{ item.title }}</b>
-    		</a>
-    	</td>
-    	<td>{{ item.author }}</td>
-    		<td>
-    		{%- if item.categories and item.categories != "" and item.categories != "n/a" -%}
-    			{{ item.categories }}
-    		{%- else -%}
-    			...
-    		{%- endif -%}
-    	</td>
     	<td>{{ item.location }}</td>
-    		<td>
+    			<td>
     		<a
     			name="{{ item.title }}"
     			title="google search"
@@ -64,3 +47,6 @@ shelf_items = items | where: "notes", page.shelf -%}
     {%- endfor -%}
 
 </table>
+
+{%- assign items = site.data.list.item | default: site.data.list -%}
+{%- assign category_items = items | where: "categpries", page.category -%}
