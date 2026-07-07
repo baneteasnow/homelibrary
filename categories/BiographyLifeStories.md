@@ -8,20 +8,32 @@ category: "BiographyLifeStories"
 {%- include backtotop.html -%}
 <br />
 
-<div style="clear: both"></div>
-{%- assign items = site.data.list.item | default: site.data.list -%} {%- assign
-category_items = items | where: "categories", page.category -%}
+{%- assign items = site.data.list.item | default: site.data.list -%}
+{%- assign category_items = items | where: "categories", page.category -%}
 
 <table class="zebra">
 	<tr>
 		<th style="text-align: left">#</th>
 		<th style="text-align: left">name of the book</th>
 		<th style="text-align: left">author</th>
+		<th style="text-align: left">shelf</th>
 		<th style="text-align: left">location</th>
+		<th style="text-align: left">info</th>
+		<th style="text-align: left">image</th>
 	</tr>
 
+    {%- for item in category_items -%}
+    <tr>
+    	<td>{{ item.bookshelf }}</td>
+    	<td>
+    		<a href="{{ site.baseurl }}/booklist#{{ item.bookshelf }}">
+    			<b>{{ item.title }}</b>
+    		</a>
+    	</td>
+    	<td>{{ item.author }}</td>
+    	<td>{{ item.notes }}</td>
     	<td>{{ item.location }}</td>
-    			<td>
+    	<td>
     		<a
     			name="{{ item.title }}"
     			title="google search"
@@ -35,7 +47,7 @@ category_items = items | where: "categories", page.category -%}
     	<td>
     		<a
     			name="{{ item.title }}"
-    			title="google search"
+    			title="google images search"
     			href="https://www.google.com/search?q={{ item.title }}%20{{ item.author }}&tbm=isch"
     			target="_blank"
     			rel="noreferrer,nofollow"
@@ -47,6 +59,3 @@ category_items = items | where: "categories", page.category -%}
     {%- endfor -%}
 
 </table>
-
-{%- assign items = site.data.list.item | default: site.data.list -%}
-{%- assign category_items = items | where: "categpries", page.category -%}
