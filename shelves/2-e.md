@@ -13,6 +13,7 @@ shelf_items = items | where: "notes", page.shelf -%}
 		<th style="text-align: left">#</th>
 		<th style="text-align: left">name of the book</th>
 		<th style="text-align: left">author</th>
+		<th style="text-align: left">category</th>
 		<th style="text-align: left">location</th>
 	</tr>
 
@@ -25,6 +26,13 @@ shelf_items = items | where: "notes", page.shelf -%}
     		</a>
     	</td>
     	<td>{{ item.author }}</td>
+    		<td>
+    		{%- if item.categories and item.categories != "" and item.categories != "n/a" -%}
+    			{{ item.categories }}
+    		{%- else -%}
+    			...
+    		{%- endif -%}
+    	</td>
     	<td>{{ item.location }}</td>
     </tr>
     {%- endfor -%}
