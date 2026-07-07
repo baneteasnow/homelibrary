@@ -21329,7 +21329,7 @@
 		"reread": "n/a",
 		"tbr": "yes",
 		"image": "https://homelibrary.next52books.com/assets/shelves/3-E.png",
-		"location": "archived"
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 2186,
@@ -23489,7 +23489,7 @@
 		"reread": "n/a",
 		"tbr": "yes",
 		"image": "https://www.next52books.com",
-		"location": "archived"
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 2306,
@@ -25379,7 +25379,7 @@
 		"reread": "n/a",
 		"tbr": "yes",
 		"image": "https://homelibrary.next52books.com/assets/shelves/5-B.png",
-		"location": "archived"
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 2411,
@@ -28745,7 +28745,7 @@
 		"reread": "n/a",
 		"tbr": "yes",
 		"image": "https://homelibrary.next52books.com/assets/shelves/4-A.png",
-		"location": "archived"
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 2598,

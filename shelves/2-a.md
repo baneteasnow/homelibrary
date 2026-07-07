@@ -34,6 +34,28 @@ shelf_items = items | where: "notes", page.shelf -%}
     		{%- endif -%}
     	</td>
     	<td>{{ item.location }}</td>
+    		<td>
+    		<a
+    			name="{{ item.title }}"
+    			title="google search"
+    			href="https://www.google.com/search?q={{ item.title }}%20{{ item.author }}"
+    			target="_blank"
+    			rel="noreferrer,nofollow"
+    		>
+    			google
+    		</a>
+    	</td>
+    	<td>
+    		<a
+    			name="{{ item.title }}"
+    			title="google search"
+    			href="https://www.google.com/search?q={{ item.title }}%20{{ item.author }}&tbm=isch"
+    			target="_blank"
+    			rel="noreferrer,nofollow"
+    		>
+    			google images
+    		</a>
+    	</td>
     </tr>
     {%- endfor -%}
 
