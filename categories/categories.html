@@ -7,14 +7,13 @@ title: "categories"
 {%- include backtotop.html -%}
 <br />
 <div style="clear: both"></div>
-
 {%- assign items = site.data.list.item | default: site.data.list -%} {%- assign
 categories = items | group_by: "categories" | sort: "name" -%}
 
 <ul>
 	{%- for category in categories -%} {%- if category.name != "" and
-	category.name != "n/a" -%} {%- assign category_slug = category.name | slugify
-	-%} {%- assign category_url = "/categories/" | append: category_slug -%}
+	category.name != "n/a" -%} {%- assign category_url = "/categories/" | append:
+	category.name -%}
 	<li>
 		<a href="{{ category_url | relative_url }}"> {{ category.name }} </a>
 		({{ category.items | size }})
