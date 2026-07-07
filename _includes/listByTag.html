@@ -13,9 +13,6 @@ gaveaway_data | size %}
 <!-- reading_yes -->
 {% assign reading_data = site.data.list %} {% assign status_reading =
 reading_data | where: "status", "Reading" | size %}
-<!-- location house-2 -->
-{% assign loc_data = site.data.list %} {% assign status_house2 = loc_data |
-where: "location", "house-2" | size %}
 <!-- plus: '50' = read as ebook - - - includes and comes from: reread.html & tobeupdated.html -->
 <!-- plus: '15' released 1st round ; plus: '81'  released 2nd round -->
 <div style="color: #b7b2b2">
@@ -56,7 +53,4 @@ where: "location", "house-2" | size %}
 			>reread (incl. e-reads): </a
 		>{{ reread_yes | plus: ereread_yes }}
 	</i>
-</div>
-<div style="color: #b7b2b2">
-	<i>house-2: {{ status_house2 }}</i>
 </div>
