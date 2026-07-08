@@ -8,4 +8,4 @@ published: true
 <br />
 
   <div style="clear: both"></div>
-<a href="https://homelibrary.next52books.com/shelves/shelves">Shelves</a>
+<a href="https://homelibrary.next52books.com/shelves/shelves">shelves</a>
