@@ -39809,5 +39809,24 @@
 		"tbr": "n/a",
 		"image": "",
 		"location": "homelibrary"
+	},
+	{
+		"bookshelf": 3211,
+		"No": 2211,
+		"title": "Burger",
+		"publisher": "Ayrinti Yayinlari",
+		"author": "Carol J. Adams",
+		"lang": "Turkce",
+		"page": 160,
+		"year": "2026",
+		"notes": "1-A",
+		"note": "add a photo",
+		"status": "UnRead",
+		"newstatus": "n/a",
+		"categories": "SocietyCulture",
+		"reread": "n/a",
+		"tbr": "n/a",
+		"image": "",
+		"location": "homelibrary"
 	}
 ]
