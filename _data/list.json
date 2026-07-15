@@ -1323,12 +1323,12 @@
 		"page": 260,
 		"year": "2026",
 		"notes": "6-B",
-		"status": "UnRead",
+		"status": "Reading",
 		"newstatus": "n/a",
-		"categories": "n/a",
+		"categories": "PsychologyMentalLife",
 		"reread": "n/a",
-		"tbr": "n/a",
-		"image": "https://homelibrary.next52books.com/assets/shelves/6-B.png",
+		"tbr": "Reading",
+		"image": "https://www.next52books.com/assets/new/all-the-lonely-people.jpg",
 		"location": "homelibrary"
 	},
 	{
@@ -5755,7 +5755,7 @@
 		"categories": "PsychologyMentalLife",
 		"reread": "no",
 		"tbr": "read",
-		"image": "https://homelibrary.next52books.com/assets/new/women-who-love-too-much.jpg",
+		"image": "https://www.next52books.com/assets/new/women-who-love-too-much.jpg",
 		"location": "homelibrary"
 	},
 	{
@@ -7033,7 +7033,7 @@
 		"categories": "PsychologyMentalLife",
 		"reread": "no",
 		"tbr": "read",
-		"image": "https://homelibrary.next52books.com/assets/new/emotional-inheritance.jpg",
+		"image": "https://www.next52books.com/assets/new/emotional-inheritance.jpg",
 		"location": "homelibrary"
 	},
 	{
@@ -19744,7 +19744,7 @@
 		"categories": "SocietyCulture",
 		"reread": "n/a",
 		"tbr": "Reading",
-		"image": "https://homelibrary.next52books.com/assets/new/dirty-work.jpg",
+		"image": "https://www.next52books.com/assets/new/dirty-work.jpg",
 		"location": "homelibrary"
 	},
 	{
