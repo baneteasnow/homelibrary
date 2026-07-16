@@ -6,29 +6,105 @@ gallery:
   - 1-A.png
   - 1-B.png
   - 1-C.png
+	- 1-D.png
+	- 1-E.png
+	- 1-F.png
   - 2-A.png
   - 2-B.png
+  - 2-C.png
+	- 2-D.png
+	- 2-E.png
+	- 2-F.png
+	- 3-A.png
+  - 3-B.png
+  - 3-C.png
+	- 3-D.png
+	- 3-E.png
+	- 3-F.png
+	- 4-A.png
+  - 4-B.png
+  - 4-C.png
+	- 4-D.png
+	- 4-E.png
+	- 4-F.png
+  - 5-A.png
+  - 5-B.png
+  - 5-C.png
+	- 5-D.png
+	- 5-E.png
+	- 5-F.png
+	- 6-A.png
+  - 6-B.png
+  - 6-C.png
+	- 6-D.png
+	- 6-E.png
+	- 6-F.png
+	- 7-A.png
+  - 7-B.png
+  - 7-C.png
+	- 7-D.png
+	- 7-E.png
+	- 7-F.png
+	- 8-A.png
+  - 8-B.png
+  - 8-C.png
+	- 8-F.png
 ---
 
-{%- include backtotop.html -%}
-<br />
-<div style="clear: both"></div>
+<style>
+.image-gallery {
+	overflow: auto;
+	margin-left: -1% !important;
+}
 
-{%- assign items = site.data.list.item | default: site.data.list -%} {%- assign
-shelves = items | group_by: "notes" | sort: "name" -%}
+.image-gallery a {
+	float: left;
+	display: block;
+	margin: 0 0 1% 1%;
+	width: 18%;
+	text-align: center;
+	text-decoration: none !important;
+}
 
-<ul>
-	{%- for shelf in shelves -%} {%- if shelf.name != "" -%} {%- assign shelf_slug
-	= shelf.name | slugify -%} {%- assign shelf_url = "/shelves/" | append:
-	shelf_slug -%}
-	<li>
-		<a href="{{ shelf_url | relative_url }}"> {{ shelf.name }} </a>
-		({{ shelf.items | size }})
-	</li>
-	{%- endif -%} {%- endfor -%}
-</ul>
+.image-gallery a img {
+	width: 100%;
+	display: block;
+	border-radius: 4px;
+	transition: opacity .2s;
+}
 
-<br />
-<div style="clear: both"></div>
+.image-gallery a:hover img {
+	opacity: .85;
+}
 
-{% include image-gallery.html folder="/assets/shelves" images=page.gallery %}
+@media (max-width: 900px) {
+	.image-gallery a {
+		width: 24%;
+	}
+}
+
+@media (max-width: 700px) {
+	.image-gallery a {
+		width: 32%;
+	}
+}
+
+@media (max-width: 480px) {
+	.image-gallery a {
+		width: 49%;
+	}
+}
+</style>
+
+<div class="image-gallery">
+{% for image in page.gallery %}
+	{% assign image_path = "/assets/shelves/" | append: image %}
+
+	<a href="{{ image_path | relative_url }}">
+		<img
+			src="{{ image_path | relative_url }}"
+			alt="{{ image | remove: ".png" }}"
+			loading="lazy">
+	</a>
+{% endfor %}
+</div>
