@@ -52,59 +52,87 @@ gallery:
 ---
 
 <style>
-.image-gallery {
-	overflow: auto;
-	margin-left: -1% !important;
-}
-
-.image-gallery a {
-	float: left;
-	display: block;
-	margin: 0 0 1% 1%;
-	width: 18%;
-	text-align: center;
-	text-decoration: none !important;
-}
-
-.image-gallery a img {
-	width: 100%;
-	display: block;
-	border-radius: 4px;
-	transition: opacity .2s;
-}
-
-.image-gallery a:hover img {
-	opacity: .85;
-}
-
-@media (max-width: 900px) {
-	.image-gallery a {
-		width: 24%;
+	.image-gallery {
+		overflow: auto;
+		margin: 24px 0 0 -1% !important;
 	}
-}
 
-@media (max-width: 700px) {
 	.image-gallery a {
-		width: 32%;
+		float: left;
+		display: block;
+		width: 18%;
+		margin: 0 0 1% 1%;
+		text-align: center;
+		text-decoration: none !important;
 	}
-}
 
-@media (max-width: 480px) {
-	.image-gallery a {
-		width: 49%;
+	.image-gallery a img {
+		display: block;
+		width: 100%;
+		height: auto;
+		margin: 0;
+		border: 0;
 	}
-}
+
+	@media (max-width: 800px) {
+		.image-gallery a {
+			width: 24%;
+		}
+	}
+
+	@media (max-width: 600px) {
+		.image-gallery a {
+			width: 32.333%;
+		}
+	}
+
+	@media (max-width: 420px) {
+		.image-gallery a {
+			width: 49%;
+		}
+	}
 </style>
 
-<div class="image-gallery">
-{% for image in page.gallery %}
-	{% assign image_path = "/assets/shelves/" | append: image %}
+{%- include backtotop.html -%}
 
-	<a href="{{ image_path | relative_url }}">
+<br />
+
+<div style="clear: both"></div>
+
+{%- assign items = site.data.list.item | default: site.data.list -%} {%- assign
+shelves = items | group_by: "notes" | sort: "name" -%}
+
+<ul>
+	{%- for shelf in shelves -%} {%- if shelf.name != "" -%} {%- assign shelf_slug
+	= shelf.name | slugify -%} {%- assign shelf_url = "/shelves/" | append:
+	shelf_slug -%}
+
+	<li>
+		<a href="{{ shelf_url | relative_url }}"> {{ shelf.name }} </a>
+		({{ shelf.items | size }})
+	</li>
+	{%- endif -%} {%- endfor -%}
+</ul>
+
+<br />
+
+<div style="clear: both"></div>
+
+<div class="image-gallery">
+	{%- for image in page.gallery -%} {%- assign image_path = "/assets/shelves/" |
+	append: image -%}
+
+	<a
+		href="{{ image_path | relative_url }}"
+		title="{{ image | remove: '.png' | replace: '-', ' ' }}"
+	>
 		<img
 			src="{{ image_path | relative_url }}"
-			alt="{{ image | remove: ".png" }}"
-			loading="lazy">
+			alt="{{ image | remove: '.png' | replace: '-', ' ' }}"
+			loading="lazy"
+		/>
 	</a>
-{% endfor %}
+	{%- endfor -%}
 </div>
+
+<div style="clear: both"></div>
