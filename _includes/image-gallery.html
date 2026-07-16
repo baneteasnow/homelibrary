@@ -1,9 +1,24 @@
-.image-gallery { display: grid; grid-template-columns: repeat(auto-fit,
-minmax(220px, 1fr)); gap: 16px; margin: 24px 0; } .image-gallery__item {
-display: block; text-decoration: none; } .image-gallery__item img { display:
-block; width: 100%; height: auto; border-radius: 4px; } {% assign gallery_folder
-= include.folder %} {% assign gallery_images = include.images %} {% if
-gallery_images and gallery_images.size > 0 %}
+<style>
+	.image-gallery {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+		gap: 16px;
+		margin: 24px 0;
+	}
+	.image-gallery__item {
+		display: block;
+		text-decoration: none;
+	}
+	.image-gallery__item img {
+		display: block;
+		width: 100%;
+		height: auto;
+		border-radius: 4px;
+	}
+</style>
+{% assign gallery_folder = include.folder %} {% assign gallery_images =
+include.images %} {% if gallery_images and gallery_images.size > 0 %}
+
 <div class="image-gallery">
 	{% for image in gallery_images %}
 	<a
