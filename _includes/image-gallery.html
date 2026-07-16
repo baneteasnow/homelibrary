@@ -1,32 +1,23 @@
-<style>
-  .image-gallery {overflow: auto; margin-left: -1%!important;}
-  .image-gallery a {float: left; display: block; margin: 0 0 1% 1%; width: 18%; text-align: center; text-decoration: none!important;}
-  .image-gallery a span {display: block; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; padding: 3px 0;}
-  .image-gallery a img {width: 100%; display: block;}
-</style>
-
-<!--     .image-gallery a {float: left; display: block; margin: 0 0 3% 3%; width: 22%; text-align: center; text-decoration: none!important;}
- -->
-
+.image-gallery { display: grid; grid-template-columns: repeat(auto-fit,
+minmax(220px, 1fr)); gap: 16px; margin: 24px 0; } .image-gallery__item {
+display: block; text-decoration: none; } .image-gallery__item img { display:
+block; width: 100%; height: auto; border-radius: 4px; } {% assign gallery_folder
+= include.folder %} {% assign gallery_images = include.images %} {% if
+gallery_images and gallery_images.size > 0 %}
 <div class="image-gallery">
-{% for file in site.static_files %}
-  {% if file.path contains include.folder %}
-        {% if file.extname == '.jpg' or 
-              file.extname == '.jpeg' or 
-              file.extname == '.JPG' or 
-              file.extname == '.JPEG' %}
-
-      {% assign filenameparts = file.path | split: "/" %}
-      {% assign filename = filenameparts | last | replace: file.extname,"" %}
-
-      <a href="{{ file.path }}" title="{{ filename |  replace:  "-"," " }}"> 
-        <!--<img src="{{ file.path }}" alt="{{ filename |  replace:  "-"," " }}" />-->
-       <!--<span><div style="word-wrap: break-word !important; font-size: 55%; color: #777">{{ filename }}</div></span>-->
-        <img src="{{ file.path }}?q=50&h=50" alt="{{ filename |  replace:  "-"," " }}" />
-        <!--<span><div style="word-wrap: break-word !important; font-size: 80%; color: #777">{{ filename |  replace:  "-"," " }}</div></span>-->
-      </a>
-    {% endif %}
-  {% endif %}
- {% endfor %}
+	{% for image in gallery_images %}
+	<a
+		class="image-gallery__item"
+		href="{{ gallery_folder | append: '/' | append: image | relative_url }}"
+	>
+		<img
+			src="{{ gallery_folder | append: '/' | append: image | relative_url }}"
+			alt="{{ image | split: '.' | first | replace: '-', ' ' }}"
+			loading="lazy"
+		/>
+	</a>
+	{% endfor %}
 </div>
-
+{% else %}
+<p>No images were added to this gallery.</p>
+{% endif %}
