@@ -40014,5 +40014,24 @@
 		"tbr": "n/a",
 		"image": "https://homelibrary.next52books.com/assets/shelves/6-A.png",
 		"location": "homelibrary"
+	},
+	{
+		"bookshelf": 3223,
+		"No": 2223,
+		"title": "Kizima Iklim Degisikligini Anlatiyorum",
+		"publisher": "Turkiye Is Bankasi Kultur Yayinlari",
+		"author": "Jean-Marc Jancovici",
+		"lang": "Turkce",
+		"page": 80,
+		"year": "2026",
+		"notes": "3-A",
+		"note": "add a photo",
+		"status": "UnRead",
+		"newstatus": "n/a",
+		"categories": "EnvironmentSustainableLiving",
+		"reread": "n/a",
+		"tbr": "n/a",
+		"image": "https://homelibrary.next52books.com/assets/shelves/3-A.png",
+		"location": "homelibrary"
 	}
 ]
