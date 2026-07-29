@@ -200,7 +200,7 @@ Home G
 			</td>
 			<td>
 				<a href="assets/shelves/7-C.png"
-					>7-C | {% assign books_data = site.data.list %} {% assign shelf_6c =
+					>7-C | {% assign books_data = site.data.list %} {% assign shelf_7c =
 					books_data | where: "notes", "7-C" | size %} {{ shelf_7c }}</a
 				>
 			</td>
@@ -330,3 +330,16 @@ shelf_10c| plus: shelf_10d | plus: shelf_11a| plus: shelf_11b| plus: shelf_11c|
 plus: shelf_11d| plus: shelf_12a| plus: shelf_12b| plus: shelf_12c| plus:
 shelf_12d}} +
 <i>archived:</i> {{ status_archived }}
+<div style="clear: both"></div>
+<i>total:</i>
+{{ shelf_1a | plus: shelf_1b | plus: shelf_1c | plus: shelf_1d | plus: shelf_2a
+| plus: shelf_2b | plus: shelf_2c | plus: shelf_2d | plus: shelf_3a | plus:
+shelf_3b | plus: shelf_3c | plus: shelf_3d | plus: shelf_4a | plus: shelf_4d |
+plus: shelf_5a | plus: shelf_5b | plus: shelf_5c | plus: shelf_5d | plus:
+shelf_6a | plus: shelf_6b | plus: shelf_6c | plus: shelf_6d | plus: shelf_7a |
+plus: shelf_7b | plus: shelf_7c | plus: shelf_7d | plus: shelf_8a | plus:
+shelf_8b | plus: shelf_8c | plus: shelf_8d | plus: shelf_9a | plus: shelf_9b |
+plus: shelf_9c | plus: shelf_9d | plus: shelf_10a | plus: shelf_10b | plus:
+shelf_10c| plus: shelf_10d | plus: shelf_11a| plus: shelf_11b| plus: shelf_11c|
+plus: shelf_11d| plus: shelf_12a| plus: shelf_12b| plus: shelf_12c| plus:
+shelf_12d | plus: status_archived}}
