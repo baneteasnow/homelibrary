@@ -4,7 +4,9 @@ title: bookshelves
 published: true
 ---
 
-{%-include f.html-%}
+{%-include f.html-%}  
+{%-include g.html-%}
+
 <br />
 
   <div style="clear: both"></div>
