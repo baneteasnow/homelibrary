@@ -1,5 +1,5 @@
 ---
-layout: page-6
+layout: page-8
 published: true
 title: "category BusinessEconomics"
 category: "BusinessEconomics"

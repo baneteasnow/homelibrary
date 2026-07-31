@@ -1,5 +1,5 @@
 ---
-layout: page-6
+layout: page-8
 published: true
 title: "category BiographyLifeStories"
 category: "BiographyLifeStories"
@@ -10,7 +10,7 @@ category: "BiographyLifeStories"
 
 <div style="clear: both"></div>
 {%- assign items = site.data.list.item | default: site.data.list -%}
-{%- assign category_items = items | where: "categories", page.category -%}
+{%- assign category_items = items | where: "categories", page.category | size -%} {{ category_items }}
 
 <table class="zebra">
 	<tr>
