@@ -7,6 +7,7 @@ published: true
 {%-include g.html-%}
 
   <div style="clear: both"></div>
+  <br />
 {%-include g0.html-%}
 <br />
 
