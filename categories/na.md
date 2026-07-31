@@ -9,6 +9,12 @@ category: "n/a"
 <br />
 
 <div style="clear: both"></div>
+
+{%- assign items = site.data.list.item | default: site.data.list -%}
+{%- assign category_items = items | where: "categories", page.category -%}
+
+<p>{{ category_items | size }}</p>
+<div style="clear: both"></div>
 {%- assign items = site.data.list.item | default: site.data.list -%}
 {%- assign category_items = items | where: "categories", page.category -%}
 
