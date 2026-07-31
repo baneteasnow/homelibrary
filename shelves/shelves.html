@@ -5,6 +5,33 @@ title: "shelves"
 ---
 
 {%- include backtotop.html -%}
+
+<br />
+<div style="clear: both"></div>
+
+{%- assign items = site.data.list.item | default: site.data.list -%} {%- assign
+shelves = items | group_by: "notes" -%} {%- assign shelf_numbers = (1..20) -%}
+{%- assign shelf_letters = "A,B,C,D" | split: "," -%}
+
+<ul>
+	{%- for number in shelf_numbers -%} {%- for letter in shelf_letters -%} {%-
+	capture shelf_name -%} {{- number -}}-{{- letter -}} {%- endcapture -%} {%-
+	assign shelf = shelves | where: "name", shelf_name | first -%} {%- if shelf
+	-%} {%- assign shelf_slug = shelf.name | slugify -%} {%- assign shelf_url =
+	"/shelves/" | append: shelf_slug -%}
+
+	<li>
+		<a href="{{ shelf_url | relative_url }}"> {{- shelf.name -}} </a>
+		({{ shelf.items | size }})
+	</li>
+	{%- endif -%} {%- endfor -%} {%- endfor -%}
+</ul>
+
+<br />
+<div style="clear: both"></div>
+
+<!--
+{%- include backtotop.html -%}
 <br />
 <div style="clear: both"></div>
 
@@ -24,3 +51,4 @@ shelves = items | group_by: "notes" | sort: "name" -%}
 
 <br />
 <div style="clear: both"></div>
+-->
