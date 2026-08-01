@@ -5,28 +5,99 @@ title: "categories"
 ---
 
 {%- include backtotop.html -%}
+
 <br />
 <div style="clear: both"></div>
+
 {%- assign items = site.data.list.item | default: site.data.list -%} {%- assign
 categories = items | group_by: "categories" | sort: "name" -%}
 
-<ul>
-	{%- for category in categories -%} {%- if category.name != "" and
-	category.name != "n/a" -%} {%- assign category_url = "/categories/" | append:
-	category.name -%}
-	<li>
-		<a href="{{ category_url | relative_url }}"> {{ category.name }} </a>
-		({{ category.items | size }})
-	</li>
-	{%- endif -%} {%- endfor -%}
-</ul>
-<br />
-<div style="clear: both"></div>
+<style>
+	.category-table {
+		width: 100%;
+		border-collapse: collapse;
+		font-size: 14px;
+		margin-bottom: 24px;
+	}
+
+	.category-table th {
+		padding: 10px 12px;
+		text-align: left;
+		background: #f5f5f5;
+		border-bottom: 2px solid #d9d9d9;
+		font-weight: 600;
+	}
+
+	.category-table th:last-child {
+		text-align: right;
+		width: 90px;
+	}
+
+	.category-table td {
+		padding: 10px 12px;
+		border-bottom: 1px solid #ececec;
+	}
+
+	.category-table td:last-child {
+		text-align: right;
+		color: #555;
+	}
+
+	.category-table tbody tr:nth-child(even) {
+		background: #fafafa;
+	}
+
+	.category-table tbody tr:hover {
+		background: #f1f1f1;
+	}
+
+	.category-table a {
+		display: block;
+		color: inherit;
+		text-decoration: none;
+	}
+
+	.na-category {
+		color: #b7b2b2;
+		font-style: italic;
+		font-size: 14px;
+	}
+
+	.na-category a {
+		color: inherit;
+	}
+</style>
+
+<table class="category-table">
+	<thead>
+		<tr>
+			<th>Category</th>
+			<th>Books</th>
+		</tr>
+	</thead>
+
+	<tbody>
+		{% for category in categories %} {% if category.name != "" and category.name
+		!= "n/a" %}
+
+		<tr>
+			<td>
+				<a href="{{ '/categories/' | append: category.name | relative_url }}">
+					{{ category.name }}
+				</a>
+			</td>
+
+			<td>{{ category.items | size }}</td>
+		</tr>
+
+		{% endif %} {% endfor %}
+	</tbody>
+</table>
+
 {% assign cat_data = site.data.list %} {% assign cat_na = cat_data | where:
 "categories", "n/a" | size %}
-<div style="color: #b7b2b2">
-	<i>
-		<a href="https://homelibrary.next52books.com/categories/na">n/a</a> ({{
-		cat_na }})
-	</i>
+
+<div class="na-category">
+	<a href="{{ '/categories/na' | relative_url }}">n/a</a>
+	({{ cat_na }})
 </div>
