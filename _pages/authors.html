@@ -100,21 +100,21 @@ permalink: /authors/
 
 	function getCategoryLabel(category) {
 		const categories = {
-			BiographyLifeStories: "Biography & Life Stories",
-			BusinessEconomics: "Business & Economics",
-			ConsumerMarketing: "Consumer & Marketing",
-			CreativityExpression: "Creativity & Expression",
-			EnvironmentSustainableLiving: "Environment & Sustainable Living",
-			HealthNutrition: "Health & Nutrition",
-			HistoryPoliticalThought: "History & Political Thought",
-			PersonalGrowthProductivity: "Personal Growth & Productivity",
-			PhilosophyMeaning: "Philosophy & Meaning",
-			PsychologyMentalLife: "Psychology & Mental Life",
-			SimpleLivingEverydayComforts: "Simple Living & Everyday Comforts",
-			ScienceDiscovery: "Science & Discovery",
-			SocietyCulture: "Society & Culture",
-			TechnologyTheDigitalWorld: "Technology & the Digital World",
-			WorkCareer: "Work & Career",
+			BiographyLifeStories: "BiographyfLifeStories",
+			BusinessEconomics: "BusinessEconomics",
+			ConsumerMarketing: "ConsumerMarketing",
+			CreativityExpression: "CreativityExpression",
+			EnvironmentSustainableLiving: "EnvironmentSustainableLiving",
+			HealthNutrition: "HealthNutrition",
+			HistoryPoliticalThought: "HistoryPoliticalThought",
+			PersonalGrowthProductivity: "PersonalGrowthProductivity",
+			PhilosophyMeaning: "PhilosophyMeaning",
+			PsychologyMentalLife: "PsychologyMentalLife",
+			SimpleLivingEverydayComforts: "SimpleLivingEverydayComforts",
+			ScienceDiscovery: "ScienceDiscovery",
+			SocietyCulture: "SocietyCulture",
+			TechnologyTheDigitalWorld: "TechnologyTheDigitalWorld",
+			WorkCareer: "WorkCareer",
 		}
 
 		return categories[category] || "category?"
@@ -151,9 +151,7 @@ permalink: /authors/
 
 			tableBody.innerHTML = matchingBooks
 				.map((book) => {
-					const bookUrl =
-						"{{ site.baseurl }}booklist#" +
-						encodeURIComponent(book.bookshelf || "")
+					const bookUrl = "booklist#" + encodeURIComponent(book.bookshelf || "")
 
 					return `
 						<tr>
@@ -174,7 +172,7 @@ permalink: /authors/
 							</td>
 
 							<td>
-								${isRead(book.status) ? "✅" : "read?"}
+								${isRead(book.status) ? "yes" : "no"}
 							</td>
 
 							<td>${escapeHTML(book.notes)}</td>
