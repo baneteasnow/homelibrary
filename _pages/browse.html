@@ -1,0 +1,416 @@
+---
+layout: page-6
+published: true
+title: "browse"
+permalink: /browse/
+---
+
+{%- include backtotop.html -%}
+
+<br />
+
+<style>
+	.browse-controls {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 10px;
+		margin-bottom: 14px;
+	}
+
+	.browse-controls select,
+	.browse-controls input {
+		box-sizing: border-box;
+		height: 38px;
+		padding: 7px 10px;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		background: #fff;
+		color: #000;
+		font: inherit;
+	}
+
+	.browse-controls select {
+		width: 210px;
+	}
+
+	.browse-controls input {
+		flex: 1;
+		min-width: 220px;
+	}
+
+	#resultInfo {
+		margin: 0 0 12px;
+	}
+
+	#browseTable {
+		width: 100%;
+		border-collapse: collapse;
+	}
+
+	table.zebra tr:nth-child(n + 2):nth-child(even) {
+		background-color: #f2f2f2;
+	}
+
+	#browseMessage {
+		margin-top: 10px;
+	}
+
+	@media (max-width: 700px) {
+		.browse-controls {
+			display: block;
+		}
+
+		.browse-controls select,
+		.browse-controls input {
+			width: 100%;
+			margin-bottom: 8px;
+		}
+	}
+</style>
+
+<div class="browse-controls">
+	<select id="fieldSelect">
+		<option value="">browse by...</option>
+		<option value="author">author</option>
+		<option value="categories">category</option>
+		<option value="notes">shelf</option>
+		<option value="publisher">publisher</option>
+		<option value="location">location</option>
+	</select>
+
+	<select
+		id="valueSelect"
+		disabled
+	>
+		<option value="">select a value...</option>
+	</select>
+
+	<input
+		type="text"
+		id="searchInput"
+		placeholder="search within results..."
+		disabled
+	/>
+</div>
+
+<p
+	id="resultInfo"
+	style="display: none"
+></p>
+
+<table
+	id="browseTable"
+	class="zebra"
+	style="display: none"
+>
+	<thead>
+		<tr>
+			<th style="text-align: left">#</th>
+			<th style="text-align: left">name of the book</th>
+			<th style="text-align: left">author</th>
+			<th style="text-align: left">year</th>
+			<th style="text-align: left">category</th>
+			<th style="text-align: left">read?</th>
+			<th style="text-align: left">shelf</th>
+			<th style="text-align: left">location</th>
+		</tr>
+	</thead>
+
+	<tbody></tbody>
+</table>
+
+<p id="browseMessage">Select a field and a value.</p>
+
+{%- assign books_data = site.data.list.item | default: site.data.list -%}
+
+<script
+	id="booksData"
+	type="application/json"
+>
+	{{ books_data | jsonify }}
+</script>
+
+<script>
+	const booksDataElement = document.getElementById("booksData")
+	const books = JSON.parse(booksDataElement.textContent)
+
+	const fieldSelect = document.getElementById("fieldSelect")
+	const valueSelect = document.getElementById("valueSelect")
+	const searchInput = document.getElementById("searchInput")
+	const resultInfo = document.getElementById("resultInfo")
+	const browseTable = document.getElementById("browseTable")
+	const tableBody = browseTable.querySelector("tbody")
+	const browseMessage = document.getElementById("browseMessage")
+
+	let selectedBooks = []
+
+	function escapeHTML(value) {
+		return String(value ?? "")
+			.replaceAll("&", "&amp;")
+			.replaceAll("<", "&lt;")
+			.replaceAll(">", "&gt;")
+			.replaceAll('"', "&quot;")
+			.replaceAll("'", "&#039;")
+	}
+
+	function normalize(value) {
+		return String(value ?? "")
+			.trim()
+			.toLocaleLowerCase("en")
+	}
+
+	function getAuthors(authorValue) {
+		return String(authorValue ?? "")
+			.split(",")
+			.map((author) => author.trim())
+			.filter(Boolean)
+	}
+
+	function getFieldValues(book, field) {
+		if (field === "author") {
+			return getAuthors(book.author)
+		}
+
+		const value = String(book[field] ?? "").trim()
+
+		return value ? [value] : []
+	}
+
+	function getUniqueValues(field) {
+		const values = new Map()
+
+		books.forEach((book) => {
+			getFieldValues(book, field).forEach((value) => {
+				const key = normalize(value)
+
+				if (!values.has(key)) {
+					values.set(key, value)
+				}
+			})
+		})
+
+		return Array.from(values.values()).sort((a, b) =>
+			a.localeCompare(b, "tr", {
+				sensitivity: "base",
+				numeric: true,
+			}),
+		)
+	}
+
+	function isRead(status) {
+		return Boolean(status) && status !== "UnRead"
+	}
+
+	function getFieldLabel(field) {
+		const labels = {
+			author: "author",
+			categories: "category",
+			notes: "shelf",
+			publisher: "publisher",
+			location: "location",
+		}
+
+		return labels[field] || field
+	}
+
+	function populateValueSelect(field, selectedValue = "") {
+		const values = getUniqueValues(field)
+
+		valueSelect.innerHTML = `
+			<option value="">select ${getFieldLabel(field)}...</option>
+			${values
+				.map(
+					(value) => `
+						<option value="${escapeHTML(value)}">
+							${escapeHTML(value)}
+						</option>
+					`,
+				)
+				.join("")}
+		`
+
+		valueSelect.disabled = false
+
+		if (selectedValue) {
+			valueSelect.value = selectedValue
+		}
+	}
+
+	function findMatchingBooks(field, value) {
+		const wantedValue = normalize(value)
+
+		return books.filter((book) =>
+			getFieldValues(book, field).some(
+				(bookValue) => normalize(bookValue) === wantedValue,
+			),
+		)
+	}
+
+	function updateURL(field, value) {
+		const url = new URL(window.location.href)
+
+		if (field && value) {
+			url.searchParams.set("field", field)
+			url.searchParams.set("value", value)
+		} else {
+			url.searchParams.delete("field")
+			url.searchParams.delete("value")
+		}
+
+		window.history.replaceState({}, "", url)
+	}
+
+	function renderTable() {
+		const searchTerm = normalize(searchInput.value)
+
+		const visibleBooks = selectedBooks.filter((book) => {
+			if (!searchTerm) {
+				return true
+			}
+
+			const searchableText = [
+				book.bookshelf,
+				book.title,
+				book.author,
+				book.year,
+				book.categories,
+				book.status,
+				book.notes,
+				book.location,
+				book.publisher,
+			]
+				.join(" ")
+				.toLocaleLowerCase("en")
+
+			return searchableText.includes(searchTerm)
+		})
+
+		tableBody.innerHTML = visibleBooks
+			.map((book) => {
+				const bookURL =
+					"{{ '/booklist' | relative_url }}#" +
+					encodeURIComponent(book.bookshelf || "")
+
+				return `
+					<tr>
+						<td>${escapeHTML(book.bookshelf)}</td>
+
+						<td>
+							<a href="${bookURL}">
+								<b>${escapeHTML(book.title)}</b>
+							</a>
+						</td>
+
+						<td>${escapeHTML(book.author)}</td>
+
+						<td>${escapeHTML(book.year)}</td>
+
+						<td>${escapeHTML(book.categories)}</td>
+
+						<td>${isRead(book.status) ? "✅" : "read?"}</td>
+
+						<td>${escapeHTML(book.notes)}</td>
+
+						<td>${escapeHTML(book.location)}</td>
+					</tr>
+				`
+			})
+			.join("")
+
+		resultInfo.textContent =
+			visibleBooks.length === 1 ? "1 book" : `${visibleBooks.length} books`
+
+		resultInfo.style.display = "block"
+
+		if (visibleBooks.length) {
+			browseTable.style.display = "table"
+			browseMessage.style.display = "none"
+		} else {
+			browseTable.style.display = "none"
+			browseMessage.textContent = "No books found."
+			browseMessage.style.display = "block"
+		}
+	}
+
+	function selectValue() {
+		const field = fieldSelect.value
+		const value = valueSelect.value
+
+		searchInput.value = ""
+
+		if (!field || !value) {
+			selectedBooks = []
+			searchInput.disabled = true
+			resultInfo.style.display = "none"
+			browseTable.style.display = "none"
+			browseMessage.textContent = "Select a field and a value."
+			browseMessage.style.display = "block"
+			updateURL("", "")
+			return
+		}
+
+		selectedBooks = findMatchingBooks(field, value)
+		searchInput.disabled = false
+
+		updateURL(field, value)
+		renderTable()
+	}
+
+	fieldSelect.addEventListener("change", function () {
+		const field = fieldSelect.value
+
+		selectedBooks = []
+		searchInput.value = ""
+		searchInput.disabled = true
+		resultInfo.style.display = "none"
+		browseTable.style.display = "none"
+
+		if (!field) {
+			valueSelect.innerHTML = '<option value="">select a value...</option>'
+
+			valueSelect.disabled = true
+			browseMessage.textContent = "Select a field and a value."
+			browseMessage.style.display = "block"
+			updateURL("", "")
+			return
+		}
+
+		populateValueSelect(field)
+
+		browseMessage.textContent = `Select a ${getFieldLabel(field)}.`
+
+		browseMessage.style.display = "block"
+		updateURL("", "")
+	})
+
+	valueSelect.addEventListener("change", selectValue)
+	searchInput.addEventListener("input", renderTable)
+
+	const params = new URLSearchParams(window.location.search)
+	const initialField = params.get("field") || ""
+	const initialValue = params.get("value") || ""
+
+	const allowedFields = [
+		"author",
+		"categories",
+		"notes",
+		"publisher",
+		"location",
+	]
+
+	if (allowedFields.includes(initialField)) {
+		fieldSelect.value = initialField
+		populateValueSelect(initialField, initialValue)
+
+		if (initialValue && valueSelect.value === initialValue) {
+			selectedBooks = findMatchingBooks(initialField, initialValue)
+
+			searchInput.disabled = false
+			renderTable()
+		}
+	}
+</script>
+
+<div style="clear: both"></div>
+
+<br />
