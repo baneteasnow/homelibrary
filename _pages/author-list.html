@@ -1,0 +1,95 @@
+---
+layout: page-6
+published: true
+title: "authors"
+permalink: /author-list/
+---
+
+{%- include backtotop.html -%}
+
+<br />
+
+<table
+	id="authorsTable"
+	class="zebra"
+	style="width: 100%"
+>
+	<thead>
+		<tr>
+			<th style="text-align: left">author</th>
+			<th style="text-align: left">books</th>
+		</tr>
+	</thead>
+
+	<tbody></tbody>
+</table>
+
+{%- assign books_data = site.data.list.item | default: site.data.list -%}
+
+<script
+	id="booksData"
+	type="application/json"
+>
+	{{ books_data | jsonify }}
+</script>
+
+<script>
+	const booksDataElement = document.getElementById("booksData")
+	const books = JSON.parse(booksDataElement.textContent)
+	const tableBody = document.querySelector("#authorsTable tbody")
+
+	function escapeHTML(value) {
+		return String(value || "")
+			.replaceAll("&", "&amp;")
+			.replaceAll("<", "&lt;")
+			.replaceAll(">", "&gt;")
+			.replaceAll('"', "&quot;")
+			.replaceAll("'", "&#039;")
+	}
+
+	function getAuthors(authorValue) {
+		return String(authorValue || "")
+			.split(",")
+			.map((author) => author.trim())
+			.filter(Boolean)
+	}
+
+	const authorCounts = new Map()
+
+	books.forEach((book) => {
+		const authors = [...new Set(getAuthors(book.author))]
+
+		authors.forEach((author) => {
+			authorCounts.set(author, (authorCounts.get(author) || 0) + 1)
+		})
+	})
+
+	const authors = Array.from(authorCounts, ([name, count]) => ({
+		name,
+		count,
+	})).sort((a, b) =>
+		a.name.localeCompare(b.name, "tr", {
+			sensitivity: "base",
+		}),
+	)
+
+	tableBody.innerHTML = authors
+		.map((author) => {
+			const authorUrl =
+				"{{ '/authors/' | relative_url }}?author=" +
+				encodeURIComponent(author.name)
+
+			return `
+				<tr>
+					<td>
+						<a href="${authorUrl}">
+							${escapeHTML(author.name)}
+						</a>
+					</td>
+
+					<td>${author.count}</td>
+				</tr>
+			`
+		})
+		.join("")
+</script>
