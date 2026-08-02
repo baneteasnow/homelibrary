@@ -9,10 +9,60 @@ permalink: /author-list/
 
 <br />
 
+<style>
+	.author-count {
+		display: inline-flex;
+		align-items: center;
+		gap: 7px;
+		white-space: nowrap;
+	}
+
+	.author-count-dot {
+		width: 10px;
+		height: 10px;
+		border-radius: 50%;
+		display: inline-block;
+		flex: 0 0 10px;
+	}
+
+	.count-1 {
+		background-color: #cfcfcf;
+	}
+
+	.count-2-3 {
+		background-color: #7da7d9;
+	}
+
+	.count-4-6 {
+		background-color: #79a879;
+	}
+
+	.count-7-10 {
+		background-color: #d9bf61;
+	}
+
+	.count-11-15 {
+		background-color: #d99a5f;
+	}
+
+	.count-16-plus {
+		background-color: #c96f6f;
+	}
+
+	#authorsTable {
+		width: 100%;
+		border-collapse: collapse;
+	}
+
+	#authorsTable th:last-child,
+	#authorsTable td:last-child {
+		width: 90px;
+	}
+</style>
+
 <table
 	id="authorsTable"
 	class="zebra"
-	style="width: 100%"
 >
 	<thead>
 		<tr>
@@ -54,6 +104,30 @@ permalink: /author-list/
 			.filter(Boolean)
 	}
 
+	function getCountClass(count) {
+		if (count === 1) {
+			return "count-1"
+		}
+
+		if (count <= 3) {
+			return "count-2-3"
+		}
+
+		if (count <= 6) {
+			return "count-4-6"
+		}
+
+		if (count <= 10) {
+			return "count-7-10"
+		}
+
+		if (count <= 15) {
+			return "count-11-15"
+		}
+
+		return "count-16-plus"
+	}
+
 	const authorCounts = new Map()
 
 	books.forEach((book) => {
@@ -79,6 +153,8 @@ permalink: /author-list/
 				"{{ '/authors/' | relative_url }}?author=" +
 				encodeURIComponent(author.name)
 
+			const countClass = getCountClass(author.count)
+
 			return `
 				<tr>
 					<td>
@@ -87,7 +163,15 @@ permalink: /author-list/
 						</a>
 					</td>
 
-					<td>${author.count}</td>
+					<td>
+						<span class="author-count">
+							<span
+								class="author-count-dot ${countClass}"
+								aria-hidden="true"
+							></span>
+							<span>${author.count}</span>
+						</span>
+					</td>
 				</tr>
 			`
 		})
