@@ -151,7 +151,9 @@ permalink: /authors/
 
 			tableBody.innerHTML = matchingBooks
 				.map((book) => {
-					const bookUrl = "booklist#" + encodeURIComponent(book.bookshelf || "")
+					const bookUrl =
+						"{{ '/booklist' | relative_url }}#" +
+						encodeURIComponent(book.bookshelf || "")
 
 					return `
 						<tr>
