@@ -41,7 +41,18 @@ title: "the list"
 				><b>{{ item.title }}</b></a
 			>
 		</td>
-		<td>{{ item.author }}</td>
+		<td>
+			{%- assign authors = item.author | split: "," -%} {%- for author in
+			authors -%} {%- assign clean_author = author | strip -%}
+
+			<a
+				href="{{ '/authors/' | relative_url }}?author={{ clean_author | url_encode }}"
+			>
+				{{- clean_author -}}
+			</a>
+
+			{%- unless forloop.last -%}, {% endunless -%} {%- endfor -%}
+		</td>
 		<td>{{ item.year }}</td>
 		<td>{{ item.page }}</td>
 		<td>

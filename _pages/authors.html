@@ -1,0 +1,189 @@
+---
+layout: page-6
+published: true
+title: "author"
+permalink: /authors/
+---
+
+{%- include backtotop.html -%}
+
+<br />
+
+<div id="authorPage">
+	<p id="loadingMessage">Loading...</p>
+
+	<h2
+		id="authorTitle"
+		style="display: none"
+	></h2>
+
+	<p
+		id="bookCount"
+		style="display: none"
+	></p>
+
+	<table
+		id="authorTable"
+		class="zebra"
+		style="display: none; width: 100%"
+	>
+		<thead>
+			<tr>
+				<th style="text-align: left">#</th>
+				<th style="text-align: left">name of the book</th>
+				<th style="text-align: left">author</th>
+				<th style="text-align: left">year</th>
+				<th style="text-align: left">category</th>
+				<th style="text-align: left">read?</th>
+				<th style="text-align: left">shelf</th>
+				<th style="text-align: left">location</th>
+			</tr>
+		</thead>
+
+		<tbody></tbody>
+	</table>
+
+	<p
+		id="noResults"
+		style="display: none"
+	>
+		No books found for this author.
+	</p>
+</div>
+{%- assign books_data = site.data.list.item | default: site.data.list -%}
+
+<script
+	id="booksData"
+	type="application/json"
+>
+	{{ books_data | jsonify }}
+</script>
+<script>
+	const booksDataElement = document.getElementById("booksData")
+	const books = JSON.parse(booksDataElement.textContent)
+
+	const params = new URLSearchParams(window.location.search)
+	const selectedAuthor = (params.get("author") || "").trim()
+
+	const loadingMessage = document.getElementById("loadingMessage")
+	const authorTitle = document.getElementById("authorTitle")
+	const bookCount = document.getElementById("bookCount")
+	const authorTable = document.getElementById("authorTable")
+	const tableBody = authorTable.querySelector("tbody")
+	const noResults = document.getElementById("noResults")
+
+	function escapeHTML(value) {
+		return String(value || "")
+			.replaceAll("&", "&amp;")
+			.replaceAll("<", "&lt;")
+			.replaceAll(">", "&gt;")
+			.replaceAll('"', "&quot;")
+			.replaceAll("'", "&#039;")
+	}
+
+	function normalize(value) {
+		return String(value || "")
+			.trim()
+			.toLocaleLowerCase("en")
+	}
+
+	function getAuthors(authorValue) {
+		return String(authorValue || "")
+			.split(",")
+			.map((author) => author.trim())
+			.filter(Boolean)
+	}
+
+	function isRead(status) {
+		return status && status !== "UnRead"
+	}
+
+	function getCategoryLabel(category) {
+		const categories = {
+			BiographyLifeStories: "Biography & Life Stories",
+			BusinessEconomics: "Business & Economics",
+			ConsumerMarketing: "Consumer & Marketing",
+			CreativityExpression: "Creativity & Expression",
+			EnvironmentSustainableLiving: "Environment & Sustainable Living",
+			HealthNutrition: "Health & Nutrition",
+			HistoryPoliticalThought: "History & Political Thought",
+			PersonalGrowthProductivity: "Personal Growth & Productivity",
+			PhilosophyMeaning: "Philosophy & Meaning",
+			PsychologyMentalLife: "Psychology & Mental Life",
+			SimpleLivingEverydayComforts: "Simple Living & Everyday Comforts",
+			ScienceDiscovery: "Science & Discovery",
+			SocietyCulture: "Society & Culture",
+			TechnologyTheDigitalWorld: "Technology & the Digital World",
+			WorkCareer: "Work & Career",
+		}
+
+		return categories[category] || "category?"
+	}
+
+	loadingMessage.style.display = "none"
+
+	if (!selectedAuthor) {
+		authorTitle.textContent = "Author not selected"
+		authorTitle.style.display = "block"
+
+		noResults.textContent = "Please select an author from the book list."
+		noResults.style.display = "block"
+	} else {
+		const matchingBooks = books.filter((book) => {
+			const authors = getAuthors(book.author)
+
+			return authors.some(
+				(author) => normalize(author) === normalize(selectedAuthor),
+			)
+		})
+
+		authorTitle.textContent = selectedAuthor
+		authorTitle.style.display = "block"
+
+		if (!matchingBooks.length) {
+			noResults.style.display = "block"
+		} else {
+			bookCount.textContent =
+				matchingBooks.length === 1 ? "1 book" : `${matchingBooks.length} books`
+
+			bookCount.style.display = "block"
+			authorTable.style.display = "table"
+
+			tableBody.innerHTML = matchingBooks
+				.map((book) => {
+					const bookUrl =
+						"{{ site.baseurl }}booklist#" +
+						encodeURIComponent(book.bookshelf || "")
+
+					return `
+						<tr>
+							<td>${escapeHTML(book.bookshelf)}</td>
+
+							<td>
+								<a href="${bookUrl}">
+									<b>${escapeHTML(book.title)}</b>
+								</a>
+							</td>
+
+							<td>${escapeHTML(book.author)}</td>
+
+							<td>${escapeHTML(book.year)}</td>
+
+							<td>
+								${escapeHTML(getCategoryLabel(book.categories))}
+							</td>
+
+							<td>
+								${isRead(book.status) ? "✅" : "read?"}
+							</td>
+
+							<td>${escapeHTML(book.notes)}</td>
+
+							<td>${escapeHTML(book.location)}</td>
+						</tr>
+					`
+				})
+				.join("")
+		}
+	}
+</script>
