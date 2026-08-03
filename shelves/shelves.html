@@ -29,12 +29,14 @@ shelves = items | group_by: "notes" -%} {%- assign shelf_numbers = (1..20) -%}
 
 <div style="clear: both"></div>
 <ul>
-	<a
-		href="
+	<i>
+		<a
+			href="
 https://homelibrary.next52books.com/shelves/archived"
-		>archived {% assign books_data = site.data.list %} {% assign shelf_archived
-		= books_data | where: "notes", "archived" | size %} ({{ shelf_archived
-		}})</a
+			>archived {% assign books_data = site.data.list %} {% assign
+			shelf_archived = books_data | where: "notes", "archived" | size %} ({{
+			shelf_archived }})</a
+		></i
 	>
 </ul>
 
