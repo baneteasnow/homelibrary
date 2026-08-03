@@ -113,9 +113,12 @@ Home G - img
 					books_data | where: "notes", "3-B" | size %} {{ shelf_3b }}</a
 				>
 			</td>
-
-			<td><span style="text-decoration: line-through">4-B</span></td>
-
+			<td>
+				<a href="assets/shelves/4-B.png"
+					>4-B | {% assign books_data = site.data.list %} {% assign shelf_4b =
+					books_data | where: "notes", "4-B" | size %} {{ shelf_4b }}</a
+				>
+			</td>
 			<td>
 				<a href="assets/shelves/5-B.png"
 					>5-B | {% assign books_data = site.data.list %} {% assign shelf_5b =
@@ -158,12 +161,7 @@ Home G - img
 					books_data | where: "notes", "11-B" | size %} {{ shelf_11b }}</a
 				>
 			</td>
-			<td>
-				<a href="assets/shelves/12-B.png"
-					>12-B | {% assign books_data = site.data.list %} {% assign shelf_12b =
-					books_data | where: "notes", "12-B" | size %} {{ shelf_12b }}</a
-				>
-			</td>
+			<td><span style="text-decoration: line-through">12-B</span></td>
 		</tr>
 		<tr>
 			<th>C</th>
@@ -185,7 +183,12 @@ Home G - img
 					books_data | where: "notes", "3-C" | size %} {{ shelf_3c }}</a
 				>
 			</td>
-			<td><span style="text-decoration: line-through">4-C</span></td>
+			<td>
+				<a href="assets/shelves/4-C.png"
+					>4-C | {% assign books_data = site.data.list %} {% assign shelf_4c =
+					books_data | where: "notes", "4-C" | size %} {{ shelf_4c }}</a
+				>
+			</td>
 			<td>
 				<a href="assets/shelves/5-C.png"
 					>5-C | {% assign books_data = site.data.list %} {% assign shelf_5c =
@@ -228,12 +231,7 @@ Home G - img
 					books_data | where: "notes", "11-C" | size %} {{ shelf_11c }}</a
 				>
 			</td>
-			<td>
-				<a href="assets/shelves/12-C.png"
-					>12-C | {% assign books_data = site.data.list %} {% assign shelf_12c =
-					books_data | where: "notes", "12-C" | size %} {{ shelf_12c }}</a
-				>
-			</td>
+			<td><span style="text-decoration: line-through">12-C</span></td>
 		</tr>
 		<tr>
 			<th>D</th>
@@ -320,26 +318,26 @@ where: "location", "archived" | size %}
 <i>homelibrary: </i>
 {{ shelf_1a | plus: shelf_1b | plus: shelf_1c | plus: shelf_1d | plus: shelf_2a
 | plus: shelf_2b | plus: shelf_2c | plus: shelf_2d | plus: shelf_3a | plus:
-shelf_3b | plus: shelf_3c | plus: shelf_3d | plus: shelf_4a | plus: shelf_4d |
-plus: shelf_5a | plus: shelf_5b | plus: shelf_5c | plus: shelf_5d | plus:
-shelf_6a | plus: shelf_6b | plus: shelf_6c | plus: shelf_6d | plus: shelf_7a |
-plus: shelf_7b | plus: shelf_7c | plus: shelf_7d | plus: shelf_8a | plus:
-shelf_8b | plus: shelf_8c | plus: shelf_8d | plus: shelf_9a | plus: shelf_9b |
-plus: shelf_9c | plus: shelf_9d | plus: shelf_10a | plus: shelf_10b | plus:
-shelf_10c| plus: shelf_10d | plus: shelf_11a| plus: shelf_11b| plus: shelf_11c|
-plus: shelf_11d| plus: shelf_12a| plus: shelf_12b| plus: shelf_12c| plus:
-shelf_12d}} +
+shelf_3b | plus: shelf_3c | plus: shelf_3d | plus: shelf_4a | plus: shelf_4b|
+plus: shelf_4c | plus: shelf_4d | plus: shelf_5a | plus: shelf_5b | plus:
+shelf_5c | plus: shelf_5d | plus: shelf_6a | plus: shelf_6b | plus: shelf_6c |
+plus: shelf_6d | plus: shelf_7a | plus: shelf_7b | plus: shelf_7c | plus:
+shelf_7d | plus: shelf_8a | plus: shelf_8b | plus: shelf_8c | plus: shelf_8d |
+plus: shelf_9a | plus: shelf_9b | plus: shelf_9c | plus: shelf_9d | plus:
+shelf_10a | plus: shelf_10b | plus: shelf_10c| plus: shelf_10d | plus:
+shelf_11a| plus: shelf_11b| plus: shelf_11c| plus: shelf_11d| plus: shelf_12a |
+plus: shelf_12d}} +
 <i>archived:</i> {{ status_archived }}
 <div style="clear: both"></div>
 <i>total:</i>
 {{ shelf_1a | plus: shelf_1b | plus: shelf_1c | plus: shelf_1d | plus: shelf_2a
 | plus: shelf_2b | plus: shelf_2c | plus: shelf_2d | plus: shelf_3a | plus:
-shelf_3b | plus: shelf_3c | plus: shelf_3d | plus: shelf_4a | plus: shelf_4d |
-plus: shelf_5a | plus: shelf_5b | plus: shelf_5c | plus: shelf_5d | plus:
-shelf_6a | plus: shelf_6b | plus: shelf_6c | plus: shelf_6d | plus: shelf_7a |
-plus: shelf_7b | plus: shelf_7c | plus: shelf_7d | plus: shelf_8a | plus:
-shelf_8b | plus: shelf_8c | plus: shelf_8d | plus: shelf_9a | plus: shelf_9b |
-plus: shelf_9c | plus: shelf_9d | plus: shelf_10a | plus: shelf_10b | plus:
-shelf_10c| plus: shelf_10d | plus: shelf_11a| plus: shelf_11b| plus: shelf_11c|
-plus: shelf_11d| plus: shelf_12a| plus: shelf_12b| plus: shelf_12c| plus:
-shelf_12d | plus: status_archived}}
+shelf_3b | plus: shelf_3c | plus: shelf_3d | plus: shelf_4a | plus: shelf_4b |
+plus: shelf_4c| plus: shelf_4d | plus: shelf_5a | plus: shelf_5b | plus:
+shelf_5c | plus: shelf_5d | plus: shelf_6a | plus: shelf_6b | plus: shelf_6c |
+plus: shelf_6d | plus: shelf_7a | plus: shelf_7b | plus: shelf_7c | plus:
+shelf_7d | plus: shelf_8a | plus: shelf_8b | plus: shelf_8c | plus: shelf_8d |
+plus: shelf_9a | plus: shelf_9b | plus: shelf_9c | plus: shelf_9d | plus:
+shelf_10a | plus: shelf_10b | plus: shelf_10c| plus: shelf_10d | plus:
+shelf_11a| plus: shelf_11b| plus: shelf_11c| plus: shelf_11d| plus: shelf_12a|
+plus: shelf_12d | plus: status_archived}}
