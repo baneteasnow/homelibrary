@@ -1,8 +1,8 @@
 ---
 layout: page-6
 published: true
-title: "authors"
-permalink: /author-list/
+title: "authors with more than 5 books"
+permalink: /frequent-authors/
 ---
 
 {%- include backtotop.html -%}
@@ -10,23 +10,20 @@ permalink: /author-list/
 <br />
 
 <style>
-	.author-list-info {
+	.frequent-authors-info {
 		margin-bottom: 16px;
 		font-size: 17px;
 	}
 
-	.author-list-info p {
+	.frequent-authors-info p {
 		margin: 0 0 6px;
 	}
 
 	.author-name {
-		font-size: 17px;
-	}
-
-	.author-highlight {
 		background-color: #fff8cc;
 		padding: 2px 6px;
 		border-radius: 4px;
+		font-size: 17px;
 		font-weight: 600;
 	}
 
@@ -46,14 +43,6 @@ permalink: /author-list/
 		border-radius: 50%;
 	}
 
-	.count-1 {
-		background-color: #cfcfcf;
-	}
-
-	.count-2-3 {
-		background-color: #7da7d9;
-	}
-
 	.count-4-6 {
 		background-color: #79a879;
 	}
@@ -70,40 +59,41 @@ permalink: /author-list/
 		background-color: #c96f6f;
 	}
 
-	#authorsTable {
+	#frequentAuthorsTable {
 		width: 100%;
 		border-collapse: collapse;
 	}
 
-	#authorsTable th,
-	#authorsTable td {
+	#frequentAuthorsTable th,
+	#frequentAuthorsTable td {
 		font-size: 17px;
 	}
 
-	#authorsTable th:last-child,
-	#authorsTable td:last-child {
+	#frequentAuthorsTable th:last-child,
+	#frequentAuthorsTable td:last-child {
 		width: 90px;
 	}
 </style>
 
 <div
-	id="authorListInfo"
-	class="author-list-info"
+	id="frequentAuthorsInfo"
+	class="frequent-authors-info"
 	style="display: none"
 >
 	<p>
-		<strong><span id="authorTotal"></span> authors</strong>
+		<strong>
+			<span id="frequentAuthorTotal"></span>
+			authors with more than 5 books
+		</strong>
 	</p>
 
 	<p>
-		<a href="{{ '/frequent-authors/' | relative_url }}">
-			authors with more than 5 books
-		</a>
+		<a href="{{ '/author-list/' | relative_url }}"> all authors </a>
 	</p>
 </div>
 
 <table
-	id="authorsTable"
+	id="frequentAuthorsTable"
 	class="zebra"
 >
 	<thead>
@@ -129,9 +119,11 @@ permalink: /author-list/
 	const booksDataElement = document.getElementById("booksData")
 	const books = JSON.parse(booksDataElement.textContent)
 
-	const tableBody = document.querySelector("#authorsTable tbody")
-	const authorListInfo = document.getElementById("authorListInfo")
-	const authorTotal = document.getElementById("authorTotal")
+	const tableBody = document.querySelector("#frequentAuthorsTable tbody")
+
+	const frequentAuthorsInfo = document.getElementById("frequentAuthorsInfo")
+
+	const frequentAuthorTotal = document.getElementById("frequentAuthorTotal")
 
 	function escapeHTML(value) {
 		return String(value || "")
@@ -150,14 +142,6 @@ permalink: /author-list/
 	}
 
 	function getCountClass(count) {
-		if (count === 1) {
-			return "count-1"
-		}
-
-		if (count <= 3) {
-			return "count-2-3"
-		}
-
 		if (count <= 6) {
 			return "count-4-6"
 		}
@@ -183,19 +167,25 @@ permalink: /author-list/
 		})
 	})
 
-	const authors = Array.from(authorCounts, ([name, count]) => ({
+	const frequentAuthors = Array.from(authorCounts, ([name, count]) => ({
 		name,
 		count,
-	})).sort((a, b) =>
-		a.name.localeCompare(b.name, "tr", {
-			sensitivity: "base",
-		}),
-	)
+	}))
+		.filter((author) => author.count > 5)
+		.sort((a, b) => {
+			if (b.count !== a.count) {
+				return b.count - a.count
+			}
 
-	authorTotal.textContent = authors.length
-	authorListInfo.style.display = "block"
+			return a.name.localeCompare(b.name, "tr", {
+				sensitivity: "base",
+			})
+		})
 
-	tableBody.innerHTML = authors
+	frequentAuthorTotal.textContent = frequentAuthors.length
+	frequentAuthorsInfo.style.display = "block"
+
+	tableBody.innerHTML = frequentAuthors
 		.map((author) => {
 			const authorUrl =
 				"{{ '/authors/' | relative_url }}?author=" +
@@ -203,14 +193,12 @@ permalink: /author-list/
 
 			const countClass = getCountClass(author.count)
 
-			const highlightClass = author.count > 5 ? "author-highlight" : ""
-
 			return `
 				<tr>
 					<td>
 						<a
 							href="${authorUrl}"
-							class="author-name ${highlightClass}"
+							class="author-name"
 						>
 							${escapeHTML(author.name)}
 						</a>
