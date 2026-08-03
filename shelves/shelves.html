@@ -29,31 +29,18 @@ shelves = items | group_by: "notes" -%} {%- assign shelf_numbers = (1..20) -%}
 
 <br />
 <div style="clear: both"></div>
-<a
-	href="
-https://homelibrary.next52books.com/shelves/archived"
-	>archived</a
->
-<!--  &  -->
-<div style="clear: both"></div>
-
-{%- assign items = site.data.list.item | default: site.data.list -%} {%- assign
-shelves = items | group_by: "notes" | sort: "name" -%}
-
 <ul>
-	{%- for shelf in shelves -%} {%- if shelf.name != "" -%} {%- assign shelf_slug
-	= shelf.name | slugify -%} {%- assign shelf_url = "/shelves/" | append:
-	shelf_slug -%}
 	<li>
-		<a href="{{ shelf_url | relative_url }}"> {{ shelf.name }} </a>
-		({{ shelf.items | size }})
+		<a
+			href="
+https://homelibrary.next52books.com/shelves/archived"
+			>archived ({% assign books_data = site.data.list %} {% assign
+			shelf_archived = books_data | where: "notes", "archived" | size %} {{
+			shelf_archived }})</a
+		>
 	</li>
-	{%- endif -%} {%- endfor -%}
 </ul>
 
-<br />
-<div style="clear: both"></div>
-<!-- & -->
 <!--
 {%- include backtotop.html -%}
 <br />
