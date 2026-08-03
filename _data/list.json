@@ -152,14 +152,14 @@
 		"lang": "Turkce",
 		"page": 308,
 		"year": "2018",
-		"notes": "archived",
+		"notes": "10-A",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "HealthNutrition",
 		"reread": "n/a",
 		"tbr": "no",
-		"image": "https://www.next52books.com",
-		"location": "archived"
+		"image": "https://homelibrary.next52books.com/assets/shelves/10-A.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1010,
@@ -1352,7 +1352,7 @@
 	{
 		"bookshelf": 1076,
 		"No": 76,
-		"title": "Harika Hissetmek - Depresyon ve Kaygı Icin Yenilikci Bir Tedavi",
+		"title": "Harika Hissetmek - Depresyon ve Kaygi Icin Yenilikci Bir Tedavi",
 		"publisher": "Psikonet Yayinlari",
 		"author": "David Burns",
 		"lang": "Turkce",
@@ -5137,14 +5137,14 @@
 		"lang": "Turkce",
 		"page": 744,
 		"year": "2019",
-		"notes": "archived",
+		"notes": "9-A",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "n/a",
-		"image": "https://www.next52books.com",
-		"location": "archived"
+		"image": "https://homelibrary.next52books.com/assets/shelves/9-A.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1287,
@@ -5425,14 +5425,14 @@
 		"lang": "Turkce",
 		"page": 144,
 		"year": "2002",
-		"notes": "archived",
+		"notes": "11-D",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "no",
-		"image": "https://www.next52books.com",
-		"location": "archived"
+		"image": "https://homelibrary.next52books.com/assets/shelves/aa-D.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1303,
@@ -6379,14 +6379,14 @@
 		"lang": "Turkce",
 		"page": 448,
 		"year": "2016",
-		"notes": "archived",
+		"notes": "4-C",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "n/a",
-		"image": "https://www.next52books.com",
-		"location": "archived"
+		"image": "https://homelibrary.next52books.com/assets/shelves/4-C.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1356,
@@ -8683,14 +8683,14 @@
 		"lang": "Turkce",
 		"page": 286,
 		"year": "2017",
-		"notes": "archived",
+		"notes": "6-A",
 		"status": "Read",
 		"reread": "yes",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"tbr": "read",
 		"image": "https://www.next52books.com/assets/old/the-industries-of-the-future.jpg",
-		"location": "archived"
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1484,
@@ -9829,7 +9829,7 @@
 	{
 		"bookshelf": 1547,
 		"No": 547,
-		"title": "Türkiye Debelenirken - Psiko-Politik Yuzlesmeler",
+		"title": "Turkiye Debelenirken - Psiko-Politik Yuzlesmeler",
 		"publisher": "Istanbul Bilgi Universitesi",
 		"author": "Murat Paker",
 		"lang": "Turkce",
@@ -10173,7 +10173,7 @@
 		"No": 566,
 		"title": "Hayal Gucu",
 		"publisher": "Yakamoz Yayincilik",
-		"author": "Jim Davis",
+		"author": "Jim Davies",
 		"lang": "Turkce",
 		"page": 320,
 		"year": "2022",
@@ -10681,14 +10681,14 @@
 		"lang": "Turkce",
 		"page": 248,
 		"year": "2010",
-		"notes": "archived",
+		"notes": "4-C",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "no",
-		"image": "https://homelibrary.next52books.com/assets/shelves/5-F.png",
-		"location": "archived"
+		"image": "https://homelibrary.next52books.com/assets/shelves/4-C.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1595,
@@ -11035,7 +11035,7 @@
 	{
 		"bookshelf": 1614,
 		"No": 614,
-		"title": "Radikaller - Dunyayi Degistirme Pesindekilerin Içyuzu",
+		"title": "Radikaller - Dunyayi Degistirme Pesindekilerin Icyuzu",
 		"publisher": "Mundi",
 		"author": "Jamie Bartlett",
 		"lang": "Turkce",
@@ -11648,7 +11648,7 @@
 	{
 		"bookshelf": 1648,
 		"No": 648,
-		"title": "Cagrisimlı Nesne Dunyasi",
+		"title": "Cagrisimli Nesne Dunyasi",
 		"publisher": "Yapi Kredi Yayinlari",
 		"author": "Christopher Bollas",
 		"lang": "Turkce",
@@ -12407,7 +12407,7 @@
 		"No": 690,
 		"title": "Kendi Evrimimizi Yonetmek - Yapay Secilim ve Rastlantisal Olmayan Mutasyon Yeryuzundeki Yasami Nasil Degistiriyor?",
 		"publisher": "Yapi Kredi Yayinlari",
-		"author": "Mariana Enriquez, Steve Gullans",
+		"author": "Juan Enriquez, Steve Gullans",
 		"lang": "Turkce",
 		"page": 360,
 		"year": "2018",
@@ -12585,7 +12585,7 @@
 	{
 		"bookshelf": 1700,
 		"No": 700,
-		"title": "Bedenin Sirlari - Hayatimizi Degiştirecek Yeni Bir Insan Biyolojisi",
+		"title": "Bedenin Sirlari - Hayatimizi Degistirecek Yeni Bir Insan Biyolojisi",
 		"publisher": "Yapi Kredi Yayinlari",
 		"author": "Daniel M. Davis",
 		"lang": "Turkce",
@@ -12825,13 +12825,13 @@
 		"lang": "Turkce",
 		"page": 104,
 		"year": "2025",
-		"notes": "archived",
+		"notes": "8-D",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "n/a",
-		"image": "https://www.next52books.com",
+		"image": "https://homelibrary.next52books.com/assets/shelves/8-D.png",
 		"location": "archived"
 	},
 	{
@@ -14007,7 +14007,7 @@
 	{
 		"bookshelf": 1779,
 		"No": 779,
-		"title": "Upstartlar - Uber, Airbnb ve Yeni Silikon Vadisi’nin Diger Sirketleri Dunyayı Nasil Degiştiriyor",
+		"title": "Upstartlar - Uber, Airbnb ve Yeni Silikon Vadisi’nin Diger Sirketleri Dunyayi Nasil Degistiriyor",
 		"publisher": "Pegasus Yayinlari",
 		"author": "Brad Stone",
 		"lang": "Turkce",
@@ -14913,7 +14913,7 @@
 		"lang": "Turkce",
 		"page": 96,
 		"year": "2019",
-		"notes": "5-A",
+		"notes": "2-B",
 		"status": "Read",
 		"newstatus": "n/a",
 		"categories": "PersonalGrowthProductivity",
@@ -15069,7 +15069,7 @@
 	{
 		"bookshelf": 1838,
 		"No": 838,
-		"title": "Sevgi Neden Onemlidir? - Sefkat Bir Bebegin Beynini Nasıl Bicimlendirir?",
+		"title": "Sevgi Neden Onemlidir? - Sefkat Bir Bebegin Beynini Nasil Bicimlendirir?",
 		"publisher": "Yapi Kredi Yayinlari",
 		"author": "Sue Gerhardt",
 		"lang": "Turkce",
@@ -16173,14 +16173,14 @@
 		"lang": "Turkce",
 		"page": 522,
 		"year": "2002",
-		"notes": "archived",
+		"notes": "9-D",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "no",
-		"image": "https://homelibrary.next52books.com/assets/shelves/5-E.png",
-		"location": "archived"
+		"image": "https://homelibrary.next52books.com/assets/shelves/9-D.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1900,
@@ -16533,14 +16533,14 @@
 		"lang": "Turkce",
 		"page": 72,
 		"year": "2018",
-		"notes": "archived",
+		"notes": "11-B",
 		"status": "Read",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "read",
-		"image": "https://www.next52books.com",
-		"location": "archived"
+		"image": "https://homelibrary.next52books.com/assets/shelves/11-B.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1920,
@@ -16605,13 +16605,13 @@
 		"lang": "Turkce",
 		"page": 168,
 		"year": "2021",
-		"notes": "5-D",
+		"notes": "8-D",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "SocietyCulture",
 		"reread": "n/a",
 		"tbr": "n/a",
-		"image": "https://homelibrary.next52books.com/assets/shelves/5-D.png",
+		"image": "https://homelibrary.next52books.com/assets/shelves/8-D.png",
 		"location": "homelibrary"
 	},
 	{
@@ -17200,14 +17200,14 @@
 		"lang": "Turkce",
 		"page": 256,
 		"year": "2023",
-		"notes": "archived",
+		"notes": "7-C",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "n/a",
-		"image": "https://www.next52books.com",
-		"location": "archived"
+		"image": "https://homelibrary.next52books.com/assets/shelves/7-C.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1957,
@@ -17290,14 +17290,14 @@
 		"lang": "Turkce",
 		"page": 312,
 		"year": "2004",
-		"notes": "archived",
+		"notes": "4-A",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "n/a",
-		"image": "https://www.next52books.com",
-		"location": "archived"
+		"image": "https://homelibrary.next52books.com/assets/shelves/4-A.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1962,
@@ -19396,7 +19396,7 @@
 		"lang": "Turkce",
 		"page": 144,
 		"year": "2017",
-		"notes": "5-A",
+		"notes": "2-B",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "CreativityExpression",
@@ -19666,14 +19666,14 @@
 		"lang": "Turkce",
 		"page": 360,
 		"year": "2018",
-		"notes": "archived",
+		"notes": "1-A",
 		"status": "Read",
 		"reread": "yes",
 		"newstatus": "n/a",
 		"categories": "HealthNutrition",
 		"tbr": "read",
 		"image": "https://www.next52books.com/assets/new/the-cheese-trap.jpg",
-		"location": "archived"
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 2094,
@@ -21336,7 +21336,7 @@
 		"No": 1186,
 		"title": "Seffaflik",
 		"publisher": "Optimist Kitap",
-		"author": "Daniel Goleman, Warren Bennis, James O'Toole",
+		"author": "Daniel Goleman, Warren Bennis, James O'Toole, Patricia Ward Biederman",
 		"lang": "Turkce",
 		"page": 144,
 		"year": "2010",
@@ -21484,13 +21484,13 @@
 		"lang": "Turkce",
 		"page": 192,
 		"year": "2022",
-		"notes": "3-B",
+		"notes": "3-D",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "PsychologyMentalLife",
 		"reread": "n/a",
 		"tbr": "no",
-		"image": "https://homelibrary.next52books.com/assets/shelves/3-B.png",
+		"image": "https://homelibrary.next52books.com/assets/shelves/3-D.png",
 		"location": "homelibrary"
 	},
 	{
@@ -22024,14 +22024,14 @@
 		"lang": "Turkce",
 		"page": 127,
 		"year": "2003",
-		"notes": "archived",
+		"notes": "1-C",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "no",
-		"image": "https://www.next52books.com",
-		"location": "archived"
+		"image": "https://homelibrary.next52books.com/assets/shelves/1-C.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 2225,
@@ -22078,14 +22078,14 @@
 		"lang": "Turkce",
 		"page": 144,
 		"year": "2021",
-		"notes": "archived",
+		"notes": "1-C",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "no",
-		"image": "https://www.next52books.com",
-		"location": "archived"
+		"image": "https://homelibrary.next52books.com/assets/shelves/1-C.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 2228,
@@ -24526,31 +24526,31 @@
 		"lang": "Turkce",
 		"page": 372,
 		"year": "2019",
-		"notes": "archived",
+		"notes": "10-A",
 		"status": "Read",
 		"reread": "yes",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"tbr": "read",
 		"image": "https://www.next52books.com/assets/new/trading-up.jpg",
-		"location": "archived"
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 2364,
 		"No": 1364,
 		"title": "Transhumanist Devrim - Tekno-Tip ve Dunyanin Uberlesmesi",
 		"publisher": "Turkiye Is Bankasi Kultur Yayinlari",
-		"author": "Luc Ferry, Kagan Kahveci",
+		"author": "Luc Ferry",
 		"lang": "Turkce",
 		"page": 192,
 		"year": "2023",
-		"notes": "6-A",
+		"notes": "3-A",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "TechnologyTheDigitalWorld",
 		"reread": "n/a",
 		"tbr": "n/a",
-		"image": "https://homelibrary.next52books.com/assets/shelves/6-A.png",
+		"image": "https://homelibrary.next52books.com/assets/shelves/3-A.png",
 		"location": "homelibrary"
 	},
 	{
@@ -25282,14 +25282,14 @@
 		"lang": "Turkce",
 		"page": 304,
 		"year": "2019",
-		"notes": "archived",
+		"notes": "1-C",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "no",
-		"image": "https://www.next52books.com",
-		"location": "archived"
+		"image": "https://homelibrary.next52books.com/assets/shelves/1-C.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 2406,
@@ -26128,14 +26128,14 @@
 		"lang": "Turkce",
 		"page": 240,
 		"year": "2008",
-		"notes": "archived",
+		"notes": "11-B",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "n/a",
 		"reread": "n/a",
 		"tbr": "no",
-		"image": "https://www.next52books.com",
-		"location": "archived"
+		"image": "https://homelibrary.next52books.com/assets/shelves/11-B.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 2453,
@@ -30972,7 +30972,7 @@
 		"lang": "Turkce",
 		"page": 74,
 		"year": "2020",
-		"notes": "5-A",
+		"notes": "2-B",
 		"status": "Read",
 		"newstatus": "n/a",
 		"categories": "CreativityExpression",
@@ -34625,7 +34625,7 @@
 		"No": 1924,
 		"title": "Kuantum Sinirinda Yasam - Yaklasan Kuantum Biyolojisi Cagi",
 		"publisher": "Domingo Yayinevi",
-		"author": "Byung-Chul Han",
+		"author": "Jim Al-Khalili, Johnjoe McFadden",
 		"lang": "Turkce",
 		"page": 384,
 		"year": "2016",
@@ -36665,7 +36665,7 @@
 		"lang": "Turkce",
 		"page": 160,
 		"year": "2025",
-		"notes": "5-A",
+		"notes": "2-B",
 		"status": "Read",
 		"newstatus": "updated",
 		"categories": "SimpleLivingEverydayComforts",
@@ -38999,7 +38999,7 @@
 	{
 		"bookshelf": 3167,
 		"No": 2167,
-		"title": "Soyu Yeniden Dusunmek - Genetik Etnisite Mitinin Çurutulmesi",
+		"title": "Soyu Yeniden Dusunmek - Genetik Etnisite Mitinin Curutulmesi",
 		"publisher": "Metis Yayinlari",
 		"author": "Kostas Kampourakis",
 		"lang": "Turkce",
@@ -39329,13 +39329,13 @@
 		"lang": "Turkce",
 		"page": 128,
 		"year": "2026",
-		"notes": "7-D",
+		"notes": "3-A",
 		"status": "UnRead",
 		"newstatus": "n/a",
 		"categories": "PhilosophyMeaning",
 		"reread": "n/a",
 		"tbr": "n/a",
-		"image": "https://homelibrary.next52books.com/assets/shelves/7-D.png",
+		"image": "https://homelibrary.next52books.com/assets/shelves/3-A.png",
 		"location": "homelibrary"
 	},
 	{
@@ -39467,7 +39467,7 @@
 	{
 		"bookshelf": 3193,
 		"No": 2193,
-		"title": "Vazgeçemediklerinin Toplamıdır Insan - Yas, Melankoli, Depresyon",
+		"title": "Vazgecemediklerinin Toplamidir Insan - Yas, Melankoli, Depresyon",
 		"publisher": "Iletisim Yayinlari",
 		"author": "Erdogan Ozmen",
 		"lang": "Turkce",
@@ -39559,7 +39559,7 @@
 		"No": 2198,
 		"title": "Insan Beynine Olagandisi Yolculuklar - Tavsan Deliginden Asagiya Uzanmak",
 		"publisher": "Alfa Yayinlari",
-		"author": "Allan Ropper",
+		"author": "Allan Ropper, B. D. Burrel",
 		"lang": "Turkce",
 		"page": 272,
 		"year": "2017",
@@ -39958,7 +39958,7 @@
 	{
 		"bookshelf": 3220,
 		"No": 2220,
-		"title": "Edebiyat Kuramı",
+		"title": "Edebiyat Kurami",
 		"publisher": "Ayrinti Yayinlari",
 		"author": "Terry Eagleton",
 		"lang": "Turkce",
@@ -39996,7 +39996,7 @@
 	{
 		"bookshelf": 3222,
 		"No": 2222,
-		"title": "Sen ve Yapay Zeka Arasında & Yapay Zeka Çağında Geri Kalmamak ve Öne Çıkmak İçin Yeni Kurallar",
+		"title": "Sen ve Yapay Zeka Arasinda & Yapay Zeka Caginda Geri Kalmamak ve One Cikmak Icin Yeni Kurallar",
 		"publisher": "Say Yayinlari",
 		"author": "Andrea Iorio",
 		"lang": "Turkce",
