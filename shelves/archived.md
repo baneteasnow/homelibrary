@@ -9,6 +9,10 @@ shelf: "archived"
 <br />
 
 <div style="clear: both"></div>
+<div>{% assign books_data = site.data.list %} {% assign shelf_archived =
+					books_data | where: "notes", "archived" | size %} {{ shelf_archived }}</div>
+
+<div style="clear: both"></div>
 {%- assign items = site.data.list.item | default: site.data.list -%} {%- assign
 shelf_items = items | where: "notes", page.shelf -%}
 
