@@ -30,6 +30,20 @@ title: "HEIC to .png / HEIC to .jpg"
 
 	convertButton.addEventListener("click", async () => {
 		const file = input.files[0]
+		const fileType = file.type.toLowerCase()
+		const fileName = file.name.toLowerCase()
+
+		const looksLikeHEIC =
+			fileType === "image/heic" ||
+			fileType === "image/heif" ||
+			fileName.endsWith(".heic") ||
+			fileName.endsWith(".heif")
+
+		if (!looksLikeHEIC) {
+			status.textContent =
+				"This file is not a HEIC or HEIF image. It may already be JPG or PNG."
+			return
+		}
 
 		if (!file) {
 			status.textContent = "Please select a HEIC file."
