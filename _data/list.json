@@ -12816,23 +12816,24 @@
 		"image": "https://homelibrary.next52books.com/assets/shelves/2-D.png",
 		"location": "homelibrary"
 	},
-	{
+		{
 		"bookshelf": 1713,
 		"No": 713,
-		"title": "Detaylar",
-		"publisher": "Ithaki Yayinlari",
-		"author": "Ia Genberg",
+		"title": "Saflik ve Tehlike - Kirlilik ve Tabu Kavramlarinin Bir Cozumlenmesi",
+		"publisher": "Metis Yayinlari",
+		"author": "Mary Douglas",
 		"lang": "Turkce",
-		"page": 104,
-		"year": "2025",
-		"notes": "8-D",
+		"page": 232,
+		"year": "2017",
+		"notes": "5-D",
+		"note": "add a photo!",
 		"status": "UnRead",
 		"newstatus": "n/a",
-		"categories": "n/a",
+		"categories": "SocietyCulture",
 		"reread": "n/a",
 		"tbr": "n/a",
-		"image": "https://homelibrary.next52books.com/assets/shelves/8-D.png",
-		"location": "archived"
+		"image": "https://homelibrary.next52books.com/assets/shelves/5-D.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 1714,
@@ -40029,25 +40030,6 @@
 		"reread": "n/a",
 		"tbr": "n/a",
 		"image": "https://homelibrary.next52books.com/assets/shelves/3-A.png",
-		"location": "homelibrary"
-	},
-	{
-		"bookshelf": 3224,
-		"No": 2224,
-		"title": "Saflik ve Tehlike - Kirlilik ve Tabu Kavramlarinin Bir Cozumlenmesi",
-		"publisher": "Metis Yayinlari",
-		"author": "Mary Douglas",
-		"lang": "Turkce",
-		"page": 232,
-		"year": "2017",
-		"notes": "5-D",
-		"note": "add a photo!",
-		"status": "UnRead",
-		"newstatus": "n/a",
-		"categories": "SocietyCulture",
-		"reread": "n/a",
-		"tbr": "n/a",
-		"image": "https://homelibrary.next52books.com/assets/shelves/5-D.png",
 		"location": "homelibrary"
 	}
 ]
