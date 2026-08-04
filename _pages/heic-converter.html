@@ -1,88 +1,302 @@
 ---
 layout: page-6
 published: true
-last_modified_at: 2026-08-05
 title: "HEIC to .png / HEIC to .jpg"
+permalink: /heic-converter/
 ---
 
-<input
-	type="file"
-	id="heicInput"
-	accept=".heic,.heif,image/heic,image/heif"
-/>
+{%- include backtotop.html -%}
 
-<select id="outputFormat">
-	<option value="image/jpeg">JPG</option>
-	<option value="image/png">PNG</option>
-</select>
+<br />
 
-<button id="convertButton">Convert</button>
+<style>
+	.converter-controls {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: 10px;
+		margin-bottom: 18px;
+	}
+
+	.converter-controls input,
+	.converter-controls select,
+	.converter-controls button {
+		box-sizing: border-box;
+		min-height: 38px;
+		padding: 7px 10px;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		background: #fff;
+		color: #000;
+		font: inherit;
+	}
+
+	.converter-controls button {
+		cursor: pointer;
+	}
+
+	.converter-controls button:hover {
+		background: #f2f2f2;
+	}
+
+	.converter-controls button:disabled {
+		cursor: default;
+		opacity: 0.6;
+	}
+
+	#status {
+		margin: 0 0 14px;
+	}
+
+	#fileInfo {
+		margin: 0;
+		font-size: 14px;
+	}
+
+	@media (max-width: 700px) {
+		.converter-controls {
+			display: block;
+		}
+
+		.converter-controls input,
+		.converter-controls select,
+		.converter-controls button {
+			width: 100%;
+			margin-bottom: 8px;
+		}
+	}
+</style>
+
+<div class="converter-controls">
+	<input
+		type="file"
+		id="imageInput"
+		accept=".heic,.heif,.jpg,.jpeg,.png,image/heic,image/heif,image/jpeg,image/png"
+	/>
+
+	<select id="outputFormat">
+		<option value="image/jpeg">JPG</option>
+		<option value="image/png">PNG</option>
+	</select>
+
+	<button
+		type="button"
+		id="convertButton"
+	>
+		Convert
+	</button>
+</div>
 
 <p id="status"></p>
+<p id="fileInfo"></p>
 
-<script src="https://cdn.jsdelivr.net/npm/heic2any/dist/heic2any.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/heic2any@0.0.4/dist/heic2any.min.js"></script>
 
 <script>
-	const input = document.getElementById("heicInput")
-	const formatSelect = document.getElementById("outputFormat")
+	const imageInput = document.getElementById("imageInput")
+	const outputFormat = document.getElementById("outputFormat")
 	const convertButton = document.getElementById("convertButton")
 	const status = document.getElementById("status")
+	const fileInfo = document.getElementById("fileInfo")
 
-	convertButton.addEventListener("click", async () => {
-		const file = input.files[0]
-		const fileType = file.type.toLowerCase()
-		const fileName = file.name.toLowerCase()
+	function getBaseName(fileName) {
+		return String(fileName || "converted-image").replace(/\.[^.]+$/, "")
+	}
 
-		const looksLikeHEIC =
-			fileType === "image/heic" ||
-			fileType === "image/heif" ||
-			fileName.endsWith(".heic") ||
-			fileName.endsWith(".heif")
+	function bytesMatch(bytes, signature) {
+		return signature.every((byte, index) => bytes[index] === byte)
+	}
 
-		if (!looksLikeHEIC) {
-			status.textContent =
-				"This file is not a HEIC or HEIF image. It may already be JPG or PNG."
-			return
+	async function detectImageFormat(file) {
+		const buffer = await file.slice(0, 32).arrayBuffer()
+		const bytes = new Uint8Array(buffer)
+
+		const isJPEG = bytesMatch(bytes, [0xff, 0xd8, 0xff])
+
+		if (isJPEG) {
+			return "jpeg"
 		}
+
+		const isPNG = bytesMatch(
+			bytes,
+			[0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a],
+		)
+
+		if (isPNG) {
+			return "png"
+		}
+
+		const boxType = String.fromCharCode(...bytes.slice(4, 8))
+
+		if (boxType === "ftyp") {
+			const brand = String.fromCharCode(...bytes.slice(8, 12)).toLowerCase()
+
+			const compatibleBrands = String.fromCharCode(
+				...bytes.slice(8, 32),
+			).toLowerCase()
+
+			const heifBrands = [
+				"heic",
+				"heix",
+				"hevc",
+				"hevx",
+				"heim",
+				"heis",
+				"mif1",
+				"msf1",
+			]
+
+			const isHEIF = heifBrands.some(
+				(item) => brand === item || compatibleBrands.includes(item),
+			)
+
+			if (isHEIF) {
+				return "heif"
+			}
+
+			if (
+				brand === "avif" ||
+				brand === "avis" ||
+				compatibleBrands.includes("avif") ||
+				compatibleBrands.includes("avis")
+			) {
+				return "avif"
+			}
+		}
+
+		return "unknown"
+	}
+
+	function downloadBlob(blob, fileName) {
+		const downloadURL = URL.createObjectURL(blob)
+		const link = document.createElement("a")
+
+		link.href = downloadURL
+		link.download = fileName
+
+		document.body.appendChild(link)
+		link.click()
+		link.remove()
+
+		setTimeout(() => {
+			URL.revokeObjectURL(downloadURL)
+		}, 1000)
+	}
+
+	function getReadableFormat(format) {
+		const labels = {
+			jpeg: "JPEG",
+			png: "PNG",
+			heif: "HEIC/HEIF",
+			avif: "AVIF",
+			unknown: "unknown",
+		}
+
+		return labels[format] || format
+	}
+
+	imageInput.addEventListener("change", async function () {
+		const file = imageInput.files[0]
+
+		status.textContent = ""
+		fileInfo.textContent = ""
 
 		if (!file) {
-			status.textContent = "Please select a HEIC file."
 			return
 		}
 
-		status.textContent = "Converting..."
+		try {
+			const detectedFormat = await detectImageFormat(file)
+
+			fileInfo.textContent = `Detected format: ${getReadableFormat(detectedFormat)}`
+		} catch (error) {
+			console.error(error)
+			fileInfo.textContent = "The file format could not be detected."
+		}
+	})
+
+	convertButton.addEventListener("click", async function () {
+		const file = imageInput.files[0]
+
+		if (!file) {
+			status.textContent = "Please select a file."
+			return
+		}
+
+		convertButton.disabled = true
+		status.textContent = "Checking file..."
 
 		try {
-			const outputType = formatSelect.value
+			const detectedFormat = await detectImageFormat(file)
 
-			const convertedBlob = await heic2any({
+			const baseName = getBaseName(file.name)
+
+			if (detectedFormat === "jpeg") {
+				status.textContent =
+					"This file is already JPEG. Downloading it with the correct extension..."
+
+				downloadBlob(file, `${baseName}.jpg`)
+
+				status.textContent = "The JPEG file is ready."
+				return
+			}
+
+			if (detectedFormat === "png") {
+				status.textContent =
+					"This file is already PNG. Downloading it with the correct extension..."
+
+				downloadBlob(file, `${baseName}.png`)
+
+				status.textContent = "The PNG file is ready."
+				return
+			}
+
+			if (detectedFormat === "avif") {
+				status.textContent =
+					"This file is AVIF, not HEIC/HEIF. AVIF conversion is not supported by this tool."
+				return
+			}
+
+			if (detectedFormat !== "heif") {
+				status.textContent = "The actual file format is not supported."
+				return
+			}
+
+			if (typeof heic2any !== "function") {
+				status.textContent = "The HEIC converter library could not be loaded."
+				return
+			}
+
+			status.textContent = "Converting..."
+
+			const selectedType = outputFormat.value
+
+			const convertedResult = await heic2any({
 				blob: file,
-				toType: outputType,
-				quality: 0.9,
+				toType: selectedType,
+				quality: selectedType === "image/jpeg" ? 0.92 : 1,
 			})
 
-			const blob = Array.isArray(convertedBlob)
-				? convertedBlob[0]
-				: convertedBlob
+			const convertedBlob = Array.isArray(convertedResult)
+				? convertedResult[0]
+				: convertedResult
 
-			const extension = outputType === "image/png" ? "png" : "jpg"
+			const extension = selectedType === "image/png" ? "png" : "jpg"
 
-			const originalName = file.name.replace(/\.[^.]+$/, "")
-			const downloadName = `${originalName}.${extension}`
-
-			const downloadURL = URL.createObjectURL(blob)
-
-			const link = document.createElement("a")
-			link.href = downloadURL
-			link.download = downloadName
-			link.click()
-
-			URL.revokeObjectURL(downloadURL)
+			downloadBlob(convertedBlob, `${baseName}.${extension}`)
 
 			status.textContent = "Conversion complete."
 		} catch (error) {
 			console.error(error)
-			status.textContent = "The file could not be converted."
+
+			status.textContent =
+				"The file could not be converted. Check the browser console for technical details."
+		} finally {
+			convertButton.disabled = false
 		}
 	})
 </script>
+
+<div style="clear: both"></div>
+
+<br />
