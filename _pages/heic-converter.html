@@ -71,7 +71,7 @@ permalink: /heic-converter/
 	<input
 		type="file"
 		id="imageInput"
-		accept=".heic,.heif,.jpg,.jpeg,.png,image/heic,image/heif,image/jpeg,image/png"
+		accept=".heic,.heif,image/heic,image/heif"
 	/>
 
 	<select id="outputFormat">
@@ -90,7 +90,7 @@ permalink: /heic-converter/
 <p id="status"></p>
 <p id="fileInfo"></p>
 
-<script src="https://cdn.jsdelivr.net/npm/heic2any@0.0.4/dist/heic2any.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/heic-to@1.5.2/dist/iife/heic-to.js"></script>
 
 <script>
 	const imageInput = document.getElementById("imageInput")
@@ -101,70 +101,6 @@ permalink: /heic-converter/
 
 	function getBaseName(fileName) {
 		return String(fileName || "converted-image").replace(/\.[^.]+$/, "")
-	}
-
-	function bytesMatch(bytes, signature) {
-		return signature.every((byte, index) => bytes[index] === byte)
-	}
-
-	async function detectImageFormat(file) {
-		const buffer = await file.slice(0, 32).arrayBuffer()
-		const bytes = new Uint8Array(buffer)
-
-		const isJPEG = bytesMatch(bytes, [0xff, 0xd8, 0xff])
-
-		if (isJPEG) {
-			return "jpeg"
-		}
-
-		const isPNG = bytesMatch(
-			bytes,
-			[0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a],
-		)
-
-		if (isPNG) {
-			return "png"
-		}
-
-		const boxType = String.fromCharCode(...bytes.slice(4, 8))
-
-		if (boxType === "ftyp") {
-			const brand = String.fromCharCode(...bytes.slice(8, 12)).toLowerCase()
-
-			const compatibleBrands = String.fromCharCode(
-				...bytes.slice(8, 32),
-			).toLowerCase()
-
-			const heifBrands = [
-				"heic",
-				"heix",
-				"hevc",
-				"hevx",
-				"heim",
-				"heis",
-				"mif1",
-				"msf1",
-			]
-
-			const isHEIF = heifBrands.some(
-				(item) => brand === item || compatibleBrands.includes(item),
-			)
-
-			if (isHEIF) {
-				return "heif"
-			}
-
-			if (
-				brand === "avif" ||
-				brand === "avis" ||
-				compatibleBrands.includes("avif") ||
-				compatibleBrands.includes("avis")
-			) {
-				return "avif"
-			}
-		}
-
-		return "unknown"
 	}
 
 	function downloadBlob(blob, fileName) {
@@ -183,18 +119,6 @@ permalink: /heic-converter/
 		}, 1000)
 	}
 
-	function getReadableFormat(format) {
-		const labels = {
-			jpeg: "JPEG",
-			png: "PNG",
-			heif: "HEIC/HEIF",
-			avif: "AVIF",
-			unknown: "unknown",
-		}
-
-		return labels[format] || format
-	}
-
 	imageInput.addEventListener("change", async function () {
 		const file = imageInput.files[0]
 
@@ -206,11 +130,14 @@ permalink: /heic-converter/
 		}
 
 		try {
-			const detectedFormat = await detectImageFormat(file)
+			const isHEIC = await HeicTo.isHeic(file)
 
-			fileInfo.textContent = `Detected format: ${getReadableFormat(detectedFormat)}`
+			fileInfo.textContent = isHEIC
+				? "Detected format: HEIC/HEIF"
+				: "This file is not a supported HEIC/HEIF image."
 		} catch (error) {
 			console.error(error)
+
 			fileInfo.textContent = "The file format could not be detected."
 		}
 	})
@@ -219,7 +146,7 @@ permalink: /heic-converter/
 		const file = imageInput.files[0]
 
 		if (!file) {
-			status.textContent = "Please select a file."
+			status.textContent = "Please select a HEIC or HEIF file."
 			return
 		}
 
@@ -227,59 +154,27 @@ permalink: /heic-converter/
 		status.textContent = "Checking file..."
 
 		try {
-			const detectedFormat = await detectImageFormat(file)
-
-			const baseName = getBaseName(file.name)
-
-			if (detectedFormat === "jpeg") {
-				status.textContent =
-					"This file is already JPEG. Downloading it with the correct extension..."
-
-				downloadBlob(file, `${baseName}.jpg`)
-
-				status.textContent = "The JPEG file is ready."
-				return
+			if (typeof HeicTo !== "function" || typeof HeicTo.isHeic !== "function") {
+				throw new Error("The HEIC converter library could not be loaded.")
 			}
 
-			if (detectedFormat === "png") {
-				status.textContent =
-					"This file is already PNG. Downloading it with the correct extension..."
+			const isHEIC = await HeicTo.isHeic(file)
 
-				downloadBlob(file, `${baseName}.png`)
-
-				status.textContent = "The PNG file is ready."
-				return
-			}
-
-			if (detectedFormat === "avif") {
-				status.textContent =
-					"This file is AVIF, not HEIC/HEIF. AVIF conversion is not supported by this tool."
-				return
-			}
-
-			if (detectedFormat !== "heif") {
-				status.textContent = "The actual file format is not supported."
-				return
-			}
-
-			if (typeof heic2any !== "function") {
-				status.textContent = "The HEIC converter library could not be loaded."
+			if (!isHEIC) {
+				status.textContent = "This file is not a supported HEIC or HEIF image."
 				return
 			}
 
 			status.textContent = "Converting..."
 
 			const selectedType = outputFormat.value
+			const baseName = getBaseName(file.name)
 
-			const convertedResult = await heic2any({
+			const convertedBlob = await HeicTo({
 				blob: file,
-				toType: selectedType,
+				type: selectedType,
 				quality: selectedType === "image/jpeg" ? 0.92 : 1,
 			})
-
-			const convertedBlob = Array.isArray(convertedResult)
-				? convertedResult[0]
-				: convertedResult
 
 			const extension = selectedType === "image/png" ? "png" : "jpg"
 
@@ -289,8 +184,7 @@ permalink: /heic-converter/
 		} catch (error) {
 			console.error(error)
 
-			status.textContent =
-				"The file could not be converted. Check the browser console for technical details."
+			status.textContent = "The file could not be converted."
 		} finally {
 			convertButton.disabled = false
 		}
