@@ -1,0 +1,311 @@
+---
+layout: page-6
+published: true
+title: "Image Resizer"
+permalink: /image-resizer/
+---
+
+{%- include backtotop.html -%}
+
+<br />
+
+<style>
+	.resizer {
+		max-width: 760px;
+	}
+
+	.resizer-controls {
+		margin-bottom: 22px;
+	}
+
+	.resizer-controls input {
+		box-sizing: border-box;
+		width: 100%;
+		min-height: 42px;
+		padding: 8px 10px;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		background: #fff;
+		color: #000;
+		font: inherit;
+	}
+
+	#status {
+		margin: 12px 0 18px;
+	}
+
+	.resize-results {
+		display: none;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 20px;
+	}
+
+	.resize-card {
+		padding: 14px;
+		border: 1px solid #ddd;
+		border-radius: 4px;
+	}
+
+	.resize-card h3 {
+		margin: 0 0 12px;
+		font-size: 17px;
+		font-weight: normal;
+	}
+
+	.resize-preview {
+		display: block;
+		width: 100%;
+		height: auto;
+		margin-bottom: 12px;
+		border: 1px solid #eee;
+	}
+
+	.download-button {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		box-sizing: border-box;
+		width: 100%;
+		min-height: 38px;
+		padding: 7px 12px;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		background: #fff;
+		color: #000;
+		font: inherit;
+		text-align: center;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.download-button:hover {
+		background: #f2f2f2;
+	}
+
+	@media (max-width: 700px) {
+		.resize-results {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>
+
+<div class="resizer">
+	<div class="resizer-controls">
+		<input
+			type="file"
+			id="imageInput"
+			accept="image/jpeg,image/png,image/webp,.jpg,.jpeg,.png,.webp"
+		/>
+	</div>
+
+	<p id="status">Choose an image.</p>
+
+	<div
+		id="resizeResults"
+		class="resize-results"
+	>
+		<div class="resize-card">
+			<h3>192 × 192</h3>
+
+			<img
+				id="preview192"
+				class="resize-preview"
+				alt="192 by 192 preview"
+			/>
+
+			<a
+				id="download192"
+				class="download-button"
+				href="#"
+				download
+			>
+				Download 192 × 192
+			</a>
+		</div>
+
+		<div class="resize-card">
+			<h3>524 × 524</h3>
+
+			<img
+				id="preview524"
+				class="resize-preview"
+				alt="524 by 524 preview"
+			/>
+
+			<a
+				id="download524"
+				class="download-button"
+				href="#"
+				download
+			>
+				Download 524 × 524
+			</a>
+		</div>
+	</div>
+</div>
+
+<script>
+	const imageInput = document.getElementById("imageInput")
+	const status = document.getElementById("status")
+	const resizeResults = document.getElementById("resizeResults")
+
+	const preview192 = document.getElementById("preview192")
+	const preview524 = document.getElementById("preview524")
+
+	const download192 = document.getElementById("download192")
+	const download524 = document.getElementById("download524")
+
+	let objectURLs = []
+
+	function clearObjectURLs() {
+		objectURLs.forEach((url) => {
+			URL.revokeObjectURL(url)
+		})
+
+		objectURLs = []
+	}
+
+	function getBaseName(fileName) {
+		return String(fileName || "image").replace(/\.[^.]+$/, "")
+	}
+
+	function loadImage(file) {
+		return new Promise((resolve, reject) => {
+			const imageURL = URL.createObjectURL(file)
+			const image = new Image()
+
+			image.onload = function () {
+				URL.revokeObjectURL(imageURL)
+				resolve(image)
+			}
+
+			image.onerror = function () {
+				URL.revokeObjectURL(imageURL)
+				reject(new Error("The image could not be opened."))
+			}
+
+			image.src = imageURL
+		})
+	}
+
+	function canvasToBlob(canvas) {
+		return new Promise((resolve, reject) => {
+			canvas.toBlob(
+				(blob) => {
+					if (!blob) {
+						reject(new Error("The resized image could not be created."))
+						return
+					}
+
+					resolve(blob)
+				},
+				"image/jpeg",
+				0.92,
+			)
+		})
+	}
+
+	async function createSquareImage(image, size) {
+		const canvas = document.createElement("canvas")
+		const context = canvas.getContext("2d")
+
+		canvas.width = size
+		canvas.height = size
+
+		const sourceSize = Math.min(image.naturalWidth, image.naturalHeight)
+
+		const sourceX = (image.naturalWidth - sourceSize) / 2
+
+		const sourceY = (image.naturalHeight - sourceSize) / 2
+
+		context.imageSmoothingEnabled = true
+		context.imageSmoothingQuality = "high"
+
+		context.drawImage(
+			image,
+			sourceX,
+			sourceY,
+			sourceSize,
+			sourceSize,
+			0,
+			0,
+			size,
+			size,
+		)
+
+		return canvasToBlob(canvas)
+	}
+
+	function prepareDownload(blob, previewElement, downloadElement, fileName) {
+		const objectURL = URL.createObjectURL(blob)
+
+		objectURLs.push(objectURL)
+
+		previewElement.src = objectURL
+		downloadElement.href = objectURL
+		downloadElement.download = fileName
+	}
+
+	imageInput.addEventListener("change", async function () {
+		const file = imageInput.files[0]
+
+		clearObjectURLs()
+		resizeResults.style.display = "none"
+
+		preview192.removeAttribute("src")
+		preview524.removeAttribute("src")
+
+		download192.removeAttribute("href")
+		download524.removeAttribute("href")
+
+		if (!file) {
+			status.textContent = "Choose an image."
+			return
+		}
+
+		if (!file.type.startsWith("image/")) {
+			status.textContent = "Please select a JPG, PNG or WebP image."
+			return
+		}
+
+		status.textContent = "Preparing images..."
+
+		try {
+			const image = await loadImage(file)
+			const baseName = getBaseName(file.name)
+
+			const [blob192, blob524] = await Promise.all([
+				createSquareImage(image, 192),
+				createSquareImage(image, 524),
+			])
+
+			prepareDownload(
+				blob192,
+				preview192,
+				download192,
+				`${baseName}-192x192.jpg`,
+			)
+
+			prepareDownload(
+				blob524,
+				preview524,
+				download524,
+				`${baseName}-524x524.jpg`,
+			)
+
+			resizeResults.style.display = "grid"
+
+			status.textContent = "Both sizes are ready."
+		} catch (error) {
+			console.error(error)
+
+			status.textContent = "The image could not be resized."
+		}
+	})
+
+	window.addEventListener("beforeunload", clearObjectURLs)
+</script>
+
+<div style="clear: both"></div>
+
+<br />
