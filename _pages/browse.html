@@ -14,11 +14,12 @@ permalink: /browse/
 		display: flex;
 		flex-wrap: wrap;
 		gap: 10px;
-		margin-bottom: 14px;
+		margin-bottom: 10px;
 	}
 
 	.browse-controls select,
-	.browse-controls input {
+	.browse-controls input,
+	#showAllButton {
 		box-sizing: border-box;
 		height: 38px;
 		padding: 7px 10px;
@@ -38,8 +39,27 @@ permalink: /browse/
 		min-width: 220px;
 	}
 
+	#showAllButton {
+		display: inline-block;
+		margin: 0 0 14px;
+		cursor: pointer;
+	}
+
+	#showAllButton:hover {
+		background: #f2f2f2;
+	}
+
+	#showAllButton:disabled {
+		cursor: default;
+		opacity: 0.6;
+	}
+
 	#resultInfo {
 		margin: 0 0 12px;
+	}
+
+	#browseMessage {
+		margin: 0 0 14px;
 	}
 
 	#browseTable {
@@ -51,8 +71,21 @@ permalink: /browse/
 		background-color: #f2f2f2;
 	}
 
-	#browseMessage {
-		margin-top: 10px;
+	#shelfPhotoArea {
+		display: none;
+		margin-top: 14px;
+	}
+
+	#shelfPhotoTitle {
+		margin: 0 0 10px;
+		font-size: 17px;
+		font-weight: normal;
+	}
+
+	#shelfPhoto {
+		display: block;
+		width: 100%;
+		height: auto;
 	}
 
 	@media (max-width: 700px) {
@@ -65,6 +98,10 @@ permalink: /browse/
 			width: 100%;
 			margin-bottom: 8px;
 		}
+
+		#showAllButton {
+			width: 100%;
+		}
 	}
 </style>
 
@@ -74,8 +111,8 @@ permalink: /browse/
 		<option value="author">author</option>
 		<option value="categories">category</option>
 		<option value="notes">shelf</option>
-		<option value="publisher">publisher</option>
 		<option value="location">location</option>
+		<option value="shelf-photo">shelf photo</option>
 	</select>
 
 	<select
@@ -92,6 +129,15 @@ permalink: /browse/
 		disabled
 	/>
 </div>
+
+<button
+	type="button"
+	id="showAllButton"
+>
+	Show all books
+</button>
+
+<p id="browseMessage">Select a filter or click Show All.</p>
 
 <p
 	id="resultInfo"
@@ -119,7 +165,15 @@ permalink: /browse/
 	<tbody></tbody>
 </table>
 
-<p id="browseMessage">Select a field and a value.</p>
+<div id="shelfPhotoArea">
+	<p id="shelfPhotoTitle"></p>
+
+	<img
+		id="shelfPhoto"
+		src=""
+		alt=""
+	/>
+</div>
 
 {%- assign books_data = site.data.list.item | default: site.data.list -%}
 
@@ -137,12 +191,70 @@ permalink: /browse/
 	const fieldSelect = document.getElementById("fieldSelect")
 	const valueSelect = document.getElementById("valueSelect")
 	const searchInput = document.getElementById("searchInput")
+	const showAllButton = document.getElementById("showAllButton")
+
 	const resultInfo = document.getElementById("resultInfo")
-	const browseTable = document.getElementById("browseTable")
-	const tableBody = browseTable.querySelector("tbody")
 	const browseMessage = document.getElementById("browseMessage")
 
+	const browseTable = document.getElementById("browseTable")
+	const tableBody = browseTable.querySelector("tbody")
+
+	const shelfPhotoArea = document.getElementById("shelfPhotoArea")
+	const shelfPhotoTitle = document.getElementById("shelfPhotoTitle")
+	const shelfPhoto = document.getElementById("shelfPhoto")
+
 	let selectedBooks = []
+
+	const shelfPhotos = [
+		"1-A",
+		"1-B",
+		"1-C",
+		"1-D",
+		"2-A",
+		"2-B",
+		"2-C",
+		"2-D",
+		"3-A",
+		"3-B",
+		"3-C",
+		"3-D",
+		"4-A",
+		"4-B",
+		"4-C",
+		"4-D",
+		"5-A",
+		"5-B",
+		"5-C",
+		"5-D",
+		"6-A",
+		"6-B",
+		"6-C",
+		"6-D",
+		"7-A",
+		"7-B",
+		"7-C",
+		"7-D",
+		"8-A",
+		"8-B",
+		"8-C",
+		"8-D",
+		"9-A",
+		"9-B",
+		"9-C",
+		"9-D",
+		"10-A",
+		"10-B",
+		"10-C",
+		"10-D",
+		"11-A",
+		"11-B",
+		"11-C",
+		"11-D",
+		"12-A",
+		"12-D",
+	]
+
+	showAllButton.textContent = `Show all ${books.length} books`
 
 	function escapeHTML(value) {
 		return String(value ?? "")
@@ -206,18 +318,46 @@ permalink: /browse/
 			author: "author",
 			categories: "category",
 			notes: "shelf",
-			publisher: "publisher",
 			location: "location",
+			"shelf-photo": "shelf photo",
 		}
 
 		return labels[field] || field
 	}
 
+	function hideTable() {
+		browseTable.style.display = "none"
+		resultInfo.style.display = "none"
+		tableBody.innerHTML = ""
+	}
+
+	function hideShelfPhoto() {
+		shelfPhotoArea.style.display = "none"
+		shelfPhoto.src = ""
+		shelfPhoto.alt = ""
+		shelfPhotoTitle.textContent = ""
+	}
+
+	function showInitialMessage() {
+		browseMessage.textContent = "Select a filter or click Show All."
+
+		browseMessage.style.display = "block"
+	}
+
 	function populateValueSelect(field, selectedValue = "") {
-		const values = getUniqueValues(field)
+		let values = []
+
+		if (field === "shelf-photo") {
+			values = shelfPhotos
+		} else {
+			values = getUniqueValues(field)
+		}
 
 		valueSelect.innerHTML = `
-			<option value="">select ${getFieldLabel(field)}...</option>
+			<option value="">
+				select ${getFieldLabel(field)}...
+			</option>
+
 			${values
 				.map(
 					(value) => `
@@ -261,6 +401,8 @@ permalink: /browse/
 	}
 
 	function renderTable() {
+		hideShelfPhoto()
+
 		const searchTerm = normalize(searchInput.value)
 
 		const visibleBooks = selectedBooks.filter((book) => {
@@ -277,7 +419,6 @@ permalink: /browse/
 				book.status,
 				book.notes,
 				book.location,
-				book.publisher,
 			]
 				.join(" ")
 				.toLocaleLowerCase("en")
@@ -293,7 +434,9 @@ permalink: /browse/
 
 				return `
 					<tr>
-						<td>${escapeHTML(book.bookshelf)}</td>
+						<td>
+							${escapeHTML(book.bookshelf)}
+						</td>
 
 						<td>
 							<a href="${bookURL}">
@@ -301,17 +444,29 @@ permalink: /browse/
 							</a>
 						</td>
 
-						<td>${escapeHTML(book.author)}</td>
+						<td>
+							${escapeHTML(book.author)}
+						</td>
 
-						<td>${escapeHTML(book.year)}</td>
+						<td>
+							${escapeHTML(book.year)}
+						</td>
 
-						<td>${escapeHTML(book.categories)}</td>
+						<td>
+							${escapeHTML(book.categories)}
+						</td>
 
-						<td>${isRead(book.status) ? "✅" : "read?"}</td>
+						<td>
+							${isRead(book.status) ? "✅" : "read?"}
+						</td>
 
-						<td>${escapeHTML(book.notes)}</td>
+						<td>
+							${escapeHTML(book.notes)}
+						</td>
 
-						<td>${escapeHTML(book.location)}</td>
+						<td>
+							${escapeHTML(book.location)}
+						</td>
 					</tr>
 				`
 			})
@@ -332,45 +487,69 @@ permalink: /browse/
 		}
 	}
 
+	function renderShelfPhoto(shelfName) {
+		hideTable()
+
+		searchInput.value = ""
+		searchInput.disabled = true
+
+		browseMessage.style.display = "none"
+
+		shelfPhotoTitle.textContent = shelfName
+		shelfPhoto.src =
+			"{{ '/assets/shelves/' | relative_url }}" +
+			encodeURIComponent(shelfName) +
+			".png"
+
+		shelfPhoto.alt = `${shelfName} shelf`
+		shelfPhotoArea.style.display = "block"
+	}
+
+	function resetResults() {
+		selectedBooks = []
+
+		searchInput.value = ""
+		searchInput.disabled = true
+
+		hideTable()
+		hideShelfPhoto()
+	}
+
 	function selectValue() {
 		const field = fieldSelect.value
 		const value = valueSelect.value
 
-		searchInput.value = ""
+		resetResults()
 
 		if (!field || !value) {
-			selectedBooks = []
-			searchInput.disabled = true
-			resultInfo.style.display = "none"
-			browseTable.style.display = "none"
-			browseMessage.textContent = "Select a field and a value."
-			browseMessage.style.display = "block"
+			showInitialMessage()
 			updateURL("", "")
+			return
+		}
+
+		updateURL(field, value)
+
+		if (field === "shelf-photo") {
+			renderShelfPhoto(value)
 			return
 		}
 
 		selectedBooks = findMatchingBooks(field, value)
 		searchInput.disabled = false
-
-		updateURL(field, value)
 		renderTable()
 	}
 
 	fieldSelect.addEventListener("change", function () {
 		const field = fieldSelect.value
 
-		selectedBooks = []
-		searchInput.value = ""
-		searchInput.disabled = true
-		resultInfo.style.display = "none"
-		browseTable.style.display = "none"
+		resetResults()
 
 		if (!field) {
 			valueSelect.innerHTML = '<option value="">select a value...</option>'
 
 			valueSelect.disabled = true
-			browseMessage.textContent = "Select a field and a value."
-			browseMessage.style.display = "block"
+
+			showInitialMessage()
 			updateURL("", "")
 			return
 		}
@@ -380,11 +559,30 @@ permalink: /browse/
 		browseMessage.textContent = `Select a ${getFieldLabel(field)}.`
 
 		browseMessage.style.display = "block"
+
 		updateURL("", "")
 	})
 
 	valueSelect.addEventListener("change", selectValue)
+
 	searchInput.addEventListener("input", renderTable)
+
+	showAllButton.addEventListener("click", function () {
+		fieldSelect.value = ""
+
+		valueSelect.innerHTML = '<option value="">select a value...</option>'
+
+		valueSelect.disabled = true
+
+		hideShelfPhoto()
+
+		selectedBooks = books
+		searchInput.value = ""
+		searchInput.disabled = false
+
+		updateURL("", "")
+		renderTable()
+	})
 
 	const params = new URLSearchParams(window.location.search)
 	const initialField = params.get("field") || ""
@@ -394,8 +592,8 @@ permalink: /browse/
 		"author",
 		"categories",
 		"notes",
-		"publisher",
 		"location",
+		"shelf-photo",
 	]
 
 	if (allowedFields.includes(initialField)) {
@@ -403,10 +601,14 @@ permalink: /browse/
 		populateValueSelect(initialField, initialValue)
 
 		if (initialValue && valueSelect.value === initialValue) {
-			selectedBooks = findMatchingBooks(initialField, initialValue)
+			if (initialField === "shelf-photo") {
+				renderShelfPhoto(initialValue)
+			} else {
+				selectedBooks = findMatchingBooks(initialField, initialValue)
 
-			searchInput.disabled = false
-			renderTable()
+				searchInput.disabled = false
+				renderTable()
+			}
 		}
 	}
 </script>
