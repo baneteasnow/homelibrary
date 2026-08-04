@@ -137,8 +137,7 @@ permalink: /browse/
 	<input
 		type="text"
 		id="searchInput"
-		placeholder="search within results..."
-		disabled
+		placeholder="search all books..."
 	/>
 </div>
 
@@ -216,6 +215,7 @@ permalink: /browse/
 	const shelfPhoto = document.getElementById("shelfPhoto")
 
 	let selectedBooks = []
+	let showingAll = false
 
 	const shelfPhotos = [
 		"1-A",
@@ -366,20 +366,20 @@ permalink: /browse/
 		}
 
 		valueSelect.innerHTML = `
-			<option value="">
-				select ${getFieldLabel(field)}...
-			</option>
-
-			${values
-				.map(
-					(value) => `
-						<option value="${escapeHTML(value)}">
-							${escapeHTML(value)}
+						<option value="">
+							select ${getFieldLabel(field)}...
 						</option>
-					`,
-				)
-				.join("")}
-		`
+
+						${values
+							.map(
+								(value) => `
+									<option value="${escapeHTML(value)}">
+										${escapeHTML(value)}
+									</option>
+								`,
+							)
+							.join("")}
+					`
 
 		valueSelect.disabled = false
 
@@ -411,13 +411,29 @@ permalink: /browse/
 
 		window.history.replaceState({}, "", url)
 	}
+	function hasActiveBookFilter() {
+		return Boolean(
+			fieldSelect.value &&
+			valueSelect.value &&
+			fieldSelect.value !== "shelf-photo",
+		)
+	}
 
 	function renderTable() {
 		hideShelfPhoto()
 
 		const searchTerm = normalize(searchInput.value)
 
-		const visibleBooks = selectedBooks.filter((book) => {
+		if (!searchTerm && !showingAll && !hasActiveBookFilter()) {
+			hideTable()
+			showInitialMessage()
+			return
+		}
+
+		const sourceBooks =
+			showingAll || hasActiveBookFilter() ? selectedBooks : books
+
+		const visibleBooks = sourceBooks.filter((book) => {
 			if (!searchTerm) {
 				return true
 			}
@@ -444,43 +460,59 @@ permalink: /browse/
 					"{{ '/booklist' | relative_url }}#" +
 					encodeURIComponent(book.bookshelf || "")
 
+				const shelfName = String(book.notes || "").trim()
+
+				const shelfPhotoURL =
+					"{{ '/browse/' | relative_url }}" +
+					"?field=shelf-photo&value=" +
+					encodeURIComponent(shelfName)
+
+				const shelfContent =
+					shelfName && shelfPhotos.includes(shelfName)
+						? `
+									<a href="${shelfPhotoURL}">
+										${escapeHTML(shelfName)}
+									</a>
+								`
+						: escapeHTML(shelfName)
+
 				return `
-					<tr>
-						<td>
-							${escapeHTML(book.bookshelf)}
-						</td>
+							<tr>
+								<td>
+									${escapeHTML(book.bookshelf)}
+								</td>
 
-						<td>
-							<a href="${bookURL}">
-								<b>${escapeHTML(book.title)}</b>
-							</a>
-						</td>
+								<td>
+									<a href="${bookURL}">
+										<b>${escapeHTML(book.title)}</b>
+									</a>
+								</td>
 
-						<td>
-							${escapeHTML(book.author)}
-						</td>
+								<td>
+									${escapeHTML(book.author)}
+								</td>
 
-						<td>
-							${escapeHTML(book.year)}
-						</td>
+								<td>
+									${escapeHTML(book.year)}
+								</td>
 
-						<td>
-							${escapeHTML(book.categories)}
-						</td>
+								<td>
+									${escapeHTML(book.categories)}
+								</td>
 
-						<td>
-							${isRead(book.status) ? "✅" : "read?"}
-						</td>
+								<td>
+									${isRead(book.status) ? "✅" : "read?"}
+								</td>
 
-						<td>
-							${escapeHTML(book.notes)}
-						</td>
+								<td>
+									${shelfContent}
+								</td>
 
-						<td>
-							${escapeHTML(book.location)}
-						</td>
-					</tr>
-				`
+								<td>
+									${escapeHTML(book.location)}
+								</td>
+							</tr>
+						`
 			})
 			.join("")
 
@@ -498,7 +530,6 @@ permalink: /browse/
 			browseMessage.style.display = "block"
 		}
 	}
-
 	function renderShelfPhoto(shelfName) {
 		hideTable()
 
@@ -519,9 +550,9 @@ permalink: /browse/
 
 	function resetResults() {
 		selectedBooks = []
+		showingAll = false
 
 		searchInput.value = ""
-		searchInput.disabled = true
 
 		hideTable()
 		hideShelfPhoto()
@@ -546,80 +577,94 @@ permalink: /browse/
 			return
 		}
 
+		showingAll = false
 		selectedBooks = findMatchingBooks(field, value)
-		searchInput.disabled = false
 		renderTable()
-	}
 
-	fieldSelect.addEventListener("change", function () {
-		const field = fieldSelect.value
+		fieldSelect.addEventListener("change", function () {
+			const field = fieldSelect.value
 
-		resetResults()
+			resetResults()
 
-		if (!field) {
+			if (!field) {
+				valueSelect.innerHTML = '<option value="">select a value...</option>'
+
+				valueSelect.disabled = true
+
+				showInitialMessage()
+				updateURL("", "")
+				return
+			}
+
+			populateValueSelect(field)
+
+			browseMessage.textContent = `Select a ${getFieldLabel(field)}.`
+
+			browseMessage.style.display = "block"
+
+			updateURL("", "")
+		})
+
+		valueSelect.addEventListener("change", selectValue)
+
+		searchInput.addEventListener("input", function () {
+			if (fieldSelect.value === "shelf-photo") {
+				fieldSelect.value = ""
+
+				valueSelect.innerHTML = '<option value="">select a value...</option>'
+
+				valueSelect.disabled = true
+
+				hideShelfPhoto()
+				updateURL("", "")
+			}
+
+			renderTable()
+		})
+
+		showAllButton.addEventListener("click", function () {
+			fieldSelect.value = ""
+
 			valueSelect.innerHTML = '<option value="">select a value...</option>'
 
 			valueSelect.disabled = true
 
-			showInitialMessage()
+			hideShelfPhoto()
+
+			showingAll = true
+			selectedBooks = books
+
+			searchInput.value = ""
+
 			updateURL("", "")
-			return
-		}
+			renderTable()
+		})
 
-		populateValueSelect(field)
+		const params = new URLSearchParams(window.location.search)
+		const initialField = params.get("field") || ""
+		const initialValue = params.get("value") || ""
 
-		browseMessage.textContent = `Select a ${getFieldLabel(field)}.`
+		const allowedFields = [
+			"author",
+			"categories",
+			"notes",
+			"location",
+			"shelf-photo",
+		]
 
-		browseMessage.style.display = "block"
+		if (allowedFields.includes(initialField)) {
+			fieldSelect.value = initialField
+			populateValueSelect(initialField, initialValue)
 
-		updateURL("", "")
-	})
+			if (initialValue && valueSelect.value === initialValue) {
+				if (initialField === "shelf-photo") {
+					renderShelfPhoto(initialValue)
+				} else {
+					selectedBooks = findMatchingBooks(initialField, initialValue)
 
-	valueSelect.addEventListener("change", selectValue)
-
-	searchInput.addEventListener("input", renderTable)
-
-	showAllButton.addEventListener("click", function () {
-		fieldSelect.value = ""
-
-		valueSelect.innerHTML = '<option value="">select a value...</option>'
-
-		valueSelect.disabled = true
-
-		hideShelfPhoto()
-
-		selectedBooks = books
-		searchInput.value = ""
-		searchInput.disabled = false
-
-		updateURL("", "")
-		renderTable()
-	})
-
-	const params = new URLSearchParams(window.location.search)
-	const initialField = params.get("field") || ""
-	const initialValue = params.get("value") || ""
-
-	const allowedFields = [
-		"author",
-		"categories",
-		"notes",
-		"location",
-		"shelf-photo",
-	]
-
-	if (allowedFields.includes(initialField)) {
-		fieldSelect.value = initialField
-		populateValueSelect(initialField, initialValue)
-
-		if (initialValue && valueSelect.value === initialValue) {
-			if (initialField === "shelf-photo") {
-				renderShelfPhoto(initialValue)
-			} else {
-				selectedBooks = findMatchingBooks(initialField, initialValue)
-
-				searchInput.disabled = false
-				renderTable()
+					searchInput.disabled = false
+					renderTable()
+				}
 			}
 		}
 	}
