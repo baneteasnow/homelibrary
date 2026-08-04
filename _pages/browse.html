@@ -39,32 +39,32 @@ permalink: /browse/
 		min-width: 220px;
 	}
 
-#showAllButton {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 220px;
-	height: 38px;
-	margin: 0 0 18px;
-	padding: 7px 14px;
-	border: 1px solid #ccc;
-	border-radius: 4px;
-	background: #fff;
-	color: #000;
-	font: inherit;
-	font-size: 16px;
-	text-align: center;
-	cursor: pointer;
-}
+	#showAllButton {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 220px;
+		height: 38px;
+		margin: 0 0 18px;
+		padding: 7px 14px;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		background: #fff;
+		color: #000;
+		font: inherit;
+		font-size: 16px;
+		text-align: center;
+		cursor: pointer;
+	}
 
-#showAllButton:hover {
-	background: #f2f2f2;
-}
+	#showAllButton:hover {
+		background: #f2f2f2;
+	}
 
-#showAllButton:disabled {
-	cursor: default;
-	opacity: 0.6;
-}
+	#showAllButton:disabled {
+		cursor: default;
+		opacity: 0.6;
+	}
 
 	#resultInfo {
 		margin: 0 0 12px;
@@ -137,8 +137,7 @@ permalink: /browse/
 	<input
 		type="text"
 		id="searchInput"
-		placeholder="search within results..."
-		disabled
+		placeholder="search all books..."
 	/>
 </div>
 
@@ -216,6 +215,7 @@ permalink: /browse/
 	const shelfPhoto = document.getElementById("shelfPhoto")
 
 	let selectedBooks = []
+	let showingAll = false
 
 	const shelfPhotos = [
 		"1-A",
@@ -366,20 +366,20 @@ permalink: /browse/
 		}
 
 		valueSelect.innerHTML = `
-			<option value="">
-				select ${getFieldLabel(field)}...
-			</option>
+					<option value="">
+						select ${getFieldLabel(field)}...
+					</option>
 
-			${values
-				.map(
-					(value) => `
-						<option value="${escapeHTML(value)}">
-							${escapeHTML(value)}
-						</option>
-					`,
-				)
-				.join("")}
-		`
+					${values
+						.map(
+							(value) => `
+								<option value="${escapeHTML(value)}">
+									${escapeHTML(value)}
+								</option>
+							`,
+						)
+						.join("")}
+				`
 
 		valueSelect.disabled = false
 
@@ -412,12 +412,29 @@ permalink: /browse/
 		window.history.replaceState({}, "", url)
 	}
 
+	function hasActiveBookFilter() {
+		return Boolean(
+			fieldSelect.value &&
+			valueSelect.value &&
+			fieldSelect.value !== "shelf-photo",
+		)
+	}
+
 	function renderTable() {
 		hideShelfPhoto()
 
 		const searchTerm = normalize(searchInput.value)
 
-		const visibleBooks = selectedBooks.filter((book) => {
+		if (!searchTerm && !showingAll && !hasActiveBookFilter()) {
+			hideTable()
+			showInitialMessage()
+			return
+		}
+
+		const sourceBooks =
+			showingAll || hasActiveBookFilter() ? selectedBooks : books
+
+		const visibleBooks = sourceBooks.filter((book) => {
 			if (!searchTerm) {
 				return true
 			}
@@ -444,43 +461,63 @@ permalink: /browse/
 					"{{ '/booklist' | relative_url }}#" +
 					encodeURIComponent(book.bookshelf || "")
 
+				const shelfName = String(book.notes || "").trim()
+
+				const shelfPhotoURL =
+					"{{ '/assets/shelves/' | relative_url }}" +
+					encodeURIComponent(shelfName) +
+					".png"
+
+				const shelfContent =
+					shelfName && shelfPhotos.includes(shelfName)
+						? `
+			<a
+				href="${shelfPhotoURL}"
+				target="_blank"
+				rel="noopener noreferrer"
+			>
+				${escapeHTML(shelfName)}
+			</a>
+		`
+						: escapeHTML(shelfName)
+
 				return `
-					<tr>
-						<td>
-							${escapeHTML(book.bookshelf)}
-						</td>
+						<tr>
+							<td>
+								${escapeHTML(book.bookshelf)}
+							</td>
 
-						<td>
-							<a href="${bookURL}">
-								<b>${escapeHTML(book.title)}</b>
-							</a>
-						</td>
+							<td>
+								<a href="${bookURL}">
+									<b>${escapeHTML(book.title)}</b>
+								</a>
+							</td>
 
-						<td>
-							${escapeHTML(book.author)}
-						</td>
+							<td>
+								${escapeHTML(book.author)}
+							</td>
 
-						<td>
-							${escapeHTML(book.year)}
-						</td>
+							<td>
+								${escapeHTML(book.year)}
+							</td>
 
-						<td>
-							${escapeHTML(book.categories)}
-						</td>
+							<td>
+								${escapeHTML(book.categories)}
+							</td>
 
-						<td>
-							${isRead(book.status) ? "✅" : "read?"}
-						</td>
+							<td>
+								${isRead(book.status) ? "✅" : "read?"}
+							</td>
 
-						<td>
-							${escapeHTML(book.notes)}
-						</td>
+							<td>
+								${shelfContent}
+							</td>
 
-						<td>
-							${escapeHTML(book.location)}
-						</td>
-					</tr>
-				`
+							<td>
+								${escapeHTML(book.location)}
+							</td>
+						</tr>
+					`
 			})
 			.join("")
 
@@ -519,38 +556,33 @@ permalink: /browse/
 
 	function resetResults() {
 		selectedBooks = []
+		showingAll = false
 
 		searchInput.value = ""
-		searchInput.disabled = true
 
 		hideTable()
 		hideShelfPhoto()
 	}
-
 	function selectValue() {
 		const field = fieldSelect.value
 		const value = valueSelect.value
-
 		resetResults()
-
 		if (!field || !value) {
 			showInitialMessage()
 			updateURL("", "")
 			return
 		}
-
 		updateURL(field, value)
-
 		if (field === "shelf-photo") {
 			renderShelfPhoto(value)
 			return
 		}
+		showingAll = false
 
 		selectedBooks = findMatchingBooks(field, value)
-		searchInput.disabled = false
+
 		renderTable()
 	}
-
 	fieldSelect.addEventListener("change", function () {
 		const field = fieldSelect.value
 
@@ -577,8 +609,20 @@ permalink: /browse/
 
 	valueSelect.addEventListener("change", selectValue)
 
-	searchInput.addEventListener("input", renderTable)
+	searchInput.addEventListener("input", function () {
+		if (fieldSelect.value === "shelf-photo") {
+			fieldSelect.value = ""
 
+			valueSelect.innerHTML = '<option value="">select a value...</option>'
+
+			valueSelect.disabled = true
+
+			hideShelfPhoto()
+			updateURL("", "")
+		}
+
+		renderTable()
+	})
 	showAllButton.addEventListener("click", function () {
 		fieldSelect.value = ""
 
@@ -588,14 +632,14 @@ permalink: /browse/
 
 		hideShelfPhoto()
 
+		showingAll = true
 		selectedBooks = books
+
 		searchInput.value = ""
-		searchInput.disabled = false
 
 		updateURL("", "")
 		renderTable()
 	})
-
 	const params = new URLSearchParams(window.location.search)
 	const initialField = params.get("field") || ""
 	const initialValue = params.get("value") || ""
