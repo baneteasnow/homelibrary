@@ -98,6 +98,15 @@ permalink: /image-resizer/
 		/>
 	</div>
 
+	<label for="fileNameInput">File name</label>
+
+	<input
+		type="text"
+		id="fileNameInput"
+		placeholder="Enter file name..."
+		style="margin-top: 8px; width: 100%; padding: 8px; box-sizing: border-box"
+	/>
+
 	<p id="status">Choose an image.</p>
 
 	<div
@@ -154,6 +163,7 @@ permalink: /image-resizer/
 
 	const download192 = document.getElementById("download192")
 	const download524 = document.getElementById("download524")
+	const fileNameInput = document.getElementById("fileNameInput")
 
 	let objectURLs = []
 
@@ -272,8 +282,8 @@ permalink: /image-resizer/
 
 		try {
 			const image = await loadImage(file)
-			const baseName = getBaseName(file.name)
-			console.log(file.name)
+			const baseName = fileNameInput.value.trim() || getBaseName(file.name)
+			fileNameInput.value = baseName
 
 			const [blob192, blob524] = await Promise.all([
 				createSquareImage(image, 192),
