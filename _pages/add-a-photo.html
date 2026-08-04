@@ -1,0 +1,19 @@
+---
+layout: page-6
+published: true
+last_modified_at: 2026-05-08
+title: "Completed List"
+---
+
+{%-include backtotop.html-%}
+<br />
+
+<div>
+	{% assign add_data = site.data.list %} {% assign status_add = add_data |
+	where: "note", "add a photo!" | size %}
+	<i>add a photo: {{ status_add }} </i>
+</div>
+<div style="clear: both"></div>
+
+{% assign add_data = site.data.list %} {% assign status_add = add_data | where:
+"note", "add a photo!" %} {{ status_add }}
