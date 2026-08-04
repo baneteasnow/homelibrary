@@ -273,6 +273,7 @@ permalink: /image-resizer/
 		try {
 			const image = await loadImage(file)
 			const baseName = getBaseName(file.name)
+			console.log(file.name)
 
 			const [blob192, blob524] = await Promise.all([
 				createSquareImage(image, 192),
