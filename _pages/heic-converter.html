@@ -1,0 +1,74 @@
+---
+layout: page-6
+published: true
+last_modified_at: 2026-08-05
+title: "HEIC to .png / HEIC to .jpg"
+---
+
+<input
+	type="file"
+	id="heicInput"
+	accept=".heic,.heif,image/heic,image/heif"
+/>
+
+<select id="outputFormat">
+	<option value="image/jpeg">JPG</option>
+	<option value="image/png">PNG</option>
+</select>
+
+<button id="convertButton">Convert</button>
+
+<p id="status"></p>
+
+<script src="https://cdn.jsdelivr.net/npm/heic2any/dist/heic2any.min.js"></script>
+
+<script>
+	const input = document.getElementById("heicInput")
+	const formatSelect = document.getElementById("outputFormat")
+	const convertButton = document.getElementById("convertButton")
+	const status = document.getElementById("status")
+
+	convertButton.addEventListener("click", async () => {
+		const file = input.files[0]
+
+		if (!file) {
+			status.textContent = "Please select a HEIC file."
+			return
+		}
+
+		status.textContent = "Converting..."
+
+		try {
+			const outputType = formatSelect.value
+
+			const convertedBlob = await heic2any({
+				blob: file,
+				toType: outputType,
+				quality: 0.9,
+			})
+
+			const blob = Array.isArray(convertedBlob)
+				? convertedBlob[0]
+				: convertedBlob
+
+			const extension = outputType === "image/png" ? "png" : "jpg"
+
+			const originalName = file.name.replace(/\.[^.]+$/, "")
+			const downloadName = `${originalName}.${extension}`
+
+			const downloadURL = URL.createObjectURL(blob)
+
+			const link = document.createElement("a")
+			link.href = downloadURL
+			link.download = downloadName
+			link.click()
+
+			URL.revokeObjectURL(downloadURL)
+
+			status.textContent = "Conversion complete."
+		} catch (error) {
+			console.error(error)
+			status.textContent = "The file could not be converted."
+		}
+	})
+</script>
