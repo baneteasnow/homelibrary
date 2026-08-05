@@ -1,0 +1,516 @@
+---
+layout: page-6
+published: true
+title: "Image Optimizer"
+permalink: /image-optimizer/
+---
+
+{%- include backtotop.html -%}
+
+<br />
+
+<style>
+	.image-compressor {
+		max-width: 760px;
+	}
+
+	.compressor-controls {
+		margin-bottom: 20px;
+	}
+
+	.compressor-controls label {
+		display: block;
+		margin: 0 0 6px;
+	}
+
+	.compressor-controls input,
+	.compressor-controls select {
+		box-sizing: border-box;
+		width: 100%;
+		min-height: 42px;
+		margin: 0 0 12px;
+		padding: 8px 10px;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		background: #fff;
+		color: #000;
+		font: inherit;
+	}
+
+	#compressorStatus {
+		margin: 14px 0 18px;
+	}
+
+	#resultCard {
+		display: none;
+		padding: 18px;
+		border: 1px solid #ddd;
+		border-radius: 4px;
+		background: #fafafa;
+	}
+
+	.result-row {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 20px;
+		padding: 10px 0;
+		border-bottom: 1px solid #e8e8e8;
+	}
+
+	.result-row:last-of-type {
+		border-bottom: none;
+	}
+
+	.result-label {
+		font-weight: bold;
+	}
+
+	.result-value {
+		text-align: right;
+	}
+
+	#downloadButton {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		box-sizing: border-box;
+		width: 100%;
+		min-height: 42px;
+		margin-top: 20px;
+		padding: 8px 14px;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		background: #fff;
+		color: #000;
+		font: inherit;
+		text-align: center;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	#downloadButton:hover {
+		background: #f2f2f2;
+	}
+
+	#downloadButton[aria-disabled="true"] {
+		pointer-events: none;
+		opacity: 0.55;
+	}
+
+	@media (max-width: 700px) {
+		.result-row {
+			align-items: flex-start;
+		}
+
+		.result-value {
+			max-width: 55%;
+		}
+	}
+</style>
+
+<div class="image-compressor">
+	<div class="compressor-controls">
+		<label for="imageInput">Choose image</label>
+
+		<input
+			type="file"
+			id="imageInput"
+			accept="image/jpeg,image/png,image/webp,.jpg,.jpeg,.png,.webp"
+		/>
+
+		<label for="fileNameInput">File name</label>
+
+		<input
+			type="text"
+			id="fileNameInput"
+			placeholder="File name..."
+			disabled
+		/>
+
+		<label for="qualitySelect">Compression</label>
+
+		<select
+			id="qualitySelect"
+			disabled
+		>
+			<option value="0.95">Maximum quality — 95%</option>
+
+			<option
+				value="0.82"
+				selected
+			>
+				Balanced — 82%
+			</option>
+
+			<option value="0.70">Small file — 70%</option>
+		</select>
+	</div>
+
+	<p id="compressorStatus">Choose an image.</p>
+
+	<div id="resultCard">
+		<div class="result-row">
+			<span class="result-label">Original</span>
+			<span
+				id="originalSize"
+				class="result-value"
+			>
+				—
+			</span>
+		</div>
+
+		<div class="result-row">
+			<span class="result-label">Optimized</span>
+			<span
+				id="optimizedSize"
+				class="result-value"
+			>
+				—
+			</span>
+		</div>
+
+		<div class="result-row">
+			<span class="result-label">Saved</span>
+			<span
+				id="savedPercent"
+				class="result-value"
+			>
+				—
+			</span>
+		</div>
+
+		<div class="result-row">
+			<span class="result-label">Metadata</span>
+			<span class="result-value"> Removed automatically </span>
+		</div>
+
+		<div class="result-row">
+			<span class="result-label">Result</span>
+			<span
+				id="compressionResult"
+				class="result-value"
+			>
+				—
+			</span>
+		</div>
+
+		<a
+			id="downloadButton"
+			href="#"
+			download
+			aria-disabled="true"
+		>
+			Download Optimized JPG
+		</a>
+	</div>
+</div>
+
+<script>
+	const imageInput = document.getElementById("imageInput")
+
+	const fileNameInput = document.getElementById("fileNameInput")
+
+	const qualitySelect = document.getElementById("qualitySelect")
+
+	const compressorStatus = document.getElementById("compressorStatus")
+
+	const resultCard = document.getElementById("resultCard")
+
+	const originalSize = document.getElementById("originalSize")
+
+	const optimizedSize = document.getElementById("optimizedSize")
+
+	const savedPercent = document.getElementById("savedPercent")
+
+	const compressionResult = document.getElementById("compressionResult")
+
+	const downloadButton = document.getElementById("downloadButton")
+
+	let selectedFile = null
+	let loadedImage = null
+	let currentDownloadURL = null
+	let processingNumber = 0
+
+	function getBaseName(fileName) {
+		return String(fileName || "image").replace(/\.[^.]+$/, "")
+	}
+
+	function cleanFileName(fileName) {
+		return (
+			String(fileName || "image")
+				.trim()
+				.replace(/[\\/:*?"<>|]+/g, "-")
+				.replace(/\s+/g, " ")
+				.replace(/^\.+|\.+$/g, "") || "image"
+		)
+	}
+
+	function formatBytes(bytes) {
+		if (!Number.isFinite(bytes) || bytes < 0) {
+			return "—"
+		}
+
+		if (bytes < 1024) {
+			return `${bytes} B`
+		}
+
+		if (bytes < 1024 * 1024) {
+			return `${(bytes / 1024).toFixed(1)} KB`
+		}
+
+		return `${(bytes / 1024 / 1024).toFixed(2)} MB`
+	}
+
+	function loadImage(file) {
+		return new Promise((resolve, reject) => {
+			const objectURL = URL.createObjectURL(file)
+
+			const image = new Image()
+
+			image.onload = function () {
+				URL.revokeObjectURL(objectURL)
+				resolve(image)
+			}
+
+			image.onerror = function () {
+				URL.revokeObjectURL(objectURL)
+
+				reject(new Error("The image could not be opened."))
+			}
+
+			image.src = objectURL
+		})
+	}
+
+	function canvasToJPEGBlob(canvas, quality) {
+		return new Promise((resolve, reject) => {
+			canvas.toBlob(
+				(blob) => {
+					if (!blob) {
+						reject(new Error("The optimized image could not be created."))
+
+						return
+					}
+
+					resolve(blob)
+				},
+				"image/jpeg",
+				quality,
+			)
+		})
+	}
+
+	async function createOptimizedJPEG(image, quality) {
+		const canvas = document.createElement("canvas")
+
+		const context = canvas.getContext("2d")
+
+		if (!context) {
+			throw new Error("Canvas is not supported.")
+		}
+
+		canvas.width = image.naturalWidth
+		canvas.height = image.naturalHeight
+
+		/*
+			PNG veya WebP şeffafsa JPEG çıktısında
+			siyah zemin oluşmaması için beyaz zemin.
+		*/
+		context.fillStyle = "#ffffff"
+		context.fillRect(0, 0, canvas.width, canvas.height)
+
+		context.imageSmoothingEnabled = true
+		context.imageSmoothingQuality = "high"
+
+		context.drawImage(image, 0, 0, canvas.width, canvas.height)
+
+		/*
+			Canvas yeniden kodlama yaptığı için EXIF,
+			GPS, kamera ve benzeri metadata çıktıya
+			aktarılmaz.
+		*/
+		return canvasToJPEGBlob(canvas, quality)
+	}
+
+	function getResultText(savedValue) {
+		if (savedValue >= 70) {
+			return "Excellent reduction"
+		}
+
+		if (savedValue >= 50) {
+			return "Very good reduction"
+		}
+
+		if (savedValue >= 30) {
+			return "Good reduction"
+		}
+
+		if (savedValue >= 10) {
+			return "Small reduction"
+		}
+
+		if (savedValue > 0) {
+			return "Minimal reduction"
+		}
+
+		return "Already optimized"
+	}
+
+	function revokeCurrentDownloadURL() {
+		if (!currentDownloadURL) {
+			return
+		}
+
+		URL.revokeObjectURL(currentDownloadURL)
+
+		currentDownloadURL = null
+	}
+
+	function updateDownloadName() {
+		if (!currentDownloadURL) {
+			return
+		}
+
+		const typedName = cleanFileName(fileNameInput.value)
+
+		downloadButton.download = `${typedName}-optimized.jpg`
+	}
+
+	async function processImage() {
+		if (!selectedFile || !loadedImage) {
+			return
+		}
+
+		const thisProcess = ++processingNumber
+
+		compressorStatus.textContent = "Optimizing..."
+
+		resultCard.style.display = "none"
+
+		downloadButton.setAttribute("aria-disabled", "true")
+
+		try {
+			const quality = Number(qualitySelect.value)
+
+			const optimizedBlob = await createOptimizedJPEG(loadedImage, quality)
+
+			/*
+				Kullanıcı bu sırada başka bir dosya
+				seçtiyse eski işlemin sonucu gösterilmez.
+			*/
+			if (thisProcess !== processingNumber) {
+				return
+			}
+
+			const originalBytes = selectedFile.size
+
+			const optimizedBytes = optimizedBlob.size
+
+			const rawSaved =
+				originalBytes > 0 ? (1 - optimizedBytes / originalBytes) * 100 : 0
+
+			const displayedSaved = Math.max(0, rawSaved)
+
+			originalSize.textContent = formatBytes(originalBytes)
+
+			optimizedSize.textContent = formatBytes(optimizedBytes)
+
+			savedPercent.textContent = `${displayedSaved.toFixed(1)}%`
+
+			compressionResult.textContent = getResultText(rawSaved)
+
+			revokeCurrentDownloadURL()
+
+			currentDownloadURL = URL.createObjectURL(optimizedBlob)
+
+			downloadButton.href = currentDownloadURL
+
+			downloadButton.setAttribute("aria-disabled", "false")
+
+			updateDownloadName()
+
+			resultCard.style.display = "block"
+
+			if (rawSaved > 0) {
+				compressorStatus.textContent = "Optimization complete."
+			} else {
+				compressorStatus.textContent =
+					"The cleaned JPG is slightly larger than the original."
+			}
+		} catch (error) {
+			console.error(error)
+
+			compressorStatus.textContent = "The image could not be optimized."
+
+			resultCard.style.display = "none"
+		}
+	}
+
+	imageInput.addEventListener("change", async function () {
+		const file = imageInput.files[0]
+
+		processingNumber++
+
+		selectedFile = null
+		loadedImage = null
+
+		revokeCurrentDownloadURL()
+
+		resultCard.style.display = "none"
+
+		fileNameInput.disabled = true
+		qualitySelect.disabled = true
+
+		downloadButton.href = "#"
+
+		downloadButton.setAttribute("aria-disabled", "true")
+
+		if (!file) {
+			fileNameInput.value = ""
+
+			compressorStatus.textContent = "Choose an image."
+
+			return
+		}
+
+		const supportedTypes = ["image/jpeg", "image/png", "image/webp"]
+
+		if (!supportedTypes.includes(file.type)) {
+			fileNameInput.value = ""
+
+			compressorStatus.textContent = "Please select a JPG, PNG or WebP image."
+
+			return
+		}
+
+		fileNameInput.value = getBaseName(file.name)
+
+		fileNameInput.disabled = false
+		qualitySelect.disabled = false
+
+		compressorStatus.textContent = "Opening image..."
+
+		try {
+			loadedImage = await loadImage(file)
+
+			selectedFile = file
+
+			await processImage()
+		} catch (error) {
+			console.error(error)
+
+			compressorStatus.textContent = "The image could not be opened."
+		}
+	})
+
+	qualitySelect.addEventListener("change", processImage)
+
+	fileNameInput.addEventListener("input", updateDownloadName)
+
+	window.addEventListener("beforeunload", revokeCurrentDownloadURL)
+</script>
+
+<div style="clear: both"></div>
+
+<br />
