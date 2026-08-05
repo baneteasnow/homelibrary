@@ -18,7 +18,7 @@ assign status_add = add_data | where: "note", "add a photo!" -%}
 <div style="clear: both"></div>
 
 <ul>
-	{%- for item in status_add -%}
+	{%- for item in status_add reversed-%}
 	<li>
 		<i
 			><a
