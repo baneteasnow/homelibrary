@@ -18,27 +18,60 @@ title: "now reading..."
 	}
 
 	.reading-item {
-		padding-bottom: 24px;
+		padding-bottom: 0;
 		border-bottom: none;
 	}
 
 	.reading-number {
-		font-size: 18px;
-		margin-bottom: 26px;
+		font-size: 15px;
+		margin-bottom: 20px;
 	}
 
 	.reading-title {
-		font-size: 28px;
-
+		font-size: 19px;
 		font-weight: 600;
-		font-style: italic;
-		margin-bottom: 10px;
+		line-height: 1.35;
+		margin-bottom: 8px;
 	}
 
 	.reading-author {
-		font-size: 24px;
+		font-size: 17px;
 		font-style: italic;
-		margin-bottom: 34px;
+		line-height: 1.4;
+		margin-bottom: 24px;
+	}
+
+	.reading-format,
+	.reading-total,
+	.reading-percent,
+	.reading-pages {
+		font-size: 12px;
+		font-style: italic;
+		line-height: 1.45;
+		margin-bottom: 5px;
+	}
+
+	.reading-pages {
+		margin-top: 10px;
+	}
+
+	.reading-error {
+		font-size: 14px;
+		color: #666666;
+	}
+
+	@media (max-width: 600px) {
+		.reading-list {
+			gap: 36px;
+		}
+
+		.reading-title {
+			font-size: 18px;
+		}
+
+		.reading-author {
+			font-size: 16px;
+		}
 	}
 
 	.reading-format,
@@ -49,42 +82,10 @@ title: "now reading..."
 		margin-bottom: 8px;
 	}
 
-	.progress-row {
-		display: flex;
-		align-items: center;
-		gap: 10px;
-		margin-top: 22px;
-	}
-	.progress-track {
-		flex: 1;
-		height: 34px;
-		overflow: hidden;
-		background: #e3e3e3;
-		border-radius: 0;
-	}
-
-	.progress-fill {
-		height: 100%;
-		background: #ffffff;
-		border: 3px solid #dddddd;
-	}
-
 	.reading-pages {
 		font-size: 15px;
 		font-style: italic;
 		white-space: nowrap;
-	}
-
-	@media (max-width: 600px) {
-
-	.reading-title {
-		font-size: 22px;
-	}
-	.reading-author {
-		font-size: 19px;
-	}
-	.progress-track {
-		height: 26px;
 	}
 </style>
 
@@ -125,51 +126,35 @@ title: "now reading..."
 				)
 
 				item.innerHTML = `
-          <div class="reading-number">
-            ❉ ${book.number || ""}
-          </div>
+	<div class="reading-number">
+		❉ ${book.number || ""}
+	</div>
 
-          <div class="reading-title">
-            ${escapeHtml(book.title)}
-            ${book.year ? `(${book.year})` : ""}
-          </div>
+	<div class="reading-title">
+		${escapeHtml(book.title)}
+		${book.year ? `(${book.year})` : ""}
+	</div>
 
-          <div class="reading-author">
-            by ${escapeHtml(book.author || "")}
-          </div>
+	<div class="reading-author">
+		by ${escapeHtml(book.author || "")}
+	</div>
 
-          <div class="reading-format">
-            reading as a ${escapeHtml(book.format || "book")}
-          </div>
+	<div class="reading-format">
+		reading as a ${escapeHtml(book.format || "book")}
+	</div>
 
-          <div class="reading-total">
-            ${book.totalPages} pages
-          </div>
+	<div class="reading-total">
+		${book.totalPages} pages
+	</div>
 
-          <div class="reading-percent">
-            ${safePercentage}%
-          </div>
+	<div class="reading-percent">
+		${safePercentage}%
+	</div>
 
-          <div class="progress-row">
-            <div
-              class="progress-track"
-              role="progressbar"
-              aria-label="${escapeHtml(book.title)} reading progress"
-              aria-valuemin="0"
-              aria-valuemax="100"
-              aria-valuenow="${safePercentage}"
-            >
-              <div
-                class="progress-fill"
-                style="width: ${safePercentage}%"
-              ></div>
-            </div>
-
-            <div class="reading-pages">
-              ${book.currentPage}/${book.totalPages}
-            </div>
-          </div>
-        `
+	<div class="reading-pages">
+		${book.currentPage} / ${book.totalPages}
+	</div>
+`
 
 				list.appendChild(item)
 			})
