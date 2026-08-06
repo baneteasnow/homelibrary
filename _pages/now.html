@@ -12,30 +12,48 @@ title: "now reading..."
 </div>
 <div style="clear: both"></div>
 <style>
+	.reading-covers {
+		display: flex;
+		align-items: flex-end;
+		gap: 8px;
+		flex-wrap: wrap;
+		margin-bottom: 34px;
+	}
+
+	.reading-cover {
+		width: auto;
+		height: 120px;
+		display: block;
+		object-fit: contain;
+	}
+
 	.reading-list {
 		display: grid;
-		gap: 42px;
+		gap: 34px;
 	}
 
 	.reading-item {
-		padding-bottom: 0;
-		border-bottom: none;
+		padding: 0;
+		border: 0;
 	}
 
 	.reading-number {
 		font-size: 14px;
+		line-height: 1.3;
 		margin-bottom: 14px;
 	}
 
 	.reading-title {
 		font-size: 18px;
 		font-weight: normal;
+		line-height: 1.35;
 		margin-bottom: 4px;
 	}
 
 	.reading-author {
 		font-size: 16px;
 		font-style: italic;
+		line-height: 1.35;
 		margin-bottom: 16px;
 	}
 
@@ -44,34 +62,44 @@ title: "now reading..."
 	.reading-percent,
 	.reading-pages {
 		font-size: 13px;
-		line-height: 1.3;
-		margin-bottom: 3px;
+		font-style: italic;
+		line-height: 1.35;
+		margin: 0 0 3px;
 	}
 
 	.reading-pages {
-		margin-top: 10px;
+		margin-top: 8px;
+		white-space: nowrap;
 	}
 
 	.reading-error {
-		font-size: 12px;
+		font-size: 14px;
 		color: #666666;
 	}
 
 	@media (max-width: 600px) {
+		.reading-covers {
+			gap: 6px;
+			margin-bottom: 28px;
+		}
+
+		.reading-cover {
+			height: 100px;
+		}
+
 		.reading-list {
-			gap: 36px;
+			gap: 30px;
 		}
 
 		.reading-title {
-			font-size: 18px;
+			font-size: 17px;
 		}
 
 		.reading-author {
-			font-size: 16px;
+			font-size: 15px;
 		}
 	}
 </style>
-
 <script>
 	const READING_API_URL =
 		"https://script.google.com/macros/s/AKfycbxRj_BExnSMkeDc2Hlj_yN7ay7uXN0WP_CiGcCaTzWcMQKgpimkPW1KYLgDjJNiPzu4/exec?mode=json"
