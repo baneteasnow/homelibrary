@@ -76,9 +76,70 @@ title: "now reading..."
 			const result = await response.json()
 			const books = result.books || []
 
-			// devamındaki kod...
+			if (!books.length) {
+				container.innerHTML = "<p>No books are currently being read.</p>"
+				return
+			}
+
+			const list = document.createElement("div")
+			list.className = "reading-list"
+
+			books.forEach((book) => {
+				const item = document.createElement("div")
+				item.className = "reading-item"
+
+				const safePercentage = Math.max(
+					0,
+					Math.min(100, Number(book.percentage) || 0),
+				)
+
+				item.innerHTML = `
+					<div class="reading-title">${escapeHtml(book.title)}</div>
+
+					<div class="reading-pages">
+						${book.currentPage} / ${book.totalPages}
+					</div>
+
+					<div
+						class="progress-track"
+						role="progressbar"
+						aria-label="${escapeHtml(book.title)} reading progress"
+						aria-valuemin="0"
+						aria-valuemax="100"
+						aria-valuenow="${safePercentage}"
+					>
+						<div
+							class="progress-fill"
+							style="width: ${safePercentage}%"
+						></div>
+					</div>
+
+					<div class="progress-percent">
+						${safePercentage}%
+					</div>
+				`
+
+				list.appendChild(item)
+			})
+
+			container.innerHTML = ""
+			container.appendChild(list)
 		} catch (error) {
 			console.error(error)
+
+			container.innerHTML = `
+				<p class="reading-error">
+					Reading progress could not be loaded.
+				</p>
+			`
 		}
 	}
+
+	function escapeHtml(value) {
+		const element = document.createElement("div")
+		element.textContent = String(value ?? "")
+		return element.innerHTML
+	}
+
+	loadReadingProgress()
 </script>
