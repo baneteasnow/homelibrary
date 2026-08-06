@@ -123,7 +123,20 @@ title: "now reading..."
 				container.innerHTML = "<p>No books are currently being read.</p>"
 				return
 			}
+			const covers = document.createElement("div")
+			covers.className = "reading-covers"
 
+			books.forEach((book) => {
+				if (!book.image) return
+
+				const image = document.createElement("img")
+				image.src = book.image
+				image.alt = `${book.title} cover`
+				image.className = "reading-cover"
+				image.loading = "lazy"
+
+				covers.appendChild(image)
+			})
 			const list = document.createElement("div")
 			list.className = "reading-list"
 
@@ -155,7 +168,7 @@ title: "now reading..."
     </div>
 
     <div class="reading-total">
-      ${book.totalPages} pages
+      ${book.total_pages} pages
     </div>
 
     <div class="reading-percent">
@@ -163,7 +176,7 @@ title: "now reading..."
     </div>
 
     <div class="reading-pages">
-      ${book.currentPage} / ${book.totalPages}
+      ${book.current_page} / ${book.total_pages}
     </div>
 `
 
@@ -171,6 +184,11 @@ title: "now reading..."
 			})
 
 			container.innerHTML = ""
+
+			if (covers.children.length) {
+				container.appendChild(covers)
+			}
+
 			container.appendChild(list)
 		} catch (error) {
 			console.error(error)
