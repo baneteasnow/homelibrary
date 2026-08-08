@@ -29,7 +29,8 @@ grouped_by_shelf = status_add | group_by: "notes" | sort: "name" -%}
 				href="{{ site.baseurl }}booklist#{{ item.bookshelf }}"
 				name="{{ item.bookshelf }}"
 			>
-				{{ item.bookshelf }} · {{ item.title }} | {{ item.author }}
+				{{ item.bookshelf }} · {{ item.title }} | {{ item.author }} · {{
+				item.notes }}
 			</a>
 		</i>
 	</li>
