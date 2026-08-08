@@ -434,27 +434,28 @@ permalink: /browse/
 		const sourceBooks =
 			showingAll || hasActiveBookFilter() ? selectedBooks : books
 
-		const visibleBooks = sourceBooks.filter((book) => {
-			if (!searchTerm) {
-				return true
-			}
+		const visibleBooks = sourceBooks
+			.filter((book) => {
+				if (!searchTerm) {
+					return true
+				}
 
-			const searchableText = [
-				book.bookshelf,
-				book.title,
-				book.author,
-				book.year,
-				book.categories,
-				book.status,
-				book.notes,
-				book.location,
-			]
-				.join(" ")
-				.toLocaleLowerCase("en")
+				const searchableText = [
+					book.bookshelf,
+					book.title,
+					book.author,
+					book.year,
+					book.categories,
+					book.status,
+					book.notes,
+					book.location,
+				]
+					.join(" ")
+					.toLocaleLowerCase("en")
 
-			return searchableText.includes(searchTerm)
-		})
-
+				return searchableText.includes(searchTerm)
+			})
+			.reverse()
 		tableBody.innerHTML = visibleBooks
 			.map((book) => {
 				const bookURL =
