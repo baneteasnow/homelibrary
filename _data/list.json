@@ -12267,7 +12267,7 @@
 		"page": 279,
 		"year": "2012",
 		"notes": "4-D",
-		"note": "5-B",
+		"note": "5-D",
 		"status": "Read",
 		"reread": "yes",
 		"newstatus": "updated",
@@ -40053,6 +40053,7 @@
 		"notes": "8-C",
 		"status": "UnRead",
 		"newstatus": "n/a",
+		"note": "add a photo!",
 		"categories": "PsychologyMentalLife",
 		"reread": "n/a",
 		"tbr": "n/a",
@@ -40266,6 +40267,25 @@
 		"reread": "n/a",
 		"tbr": "n/a",
 		"image": "https://homelibrary.next52books.com/assets/shelves/4-D.png",
+		"location": "homelibrary"
+	},
+	{
+		"bookshelf": 3237,
+		"No": 2237,
+		"title": "Pozitif Cozulme",
+		"publisher": "Okuyan Us Yayincilik",
+		"author": "Kazimierz Dabrowski",
+		"lang": "Turkce",
+		"page": 144,
+		"year": "2026",
+		"notes": "3-B",
+		"note": "add a photo!",
+		"status": "UnRead",
+		"newstatus": "n/a",
+		"categories": "PsychologyMentalLife",
+		"reread": "n/a",
+		"tbr": "n/a",
+		"image": "https://homelibrary.next52books.com/assets/shelves/3-B.png",
 		"location": "homelibrary"
 	}
 ]
