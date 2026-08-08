@@ -24,8 +24,9 @@ assign status_add = add_data | where: "note", "add a photo!" -%}
 			><a
 				href="{{ site.baseurl }}booklist#{{ item.bookshelf }}"
 				name="{{ item.bookshelf }}"
-				>{{ item.bookshelf }}. {{ item.title }} | {{ item.author }}</a
-			>
+				>{{ item.bookshelf }} · {{ item.title }} | {{ item.author }} · {{
+				item.notes }}
+			</a>
 		</i>
 	</li>
 	{%- endfor -%}
