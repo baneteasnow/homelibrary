@@ -9,7 +9,8 @@ title: "add a photo!"
 <br />
 
 {%- assign add_data = site.data.list.item | default: site.data.list -%} {%-
-assign status_add = add_data | where: "note", "add a photo!" -%}
+assign status_add = add_data | where: "note", "add a photo!" -%} {%- assign
+grouped_by_shelf = status_add | group_by: "notes" | sort: "name" -%}
 
 <div>
 	<i>add a photo: {{ status_add | size }}</i>
@@ -17,17 +18,21 @@ assign status_add = add_data | where: "note", "add a photo!" -%}
 
 <div style="clear: both"></div>
 
+{%- for shelf in grouped_by_shelf -%}
+<h3>{{ shelf.name }}</h3>
+
 <ul>
-	{%- for item in status_add reversed-%}
+	{%- for item in shelf.items reversed -%}
 	<li>
-		<i
-			><a
+		<i>
+			<a
 				href="{{ site.baseurl }}booklist#{{ item.bookshelf }}"
 				name="{{ item.bookshelf }}"
-				>{{ item.bookshelf }} · {{ item.title }} | {{ item.author }} · {{
-				item.notes }}
+			>
+				{{ item.bookshelf }} · {{ item.title }} | {{ item.author }}
 			</a>
 		</i>
 	</li>
 	{%- endfor -%}
 </ul>
+{%- endfor -%}
