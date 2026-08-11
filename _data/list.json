@@ -38207,20 +38207,20 @@
 	{
 		"bookshelf": 3123,
 		"No": 2123,
-		"title": "Sana Gul Bahcesi Vadetmedim",
-		"publisher": "Metis Yayinlari",
-		"author": "Joanne Greenberg",
+		"title": "Pozitif Cozulme",
+		"publisher": "Okuyan Us Yayincilik",
+		"author": "Kazimierz Dabrowski",
 		"lang": "Turkce",
-		"page": 296,
-		"year": "2023",
-		"notes": "archived",
+		"page": 144,
+		"year": "2026",
+		"notes": "3-B",
 		"status": "UnRead",
 		"newstatus": "n/a",
-		"categories": "n/a",
+		"categories": "PsychologyMentalLife",
 		"reread": "n/a",
-		"tbr": "no",
-		"image": "https://www.next52books.com",
-		"location": "archived"
+		"tbr": "n/a",
+		"image": "https://homelibrary.next52books.com/assets/shelves/3-B.png",
+		"location": "homelibrary"
 	},
 	{
 		"bookshelf": 3124,
@@ -40258,24 +40258,6 @@
 		"reread": "n/a",
 		"tbr": "n/a",
 		"image": "https://homelibrary.next52books.com/assets/shelves/4-D.png",
-		"location": "homelibrary"
-	},
-	{
-		"bookshelf": 3237,
-		"No": 2237,
-		"title": "Pozitif Cozulme",
-		"publisher": "Okuyan Us Yayincilik",
-		"author": "Kazimierz Dabrowski",
-		"lang": "Turkce",
-		"page": 144,
-		"year": "2026",
-		"notes": "3-B",
-		"status": "UnRead",
-		"newstatus": "n/a",
-		"categories": "PsychologyMentalLife",
-		"reread": "n/a",
-		"tbr": "n/a",
-		"image": "https://homelibrary.next52books.com/assets/shelves/3-B.png",
 		"location": "homelibrary"
 	}
 ]
