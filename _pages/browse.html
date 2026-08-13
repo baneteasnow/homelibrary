@@ -462,7 +462,19 @@ permalink: /browse/
 				const bookURL =
 					"{{ '/booklist' | relative_url }}#" +
 					encodeURIComponent(book.bookshelf || "")
+				const authorContent = getAuthors(book.author)
+					.map((author) => {
+						const authorURL =
+							"{{ '/browse/' | relative_url }}?field=author&value=" +
+							encodeURIComponent(author)
 
+						return `<a href="${authorURL}">${escapeHTML(author)}</a>`
+					})
+					.join(", ")
+
+				const categoryURL =
+					"{{ '/browse/' | relative_url }}?field=categories&value=" +
+					encodeURIComponent(book.categories || "")
 				const shelfName = String(book.notes || "").trim()
 
 				const shelfPhotoURL =
@@ -496,7 +508,7 @@ permalink: /browse/
 							</td>
 
 							<td>
-								${escapeHTML(book.author)}
+								${authorContent}
 							</td>
 
 							<td>
@@ -504,11 +516,13 @@ permalink: /browse/
 							</td>
 
 							<td>
+								<a href="${categoryURL}">
 								${escapeHTML(book.categories)}
+								</a>
 							</td>
 
 							<td>
-								${isRead(book.status) ? "✅" : "read?"}
+								${isRead(book.status) ? "yes" : "no"}
 							</td>
 
 							<td>
