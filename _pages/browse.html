@@ -2,7 +2,7 @@
 layout: page-6
 published: true
 title: "browse"
-last_modified_at: 2026-08-14
+last_modified_at: 2026-08-21
 permalink: /browse/
 ---
 
@@ -12,9 +12,10 @@ permalink: /browse/
 
 <style>
 	.browse-controls {
-		display: flex;
-		flex-wrap: wrap;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
 		gap: 10px;
+		width: 100%;
 		margin-bottom: 10px;
 	}
 
@@ -22,6 +23,7 @@ permalink: /browse/
 	.browse-controls input,
 	#showAllButton {
 		box-sizing: border-box;
+		width: 100%;
 		height: 38px;
 		padding: 7px 10px;
 		border: 1px solid #ccc;
@@ -31,28 +33,25 @@ permalink: /browse/
 		font: inherit;
 	}
 
-	.browse-controls select {
-		width: 210px;
+	#fieldSelect {
+		grid-column: 1;
 	}
 
-	.browse-controls input {
-		flex: 1;
-		min-width: 220px;
+	#valueSelect {
+		grid-column: 2;
+	}
+
+	#searchInput {
+		grid-column: 1 / -1;
+		min-width: 0;
 	}
 
 	#showAllButton {
+		grid-column: 1;
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		width: 220px;
-		height: 38px;
-		margin: 0 0 18px;
-		padding: 7px 14px;
-		border: 1px solid #ccc;
-		border-radius: 4px;
-		background: #fff;
-		color: #000;
-		font: inherit;
+		margin: 0;
 		font-size: 16px;
 		text-align: center;
 		cursor: pointer;
@@ -67,12 +66,12 @@ permalink: /browse/
 		opacity: 0.6;
 	}
 
-	#resultInfo {
-		margin: 0 0 12px;
+	#browseMessage {
+		margin: 18px 0 14px;
 	}
 
-	#browseMessage {
-		margin: 0 0 14px;
+	#resultInfo {
+		margin: 0 0 12px;
 	}
 
 	#browseTable {
@@ -107,13 +106,10 @@ permalink: /browse/
 		}
 
 		.browse-controls select,
-		.browse-controls input {
-			width: 100%;
-			margin-bottom: 8px;
-		}
-
+		.browse-controls input,
 		#showAllButton {
 			width: 100%;
+			margin-bottom: 8px;
 		}
 	}
 </style>
@@ -140,14 +136,14 @@ permalink: /browse/
 		id="searchInput"
 		placeholder="search all books..."
 	/>
-</div>
 
-<button
-	type="button"
-	id="showAllButton"
->
-	Show all books
-</button>
+	<button
+		type="button"
+		id="showAllButton"
+	>
+		Show all books
+	</button>
+</div>
 
 <p id="browseMessage">Select a filter or click Show All.</p>
 
@@ -353,34 +349,28 @@ permalink: /browse/
 
 	function showInitialMessage() {
 		browseMessage.textContent = "Select a filter or click Show All."
-
 		browseMessage.style.display = "block"
 	}
 
 	function populateValueSelect(field, selectedValue = "") {
-		let values = []
-
-		if (field === "shelf-photo") {
-			values = shelfPhotos
-		} else {
-			values = getUniqueValues(field)
-		}
+		const values =
+			field === "shelf-photo" ? shelfPhotos : getUniqueValues(field)
 
 		valueSelect.innerHTML = `
-					<option value="">
-						select ${getFieldLabel(field)}...
-					</option>
+			<option value="">
+				select ${getFieldLabel(field)}...
+			</option>
 
-					${values
-						.map(
-							(value) => `
-								<option value="${escapeHTML(value)}">
-									${escapeHTML(value)}
-								</option>
-							`,
-						)
-						.join("")}
-				`
+			${values
+				.map(
+					(value) => `
+						<option value="${escapeHTML(value)}">
+							${escapeHTML(value)}
+						</option>
+					`,
+				)
+				.join("")}
+		`
 
 		valueSelect.disabled = false
 
@@ -457,24 +447,31 @@ permalink: /browse/
 				return searchableText.includes(searchTerm)
 			})
 			.reverse()
+
 		tableBody.innerHTML = visibleBooks
 			.map((book) => {
 				const bookURL =
 					"{{ '/booklist' | relative_url }}#" +
 					encodeURIComponent(book.bookshelf || "")
+
 				const authorContent = getAuthors(book.author)
 					.map((author) => {
 						const authorURL =
 							"{{ '/browse/' | relative_url }}?field=author&value=" +
 							encodeURIComponent(author)
 
-						return `<a href="${authorURL}">${escapeHTML(author)}</a>`
+						return `
+							<a href="${authorURL}">
+								${escapeHTML(author)}
+							</a>
+						`
 					})
 					.join(", ")
 
 				const categoryURL =
 					"{{ '/browse/' | relative_url }}?field=categories&value=" +
 					encodeURIComponent(book.categories || "")
+
 				const shelfName = String(book.notes || "").trim()
 
 				const shelfPhotoURL =
@@ -485,55 +482,55 @@ permalink: /browse/
 				const shelfContent =
 					shelfName && shelfPhotos.includes(shelfName)
 						? `
-			<a
-				href="${shelfPhotoURL}"
-				target="_blank"
-				rel="noopener noreferrer"
-			>
-				${escapeHTML(shelfName)}
-			</a>
-		`
+							<a
+								href="${shelfPhotoURL}"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								${escapeHTML(shelfName)}
+							</a>
+						`
 						: escapeHTML(shelfName)
 
 				return `
-						<tr>
-							<td>
-								${escapeHTML(book.bookshelf)}
-							</td>
+					<tr>
+						<td>
+							${escapeHTML(book.bookshelf)}
+						</td>
 
-							<td>
-								<a href="${bookURL}">
-									<b>${escapeHTML(book.title)}</b>
-								</a>
-							</td>
+						<td>
+							<a href="${bookURL}">
+								<b>${escapeHTML(book.title)}</b>
+							</a>
+						</td>
 
-							<td>
-								${authorContent}
-							</td>
+						<td>
+							${authorContent}
+						</td>
 
-							<td>
-								${escapeHTML(book.year)}
-							</td>
+						<td>
+							${escapeHTML(book.year)}
+						</td>
 
-							<td>
-								<a href="${categoryURL}">
+						<td>
+							<a href="${categoryURL}">
 								${escapeHTML(book.categories)}
-								</a>
-							</td>
+							</a>
+						</td>
 
-							<td>
-								${isRead(book.status) ? "yes" : "no"}
-							</td>
+						<td>
+							${isRead(book.status) ? "yes" : "no"}
+						</td>
 
-							<td>
-								${shelfContent}
-							</td>
+						<td>
+							${shelfContent}
+						</td>
 
-							<td>
-								${escapeHTML(book.location)}
-							</td>
-						</tr>
-					`
+						<td>
+							${escapeHTML(book.location)}
+						</td>
+					</tr>
+				`
 			})
 			.join("")
 
@@ -561,6 +558,7 @@ permalink: /browse/
 		browseMessage.style.display = "none"
 
 		shelfPhotoTitle.textContent = shelfName
+
 		shelfPhoto.src =
 			"{{ '/assets/shelves/' | relative_url }}" +
 			encodeURIComponent(shelfName) +
@@ -575,30 +573,38 @@ permalink: /browse/
 		showingAll = false
 
 		searchInput.value = ""
+		searchInput.disabled = false
+
+		showAllButton.textContent = `Show all ${books.length} books`
 
 		hideTable()
 		hideShelfPhoto()
 	}
+
 	function selectValue() {
 		const field = fieldSelect.value
 		const value = valueSelect.value
+
 		resetResults()
+
 		if (!field || !value) {
 			showInitialMessage()
 			updateURL("", "")
 			return
 		}
+
 		updateURL(field, value)
+
 		if (field === "shelf-photo") {
 			renderShelfPhoto(value)
 			return
 		}
-		showingAll = false
 
 		selectedBooks = findMatchingBooks(field, value)
 
 		renderTable()
 	}
+
 	fieldSelect.addEventListener("change", function () {
 		const field = fieldSelect.value
 
@@ -639,6 +645,7 @@ permalink: /browse/
 
 		renderTable()
 	})
+
 	showAllButton.addEventListener("click", function () {
 		if (showingAll) {
 			showingAll = false
@@ -658,21 +665,25 @@ permalink: /browse/
 		fieldSelect.value = ""
 
 		valueSelect.innerHTML = '<option value="">select a value...</option>'
+
 		valueSelect.disabled = true
+
+		searchInput.disabled = false
+		searchInput.value = ""
 
 		hideShelfPhoto()
 
 		showingAll = true
 		selectedBooks = books
 
-		searchInput.value = ""
-
 		showAllButton.textContent = "Hide all books"
 
 		updateURL("", "")
 		renderTable()
 	})
+
 	const params = new URLSearchParams(window.location.search)
+
 	const initialField = params.get("field") || ""
 	const initialValue = params.get("value") || ""
 
@@ -686,6 +697,7 @@ permalink: /browse/
 
 	if (allowedFields.includes(initialField)) {
 		fieldSelect.value = initialField
+
 		populateValueSelect(initialField, initialValue)
 
 		if (initialValue && valueSelect.value === initialValue) {
@@ -695,6 +707,7 @@ permalink: /browse/
 				selectedBooks = findMatchingBooks(initialField, initialValue)
 
 				searchInput.disabled = false
+
 				renderTable()
 			}
 		}
