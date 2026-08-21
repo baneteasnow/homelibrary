@@ -30,7 +30,7 @@ category: "BiographyLifeStories"
 	</thead>
 
     <tbody>
-    	{%- for item in category_items -%}
+    	{%- for item in category_items reversed -%}
     	<tr>
     		<td>{{ item.bookshelf }}</td>
 

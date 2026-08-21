@@ -27,7 +27,7 @@ category: "SimpleLivingEverydayComforts"
 		<th style="text-align: left">location</th>
 	</tr>
 
-    {%- for item in category_items -%}
+    {%- for item in category_items reversed -%}
     <tr>
     	<td>{{ item.bookshelf }}</td>
     	<td>
