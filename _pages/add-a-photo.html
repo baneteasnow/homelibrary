@@ -10,7 +10,11 @@ title: "add a photo!"
 
 {%- assign add_data = site.data.list.item | default: site.data.list -%} {%-
 assign status_add = add_data | where: "note", "add a photo!" -%} {%- assign
-grouped_by_shelf = status_add | group_by: "notes" | sort: "name" -%}
+grouped_by_shelf = status_add | group_by: "notes" -%} {%- assign shelf_order =
+"1-A,1-B,1-C,1-D, 2-A,2-B,2-C,2-D, 3-A,3-B,3-C,3-D, 4-A,4-B,4-C,4-D,
+5-A,5-B,5-C,5-D, 6-A,6-B,6-C,6-D, 7-A,7-B,7-C,7-D, 8-A,8-B,8-C,8-D,
+9-A,9-B,9-C,9-D, 10-A,10-B,10-C,10-D, 11-A,11-B,11-C,11-D, 12-A,12-B,12-C,12-D"
+| split: "," -%}
 
 <div>
 	<i>add a photo: {{ status_add | size }}</i>
@@ -18,7 +22,8 @@ grouped_by_shelf = status_add | group_by: "notes" | sort: "name" -%}
 
 <div style="clear: both"></div>
 
-{%- for shelf in grouped_by_shelf -%}
+{%- for shelf_name in shelf_order -%} {%- assign shelf = grouped_by_shelf |
+where: "name", shelf_name | first -%} {%- if shelf -%}
 <h3>{{ shelf.name }}</h3>
 
 <ul>
@@ -36,4 +41,4 @@ grouped_by_shelf = status_add | group_by: "notes" | sort: "name" -%}
 	</li>
 	{%- endfor -%}
 </ul>
-{%- endfor -%}
+{%- endif -%} {%- endfor -%}
