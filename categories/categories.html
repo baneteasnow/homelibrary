@@ -43,22 +43,26 @@ title: "categories"
 	}
 
 	.count-level-2 {
-		background-color: #7da7d9;
+		background-color: #b8a9c9;
 	}
 
 	.count-level-3 {
-		background-color: #79a879;
+		background-color: #7da7d9;
 	}
 
 	.count-level-4 {
-		background-color: #d9bf61;
+		background-color: #79a879;
 	}
 
 	.count-level-5 {
-		background-color: #d99a5f;
+		background-color: #d9bf61;
 	}
 
 	.count-level-6 {
+		background-color: #d99a5f;
+	}
+
+	.count-level-7 {
 		background-color: #c96f6f;
 	}
 
@@ -195,27 +199,31 @@ title: "categories"
 
 		const ratio = count / maxCount
 
-		if (ratio <= 0.2) {
+		if (ratio <= 0.12) {
 			return "count-level-1"
 		}
 
-		if (ratio <= 0.4) {
+		if (ratio <= 0.25) {
 			return "count-level-2"
 		}
 
-		if (ratio <= 0.6) {
+		if (ratio <= 0.4) {
 			return "count-level-3"
 		}
 
-		if (ratio <= 0.75) {
+		if (ratio <= 0.55) {
 			return "count-level-4"
 		}
 
-		if (ratio <= 0.9) {
+		if (ratio <= 0.7) {
 			return "count-level-5"
 		}
 
-		return "count-level-6"
+		if (ratio <= 0.85) {
+			return "count-level-6"
+		}
+
+		return "count-level-7"
 	}
 
 	categoryTotal.textContent = categories.length
