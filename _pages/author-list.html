@@ -186,11 +186,15 @@ permalink: /author-list/
 	const authors = Array.from(authorCounts, ([name, count]) => ({
 		name,
 		count,
-	})).sort((a, b) =>
-		a.name.localeCompare(b.name, "tr", {
+	})).sort((a, b) => {
+		if (b.count !== a.count) {
+			return b.count - a.count
+		}
+
+		return a.name.localeCompare(b.name, "tr", {
 			sensitivity: "base",
-		}),
-	)
+		})
+	})
 
 	authorTotal.textContent = authors.length
 	authorListInfo.style.display = "block"
