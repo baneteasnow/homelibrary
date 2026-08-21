@@ -640,10 +640,24 @@ permalink: /browse/
 		renderTable()
 	})
 	showAllButton.addEventListener("click", function () {
+		if (showingAll) {
+			showingAll = false
+			selectedBooks = []
+
+			searchInput.value = ""
+
+			hideTable()
+			showInitialMessage()
+
+			showAllButton.textContent = `Show all ${books.length} books`
+
+			updateURL("", "")
+			return
+		}
+
 		fieldSelect.value = ""
 
 		valueSelect.innerHTML = '<option value="">select a value...</option>'
-
 		valueSelect.disabled = true
 
 		hideShelfPhoto()
@@ -652,6 +666,8 @@ permalink: /browse/
 		selectedBooks = books
 
 		searchInput.value = ""
+
+		showAllButton.textContent = "Hide all books"
 
 		updateURL("", "")
 		renderTable()
