@@ -18,6 +18,13 @@ title: "categories"
 		margin: 0 0 6px;
 	}
 
+	.category-layout {
+		display: grid;
+		grid-template-columns: minmax(280px, 0.9fr) minmax(320px, 1.1fr);
+		gap: 34px;
+		align-items: start;
+	}
+
 	.category-name {
 		font-size: 17px;
 	}
@@ -81,6 +88,44 @@ title: "categories"
 		width: 90px;
 	}
 
+	#categoriesTable tbody tr {
+		cursor: pointer;
+	}
+
+	#categoriesTable tbody tr.is-selected {
+		background: #f2f2f2;
+	}
+
+	.category-detail {
+		position: sticky;
+		top: 24px;
+		padding: 20px 22px;
+		border: 1px solid #dedede;
+		border-radius: 6px;
+	}
+
+	.category-detail-title {
+		margin: 0 0 14px;
+		font-size: 20px;
+		font-weight: 600;
+	}
+
+	.category-detail-scope {
+		margin: 0 0 18px;
+		font-size: 16px;
+		line-height: 1.6;
+	}
+
+	.category-detail-count {
+		margin: 0 0 14px;
+		font-size: 14px;
+		font-style: italic;
+	}
+
+	.category-detail-link {
+		font-size: 15px;
+	}
+
 	.na-category {
 		margin-top: 16px;
 		color: #b7b2b2;
@@ -90,6 +135,17 @@ title: "categories"
 
 	.na-category a {
 		color: inherit;
+	}
+
+	@media (max-width: 760px) {
+		.category-layout {
+			display: block;
+		}
+
+		.category-detail {
+			position: static;
+			margin-top: 24px;
+		}
 	}
 </style>
 
@@ -103,27 +159,59 @@ title: "categories"
 	</p>
 </div>
 
-<table
-	id="categoriesTable"
-	class="zebra"
->
-	<thead>
-		<tr>
-			<th style="text-align: left">category</th>
-			<th style="text-align: left">books</th>
-		</tr>
-	</thead>
+<div class="category-layout">
+	<div>
+		<table
+			id="categoriesTable"
+			class="zebra"
+		>
+			<thead>
+				<tr>
+					<th style="text-align: left">category</th>
+					<th style="text-align: left">books</th>
+				</tr>
+			</thead>
 
-	<tbody></tbody>
-</table>
+			<tbody></tbody>
+		</table>
 
-<div
-	id="naCategory"
-	class="na-category"
-	style="display: none"
->
-	<a href="{{ '/categories/na' | relative_url }}">n/a</a>
-	(<span id="naCategoryCount"></span>)
+		<div
+			id="naCategory"
+			class="na-category"
+			style="display: none"
+		>
+			<a href="{{ '/categories/na' | relative_url }}">n/a</a>
+			(<span id="naCategoryCount"></span>)
+		</div>
+	</div>
+
+	<aside
+		id="categoryDetail"
+		class="category-detail"
+	>
+		<h2
+			id="categoryDetailTitle"
+			class="category-detail-title"
+		></h2>
+
+		<p
+			id="categoryDetailScope"
+			class="category-detail-scope"
+		></p>
+
+		<p
+			id="categoryDetailCount"
+			class="category-detail-count"
+		></p>
+
+		<a
+			id="categoryDetailLink"
+			class="category-detail-link"
+			href="#"
+		>
+			browse books →
+		</a>
+	</aside>
 </div>
 
 {%- assign books_data = site.data.list.item | default: site.data.list -%}
@@ -148,6 +236,106 @@ title: "categories"
 	const naCategory = document.getElementById("naCategory")
 
 	const naCategoryCount = document.getElementById("naCategoryCount")
+
+	const categoryDetailTitle = document.getElementById("categoryDetailTitle")
+
+	const categoryDetailScope = document.getElementById("categoryDetailScope")
+
+	const categoryDetailCount = document.getElementById("categoryDetailCount")
+
+	const categoryDetailLink = document.getElementById("categoryDetailLink")
+
+	const categoryDetails = {
+		PsychologyMentalLife: {
+			label: "Psychology & Mental Life",
+			scope:
+				"Psychology, psychiatry, psychotherapy, emotions, relationships, trauma, personality, behavior, consciousness, mental health.",
+		},
+
+		PhilosophyMeaning: {
+			label: "Philosophy & Meaning",
+			scope:
+				"Philosophy, ethics, religion, spirituality, existential questions, meaning, values, worldviews.",
+		},
+
+		PersonalGrowthProductivity: {
+			label: "Personal Growth & Productivity",
+			scope:
+				"Personal development, habits, motivation, self-discipline, goal-setting, time management, productivity, practical self-improvement.",
+		},
+
+		HealthNutrition: {
+			label: "Health & Nutrition",
+			scope:
+				"Health, medicine, illness, nutrition, metabolism, exercise, fitness, sleep, longevity, physical wellbeing.",
+		},
+
+		WorkCareer: {
+			label: "Work & Career",
+			scope:
+				"Careers, leadership, management, teams, workplace life, organizations, human resources, professional development.",
+		},
+
+		BusinessEconomics: {
+			label: "Business & Economics",
+			scope:
+				"Entrepreneurship, companies, economics, finance, investing, markets, business models.",
+		},
+
+		ConsumerMarketing: {
+			label: "Consumer & Marketing",
+			scope:
+				"Marketing, advertising, brands, sales, consumer behavior, persuasion, commercial culture.",
+		},
+
+		TechnologyTheDigitalWorld: {
+			label: "Technology & The Digital World",
+			scope:
+				"Technology, the internet, artificial intelligence, digital culture, platforms, social media, computing and technological change.",
+		},
+
+		CreativityExpression: {
+			label: "Creativity & Expression",
+			scope:
+				"Creativity, writing, art, design, creative process, artistic expression and the psychology of making things.",
+		},
+
+		SocietyCulture: {
+			label: "Society & Culture",
+			scope:
+				"Society, culture, gender, family, relationships, social norms, inequality, identity and contemporary social life.",
+		},
+
+		HistoryPoliticalThought: {
+			label: "History & Political Thought",
+			scope:
+				"History, political thought, political philosophy, ideologies, institutions, power and major historical developments.",
+		},
+
+		ScienceDiscovery: {
+			label: "Science & Discovery",
+			scope:
+				"Science, scientific ideas, physics, biology, mathematics, nature, research, discovery and the history of science.",
+		},
+
+		EnvironmentSustainableLiving: {
+			label: "Environment & Sustainable Living",
+			scope:
+				"Environment, climate, sustainability, ecological issues, consumption, sustainable living and humanity’s relationship with nature.",
+		},
+
+		BiographyLifeStories: {
+			label: "Biography & Life Stories",
+			scope:
+				"Biography, autobiography, memoir, personal histories and nonfiction accounts centered on individual lives.",
+		},
+
+		TravelPlace: {
+			label: "Travel & Place",
+			scope:
+				"Travel writing, places, cities, geography, landscape, cultural encounters and nonfiction centered on location.",
+		},
+	}
 
 	function escapeHTML(value) {
 		return String(value || "")
@@ -226,26 +414,54 @@ title: "categories"
 		return "count-level-7"
 	}
 
+	function showCategory(categoryName) {
+		const category = categories.find((item) => item.name === categoryName)
+
+		if (!category) {
+			return
+		}
+
+		const details = categoryDetails[category.name] || {
+			label: category.name,
+			scope: "",
+		}
+
+		categoryDetailTitle.textContent = details.label
+
+		categoryDetailScope.textContent = details.scope
+
+		categoryDetailCount.textContent =
+			category.count === 1 ? "1 book" : `${category.count} books`
+
+		categoryDetailLink.href =
+			"{{ '/browse/' | relative_url }}?field=categories&value=" +
+			encodeURIComponent(category.name)
+
+		document.querySelectorAll("#categoriesTable tbody tr").forEach((row) => {
+			row.classList.toggle(
+				"is-selected",
+				row.dataset.category === category.name,
+			)
+		})
+	}
+
 	categoryTotal.textContent = categories.length
 	categoryListInfo.style.display = "block"
 
 	tableBody.innerHTML = categories
 		.map((category) => {
-			const categoryURL =
-				"{{ '/categories/' | relative_url }}" +
-				encodeURIComponent(category.name)
-
 			const countClass = getCountClass(category.count)
 
+			const details = categoryDetails[category.name] || {
+				label: category.name,
+			}
+
 			return `
-				<tr>
+				<tr data-category="${escapeHTML(category.name)}">
 					<td>
-						<a
-							href="${categoryURL}"
-							class="category-name"
-						>
-							${escapeHTML(category.name)}
-						</a>
+						<span class="category-name">
+							${escapeHTML(details.label)}
+						</span>
 					</td>
 
 					<td>
@@ -262,6 +478,20 @@ title: "categories"
 			`
 		})
 		.join("")
+
+	tableBody.addEventListener("click", (event) => {
+		const row = event.target.closest("tr")
+
+		if (!row) {
+			return
+		}
+
+		showCategory(row.dataset.category)
+	})
+
+	if (categories.length) {
+		showCategory(categories[0].name)
+	}
 
 	if (naCount > 0) {
 		naCategoryCount.textContent = naCount
