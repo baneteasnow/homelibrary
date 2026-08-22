@@ -188,6 +188,7 @@ title: "categories"
 	<aside
 		id="categoryDetail"
 		class="category-detail"
+		style="display: none"
 	>
 		<h2
 			id="categoryDetailTitle"
@@ -245,6 +246,8 @@ title: "categories"
 
 	const categoryDetailLink = document.getElementById("categoryDetailLink")
 
+	const categoryDetail = document.getElementById("categoryDetail")
+
 	const categoryDetails = {
 		PsychologyMentalLife: {
 			label: "Psychology & Mental Life",
@@ -267,73 +270,73 @@ title: "categories"
 		HealthNutrition: {
 			label: "Health & Nutrition",
 			scope:
-				"Health, medicine, illness, nutrition, metabolism, exercise, fitness, sleep, longevity, physical wellbeing.",
+				"Health, medicine, illness, nutrition, metabolism, exercise, fitness, sleep, longevity, physical well-being.",
 		},
 
 		WorkCareer: {
 			label: "Work & Career",
 			scope:
-				"Careers, leadership, management, teams, workplace life, organizations, human resources, professional development.",
+				"Careers, leadership, management, teams, workplace culture, organizations, human resources, professional development.",
 		},
 
 		BusinessEconomics: {
 			label: "Business & Economics",
 			scope:
-				"Entrepreneurship, companies, economics, finance, investing, markets, business models.",
+				"Business, entrepreneurship, companies, economics, finance, investment, markets, business models.",
 		},
 
 		ConsumerMarketing: {
 			label: "Consumer & Marketing",
 			scope:
-				"Marketing, advertising, brands, sales, consumer behavior, persuasion, commercial culture.",
+				"Marketing, advertising, branding, sales, consumer culture, consumer behavior, purchasing psychology.",
 		},
 
 		TechnologyTheDigitalWorld: {
 			label: "Technology & The Digital World",
 			scope:
-				"Technology, the internet, artificial intelligence, digital culture, platforms, social media, computing and technological change.",
+				"Technology, the internet, artificial intelligence, computers, social media, digital culture, digital transformation.",
 		},
 
 		CreativityExpression: {
 			label: "Creativity & Expression",
 			scope:
-				"Creativity, writing, art, design, creative process, artistic expression and the psychology of making things.",
+				"Creativity, writing, art, design, photography, architecture, music, aesthetics, creative processes.",
 		},
 
 		SocietyCulture: {
 			label: "Society & Culture",
 			scope:
-				"Society, culture, gender, family, relationships, social norms, inequality, identity and contemporary social life.",
+				"Sociology, anthropology, education, culture, media, gender, social structures, social change, contemporary society",
 		},
 
 		HistoryPoliticalThought: {
 			label: "History & Political Thought",
 			scope:
-				"History, political thought, political philosophy, ideologies, institutions, power and major historical developments.",
+				"History, wars, civilizations, political systems, political ideologies, democracy, power, geopolitics.",
 		},
 
 		ScienceDiscovery: {
 			label: "Science & Discovery",
 			scope:
-				"Science, scientific ideas, physics, biology, mathematics, nature, research, discovery and the history of science.",
+				"Physics, biology, evolution, neuroscience, mathematics, astronomy, scientific discovery, popular science and the history of science..",
 		},
 
 		EnvironmentSustainableLiving: {
 			label: "Environment & Sustainable Living",
 			scope:
-				"Environment, climate, sustainability, ecological issues, consumption, sustainable living and humanity’s relationship with nature.",
+				"Environment, climate change, sustainability, nature, ecology, environmental policy, sustainable systems.",
 		},
 
 		BiographyLifeStories: {
 			label: "Biography & Life Stories",
 			scope:
-				"Biography, autobiography, memoir, personal histories and nonfiction accounts centered on individual lives.",
+				"Biographies, autobiographies, memoirs, personal narratives, diaries, and accounts of individual lives.",
 		},
 
-		TravelPlace: {
-			label: "Travel & Place",
+		SimpleLivingEverydayComforts: {
+			label: "Simple Living & Everyday Comforts",
 			scope:
-				"Travel writing, places, cities, geography, landscape, cultural encounters and nonfiction centered on location.",
+				"Everyday life, simple living, home, food, coffee, hobbies, personal style, routines, practical pleasures and everyday comforts.",
 		},
 	}
 
@@ -426,6 +429,8 @@ title: "categories"
 			scope: "",
 		}
 
+		categoryDetail.style.display = "block"
+
 		categoryDetailTitle.textContent = details.label
 
 		categoryDetailScope.textContent = details.scope
@@ -488,10 +493,6 @@ title: "categories"
 
 		showCategory(row.dataset.category)
 	})
-
-	if (categories.length) {
-		showCategory(categories[0].name)
-	}
 
 	if (naCount > 0) {
 		naCategoryCount.textContent = naCount
