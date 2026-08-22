@@ -9,6 +9,10 @@ title: "categories"
 <br />
 
 <style>
+	.category-list {
+		width: 100%;
+		max-width: 520px;
+	}
 	.category-list-info {
 		margin-bottom: 16px;
 		font-size: 17px;
@@ -19,6 +23,12 @@ title: "categories"
 	}
 
 	.category-layout {
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+	}
+
+	.category-layout.has-selection {
 		display: grid;
 		grid-template-columns: minmax(280px, 0.9fr) minmax(320px, 1.1fr);
 		gap: 34px;
@@ -138,8 +148,13 @@ title: "categories"
 	}
 
 	@media (max-width: 760px) {
-		.category-layout {
+		.category-layout,
+		.category-layout.has-selection {
 			display: block;
+		}
+
+		.category-list {
+			max-width: none;
 		}
 
 		.category-detail {
@@ -159,8 +174,11 @@ title: "categories"
 	</p>
 </div>
 
-<div class="category-layout">
-	<div>
+<div
+	id="categoryLayout"
+	class="category-layout"
+>
+	<div class="category-list">
 		<table
 			id="categoriesTable"
 			class="zebra"
@@ -225,7 +243,10 @@ title: "categories"
 </script>
 
 <script>
+	const categoryLayout = document.getElementById("categoryLayout")
+
 	const booksDataElement = document.getElementById("booksData")
+
 	const books = JSON.parse(booksDataElement.textContent)
 
 	const tableBody = document.querySelector("#categoriesTable tbody")
@@ -428,7 +449,7 @@ title: "categories"
 			label: category.name,
 			scope: "",
 		}
-
+		categoryLayout.classList.add("has-selection")
 		categoryDetail.style.display = "block"
 
 		categoryDetailTitle.textContent = details.label
