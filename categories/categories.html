@@ -147,6 +147,10 @@ title: "categories"
 		color: inherit;
 	}
 
+	.mobile-category-detail {
+		display: none;
+	}
+
 	@media (max-width: 760px) {
 		.category-layout,
 		.category-layout.has-selection {
@@ -158,8 +162,38 @@ title: "categories"
 		}
 
 		.category-detail {
-			position: static;
-			margin-top: 24px;
+			display: none !important;
+		}
+
+		.mobile-category-detail {
+			display: table-row;
+		}
+
+		.mobile-category-detail td {
+			padding: 18px 14px;
+			background: #fafafa;
+		}
+
+		.mobile-detail-title {
+			margin: 0 0 10px;
+			font-size: 18px;
+			font-weight: 600;
+		}
+
+		.mobile-detail-scope {
+			margin: 0 0 14px;
+			font-size: 16px;
+			line-height: 1.6;
+		}
+
+		.mobile-detail-count {
+			margin: 0 0 12px;
+			font-size: 14px;
+			font-style: italic;
+		}
+
+		.mobile-detail-link {
+			font-size: 15px;
 		}
 	}
 </style>
@@ -243,6 +277,7 @@ title: "categories"
 </script>
 
 <script>
+	let selectedCategory = null
 	const categoryLayout = document.getElementById("categoryLayout")
 
 	const booksDataElement = document.getElementById("booksData")
@@ -480,39 +515,112 @@ title: "categories"
 
 			const details = categoryDetails[category.name] || {
 				label: category.name,
+				scope: "",
 			}
 
+			const browseURL =
+				"{{ '/browse/' | relative_url }}?field=categories&value=" +
+				encodeURIComponent(category.name)
+
+			const bookLabel =
+				category.count === 1 ? "1 book" : `${category.count} books`
+
 			return `
-				<tr data-category="${escapeHTML(category.name)}">
-					<td>
-						<span class="category-name">
-							${escapeHTML(details.label)}
-						</span>
-					</td>
+			<tr
+				class="category-row"
+				data-category="${escapeHTML(category.name)}"
+			>
+				<td>
+					<span class="category-name">
+						${escapeHTML(details.label)}
+					</span>
+				</td>
 
-					<td>
-						<span class="category-count">
-							<span
-								class="category-count-dot ${countClass}"
-								aria-hidden="true"
-							></span>
+				<td>
+					<span class="category-count">
+						<span
+							class="category-count-dot ${countClass}"
+							aria-hidden="true"
+						></span>
 
-							<span>${category.count}</span>
-						</span>
-					</td>
-				</tr>
-			`
+						<span>${category.count}</span>
+					</span>
+				</td>
+			</tr>
+
+			<tr
+				class="mobile-category-detail"
+				data-detail-for="${escapeHTML(category.name)}"
+				style="display: none;"
+			>
+				<td colspan="2">
+					<h3 class="mobile-detail-title">
+						${escapeHTML(details.label)}
+					</h3>
+
+					<p class="mobile-detail-scope">
+						${escapeHTML(details.scope)}
+					</p>
+
+					<p class="mobile-detail-count">
+						${bookLabel}
+					</p>
+
+					<a
+						class="mobile-detail-link"
+						href="${browseURL}"
+					>
+						browse books →
+					</a>
+				</td>
+			</tr>
+		`
 		})
 		.join("")
 
 	tableBody.addEventListener("click", (event) => {
-		const row = event.target.closest("tr")
+		const row = event.target.closest(".category-row")
 
 		if (!row) {
 			return
 		}
 
-		showCategory(row.dataset.category)
+		const categoryName = row.dataset.category
+
+		if (window.matchMedia("(max-width: 760px)").matches) {
+			const isSameCategory = selectedCategory === categoryName
+
+			document
+				.querySelectorAll(".mobile-category-detail")
+				.forEach((detailRow) => {
+					detailRow.style.display = "none"
+				})
+
+			document.querySelectorAll(".category-row").forEach((categoryRow) => {
+				categoryRow.classList.remove("is-selected")
+			})
+
+			if (isSameCategory) {
+				selectedCategory = null
+				return
+			}
+
+			const detailRow = document.querySelector(
+				`[data-detail-for="${CSS.escape(categoryName)}"]`,
+			)
+
+			if (detailRow) {
+				detailRow.style.display = "table-row"
+			}
+
+			row.classList.add("is-selected")
+			selectedCategory = categoryName
+
+			return
+		}
+
+		selectedCategory = categoryName
+		showCategory(categoryName)
 	})
 
 	if (naCount > 0) {
