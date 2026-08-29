@@ -40705,5 +40705,23 @@
 		"tbr": "n/a",
 		"image": "https://homelibrary.next52books.com/assets/shelves/12-D.png",
 		"location": "homelibrary"
+	},
+	{
+		"bookshelf": 3262,
+		"No": 2262,
+		"title": "Insan Yaratmak",
+		"publisher": "Beyaz Yayinlari",
+		"author": "Virginia Satir",
+		"lang": "Turkce",
+		"page": 418,
+		"year": "2017",
+		"notes": "2-B",
+		"status": "UnRead",
+		"newstatus": "n/a",
+		"categories": "PsychologyMentalLife",
+		"reread": "n/a",
+		"tbr": "n/a",
+		"image": "https://homelibrary.next52books.com/assets/shelves/2-B.png",
+		"location": "homelibrary"
 	}
 ]
