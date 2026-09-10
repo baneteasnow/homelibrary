@@ -41046,5 +41046,24 @@
 		"tbr": "n/a",
 		"image": "https://homelibrary.next52books.com/assets/shelves/9-B.png",
 		"location": "homelibrary"
+	},
+	{
+		"bookshelf": 3280,
+		"No": 2280,
+		"title": "Cinsel Politika",
+		"publisher": "Can Yayinlari",
+		"author": "Kate Millett ",
+		"lang": "Turkce",
+		"page": 528,
+		"year": "2024",
+		"notes": "8-A",
+		"note": "add a photo!",
+		"status": "UnRead",
+		"newstatus": "n/a",
+		"categories": "PsychologyMentalLife",
+		"reread": "n/a",
+		"tbr": "n/a",
+		"image": "https://homelibrary.next52books.com/assets/shelves/8-A.png",
+		"location": "homelibrary"
 	}
 ]
