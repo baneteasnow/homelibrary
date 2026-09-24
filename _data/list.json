@@ -41142,5 +41142,43 @@
 		"tbr": "n/a",
 		"image": "https://homelibrary.next52books.com/assets/shelves/12-D.png",
 		"location": "homelibrary"
+	},
+	{
+		"bookshelf": 3286,
+		"No": 2286,
+		"title": "Iliskisel Perspektifler - Evren, Benlik ve Olum",
+		"publisher": "Akademim Yayincilik",
+		"author": "N. Toygar Ates",
+		"lang": "Turkce",
+		"page": 192,
+		"year": "2026",
+		"notes": "12-D",
+		"note": "add a photo!",
+		"status": "UnRead",
+		"newstatus": "n/a",
+		"categories": "PhilosophyMeaning",
+		"reread": "n/a",
+		"tbr": "n/a",
+		"image": "https://homelibrary.next52books.com/assets/shelves/12-D.png",
+		"location": "homelibrary"
+	},
+	{
+		"bookshelf": 3287,
+		"No": 2287,
+		"title": "Kayip Ruhlarla Savas - Uyusturucuyla Mucadelenin Basarisiz Tarihi",
+		"publisher": "Ucuncu Goz",
+		"author": "Johann Hari",
+		"lang": "Turkce",
+		"page": 528,
+		"year": "2025",
+		"notes": "6-B",
+		"note": "add a photo!",
+		"status": "UnRead",
+		"newstatus": "n/a",
+		"categories": "PsychologyMentalLife",
+		"reread": "n/a",
+		"tbr": "n/a",
+		"image": "https://homelibrary.next52books.com/assets/shelves/6-B.png",
+		"location": "homelibrary"
 	}
 ]
