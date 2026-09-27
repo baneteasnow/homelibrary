@@ -41173,5 +41173,24 @@
 		"tbr": "Reading",
 		"image": "https://homelibrary.next52books.com/assets/shelves/6-B.png",
 		"location": "homelibrary"
+	},
+	{
+		"bookshelf": 3288,
+		"No": 2288,
+		"title": "Iktidarin Psisik Yasami - Tabiyet Uzerine Teoriler",
+		"publisher": "Ayrinti Yayinlari",
+		"author": "Judith Butler",
+		"lang": "Turkce",
+		"page": 208,
+		"year": "2005",
+		"notes": "8-B",
+		"note": "add a photo!",
+		"status": "UnRead",
+		"newstatus": "n/a",
+		"categories": "PhilosophyMeaning",
+		"reread": "n/a",
+		"tbr": "n/a",
+		"image": "https://homelibrary.next52books.com/assets/shelves/8-B.png",
+		"location": "homelibrary"
 	}
 ]
