@@ -5,7 +5,7 @@ layout: null
   {% for item in site.data.list %}
     {
       "title"      : "{{ item.title }}",
-      "url"        : "{{ site.baseurl }}booklist#{{ item.bookshelf }}",
+      "url"        : "{{ site.baseurl }}/booklist#{{ item.bookshelf }}",
       "author"     : "{{ item.author }}",
       "year"       : "{{ item.year }}",
       "no"         : "{{ item.No }}",
