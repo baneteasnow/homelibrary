@@ -41249,5 +41249,24 @@
 		"tbr": "n/a",
 		"image": "https://homelibrary.next52books.com/assets/shelves/4-C.png",
 		"location": "homelibrary"
+	},
+	{
+		"bookshelf": 3291,
+		"No": 2291,
+		"title": "El Konulan Dunya – Sonluluk Kapitalizmi Uzerine Deneme (16.–21.Yuzyillar)",
+		"publisher": "Turkiye Is Bankasi Kultur Yayinlari",
+		"author": "Arnaud Orain",
+		"lang": "Turkce",
+		"page": 272,
+		"year": "2026",
+		"notes": "3-A",
+		"note": "add a photo!",
+		"status": "UnRead",
+		"newstatus": "n/a",
+		"categories": "BusinessEconomics",
+		"reread": "n/a",
+		"tbr": "n/a",
+		"image": "https://homelibrary.next52books.com/assets/shelves/3-A.png",
+		"location": "homelibrary"
 	}
 ]
