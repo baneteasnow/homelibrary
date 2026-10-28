@@ -1,287 +1,98 @@
-/*!
- * Simple-Jekyll-Search v1.7.2 (with debounce)
- * Modified by Brooklyn for improved performance
- */
-!(function () {
-	"use strict"
-	var f = {
-		load: function w(t, e) {
-			var n = (function r() {
-				return window.XMLHttpRequest
-					? new window.XMLHttpRequest()
-					: new ActiveXObject("Microsoft.XMLHTTP")
-			})()
-			n.open("GET", t, !0),
-				(n.onreadystatechange = (function i(e, n) {
-					return function () {
-						if (4 === e.readyState && 200 === e.status)
-							try {
-								n(null, JSON.parse(e.responseText))
-							} catch (t) {
-								n(t, null)
-							}
-					}
-				})(n, e)),
-				n.send()
-		},
-	}
-	;(function y(t) {
-		if (
-			!(function e(t) {
-				return (
-					!!t && "undefined" != typeof t.required && t.required instanceof Array
-				)
-			})(t)
-		)
-			throw new Error("-- OptionsValidator: required options missing")
-		if (!(this instanceof y)) return new y(t)
-		var r = t.required
-		;(this.getRequiredOptions = function () {
-			return r
-		}),
-			(this.validate = function (e) {
-				var n = []
-				return (
-					r.forEach(function (t) {
-						"undefined" == typeof e[t] && n.push(t)
-					}),
-					n
-				)
-			})
-	})
-	var n = function g(t, e) {
-			var n = e.length,
-				r = t.length
-			if (n < r) return !1
-			if (r === n) return t === e
-			t: for (var i = 0, o = 0; i < r; i++) {
-				for (var u = t.charCodeAt(i); o < n; )
-					if (e.charCodeAt(o++) === u) continue t
-				return !1
-			}
-			return !0
-		},
-		e = new (function t() {
-			this.matches = function (t, e) {
-				return n(e.toLowerCase(), t.toLowerCase())
-			}
-		})()
-	var r = new (function O() {
-		this.matches = function (e, t) {
-			return (
-				!!e &&
-				((e = e.trim().toLowerCase()),
-				(t = t.trim().toLowerCase()).split(" ").filter(function (t) {
-					return 0 <= e.indexOf(t)
-				}).length === t.split(" ").length)
-			)
-		}
-	})()
-	var l = {
-		put: function z(t) {
-			if (c(t)) return s(t)
-			if (
-				(function e(t) {
-					return (
-						Boolean(t) && "[object Array]" === Object.prototype.toString.call(t)
+/* Home Library PWA — network-first, versioned offline cache */
+const CACHE_NAME = "homelibrary-v1"
+const OLD_CACHE_NAME = "pwabuilder-offline"
+const APP_SHELL = ["/browse/", "/assets/css/main.css"]
+const MAX_CACHED_ASSETS = 80
+
+self.addEventListener("install", (event) => {
+	event.waitUntil(
+		caches.open(CACHE_NAME).then((cache) => cache.addAll(APP_SHELL)),
+	)
+	self.skipWaiting()
+})
+
+self.addEventListener("activate", (event) => {
+	event.waitUntil(
+		(async () => {
+			const names = await caches.keys()
+			await Promise.all(
+				names
+					.filter(
+						(name) =>
+							name === OLD_CACHE_NAME ||
+							(name.startsWith("homelibrary-") && name !== CACHE_NAME),
 					)
-				})(t)
+					.map((name) => caches.delete(name)),
 			)
-				return (function i(t) {
-					var e = []
-					a()
-					for (var n = 0, r = t.length; n < r; n++) c(t[n]) && e.push(s(t[n]))
-					return e
-				})(t)
-			return undefined
-		},
-		clear: a,
-		search: function S(t) {
-			return t
-				? (function a(t, e, n, r) {
-						for (var i = [], o = 0; o < t.length && i.length < r.limit; o++) {
-							var u = d(t[o], e, n, r)
-							u && i.push(u)
-						}
-						return i
-				  })(o, t, u.searchStrategy, u).sort(u.sort)
-				: []
-		},
-		setOptions: function q(t) {
-			;((u = t || {}).fuzzy = t.fuzzy || !1),
-				(u.limit = t.limit || 10),
-				(u.searchStrategy = t.fuzzy ? e : r),
-				(u.sort = t.sort || i)
-		},
-	}
-	function i() {
-		return 0
-	}
-	var o = [],
-		u = {}
-	function a() {
-		return (o.length = 0), o
-	}
-	function c(t) {
-		return Boolean(t) && "[object Object]" === Object.prototype.toString.call(t)
-	}
-	function s(t) {
-		return o.push(t), o
-	}
-	function d(t, e, n, r) {
-		for (var i in t) if (!p(t[i], r.exclude) && n.matches(t[i], e)) return t
-	}
-	function p(t, e) {
-		for (var n = !1, r = 0, i = (e = e || []).length; r < i; r++) {
-			var o = e[r]
-			!n && new RegExp(t).test(o) && (n = !0)
-		}
-		return n
-	}
-	;(u.fuzzy = !1),
-		(u.limit = 10),
-		(u.searchStrategy = u.fuzzy ? e : r),
-		(u.sort = i)
-	var h = {
-			compile: function j(r) {
-				return m.template.replace(m.pattern, function (t, e) {
-					var n = m.middleware(e, r[e], m.template)
-					return void 0 !== n ? n : r[e] || t
-				})
-			},
-			setOptions: function C(t) {
-				;(m.pattern = t.pattern || m.pattern),
-					(m.template = t.template || m.template),
-					"function" == typeof t.middleware && (m.middleware = t.middleware)
-			},
-		},
-		m = {}
-	;(m.pattern = /\{(.*?)\}/g),
-		(m.template = ""),
-		(m.middleware = function () {})
-	var v = {
-		merge: function L(t, e) {
-			var n = {}
-			for (var r in t)
-				(n[r] = t[r]), "undefined" != typeof e[r] && (n[r] = e[r])
-			return n
-		},
-		isJSON: function M(t) {
-			try {
-				return !!(t instanceof Object && JSON.parse(JSON.stringify(t)))
-			} catch (e) {
-				return !1
-			}
-		},
-	}
-	!(function (t) {
-		var o = {
-				searchInput: null,
-				resultsContainer: null,
-				json: [],
-				success: Function.prototype,
-				searchResultTemplate:
-					'<li><a href="{url}" title="{desc}">{title}</a></li>',
-				templateMiddleware: Function.prototype,
-				sortMiddleware: function () {
-					return 0
-				},
-				noResultsText: "No results found",
-				limit: 10,
-				fuzzy: !1,
-				exclude: [],
-			},
-			n = ["searchInput", "resultsContainer", "json"],
-			r = (function y(e) {
-				if (
-					!(function n(t) {
-						return (
-							!!t &&
-							"undefined" != typeof t.required &&
-							t.required instanceof Array
-						)
-					})(e)
-				)
-					throw new Error("-- OptionsValidator: required options missing")
-				if (!(this instanceof y)) return new y(e)
-				var r = e.required
-				;(this.getRequiredOptions = function () {
-					return r
-				}),
-					(this.validate = function (e) {
-						var n = []
-						return (
-							r.forEach(function (t) {
-								"undefined" == typeof e[t] && n.push(t)
-							}),
-							n
-						)
-					})
-			})({ required: n })
+			await self.clients.claim()
+		})(),
+	)
+})
 
-		function i(t) {
-			o.success(t),
-				l.put(t),
-				(function e() {
-					let debounceTimer
-					o.searchInput.addEventListener("keyup", function (t) {
-						if (-1 === [13, 16, 20, 37, 38, 39, 40, 91].indexOf(t.which)) {
-							clearTimeout(debounceTimer)
-							debounceTimer = setTimeout(function () {
-								u()
-								c(t.target.value)
-							}, 300)
-						}
-					})
-				})()
-		}
+self.addEventListener("fetch", (event) => {
+	const request = event.request
+	if (request.method !== "GET") return
 
-		function u() {
-			o.resultsContainer.innerHTML = ""
-		}
-		function a(t) {
-			o.resultsContainer.innerHTML += t
-		}
-		function c(t) {
-			if (t && 0 < t.length) {
-				u()
-				var results = l.search(t)
-				if (results.length === 0) {
-					a(o.noResultsText)
-				} else {
-					for (var r = 0; r < results.length; r++) {
-						results[r].query = t
-						a(h.compile(results[r]))
+	const url = new URL(request.url)
+	if (url.origin !== self.location.origin) return
+	if (request.cache === "only-if-cached") return
+
+	// Pages (including the embedded book data) always try the network first.
+	if (request.mode === "navigate") {
+		event.respondWith(
+			(async () => {
+				try {
+					const response = await fetch(request)
+					if (response.ok) {
+						const cache = await caches.open(CACHE_NAME)
+						await cache.put(request, response.clone()).catch(() => {})
 					}
+					return response
+				} catch {
+					const cache = await caches.open(CACHE_NAME)
+					const saved = await cache.match(request, { ignoreSearch: true })
+					if (saved) return saved
+					return new Response("This page is unavailable offline.", {
+						status: 503,
+						headers: { "Content-Type": "text/plain; charset=utf-8" },
+					})
 				}
+			})(),
+		)
+		return
+	}
+
+	// Cache only local CSS, JS and images, not every request.
+	if (!/\.(?:css|js|png|jpg|jpeg|webp|svg|ico)$/i.test(url.pathname)) return
+
+	event.respondWith(
+		(async () => {
+			try {
+				const response = await fetch(request)
+				if (response.ok) {
+					event.waitUntil(
+						(async () => {
+							const cache = await caches.open(CACHE_NAME)
+							await cache.put(request, response.clone())
+							const keys = (await cache.keys()).filter((item) =>
+								/\.(?:css|js|png|jpg|jpeg|webp|svg|ico)$/i.test(
+									new URL(item.url).pathname,
+								),
+							)
+							for (const key of keys.slice(
+								0,
+								Math.max(0, keys.length - MAX_CACHED_ASSETS),
+							)) {
+								await cache.delete(key)
+							}
+						})().catch(() => {}),
+					)
+				}
+				return response
+			} catch {
+				const cache = await caches.open(CACHE_NAME)
+				return (await cache.match(request)) || Response.error()
 			}
-		}
-		function s(t) {
-			throw new Error("SimpleJekyllSearch --- " + t)
-		}
-		t.SimpleJekyllSearch = function (t) {
-			if (0 < r.validate(t).length) {
-				s("You must specify the following required options: " + n)
-			}
-			o = v.merge(o, t)
-			h.setOptions({
-				template: o.searchResultTemplate,
-				middleware: o.templateMiddleware,
-			})
-			l.setOptions({
-				fuzzy: o.fuzzy,
-				limit: o.limit,
-				sort: o.sortMiddleware,
-			})
-			if (v.isJSON(o.json)) {
-				i(o.json)
-			} else {
-				f.load(o.json, function (t, e) {
-					if (t) s("failed to get JSON (" + o.json + ")")
-					i(e)
-				})
-			}
-			return { search: c }
-		}
-	})(window)
-})()
+		})(),
+	)
+})
