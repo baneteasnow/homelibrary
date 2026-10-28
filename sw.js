@@ -1,70 +1,88 @@
-const CACHE = "pwabuilder-offline"
+// Home Library Service Worker
+// Network First + Offline Support
 
-const offlineFallbackPage = "index.html"
+const CACHE_NAME = "homelibrary-v2"
+const OLD_CACHE_NAME = "pwabuilder-offline"
+const HOME_PAGE = "/browse/"
 
-// Install stage sets up the index page (home page) in the cache and opens a new cache
-self.addEventListener("install", function (event) {
-	console.log("Install Event processing")
+const PRECACHE = [HOME_PAGE, "/assets/css/main.css"]
 
+// INSTALL
+self.addEventListener("install", (event) => {
 	event.waitUntil(
-		caches.open(CACHE).then(function (cache) {
-			console.log("Cached offline page during install")
+		(async () => {
+			const cache = await caches.open(CACHE_NAME)
 
-			if (
-				offlineFallbackPage ===
-				"https://homelibrary.next52books.com/offline.html"
-			) {
-				return cache.add(
-					new Response(
-						"Update the value of the offlineFallbackPage constant in the serviceworker."
-					)
-				)
-			}
-			return cache.add(offlineFallbackPage)
-		})
+			// Cache the book collection page.
+			await cache.add(HOME_PAGE)
+
+			// Cache additional resources when available.
+			await Promise.allSettled(PRECACHE.slice(1).map((url) => cache.add(url)))
+
+			await self.skipWaiting()
+		})(),
 	)
 })
 
-// If any fetch fails, it will look for the request in the cache and serve it from there first
-self.addEventListener("fetch", function (event) {
-	if (event.request.method !== "GET") return
+// ACTIVATE
+self.addEventListener("activate", (event) => {
+	event.waitUntil(
+		(async () => {
+			const names = await caches.keys()
+
+			await Promise.all(
+				names
+					.filter(
+						(name) =>
+							name === OLD_CACHE_NAME ||
+							(name.startsWith("homelibrary-") && name !== CACHE_NAME),
+					)
+					.map((name) => caches.delete(name)),
+			)
+
+			await self.clients.claim()
+		})(),
+	)
+})
+
+// FETCH
+self.addEventListener("fetch", (event) => {
+	const request = event.request
+
+	if (request.method !== "GET") return
+
+	const url = new URL(request.url)
+
+	if (url.origin !== self.location.origin) return
+	if (url.pathname === "/sw.js") return
 
 	event.respondWith(
-		fetch(event.request)
-			.then(function (response) {
-				console.log("Add page to offline cache: " + response.url)
+		(async () => {
+			const cache = await caches.open(CACHE_NAME)
 
-				// If request was success, add or update it in the cache
-				event.waitUntil(updateCache(event.request, response.clone()))
+			try {
+				const response = await fetch(request)
+
+				if (response.ok && response.type === "basic") {
+					event.waitUntil(cache.put(request, response.clone()).catch(() => {}))
+				}
 
 				return response
-			})
-			.catch(function (error) {
-				console.log(
-					"Network request Failed. Serving content from cache: " + error
-				)
-				return fromCache(event.request)
-			})
+			} catch (_) {
+				const exact = await cache.match(request, {
+					ignoreSearch: request.mode === "navigate",
+				})
+
+				if (exact) return exact
+
+				if (request.mode === "navigate") {
+					const fallback = await cache.match(HOME_PAGE)
+
+					if (fallback) return fallback
+				}
+
+				return Response.error()
+			}
+		})(),
 	)
 })
-
-function fromCache(request) {
-	// Check to see if you have it in the cache
-	// Return response
-	// If not in the cache, then return error page
-	return caches.open(CACHE).then(function (cache) {
-		return cache.match(request).then(function (matching) {
-			if (!matching || matching.status === 404) {
-				return Promise.reject("no-match")
-			}
-
-			return matching
-		})
-	})
-}
-
-function updateCache(request, response) {
-	return caches.open(CACHE).then(function (cache) {
-		return cache.put(request, response)
-	})
-}
