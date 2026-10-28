@@ -7,21 +7,22 @@
 			"src": "https://homelibrary.next52books.com/assets/images/android-chrome-192x192.png",
 			"sizes": "192x192",
 			"type": "image/png",
-			"purpose": "any maskable"
+			"purpose": "any"
 		},
 		{
 			"src": "https://homelibrary.next52books.com/assets/images/android-chrome-512x512.png",
 			"sizes": "512x512",
 			"type": "image/png",
-			"purpose": "any maskable"
+			"purpose": "any"
 		}
 	],
-	"theme_color": "#d2c6c0",
-	"background_color": "#e4a69f",
+	"theme_color": "#C9F9DA",
+	"background_color": "#C9F9DA",
 	"display": "standalone",
 	"orientation": "natural",
 	"categories": [],
-	"start_url": "https://homelibrary.next52books.com/browse/",
+	"scope": "/",
+	"start_url": "/browse/",
 	"shortcuts": [],
 	"screenshots": []
 }
