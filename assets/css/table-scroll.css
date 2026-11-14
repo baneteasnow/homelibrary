@@ -3,10 +3,20 @@
 .hl-scroll-indicator { display: none; }
 
 @media (max-width: 768px) {
+  /* Prevent the wide table from expanding the document itself. */
+  html, body { max-width: 100%; overflow-x: clip; }
+  .page-content, .page-content > .w {
+    box-sizing: border-box;
+    min-width: 0;
+    max-width: 100%;
+  }
+  .page-content > .w { overflow-x: clip; }
+
   .hl-table-scroll {
     display: block;
+    box-sizing: border-box;
     width: 100%;
-    max-width: 100%;
+    max-width: min(100%, calc(100vw - 24px));
     min-width: 0;
     overflow-x: auto;
     overflow-y: hidden;
@@ -18,7 +28,12 @@
   .hl-table-scroll::-webkit-scrollbar { height: 5px; }
   .hl-table-scroll::-webkit-scrollbar-thumb { background: #c5c5c5; border-radius: 10px; }
   .hl-table-scroll::-webkit-scrollbar-track { background: transparent; }
-  .hl-table-scroll > table { width: max-content; min-width: 100%; max-width: none; margin-bottom: 0; }
+  .hl-table-scroll > table {
+    width: max-content !important;
+    min-width: 100%;
+    max-width: none !important;
+    margin-bottom: 0;
+  }
   .hl-table-scroll > table th,
   .hl-table-scroll > table td { overflow-wrap: normal; }
   .hl-scroll-indicator {
