@@ -1,0 +1,31 @@
+---
+layout: page-6
+published: true
+title: "more"
+permalink: /more/
+---
+
+{%- include backtotop.html -%}
+
+<style>
+  .hl-more { max-width: 520px; margin: 46px auto 0; padding: 0 8px 60px 0; color: #242424; }
+  .hl-more__intro { margin: 0 0 28px; color: #777; font-size: 13px; font-style: italic; }
+  .hl-more__links { list-style: none; margin: 0; padding: 0; }
+  .hl-more__links li { margin: 0; border-bottom: 1px solid #ececec; }
+  .hl-more__links a { display: block; padding: 12px 0; color: #303030; text-decoration: none; font-size: 15px; }
+  .hl-more__links a:hover { text-decoration: underline; text-underline-offset: 3px; }
+  .hl-more__links a:focus-visible { outline: 2px solid #777; outline-offset: 3px; }
+  @media (max-width: 700px) { .hl-more { margin-top: 28px; padding-right: min(30vw, 118px); } .hl-more__links a { font-size: 14px; } }
+</style>
+
+<section class="hl-more" aria-label="More library pages">
+  <p class="hl-more__intro">More ways to explore the library.</p>
+  <ul class="hl-more__links">
+    <li><a href="{{ '/search/' | relative_url }}">Search</a></li>
+    <li><a href="{{ '/categories/categories' | relative_url }}">Categories</a></li>
+    <li><a href="{{ '/author-list/' | relative_url }}">Authors</a></li>
+    <li><a href="{{ '/booklist' | relative_url }}">Book List</a></li>
+    <li><a href="{{ '/thelist' | relative_url }}">The List</a></li>
+    <li><a href="{{ '/old-library/' | relative_url }}">Library Old Version</a></li>
+  </ul>
+</section>

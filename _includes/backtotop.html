@@ -1,31 +1,10 @@
-<link rel="stylesheet" href="{{ '/assets/css/sidebar.css' | relative_url }}">
 <aside class="hl-sidebar" aria-label="Homelibrary navigation">
   <nav aria-label="Library pages">
     <a class="hl-sidebar__top" href="#">Back to top ↑</a>
-    {%- assign hl_link = "/search/" -%}
-    {%- assign hl_current = page.url | replace: "/index.html", "/" | remove: ".html" | remove: "/" -%}
-    {%- assign hl_target = hl_link | remove: ".html" | remove: "/" -%}
-    <a href="{{ hl_link | relative_url }}"{% if hl_current == hl_target %} aria-current="page"{% endif %}>Search</a>
-    {%- assign hl_link = "/browse/" -%}
-    {%- assign hl_current = page.url | replace: "/index.html", "/" | remove: ".html" | remove: "/" -%}
-    {%- assign hl_target = hl_link | remove: ".html" | remove: "/" -%}
-    <a href="{{ hl_link | relative_url }}"{% if hl_current == hl_target %} aria-current="page"{% endif %}>Browse</a>
-    {%- assign hl_link = "/add-a-photo.html" -%}
-    {%- assign hl_current = page.url | replace: "/index.html", "/" | remove: ".html" | remove: "/" -%}
-    {%- assign hl_target = hl_link | remove: ".html" | remove: "/" -%}
-    <a href="{{ hl_link | relative_url }}"{% if hl_current == hl_target %} aria-current="page"{% endif %}>add a photo!</a>
-    {%- assign hl_link = "/booklist" -%}
-    {%- assign hl_current = page.url | replace: "/index.html", "/" | remove: ".html" | remove: "/" -%}
-    {%- assign hl_target = hl_link | remove: ".html" | remove: "/" -%}
-    <a href="{{ hl_link | relative_url }}"{% if hl_current == hl_target %} aria-current="page"{% endif %}>Book List</a>
-    {%- assign hl_link = "/thelist" -%}
-    {%- assign hl_current = page.url | replace: "/index.html", "/" | remove: ".html" | remove: "/" -%}
-    {%- assign hl_target = hl_link | remove: ".html" | remove: "/" -%}
-    <a href="{{ hl_link | relative_url }}"{% if hl_current == hl_target %} aria-current="page"{% endif %}>The List</a>
-    {%- assign hl_link = "/old-library/" -%}
-    {%- assign hl_current = page.url | replace: "/index.html", "/" | remove: ".html" | remove: "/" -%}
-    {%- assign hl_target = hl_link | remove: ".html" | remove: "/" -%}
-    <a class="hl-sidebar__desktop-only" href="{{ hl_link | relative_url }}"{% if hl_current == hl_target %} aria-current="page"{% endif %}>Library Old Version</a>
+    {% assign current_path = page.url | replace: '/index.html', '/' %}
+    <a href="{{ '/browse/' | relative_url }}"{% if current_path == '/browse/' %} aria-current="page"{% endif %}>Browse</a>
+    <a href="{{ '/add-a-photo.html' | relative_url }}"{% if current_path == '/add-a-photo.html' %} aria-current="page"{% endif %}>add a photo!</a>
+    <a href="{{ '/more/' | relative_url }}"{% if current_path == '/more/' %} aria-current="page"{% endif %}>more</a>
     <a class="hl-sidebar__external" href="https://www.next52books.com/">n52b</a>
   </nav>
 </aside>
