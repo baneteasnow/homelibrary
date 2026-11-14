@@ -1,39 +1,62 @@
-/* Homelibrary: desktop tables remain unchanged. */
+/* Homelibrary: preserve original desktop tables; scroll only on narrow screens. */
 .hl-table-scroll { display: contents; }
 .hl-scroll-indicator { display: none; }
 
 @media (max-width: 768px) {
-  /* Keep the document at viewport width; the table is the only scroll surface. */
-  html { width: 100%; overflow-x: hidden; }
-  body { width: 100%; max-width: 100%; overflow-x: hidden; }
+  /* Prevent the wide table from expanding the document itself. */
+  html, body { max-width: 100%; overflow-x: clip; }
   .page-content, .page-content > .w {
     box-sizing: border-box;
     min-width: 0;
     max-width: 100%;
   }
+  .page-content > .w { overflow-x: clip; }
+
   .hl-table-scroll {
     display: block;
-    position: relative;
     box-sizing: border-box;
     width: 100%;
-    max-width: 100%;
+    max-width: min(100%, calc(100vw - 24px));
     min-width: 0;
     overflow-x: auto;
     overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
     overscroll-behavior-x: contain;
-    scrollbar-width: none;
+    scrollbar-width: thin;
+    scrollbar-color: #c5c5c5 transparent;
   }
-  .hl-table-scroll::-webkit-scrollbar { display: none; }
+  .hl-table-scroll::-webkit-scrollbar { height: 5px; }
+  .hl-table-scroll::-webkit-scrollbar-thumb { background: #c5c5c5; border-radius: 10px; }
+  .hl-table-scroll::-webkit-scrollbar-track { background: transparent; }
   .hl-table-scroll > table {
-    width: max-content !important;
-    min-width: 100%;
+    width: 1070px !important;
+    min-width: 1070px !important;
     max-width: none !important;
+    table-layout: fixed;
     margin-bottom: 0;
   }
+  /* Fixed column widths keep book titles wrapping on narrow screens. */
   .hl-table-scroll > table th,
-  .hl-table-scroll > table td { overflow-wrap: normal; }
-  /* Indicator stays at the left edge of the visible scroll area. */
+  .hl-table-scroll > table td {
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    word-break: normal;
+    white-space: normal;
+  }
+  .hl-table-scroll > table th:nth-child(1), .hl-table-scroll > table td:nth-child(1) { width: 45px; }
+  .hl-table-scroll > table th:nth-child(2), .hl-table-scroll > table td:nth-child(2) { width: 190px; }
+  .hl-table-scroll > table th:nth-child(3), .hl-table-scroll > table td:nth-child(3) { width: 120px; }
+  .hl-table-scroll > table th:nth-child(4), .hl-table-scroll > table td:nth-child(4) { width: 45px; }
+  .hl-table-scroll > table th:nth-child(5), .hl-table-scroll > table td:nth-child(5) { width: 45px; }
+  .hl-table-scroll > table th:nth-child(6), .hl-table-scroll > table td:nth-child(6) { width: 120px; }
+  .hl-table-scroll > table th:nth-child(7), .hl-table-scroll > table td:nth-child(7) { width: 55px; }
+  .hl-table-scroll > table th:nth-child(8), .hl-table-scroll > table td:nth-child(8) { width: 65px; }
+  .hl-table-scroll > table th:nth-child(9), .hl-table-scroll > table td:nth-child(9) { width: 45px; }
+  .hl-table-scroll > table th:nth-child(10), .hl-table-scroll > table td:nth-child(10) { width: 65px; }
+  .hl-table-scroll > table th:nth-child(11), .hl-table-scroll > table td:nth-child(11) { width: 55px; }
+  .hl-table-scroll > table th:nth-child(12), .hl-table-scroll > table td:nth-child(12) { width: 90px; }
+  .hl-table-scroll > table th:nth-child(13), .hl-table-scroll > table td:nth-child(13) { width: 55px; }
+  .hl-table-scroll > table th:nth-child(14), .hl-table-scroll > table td:nth-child(14) { width: 75px; }
   .hl-scroll-indicator {
     position: sticky;
     left: 0;
@@ -45,11 +68,6 @@
     pointer-events: none;
   }
   .hl-scroll-indicator.is-visible { display: block; }
-  .hl-scroll-thumb {
-    display: block;
-    height: 100%;
-    background: #bdbdbd;
-    border-radius: 4px;
-    transform: translateX(0);
-  }
+  .hl-scroll-thumb { display: block; height: 100%; background: #bdbdbd; border-radius: 4px; transform: translateX(0); }
 }
+@media (prefers-reduced-motion: reduce) { .hl-table-scroll { scroll-behavior: auto; } }
