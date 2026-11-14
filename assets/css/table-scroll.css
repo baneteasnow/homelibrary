@@ -1,33 +1,30 @@
-/* Homelibrary: preserve original desktop tables; scroll only on narrow screens. */
+/* Homelibrary: desktop tables remain unchanged. */
 .hl-table-scroll { display: contents; }
 .hl-scroll-indicator { display: none; }
 
 @media (max-width: 768px) {
-  /* Prevent the wide table from expanding the document itself. */
-  html, body { max-width: 100%; overflow-x: clip; }
+  /* Keep the document at viewport width; the table is the only scroll surface. */
+  html { width: 100%; overflow-x: hidden; }
+  body { width: 100%; max-width: 100%; overflow-x: hidden; }
   .page-content, .page-content > .w {
     box-sizing: border-box;
     min-width: 0;
     max-width: 100%;
   }
-  .page-content > .w { overflow-x: clip; }
-
   .hl-table-scroll {
     display: block;
+    position: relative;
     box-sizing: border-box;
     width: 100%;
-    max-width: min(100%, calc(100vw - 24px));
+    max-width: 100%;
     min-width: 0;
     overflow-x: auto;
     overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
     overscroll-behavior-x: contain;
-    scrollbar-width: thin;
-    scrollbar-color: #c5c5c5 transparent;
+    scrollbar-width: none;
   }
-  .hl-table-scroll::-webkit-scrollbar { height: 5px; }
-  .hl-table-scroll::-webkit-scrollbar-thumb { background: #c5c5c5; border-radius: 10px; }
-  .hl-table-scroll::-webkit-scrollbar-track { background: transparent; }
+  .hl-table-scroll::-webkit-scrollbar { display: none; }
   .hl-table-scroll > table {
     width: max-content !important;
     min-width: 100%;
@@ -36,6 +33,7 @@
   }
   .hl-table-scroll > table th,
   .hl-table-scroll > table td { overflow-wrap: normal; }
+  /* Indicator stays at the left edge of the visible scroll area. */
   .hl-scroll-indicator {
     position: sticky;
     left: 0;
@@ -47,6 +45,11 @@
     pointer-events: none;
   }
   .hl-scroll-indicator.is-visible { display: block; }
-  .hl-scroll-thumb { display: block; height: 100%; background: #bdbdbd; border-radius: 4px; transform: translateX(0); }
+  .hl-scroll-thumb {
+    display: block;
+    height: 100%;
+    background: #bdbdbd;
+    border-radius: 4px;
+    transform: translateX(0);
+  }
 }
-@media (prefers-reduced-motion: reduce) { .hl-table-scroll { scroll-behavior: auto; } }
