@@ -10,7 +10,7 @@
       scheduled = false;
       const viewport = wrapper.clientWidth;
       const total = wrapper.scrollWidth;
-      const visible = table.getClientRects().length > 0 && total > viewport + 2;
+      const visible = window.matchMedia('(max-width: 768px)').matches && table.getClientRects().length > 0 && total > viewport + 2;
       indicator.classList.toggle('is-visible', visible);
       if (!visible) return;
       const thumbWidth = Math.max(12, viewport * viewport / total);
