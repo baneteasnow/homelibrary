@@ -2,6 +2,7 @@
 layout: page-6
 published: true
 title: "categories"
+permalink: /categories/
 ---
 
 {%- include backtotop.html -%}
@@ -267,6 +268,21 @@ title: "categories"
 	</aside>
 </div>
 
+<section id="categoryBooksView" style="display:none">
+  <p><a href="{{ '/categories/' | relative_url }}">← all categories</a></p>
+  <h2 id="selectedCategoryTitle"></h2>
+  <p id="selectedCategoryCount"></p>
+  <link rel="stylesheet" href="{{ '/assets/css/table-scroll.css' | relative_url }}">
+  <script src="{{ '/assets/js/table-scroll.js' | relative_url }}" defer></script>
+  <div class="hl-table-scroll" data-hl-table-scroll>
+    <table class="zebra" id="selectedCategoryTable" style="width:100%">
+      <thead><tr><th>#</th><th>name of the book</th><th>author</th><th>year</th><th>category</th><th>read?</th><th>shelf</th><th>location</th></tr></thead>
+      <tbody></tbody>
+    </table>
+    <div class="hl-scroll-indicator" aria-hidden="true"><span class="hl-scroll-thumb"></span></div>
+  </div>
+</section>
+
 {%- assign books_data = site.data.list.item | default: site.data.list -%}
 
 <script
@@ -495,7 +511,7 @@ title: "categories"
 			category.count === 1 ? "1 book" : `${category.count} books`
 
 		categoryDetailLink.href =
-			"{{ '/browse/' | relative_url }}?field=categories&value=" +
+			"{{ '/categories/' | relative_url }}?category=" +
 			encodeURIComponent(category.name)
 
 		document.querySelectorAll("#categoriesTable tbody tr").forEach((row) => {
@@ -519,7 +535,7 @@ title: "categories"
 			}
 
 			const browseURL =
-				"{{ '/browse/' | relative_url }}?field=categories&value=" +
+				"{{ '/categories/' | relative_url }}?category=" +
 				encodeURIComponent(category.name)
 
 			const bookLabel =
@@ -627,4 +643,33 @@ title: "categories"
 		naCategoryCount.textContent = naCount
 		naCategory.style.display = "block"
 	}
+
+  // Dedicated category URL: independent of Browse and its filters.
+  const requestedCategory = new URLSearchParams(window.location.search).get("category")
+  if (requestedCategory) {
+    document.getElementById("categoryListInfo").style.display = "none"
+    categoryLayout.style.display = "none"
+    const view = document.getElementById("categoryBooksView")
+    view.style.display = "block"
+    const detail = categoryDetails[requestedCategory]
+    document.getElementById("selectedCategoryTitle").textContent = detail ? detail.label : requestedCategory
+    const matches = books.filter(book => String(book.categories || "").trim() === requestedCategory)
+    document.getElementById("selectedCategoryCount").textContent = `${matches.length} ${matches.length === 1 ? "book" : "books"}`
+    document.querySelector("#selectedCategoryTable tbody").innerHTML = matches.slice().reverse().map(book => {
+      const authorLinks = String(book.author || "").split(",").map(name => name.trim()).filter(Boolean).map(name =>
+        `<a href="{{ '/authors/' | relative_url }}?author=${encodeURIComponent(name)}">${escapeHTML(name)}</a>`
+      ).join(", ")
+      const bookURL = "{{ '/booklist' | relative_url }}#" + encodeURIComponent(book.bookshelf || "")
+      return `<tr>
+        <td>${escapeHTML(book.bookshelf)}</td>
+        <td><a href="${bookURL}"><b>${escapeHTML(book.title)}</b></a></td>
+        <td>${authorLinks}</td>
+        <td>${escapeHTML(book.year)}</td>
+        <td>${escapeHTML(book.categories)}</td>
+        <td>${book.status && book.status !== "UnRead" ? "yes" : "no"}</td>
+        <td>${escapeHTML(book.notes)}</td>
+        <td>${escapeHTML(book.location)}</td>
+      </tr>`
+    }).join("")
+  }
 </script>

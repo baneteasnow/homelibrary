@@ -463,7 +463,7 @@ permalink: /browse/
 				const authorContent = getAuthors(book.author)
 					.map((author) => {
 						const authorURL =
-							"{{ '/browse/' | relative_url }}?field=author&value=" +
+							"{{ '/authors/' | relative_url }}?author=" +
 							encodeURIComponent(author)
 
 						return `
@@ -475,7 +475,7 @@ permalink: /browse/
 					.join(", ")
 
 				const categoryURL =
-					"{{ '/browse/' | relative_url }}?field=categories&value=" +
+					"{{ '/categories/' | relative_url }}?category=" +
 					encodeURIComponent(book.categories || "")
 
 				const shelfName = String(book.notes || "").trim()
