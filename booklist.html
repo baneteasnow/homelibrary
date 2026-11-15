@@ -14,7 +14,7 @@ title: "Home Library Book List"
 		box-sizing: border-box;
 		width: calc((100% - 10px) / 2);
 		min-height: 44px;
-		margin-bottom: 10px;
+		margin-bottom: 1.5rem;
 		padding: 7px 10px;
 		border: 1px solid #ccc;
 		border-radius: 4px;
@@ -34,7 +34,11 @@ title: "Home Library Book List"
 		outline-offset: 2px;
 	}
 
-	.booklist-with-covers .booklist-entry {
+	#booklist-entries > .booklist-entry:first-child > h4 {
+		margin-top: 0;
+	}
+
+	.booklist-with-covers .booklist-entry-body {
 		display: grid;
 		grid-template-columns: clamp(4.25rem, 22vw, 7rem) minmax(0, 1fr);
 		gap: clamp(.75rem, 3vw, 1.5rem);
@@ -79,14 +83,13 @@ title: "Home Library Book List"
 	@media (max-width: 700px) {
 		.booklist-cover-toggle {
 			width: 100%;
-			margin-bottom: 8px;
 		}
 	}
 </style>
 
-<button class="booklist-cover-toggle" id="booklist-cover-toggle" type="button" aria-controls="booklist-entries" hidden>Hide covers</button>
+<button class="booklist-cover-toggle" id="booklist-cover-toggle" type="button" aria-controls="booklist-entries" hidden>Show covers</button>
 
-<div class="booklist-with-covers" id="booklist-entries">
+<div id="booklist-entries">
 {% for item in site.data.list reversed %}
 {% assign cover_url = item.image | default: '' | strip %}
 {% assign cover_url_key = cover_url | downcase %}
@@ -99,13 +102,6 @@ title: "Home Library Book List"
 	{% endunless %}
 {% endif %}
 <div class="booklist-entry">
-	<div class="booklist-cover-slot">
-		{% if show_cover %}
-		<img class="booklist-cover" src="{{ cover_url | escape }}" alt="{{ item.title | escape }} cover" loading="lazy" decoding="async" onerror="this.hidden = true; this.nextElementSibling.hidden = false">
-		{% endif %}
-		<span class="booklist-cover-placeholder"{% if show_cover %} hidden{% endif %}>No cover</span>
-	</div>
-	<div class="booklist-entry-copy">
 <h4>
 	<a
 		href="{{ site.baseurl }}booklist#{{ item.bookshelf }}"
@@ -114,7 +110,13 @@ title: "Home Library Book List"
 		{{ item.title }}
 	</a>
 </h4>
-
+	<div class="booklist-entry-body">
+	<div class="booklist-cover-slot">
+		{% if show_cover %}
+		<img class="booklist-cover" src="{{ cover_url | escape }}" alt="{{ item.title | escape }} cover" loading="lazy" decoding="async" onerror="this.hidden = true; this.nextElementSibling.hidden = false">
+		{% endif %}
+		<span class="booklist-cover-placeholder"{% if show_cover %} hidden{% endif %}>No cover</span>
+	</div>
 <div style="margin-left: 5%">
 	<div
 		class="decorated"
