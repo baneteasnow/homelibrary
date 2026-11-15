@@ -12,10 +12,10 @@ title: "Home Library Book List"
 <style>
 	.booklist-cover-toggle {
 		box-sizing: border-box;
-		width: calc((100% - 10px) / 2);
-		min-height: 44px;
+		width: 100%;
+		min-height: 34px;
 		margin-bottom: 1.5rem;
-		padding: 7px 10px;
+		padding: 4px 10px;
 		border: 1px solid #ccc;
 		border-radius: 4px;
 		background: #fff;
@@ -82,12 +82,13 @@ title: "Home Library Book List"
 
 	@media (max-width: 700px) {
 		.booklist-cover-toggle {
-			width: 100%;
+			min-height: 44px;
+			padding: 7px 16px;
 		}
 	}
 </style>
 
-<button class="booklist-cover-toggle" id="booklist-cover-toggle" type="button" aria-controls="booklist-entries" hidden>Show covers</button>
+<button class="booklist-cover-toggle" id="booklist-cover-toggle" type="button" aria-controls="booklist-entries" hidden><span class="cover-toggle-label">Show covers</span></button>
 
 <div id="booklist-entries">
 {% for item in site.data.list reversed %}
@@ -311,7 +312,7 @@ title: "Home Library Book List"
 
 	coverToggle.addEventListener("click", () => {
 		const coversVisible = booklistEntries.classList.toggle("booklist-with-covers");
-		coverToggle.textContent = coversVisible ? "Hide covers" : "Show covers";
+		coverToggle.querySelector(".cover-toggle-label").textContent = coversVisible ? "Hide covers" : "Show covers";
 	});
 	coverToggle.hidden = false;
 </script>
