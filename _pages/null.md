@@ -4,27 +4,6 @@ title: notes
 published: true
 ---
 
-- 1501 ok
-- 1568 ok
-- 1587 ok
-- 1688 ok
-- 1689 ok
-- 1735 ok
-- 1861 ok
-- 2013 ok
-- 2052 ok
-- 2229 ok
-- 2486 ok
-- 2493 ok  
-  2553 ok
-
-- status: read
-- notes
-
-  - n/a
-  - a-1, etc
-  - new
-
     ## Reread
 
 - Building a Second Brain
