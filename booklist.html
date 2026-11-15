@@ -12,7 +12,103 @@ title: "Home Library Book List"
 {%- include backtotop.html -%}
 <br />
 
+<style>
+	.booklist-cover-toggle {
+		box-sizing: border-box;
+		width: calc((100% - 10px) / 2);
+		min-height: 44px;
+		margin-bottom: 10px;
+		padding: 7px 10px;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		background: #fff;
+		color: #000;
+		font: inherit;
+		font-size: 16px;
+		cursor: pointer;
+	}
+
+	.booklist-cover-toggle:hover {
+		background: #f2f2f2;
+	}
+
+	.booklist-cover-toggle:focus-visible {
+		outline: 2px solid #666;
+		outline-offset: 2px;
+	}
+
+	.booklist-with-covers .booklist-entry {
+		display: grid;
+		grid-template-columns: clamp(4.25rem, 22vw, 7rem) minmax(0, 1fr);
+		gap: clamp(.75rem, 3vw, 1.5rem);
+		align-items: start;
+	}
+
+	.booklist-cover-slot {
+		min-width: 0;
+	}
+
+	.booklist-cover,
+	.booklist-cover-placeholder {
+		box-sizing: border-box;
+		width: 100%;
+		aspect-ratio: 2 / 3;
+		margin: 0;
+	}
+
+	.booklist-cover {
+		display: block;
+		object-fit: contain;
+	}
+
+	.booklist-cover-placeholder {
+		display: grid;
+		place-items: center;
+		padding: .2rem;
+		border: 1px solid #e5e5e5;
+		background: #f5f5f5;
+		color: #666;
+		font-size: 75%;
+		font-style: italic;
+		text-align: center;
+	}
+
+	.booklist-cover-toggle[hidden],
+	.booklist-cover-slot [hidden],
+	#booklist-entries:not(.booklist-with-covers) .booklist-cover-slot {
+		display: none;
+	}
+
+	@media (max-width: 700px) {
+		.booklist-cover-toggle {
+			width: 100%;
+			margin-bottom: 8px;
+		}
+	}
+</style>
+
+<button class="booklist-cover-toggle" id="booklist-cover-toggle" type="button" aria-controls="booklist-entries" hidden>Hide covers</button>
+
+<div class="booklist-with-covers" id="booklist-entries">
 {% for item in site.data.list reversed %}
+{% assign cover_url = item.image | default: '' | strip %}
+{% assign cover_url_key = cover_url | downcase %}
+{% assign cover_prefix = cover_url_key | slice: 0, 8 %}
+{% assign cover_path = cover_url_key | split: '?' | first | split: '#' | first | remove_first: 'https://' | split: '/' %}
+{% assign show_cover = false %}
+{% if cover_prefix == 'https://' and cover_path.size > 1 %}
+	{% unless cover_url_key contains '/assets/shelves/' %}
+		{% assign show_cover = true %}
+	{% endunless %}
+{% endif %}
+<div class="booklist-entry">
+	<div class="booklist-cover-slot">
+		{% if show_cover %}
+		<img class="booklist-cover" src="{{ cover_url | escape }}" alt="{{ item.title | escape }} cover" loading="lazy" decoding="async" onerror="this.hidden = true; this.nextElementSibling.hidden = false">
+		{% endif %}
+		<span class="booklist-cover-placeholder"{% if show_cover %} hidden{% endif %}>No cover</span>
+	</div>
+	<div class="booklist-entry-copy">
 <h4>
 	<a
 		href="{{ site.baseurl }}booklist#{{ item.bookshelf }}"
@@ -205,7 +301,21 @@ title: "Home Library Book List"
 		</i>
 	</span>
 </div>
+	</div>
+</div>
 {% endfor %}
+</div>
+
+<script>
+	const coverToggle = document.getElementById("booklist-cover-toggle");
+	const booklistEntries = document.getElementById("booklist-entries");
+
+	coverToggle.addEventListener("click", () => {
+		const coversVisible = booklistEntries.classList.toggle("booklist-with-covers");
+		coverToggle.textContent = coversVisible ? "Hide covers" : "Show covers";
+	});
+	coverToggle.hidden = false;
+</script>
 
 <br />
 <br />

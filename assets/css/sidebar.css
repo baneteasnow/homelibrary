@@ -13,7 +13,7 @@
   body::after {
     content: "";
     display: block;
-    height: calc(54px + env(safe-area-inset-bottom, 0px));
+    height: calc(55px + env(safe-area-inset-bottom, 0px));
   }
 
   .hl-sidebar {
@@ -25,7 +25,8 @@
     padding: 5px max(8px, env(safe-area-inset-right, 0px))
       calc(5px + env(safe-area-inset-bottom, 0px))
       max(8px, env(safe-area-inset-left, 0px));
-    background: rgba(255,255,255,.96);
+    background: #fff;
+    border-top: 1px solid #dedede;
     border-radius: 0;
   }
 
