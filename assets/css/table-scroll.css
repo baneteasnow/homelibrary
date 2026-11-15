@@ -2,6 +2,19 @@
 .hl-table-scroll { display: contents; }
 .hl-scroll-indicator { display: none; }
 
+/* Keep the requested columns compact when the table uses automatic layout. */
+@media (min-width: 769px) {
+  #authorTable > thead > tr > th.book-author { width: 13ch; }
+  #selectedCategoryTable > thead > tr > th.book-title { width: 18ch; }
+
+  #authorTable > thead > tr > th.book-read,
+  #selectedCategoryTable > thead > tr > th.book-read,
+  #libraryTable > thead > tr > th.library-year {
+    width: 1%;
+    white-space: nowrap;
+  }
+}
+
 @media (max-width: 768px) {
   /* Prevent the wide table from expanding the document itself. */
   html, body { max-width: 100%; overflow-x: clip; }
@@ -43,20 +56,45 @@
     word-break: normal;
     white-space: normal;
   }
-  .hl-table-scroll > table th:nth-child(1), .hl-table-scroll > table td:nth-child(1) { width: 45px; }
-  .hl-table-scroll > table th:nth-child(2), .hl-table-scroll > table td:nth-child(2) { width: 190px; }
-  .hl-table-scroll > table th:nth-child(3), .hl-table-scroll > table td:nth-child(3) { width: 120px; }
-  .hl-table-scroll > table th:nth-child(4), .hl-table-scroll > table td:nth-child(4) { width: 45px; }
-  .hl-table-scroll > table th:nth-child(5), .hl-table-scroll > table td:nth-child(5) { width: 45px; }
-  .hl-table-scroll > table th:nth-child(6), .hl-table-scroll > table td:nth-child(6) { width: 120px; }
-  .hl-table-scroll > table th:nth-child(7), .hl-table-scroll > table td:nth-child(7) { width: 55px; }
-  .hl-table-scroll > table th:nth-child(8), .hl-table-scroll > table td:nth-child(8) { width: 65px; }
-  .hl-table-scroll > table th:nth-child(9), .hl-table-scroll > table td:nth-child(9) { width: 45px; }
-  .hl-table-scroll > table th:nth-child(10), .hl-table-scroll > table td:nth-child(10) { width: 65px; }
-  .hl-table-scroll > table th:nth-child(11), .hl-table-scroll > table td:nth-child(11) { width: 55px; }
-  .hl-table-scroll > table th:nth-child(12), .hl-table-scroll > table td:nth-child(12) { width: 90px; }
-  .hl-table-scroll > table th:nth-child(13), .hl-table-scroll > table td:nth-child(13) { width: 55px; }
-  .hl-table-scroll > table th:nth-child(14), .hl-table-scroll > table td:nth-child(14) { width: 75px; }
+  #libraryTable > thead > tr > th:nth-child(1) { width: 45px; }
+  #libraryTable > thead > tr > th:nth-child(2) { width: 190px; }
+  #libraryTable > thead > tr > th:nth-child(3) { width: 120px; }
+  #libraryTable > thead > tr > th:nth-child(4) { width: 45px; }
+  #libraryTable > thead > tr > th:nth-child(5) { width: 45px; }
+  #libraryTable > thead > tr > th:nth-child(6) { width: 120px; }
+  #libraryTable > thead > tr > th:nth-child(7) { width: 55px; }
+  #libraryTable > thead > tr > th:nth-child(8) { width: 65px; }
+  #libraryTable > thead > tr > th:nth-child(9) { width: 45px; }
+  #libraryTable > thead > tr > th:nth-child(10) { width: 65px; }
+  #libraryTable > thead > tr > th:nth-child(11) { width: 55px; }
+  #libraryTable > thead > tr > th:nth-child(12) { width: 90px; }
+  #libraryTable > thead > tr > th:nth-child(13) { width: 55px; }
+  #libraryTable > thead > tr > th:nth-child(14) { width: 75px; }
+  .hl-table-scroll > #authorTable {
+    width: 810px !important;
+    min-width: 810px !important;
+  }
+  #authorTable > thead > tr > th:nth-child(1) { width: 60px; }
+  #authorTable > thead > tr > th:nth-child(2) { width: 240px; }
+  #authorTable > thead > tr > th.book-author { width: 110px; }
+  #authorTable > thead > tr > th:nth-child(4) { width: 65px; }
+  #authorTable > thead > tr > th:nth-child(5) { width: 100px; }
+  #authorTable > thead > tr > th.book-read { width: 55px; }
+  #authorTable > thead > tr > th:nth-child(7) { width: 85px; }
+  #authorTable > thead > tr > th:nth-child(8) { width: 95px; }
+  .hl-table-scroll > #selectedCategoryTable {
+    width: 780px !important;
+    min-width: 780px !important;
+  }
+  #selectedCategoryTable > thead > tr > th:nth-child(1) { width: 60px; }
+  #selectedCategoryTable > thead > tr > th.book-title { width: 155px; }
+  #selectedCategoryTable > thead > tr > th:nth-child(3) { width: 165px; }
+  #selectedCategoryTable > thead > tr > th:nth-child(4) { width: 65px; }
+  #selectedCategoryTable > thead > tr > th:nth-child(5) { width: 100px; }
+  #selectedCategoryTable > thead > tr > th.book-read { width: 55px; }
+  #selectedCategoryTable > thead > tr > th:nth-child(7) { width: 85px; }
+  #selectedCategoryTable > thead > tr > th:nth-child(8) { width: 95px; }
+  #libraryTable > thead > tr > th.library-year { width: 44px; }
   .hl-scroll-indicator {
     position: sticky;
     left: 0;

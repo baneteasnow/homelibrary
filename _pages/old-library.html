@@ -87,7 +87,10 @@ published: true
 
 			thead.innerHTML = `
 				<tr>
-					${headers.map((h) => `<th>${h}</th>`).join("")}
+					${headers.map((h) => {
+						const yearClass = h.trim().toLowerCase() === "year" ? ' class="library-year"' : ""
+						return `<th${yearClass}>${h}</th>`
+					}).join("")}
 				</tr>
 			`
 

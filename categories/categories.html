@@ -29,13 +29,6 @@ permalink: /categories/
 		align-items: flex-start;
 	}
 
-	.category-layout.has-selection {
-		display: grid;
-		grid-template-columns: minmax(280px, 0.9fr) minmax(320px, 1.1fr);
-		gap: 34px;
-		align-items: start;
-	}
-
 	.category-name {
 		font-size: 17px;
 	}
@@ -95,46 +88,16 @@ permalink: /categories/
 	}
 
 	#categoriesTable th:last-child,
-	#categoriesTable td:last-child {
+	#categoriesTable .category-row td:last-child {
 		width: 90px;
 	}
 
-	#categoriesTable tbody tr {
+	#categoriesTable .category-row {
 		cursor: pointer;
 	}
 
 	#categoriesTable tbody tr.is-selected {
 		background: #f2f2f2;
-	}
-
-	.category-detail {
-		position: sticky;
-		top: 24px;
-		padding: 20px 22px;
-		border: 1px solid #dedede;
-		border-radius: 6px;
-	}
-
-	.category-detail-title {
-		margin: 0 0 14px;
-		font-size: 20px;
-		font-weight: 600;
-	}
-
-	.category-detail-scope {
-		margin: 0 0 18px;
-		font-size: 16px;
-		line-height: 1.6;
-	}
-
-	.category-detail-count {
-		margin: 0 0 14px;
-		font-size: 14px;
-		font-style: italic;
-	}
-
-	.category-detail-link {
-		font-size: 15px;
 	}
 
 	.na-category {
@@ -148,53 +111,46 @@ permalink: /categories/
 		color: inherit;
 	}
 
-	.mobile-category-detail {
+	#categoriesTable .category-detail[hidden] {
 		display: none;
 	}
 
+	#categoriesTable .category-detail td {
+		width: auto;
+		padding: 18px 14px;
+		background: #fafafa;
+		cursor: auto;
+	}
+
+	.category-detail-title {
+		margin: 0 0 10px;
+		font-size: 18px;
+		font-weight: 600;
+	}
+
+	.category-detail-scope {
+		margin: 0 0 14px;
+		font-size: 16px;
+		line-height: 1.6;
+	}
+
+	.category-detail-count {
+		margin: 0 0 12px;
+		font-size: 14px;
+		font-style: italic;
+	}
+
+	.category-detail-link {
+		font-size: 15px;
+	}
+
 	@media (max-width: 760px) {
-		.category-layout,
-		.category-layout.has-selection {
+		.category-layout {
 			display: block;
 		}
 
 		.category-list {
 			max-width: none;
-		}
-
-		.category-detail {
-			display: none !important;
-		}
-
-		.mobile-category-detail {
-			display: table-row;
-		}
-
-		.mobile-category-detail td {
-			padding: 18px 14px;
-			background: #fafafa;
-		}
-
-		.mobile-detail-title {
-			margin: 0 0 10px;
-			font-size: 18px;
-			font-weight: 600;
-		}
-
-		.mobile-detail-scope {
-			margin: 0 0 14px;
-			font-size: 16px;
-			line-height: 1.6;
-		}
-
-		.mobile-detail-count {
-			margin: 0 0 12px;
-			font-size: 14px;
-			font-style: italic;
-		}
-
-		.mobile-detail-link {
-			font-size: 15px;
 		}
 	}
 </style>
@@ -237,35 +193,6 @@ permalink: /categories/
 			(<span id="naCategoryCount"></span>)
 		</div>
 	</div>
-
-	<aside
-		id="categoryDetail"
-		class="category-detail"
-		style="display: none"
-	>
-		<h2
-			id="categoryDetailTitle"
-			class="category-detail-title"
-		></h2>
-
-		<p
-			id="categoryDetailScope"
-			class="category-detail-scope"
-		></p>
-
-		<p
-			id="categoryDetailCount"
-			class="category-detail-count"
-		></p>
-
-		<a
-			id="categoryDetailLink"
-			class="category-detail-link"
-			href="#"
-		>
-			browse books →
-		</a>
-	</aside>
 </div>
 
 <section id="categoryBooksView" style="display:none">
@@ -275,7 +202,7 @@ permalink: /categories/
   <script src="{{ '/assets/js/table-scroll.js' | relative_url }}" defer></script>
   <div class="hl-table-scroll" data-hl-table-scroll>
     <table class="zebra" id="selectedCategoryTable" style="width:100%">
-      <thead><tr><th>#</th><th>name of the book</th><th>author</th><th>year</th><th>category</th><th>read?</th><th>shelf</th><th>location</th></tr></thead>
+      <thead><tr><th>#</th><th class="book-title">name of the book</th><th>author</th><th>year</th><th>category</th><th class="book-read">read?</th><th>shelf</th><th>location</th></tr></thead>
       <tbody></tbody>
     </table>
     <div class="hl-scroll-indicator" aria-hidden="true"><span class="hl-scroll-thumb"></span></div>
@@ -292,7 +219,7 @@ permalink: /categories/
 </script>
 
 <script>
-	let selectedCategory = null
+	let selectedRow = null
 	const categoryLayout = document.getElementById("categoryLayout")
 
 	const booksDataElement = document.getElementById("booksData")
@@ -309,15 +236,6 @@ permalink: /categories/
 
 	const naCategoryCount = document.getElementById("naCategoryCount")
 
-	const categoryDetailTitle = document.getElementById("categoryDetailTitle")
-
-	const categoryDetailScope = document.getElementById("categoryDetailScope")
-
-	const categoryDetailCount = document.getElementById("categoryDetailCount")
-
-	const categoryDetailLink = document.getElementById("categoryDetailLink")
-
-	const categoryDetail = document.getElementById("categoryDetail")
 
 	const categoryDetails = {
 		PsychologyMentalLife: {
@@ -488,39 +406,6 @@ permalink: /categories/
 		return "count-level-7"
 	}
 
-	function showCategory(categoryName) {
-		const category = categories.find((item) => item.name === categoryName)
-
-		if (!category) {
-			return
-		}
-
-		const details = categoryDetails[category.name] || {
-			label: category.name,
-			scope: "",
-		}
-		categoryLayout.classList.add("has-selection")
-		categoryDetail.style.display = "block"
-
-		categoryDetailTitle.textContent = details.label
-
-		categoryDetailScope.textContent = details.scope
-
-		categoryDetailCount.textContent =
-			category.count === 1 ? "1 book" : `${category.count} books`
-
-		categoryDetailLink.href =
-			"{{ '/categories/' | relative_url }}?category=" +
-			encodeURIComponent(category.name)
-
-		document.querySelectorAll("#categoriesTable tbody tr").forEach((row) => {
-			row.classList.toggle(
-				"is-selected",
-				row.dataset.category === category.name,
-			)
-		})
-	}
-
 	categoryTotal.textContent = categories.length
 	categoryListInfo.style.display = "block"
 
@@ -541,10 +426,7 @@ permalink: /categories/
 				category.count === 1 ? "1 book" : `${category.count} books`
 
 			return `
-			<tr
-				class="category-row"
-				data-category="${escapeHTML(category.name)}"
-			>
+			<tr class="category-row">
 				<td>
 					<span class="category-name">
 						${escapeHTML(details.label)}
@@ -564,25 +446,24 @@ permalink: /categories/
 			</tr>
 
 			<tr
-				class="mobile-category-detail"
-				data-detail-for="${escapeHTML(category.name)}"
-				style="display: none;"
+				class="category-detail"
+				hidden
 			>
 				<td colspan="2">
-					<h3 class="mobile-detail-title">
+					<h3 class="category-detail-title">
 						${escapeHTML(details.label)}
 					</h3>
 
-					<p class="mobile-detail-scope">
+					<p class="category-detail-scope">
 						${escapeHTML(details.scope)}
 					</p>
 
-					<p class="mobile-detail-count">
+					<p class="category-detail-count">
 						${bookLabel}
 					</p>
 
 					<a
-						class="mobile-detail-link"
+						class="category-detail-link"
 						href="${browseURL}"
 					>
 						browse books →
@@ -600,42 +481,17 @@ permalink: /categories/
 			return
 		}
 
-		const categoryName = row.dataset.category
-
-		if (window.matchMedia("(max-width: 760px)").matches) {
-			const isSameCategory = selectedCategory === categoryName
-
-			document
-				.querySelectorAll(".mobile-category-detail")
-				.forEach((detailRow) => {
-					detailRow.style.display = "none"
-				})
-
-			document.querySelectorAll(".category-row").forEach((categoryRow) => {
-				categoryRow.classList.remove("is-selected")
-			})
-
-			if (isSameCategory) {
-				selectedCategory = null
-				return
-			}
-
-			const detailRow = document.querySelector(
-				`[data-detail-for="${CSS.escape(categoryName)}"]`,
-			)
-
-			if (detailRow) {
-				detailRow.style.display = "table-row"
-			}
-
-			row.classList.add("is-selected")
-			selectedCategory = categoryName
-
-			return
+		const wasSelected = row === selectedRow
+		if (selectedRow) {
+			selectedRow.classList.remove("is-selected")
+			selectedRow.nextElementSibling.hidden = true
 		}
 
-		selectedCategory = categoryName
-		showCategory(categoryName)
+		selectedRow = wasSelected ? null : row
+		if (selectedRow) {
+			selectedRow.classList.add("is-selected")
+			selectedRow.nextElementSibling.hidden = false
+		}
 	})
 
 	if (naCount > 0) {
