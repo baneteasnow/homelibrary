@@ -2,7 +2,7 @@
 .hl-sidebar { position:fixed; right:clamp(8px,2.6vw,38px); top:72%; transform:translateY(-50%); z-index:1000; width:max-content; max-width:min(235px,calc(100vw - 18px)); padding:14px 15px 14px 23px; background:rgba(255,255,255,.94); -webkit-backdrop-filter:blur(8px); backdrop-filter:blur(8px); border-radius:3px; }
 .hl-sidebar nav { display:flex; flex-direction:column; gap:13px; }
 .hl-sidebar a, .hl-sidebar .hl-sidebar__cover-toggle { position:relative; display:block; color:#424242; text-decoration:none; font-family:Georgia,'Times New Roman',serif; font-size:15px; font-style:italic; font-weight:normal; line-height:1.25; white-space:nowrap; }
-.hl-sidebar .hl-sidebar__cover-toggle { border: 0; padding: 0; background: transparent; text-align: left; cursor: pointer; }
+.hl-sidebar .hl-sidebar__cover-toggle { border: 0; padding: 0; background: transparent; text-align: left; cursor: pointer; text-decoration: underline; text-underline-offset: .18em; }
 .hl-sidebar a:hover, .hl-sidebar .hl-sidebar__cover-toggle:hover { color:#000; }
 .hl-sidebar a:focus-visible, .hl-sidebar .hl-sidebar__cover-toggle:focus-visible { outline:2px solid #777; outline-offset:4px; }
 .hl-sidebar a[aria-current="page"] { color:#252525; }
