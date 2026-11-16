@@ -5,7 +5,7 @@ published: true
 ---
 {%- include backtotop.html -%}
 <br />
-<a href="https://homelibrary.next52books.com/shelf-images/">shelf-images</a>
+<i><a href="https://homelibrary.next52books.com/shelf-images/">shelf-images</a></i>
 
 <br/>
 {%-include g.html-%}
