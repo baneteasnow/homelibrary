@@ -1,11 +1,15 @@
 <link rel="stylesheet" href="{{ '/assets/css/sidebar.css' | relative_url }}">
 <aside class="hl-sidebar" aria-label="Homelibrary navigation">
   <nav aria-label="Library pages">
-    <a class="hl-sidebar__top" href="#">Back to top ↑</a>
+    <a class="hl-sidebar__top hl-sidebar__desktop-only" href="#">↑ back to top</a>
     {% assign current_path = page.url | replace: '/index.html', '/' %}
-    <a href="{{ '/browse/' | relative_url }}"{% if current_path == '/browse/' %} aria-current="page"{% endif %}>Browse</a>
+    <a href="{{ '/browse/' | relative_url }}"{% if current_path == '/browse/' %} aria-current="page"{% endif %}>browse</a>
     <a href="{{ '/add-a-photo.html' | relative_url }}"{% if current_path == '/add-a-photo.html' %} aria-current="page"{% endif %}>add a photo!</a>
     <a href="{{ '/more/' | relative_url }}"{% if current_path == '/more/' %} aria-current="page"{% endif %}>more</a>
     <a class="hl-sidebar__external" href="https://www.next52books.com/">n52b</a>
+    {% if current_path == '/booklist.html' or current_path == '/booklist' or current_path == '/booklist/' %}
+    <button class="hl-sidebar__cover-toggle" id="sidebar-cover-toggle" type="button" aria-controls="booklist-entries" hidden>show covers</button>
+    {% endif %}
+    <a class="hl-sidebar__top hl-sidebar__mobile-only" href="#" aria-label="back to top">↑top</a>
   </nav>
 </aside>

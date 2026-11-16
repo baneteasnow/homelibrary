@@ -308,13 +308,24 @@ title: "Home Library Book List"
 
 <script>
 	const coverToggle = document.getElementById("booklist-cover-toggle");
+	const sidebarCoverToggle = document.getElementById("sidebar-cover-toggle");
 	const booklistEntries = document.getElementById("booklist-entries");
 
-	coverToggle.addEventListener("click", () => {
+	function toggleCovers() {
 		const coversVisible = booklistEntries.classList.toggle("booklist-with-covers");
 		coverToggle.querySelector(".cover-toggle-label").textContent = coversVisible ? "Hide covers" : "Show covers";
-	});
+		if (sidebarCoverToggle) {
+			sidebarCoverToggle.textContent = coversVisible ? "hide covers" : "show covers";
+		}
+	}
+
+	coverToggle.addEventListener("click", toggleCovers);
 	coverToggle.hidden = false;
+
+	if (sidebarCoverToggle) {
+		sidebarCoverToggle.addEventListener("click", toggleCovers);
+		sidebarCoverToggle.hidden = false;
+	}
 </script>
 
 <br />
