@@ -1,0 +1,51 @@
+---
+layout: page-6
+title: "shelf images"
+permalink: /shelf-images/
+published: true
+---
+
+{%- include backtotop.html -%}
+
+<style>
+  .hl-shelf-gallery { margin-top: 1.5rem; }
+  .hl-shelf-row {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: clamp(.35rem, 2vw, 1rem);
+    margin-bottom: 1.25rem;
+  }
+  .hl-shelf-photo {
+    display: block;
+    min-width: 0;
+    aspect-ratio: var(--shelf-ratio);
+    background: #f7f7f7;
+  }
+  .hl-shelf-photo:focus-visible {
+    outline: 2px solid #555;
+    outline-offset: 2px;
+  }
+  .hl-shelf-gallery .hl-shelf-photo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    object-fit: contain;
+  }
+</style>
+
+{% assign shelf_rows = "0.403571|1-A,1-B,1-C,1-D;0.400000|2-A,2-B,2-C,2-D;0.307143|3-A,3-B,3-C,3-D;0.307143|4-A,4-B,4-C,4-D;0.403571|5-A,5-B,5-C,5-D;0.307143|6-A,6-B,6-C,6-D;0.403571|7-A,7-B,7-C,7-D;0.307143|8-A,8-B,8-C,8-D;0.307143|9-A,9-B,9-C,9-D;0.403571|10-A,10-B,10-C,10-D;0.307143|11-A,11-B,11-C,11-D;0.403571|12-A,12-D" | split: ";" %}
+<div class="hl-shelf-gallery" aria-label="Shelf photos">
+  {% for row in shelf_rows %}
+    {% assign row_fields = row | split: "|" %}
+    {% assign shelf_ids = row_fields[1] | split: "," %}
+    <div class="hl-shelf-row" style="--shelf-ratio: {{ row_fields[0] }}">
+      {% for shelf_id in shelf_ids %}
+        {% assign photo_url = '/assets/shelves/' | append: shelf_id | append: '.png' | relative_url %}
+        <a class="hl-shelf-photo" href="{{ photo_url }}">
+          <img src="{{ photo_url }}" alt="Shelf {{ shelf_id }}" loading="lazy" decoding="async">
+        </a>
+      {% endfor %}
+    </div>
+  {% endfor %}
+</div>
