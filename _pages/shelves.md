@@ -4,6 +4,9 @@ title: bookshelves
 published: true
 ---
 {%- include backtotop.html -%}
+<br />
+<a href="https://homelibrary.next52books.com/shelf-images/">shelf-images</a>
+
 <br/>
 {%-include g.html-%}
 
