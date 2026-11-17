@@ -41,10 +41,7 @@ permalink: /authors/
 <div id="authorPage">
 	<p id="loadingMessage">Loading...</p>
 
-	<h2
-		id="authorTitle"
-		style="display: none"
-	></h2>
+	<a href="{{ '/author-list/' | relative_url }}"><h4 id="authorTitle" style="display: none"></h4></a>
 
 	<p
 		id="bookCount"
@@ -172,11 +169,7 @@ permalink: /authors/
 	loadingMessage.style.display = "none"
 
 	if (!selectedAuthor) {
-		authorTitle.textContent = "Author not selected"
-		authorTitle.style.display = "block"
-
-		noResults.textContent = "Please select an author from the book list."
-		noResults.style.display = "block"
+		window.location.replace("{{ '/author-list/' | relative_url }}")
 	} else {
 		const matchingBooks = books.filter((book) => {
 			const authors = getAuthors(book.author)
