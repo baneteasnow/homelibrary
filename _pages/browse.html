@@ -182,8 +182,7 @@ permalink: /browse/
 		<option value="notes">shelf</option>
 		<option value="location">location</option>
 		<option value="shelf-photo">shelf photo</option>
-		<option value="english">english</option>
-		<option value="turkish">turkish</option>
+		<option value="language">language</option>
 	</select>
 
 	<select
@@ -354,9 +353,6 @@ permalink: /browse/
 	}
 
 	const languageValues = { english: "English", turkish: "Turkce" }
-	function isLanguage(field) {
-		return Object.prototype.hasOwnProperty.call(languageValues, field)
-	}
 	function coverURL(book) {
 		const raw = String(book.image ?? "").trim()
 		if (!raw) return ""
@@ -371,6 +367,9 @@ permalink: /browse/
 	}
 
 	function getFieldValues(book, field) {
+		if (field === "language") {
+			return Object.keys(languageValues).filter(key => normalize(languageValues[key]) === normalize(book.lang))
+		}
 		if (field === "author") {
 			return getAuthors(book.author)
 		}
@@ -437,7 +436,7 @@ permalink: /browse/
 
 	function populateValueSelect(field, selectedValue = "") {
 		const values =
-			field === "shelf-photo" ? shelfPhotos : getUniqueValues(field)
+			field === "shelf-photo" ? shelfPhotos : field === "language" ? Object.keys(languageValues) : getUniqueValues(field)
 
 		valueSelect.innerHTML = `
 			<option value="">
@@ -489,7 +488,7 @@ permalink: /browse/
 	function hasActiveBookFilter() {
 		return Boolean(
 			fieldSelect.value &&
-			(valueSelect.value || isLanguage(fieldSelect.value)) &&
+			valueSelect.value &&
 			fieldSelect.value !== "shelf-photo",
 		)
 	}
@@ -706,14 +705,6 @@ permalink: /browse/
 			return
 		}
 
-		if (isLanguage(field)) {
-			valueSelect.innerHTML = '<option value="">—</option>'
-			valueSelect.disabled = true
-			selectedBooks = findMatchingBooks("lang", languageValues[field])
-			updateURL(field, languageValues[field])
-			renderTable()
-			return
-		}
 		populateValueSelect(field)
 
 		browseMessage.textContent = `Select a ${getFieldLabel(field)}.`
@@ -778,8 +769,10 @@ permalink: /browse/
 
 	const params = new URLSearchParams(window.location.search)
 
-	const initialField = params.get("field") || ""
-	const initialValue = params.get("value") || ""
+	const oldField = params.get("field") || ""
+	const legacyLanguage = Object.prototype.hasOwnProperty.call(languageValues, oldField)
+	const initialField = legacyLanguage ? "language" : oldField
+	const initialValue = legacyLanguage ? oldField : (params.get("value") || "")
 
 	const allowedFields = [
 		"author",
@@ -787,16 +780,12 @@ permalink: /browse/
 		"notes",
 		"location",
 		"shelf-photo",
-		"english",
-		"turkish",
+		"language",
 	]
 
 	if (allowedFields.includes(initialField)) {
 		fieldSelect.value = initialField
 
-		if (isLanguage(initialField)) {
-			fieldSelect.dispatchEvent(new Event("change"))
-		} else {
 		populateValueSelect(initialField, initialValue)
 
 		if (initialValue && valueSelect.value === initialValue) {
@@ -809,7 +798,6 @@ permalink: /browse/
 
 				renderTable()
 			}
-		}
 		}
 	}
 </script>
