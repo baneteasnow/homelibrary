@@ -146,6 +146,32 @@ permalink: /browse/
 			margin-bottom: 8px;
 		}
 	}
+
+	@media (min-width: 769px) {
+		.hl-table-scroll.browse-results-scroll { display: block !important; }
+		.hl-table-scroll.browse-results-scroll > #browseTable {
+			width: 100% !important;
+			min-width: 0 !important;
+			max-width: 100% !important;
+			table-layout: fixed !important;
+			box-sizing: border-box;
+		}
+		#browseTable th, #browseTable td {
+			box-sizing: border-box;
+			white-space: normal !important;
+			overflow-wrap: anywhere !important;
+			padding: 4px !important;
+		}
+		#browseTable th:nth-child(1) { width: 6%; }
+		#browseTable th:nth-child(2) { width: 24%; }
+		#browseTable th:nth-child(3) { width: 15%; }
+		#browseTable th:nth-child(4) { width: 7%; }
+		#browseTable th:nth-child(5) { width: 17%; }
+		#browseTable th:nth-child(6) { width: 7%; }
+		#browseTable th:nth-child(7) { width: 7%; }
+		#browseTable th:nth-child(8) { width: 9%; }
+		#browseTable th.browse-cover, #browseTable td.browse-cover { width: 8% !important; min-width: 0 !important; }
+	}
 </style>
 
 <div class="browse-controls">
