@@ -103,6 +103,29 @@ permalink: /browse/
 		height: auto;
 	}
 
+	#browseTable th.browse-cover, #browseTable td.browse-cover {
+		width: 48px !important;
+		min-width: 48px !important;
+		text-align: center;
+		vertical-align: middle;
+		padding: 3px !important;
+	}
+	#browseTable .browse-cover img {
+		display: block;
+		width: auto;
+		height: auto;
+		max-width: 28px;
+		max-height: 40px;
+		margin: 0 auto;
+		object-fit: contain;
+	}
+	@media (max-width: 768px) {
+		.hl-table-scroll > #browseTable {
+			width: 1120px !important;
+			min-width: 1120px !important;
+		}
+	}
+
 	@media (max-width: 700px) {
 		.browse-controls {
 			display: block;
@@ -125,6 +148,8 @@ permalink: /browse/
 		<option value="notes">shelf</option>
 		<option value="location">location</option>
 		<option value="shelf-photo">shelf photo</option>
+		<option value="english">english</option>
+		<option value="turkish">turkish</option>
 	</select>
 
 	<select
@@ -171,6 +196,7 @@ permalink: /browse/
 			<th style="text-align: left">read?</th>
 			<th style="text-align: left">shelf</th>
 			<th style="text-align: left">location</th>
+			<th class="browse-cover">cover</th>
 		</tr>
 	</thead>
 
@@ -293,6 +319,23 @@ permalink: /browse/
 			.filter(Boolean)
 	}
 
+	const languageValues = { english: "English", turkish: "Turkce" }
+	function isLanguage(field) {
+		return Object.prototype.hasOwnProperty.call(languageValues, field)
+	}
+	function coverURL(book) {
+		const raw = String(book.image ?? "").trim()
+		if (!raw) return ""
+		try {
+			const url = new URL(raw, "https://www.next52books.com/")
+			if (url.protocol !== "https:" && url.protocol !== "http:") return ""
+			if (!/^(www\.)?next52books\.com$/i.test(url.hostname)) return ""
+			if (!/\.(jpe?g|png|webp|gif|avif)$/i.test(url.pathname)) return ""
+			if (/\/shelves\//i.test(url.pathname)) return ""
+			return url.href
+		} catch { return "" }
+	}
+
 	function getFieldValues(book, field) {
 		if (field === "author") {
 			return getAuthors(book.author)
@@ -412,7 +455,7 @@ permalink: /browse/
 	function hasActiveBookFilter() {
 		return Boolean(
 			fieldSelect.value &&
-			valueSelect.value &&
+			(valueSelect.value || isLanguage(fieldSelect.value)) &&
 			fieldSelect.value !== "shelf-photo",
 		)
 	}
@@ -498,6 +541,8 @@ permalink: /browse/
 						`
 						: escapeHTML(shelfName)
 
+				const cover = coverURL(book)
+				const coverContent = cover ? `<a href="${escapeHTML(cover)}" target="_blank" rel="noopener noreferrer"><img src="${escapeHTML(cover)}" alt="${escapeHTML(book.title)} cover" loading="lazy" decoding="async" onerror="this.parentElement.remove()"></a>` : ""
 				return `
 					<tr>
 						<td>
@@ -535,6 +580,7 @@ permalink: /browse/
 						<td>
 							${escapeHTML(book.location)}
 						</td>
+						<td class="browse-cover">${coverContent}</td>
 					</tr>
 				`
 			})
@@ -626,6 +672,14 @@ permalink: /browse/
 			return
 		}
 
+		if (isLanguage(field)) {
+			valueSelect.innerHTML = '<option value="">—</option>'
+			valueSelect.disabled = true
+			selectedBooks = findMatchingBooks("lang", languageValues[field])
+			updateURL(field, languageValues[field])
+			renderTable()
+			return
+		}
 		populateValueSelect(field)
 
 		browseMessage.textContent = `Select a ${getFieldLabel(field)}.`
@@ -699,11 +753,16 @@ permalink: /browse/
 		"notes",
 		"location",
 		"shelf-photo",
+		"english",
+		"turkish",
 	]
 
 	if (allowedFields.includes(initialField)) {
 		fieldSelect.value = initialField
 
+		if (isLanguage(initialField)) {
+			fieldSelect.dispatchEvent(new Event("change"))
+		} else {
 		populateValueSelect(initialField, initialValue)
 
 		if (initialValue && valueSelect.value === initialValue) {
@@ -716,6 +775,7 @@ permalink: /browse/
 
 				renderTable()
 			}
+		}
 		}
 	}
 </script>
