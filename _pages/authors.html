@@ -12,6 +12,32 @@ permalink: /authors/
 
 <br />
 
+<style>
+	#authorTable th.browse-cover, #authorTable td.browse-cover {
+		width: 48px !important;
+		min-width: 48px !important;
+		text-align: center;
+		vertical-align: middle;
+		padding: 3px !important;
+	}
+	#authorTable .browse-cover img {
+		display: block;
+		width: auto;
+		height: auto;
+		max-width: 28px;
+		max-height: 40px;
+		margin: 0 auto;
+		object-fit: contain;
+	}
+	@media (max-width: 768px) {
+		.hl-table-scroll > #authorTable {
+			width: 1120px !important;
+			min-width: 1120px !important;
+		}
+	}
+
+</style>
+
 <div id="authorPage">
 	<p id="loadingMessage">Loading...</p>
 
@@ -40,7 +66,7 @@ permalink: /authors/
 				<th style="text-align: left">category</th>
 				<th class="book-read" style="text-align: left">read?</th>
 				<th style="text-align: left">shelf</th>
-				<th style="text-align: left">location</th>
+				<th style="text-align: left">location</th><th class="browse-cover">cover</th>
 			</tr>
 		</thead>
 
@@ -77,6 +103,23 @@ permalink: /authors/
 	const authorTable = document.getElementById("authorTable")
 	const tableBody = authorTable.querySelector("tbody")
 	const noResults = document.getElementById("noResults")
+
+	function coverURL(book) {
+		const raw = String(book.image ?? "").trim()
+		if (!raw) return ""
+		try {
+			const url = new URL(raw, "https://www.next52books.com/")
+			if (url.protocol !== "https:" && url.protocol !== "http:") return ""
+			if (!/^(www\.)?next52books\.com$/i.test(url.hostname)) return ""
+			if (!/\.(jpe?g|png|webp|gif|avif)$/i.test(url.pathname)) return ""
+			if (/\/shelves\//i.test(url.pathname)) return ""
+			return url.href
+		} catch { return "" }
+	}
+	function renderCover(book) {
+		const cover = coverURL(book)
+		return cover ? `<a href="${escapeHTML(cover)}" target="_blank" rel="noopener noreferrer"><img src="${escapeHTML(cover)}" alt="${escapeHTML(book.title)} cover" loading="lazy" decoding="async" onerror="this.parentElement.remove()"></a>` : ""
+	}
 
 	function escapeHTML(value) {
 		return String(value || "")
@@ -186,6 +229,7 @@ permalink: /authors/
 							<td>${escapeHTML(book.notes)}</td>
 
 							<td>${escapeHTML(book.location)}</td>
+        <td class="browse-cover">${renderCover(book)}</td>
 						</tr>
 					`
 				})

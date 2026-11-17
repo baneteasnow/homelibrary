@@ -153,6 +153,29 @@ permalink: /categories/
 			max-width: none;
 		}
 	}
+	#selectedCategoryTable th.browse-cover, #selectedCategoryTable td.browse-cover {
+		width: 48px !important;
+		min-width: 48px !important;
+		text-align: center;
+		vertical-align: middle;
+		padding: 3px !important;
+	}
+	#selectedCategoryTable .browse-cover img {
+		display: block;
+		width: auto;
+		height: auto;
+		max-width: 28px;
+		max-height: 40px;
+		margin: 0 auto;
+		object-fit: contain;
+	}
+	@media (max-width: 768px) {
+		.hl-table-scroll > #selectedCategoryTable {
+			width: 1120px !important;
+			min-width: 1120px !important;
+		}
+	}
+
 </style>
 
 <div
@@ -202,7 +225,7 @@ permalink: /categories/
   <script src="{{ '/assets/js/table-scroll.js' | relative_url }}" defer></script>
   <div class="hl-table-scroll" data-hl-table-scroll>
     <table class="zebra" id="selectedCategoryTable" style="width:100%">
-      <thead><tr><th>#</th><th class="book-title">name of the book</th><th>author</th><th>year</th><th>category</th><th class="book-read">read?</th><th>shelf</th><th>location</th></tr></thead>
+      <thead><tr><th>#</th><th class="book-title">name of the book</th><th>author</th><th>year</th><th>category</th><th class="book-read">read?</th><th>shelf</th><th>location</th><th class="browse-cover">cover</th></tr></thead>
       <tbody></tbody>
     </table>
     <div class="hl-scroll-indicator" aria-hidden="true"><span class="hl-scroll-thumb"></span></div>
@@ -327,6 +350,23 @@ permalink: /categories/
 			scope:
 				"Everyday life, simple living, home, food, coffee, hobbies, personal style, routines, practical pleasures and everyday comforts.",
 		},
+	}
+
+	function coverURL(book) {
+		const raw = String(book.image ?? "").trim()
+		if (!raw) return ""
+		try {
+			const url = new URL(raw, "https://www.next52books.com/")
+			if (url.protocol !== "https:" && url.protocol !== "http:") return ""
+			if (!/^(www\.)?next52books\.com$/i.test(url.hostname)) return ""
+			if (!/\.(jpe?g|png|webp|gif|avif)$/i.test(url.pathname)) return ""
+			if (/\/shelves\//i.test(url.pathname)) return ""
+			return url.href
+		} catch { return "" }
+	}
+	function renderCover(book) {
+		const cover = coverURL(book)
+		return cover ? `<a href="${escapeHTML(cover)}" target="_blank" rel="noopener noreferrer"><img src="${escapeHTML(cover)}" alt="${escapeHTML(book.title)} cover" loading="lazy" decoding="async" onerror="this.parentElement.remove()"></a>` : ""
 	}
 
 	function escapeHTML(value) {
@@ -524,6 +564,7 @@ permalink: /categories/
         <td>${book.status && book.status !== "UnRead" ? "yes" : "no"}</td>
         <td>${escapeHTML(book.notes)}</td>
         <td>${escapeHTML(book.location)}</td>
+        <td class="browse-cover">${renderCover(book)}</td>
       </tr>`
     }).join("")
   }
