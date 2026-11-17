@@ -77,6 +77,14 @@ permalink: /browse/
 		margin: 0 0 12px;
 	}
 
+	.hl-table-scroll.browse-results-scroll {
+		width: 100%;
+		max-width: 100% !important;
+		min-width: 0 !important;
+		box-sizing: border-box;
+		overflow-x: auto;
+	}
+
 	#browseTable {
 		width: 100%;
 		border-collapse: collapse;
@@ -180,7 +188,7 @@ permalink: /browse/
 	style="display: none"
 ></p>
 
-<div class="hl-table-scroll" data-hl-table-scroll>
+<div class="hl-table-scroll browse-results-scroll" data-hl-table-scroll>
 <table
 	id="browseTable"
 	class="zebra"
