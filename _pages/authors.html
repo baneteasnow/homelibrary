@@ -398,7 +398,7 @@ permalink: /authors/
 			bookCount.style.display = "block"
 			authorTable.style.display = "table"
 
-			tableBody.innerHTML = matchingBooks
+			tableBody.innerHTML = matchingBooks.slice().reverse()
 				.map((book) => {
 					const bookUrl =
 						"{{ '/booklist' | relative_url }}#" +
