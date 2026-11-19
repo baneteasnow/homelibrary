@@ -1,7 +1,7 @@
 ---
 layout: page-6
 published: true
-title: "author"
+title: "authors"
 permalink: /authors/
 ---
 <link rel="stylesheet" href="{{ '/assets/css/table-scroll.css' | relative_url }}">
@@ -36,12 +36,124 @@ permalink: /authors/
 		}
 	}
 
+
+	.author-list-info {
+		margin-bottom: 16px;
+		font-size: 17px;
+	}
+
+	.author-list-info p {
+		margin: 0 0 6px;
+	}
+
+	.author-name {
+		font-size: 17px;
+	}
+
+	.author-highlight {
+		background-color: #fff8cc;
+		padding: 2px 6px;
+		border-radius: 4px;
+		font-weight: 600;
+	}
+
+	.author-count {
+		display: inline-flex;
+		align-items: center;
+		gap: 7px;
+		white-space: nowrap;
+		font-size: 17px;
+	}
+
+	.author-count-dot {
+		display: inline-block;
+		width: 10px;
+		height: 10px;
+		flex: 0 0 10px;
+		border-radius: 50%;
+	}
+
+	.count-1 {
+		background-color: #cfcfcf;
+	}
+
+	.count-2-3 {
+		background-color: #7da7d9;
+	}
+
+	.count-4-6 {
+		background-color: #79a879;
+	}
+
+	.count-7-10 {
+		background-color: #d9bf61;
+	}
+
+	.count-11-15 {
+		background-color: #d99a5f;
+	}
+
+	.count-16-plus {
+		background-color: #c96f6f;
+	}
+
+	#authorsTable {
+		width: 100%;
+		border-collapse: collapse;
+	}
+
+	#authorsTable th,
+	#authorsTable td {
+		font-size: 17px;
+	}
+
+	#authorsTable th:last-child,
+	#authorsTable td:last-child {
+		width: 90px;
+	}
+
 </style>
+
+<section id="authorListView" hidden>
+<div
+	id="authorListInfo"
+	class="author-list-info"
+	style="display: none"
+>
+	<p>
+		<strong><span id="authorTotal"></span> authors</strong>
+	</p>
+
+	<p>
+		<a href="{{ '/frequent-authors/' | relative_url }}">
+			authors with more than 5 books
+		</a>
+	</p>
+</div>
+
+<div class="hl-table-scroll" data-hl-table-scroll>
+<table
+	id="authorsTable"
+	class="zebra"
+>
+	<thead>
+		<tr>
+			<th style="text-align: left">author</th>
+			<th style="text-align: left">books</th>
+		</tr>
+	</thead>
+
+	<tbody></tbody>
+</table>
+  <div class="hl-scroll-indicator" aria-hidden="true"><span class="hl-scroll-thumb"></span></div>
+</div>
+
+</section>
 
 <div id="authorPage">
 	<p id="loadingMessage">Loading...</p>
 
-	<a href="{{ '/author-list/' | relative_url }}"><h4 id="authorTitle" style="display: none"></h4></a>
+	<a href="{{ '/authors/' | relative_url }}"><h4 id="authorTitle" style="display: none"></h4></a>
 
 	<p
 		id="bookCount"
@@ -169,7 +281,102 @@ permalink: /authors/
 	loadingMessage.style.display = "none"
 
 	if (!selectedAuthor) {
-		window.location.replace("{{ '/author-list/' | relative_url }}")
+		document.getElementById("authorPage").hidden = true
+		document.getElementById("authorListView").hidden = false
+
+
+	const listTableBody = document.querySelector("#authorsTable tbody")
+	const authorListInfo = document.getElementById("authorListInfo")
+	const authorTotal = document.getElementById("authorTotal")
+
+
+
+	function getCountClass(count) {
+		if (count === 1) {
+			return "count-1"
+		}
+
+		if (count <= 3) {
+			return "count-2-3"
+		}
+
+		if (count <= 6) {
+			return "count-4-6"
+		}
+
+		if (count <= 10) {
+			return "count-7-10"
+		}
+
+		if (count <= 15) {
+			return "count-11-15"
+		}
+
+		return "count-16-plus"
+	}
+
+	const authorCounts = new Map()
+
+	books.forEach((book) => {
+		const authors = [...new Set(getAuthors(book.author))]
+
+		authors.forEach((author) => {
+			authorCounts.set(author, (authorCounts.get(author) || 0) + 1)
+		})
+	})
+
+	const authors = Array.from(authorCounts, ([name, count]) => ({
+		name,
+		count,
+	})).sort((a, b) => {
+		if (b.count !== a.count) {
+			return b.count - a.count
+		}
+
+		return a.name.localeCompare(b.name, "tr", {
+			sensitivity: "base",
+		})
+	})
+
+	authorTotal.textContent = authors.length
+	authorListInfo.style.display = "block"
+
+	listTableBody.innerHTML = authors
+		.map((author) => {
+			const authorUrl =
+				"{{ '/authors/' | relative_url }}?author=" +
+				encodeURIComponent(author.name)
+
+			const countClass = getCountClass(author.count)
+
+			const highlightClass = author.count > 5 ? "author-highlight" : ""
+
+			return `
+				<tr>
+					<td>
+						<a
+							href="${authorUrl}"
+							class="author-name ${highlightClass}"
+						>
+							${escapeHTML(author.name)}
+						</a>
+					</td>
+
+					<td>
+						<span class="author-count">
+							<span
+								class="author-count-dot ${countClass}"
+								aria-hidden="true"
+							></span>
+
+							<span>${author.count}</span>
+						</span>
+					</td>
+				</tr>
+			`
+		})
+		.join("")
+
 	} else {
 		const matchingBooks = books.filter((book) => {
 			const authors = getAuthors(book.author)
