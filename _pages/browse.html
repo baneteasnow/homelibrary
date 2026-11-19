@@ -132,6 +132,41 @@ permalink: /browse/
 			width: 1120px !important;
 			min-width: 1120px !important;
 		}
+
+		/* Keep the book number and title visible while other columns scroll. */
+		.hl-table-scroll > #browseTable {
+			border-collapse: separate;
+			border-spacing: 0;
+			table-layout: fixed;
+		}
+
+		#browseTable > :is(thead, tbody) > tr > :is(th, td):nth-child(1),
+		#browseTable > :is(thead, tbody) > tr > :is(th, td):nth-child(2) {
+			position: sticky;
+			z-index: 1;
+			box-sizing: border-box;
+			background-color: #fff;
+		}
+
+		#browseTable > :is(thead, tbody) > tr > :is(th, td):nth-child(1) {
+			left: 0;
+			width: 45px !important;
+			min-width: 45px !important;
+			max-width: 45px;
+		}
+
+		#browseTable > :is(thead, tbody) > tr > :is(th, td):nth-child(2) {
+			left: 45px;
+			width: 190px !important;
+			min-width: 190px !important;
+			max-width: 190px;
+			box-shadow: 2px 0 0 #d6d6d6;
+		}
+
+		#browseTable > tbody > tr:nth-child(n + 2):nth-child(even) > td:nth-child(-n + 2) {
+			background-color: #f2f2f2;
+		}
+
 	}
 
 	@media (max-width: 700px) {
