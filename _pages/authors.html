@@ -212,7 +212,9 @@ permalink: /authors/
 							<td>${escapeHTML(book.year)}</td>
 
 							<td>
-								${escapeHTML(getCategoryLabel(book.categories))}
+								${book.categories
+									? `<a href="{{ '/categories/' | relative_url }}?category=${encodeURIComponent(book.categories)}">${escapeHTML(getCategoryLabel(book.categories))}</a>`
+									: escapeHTML(getCategoryLabel(book.categories))}
 							</td>
 
 							<td>

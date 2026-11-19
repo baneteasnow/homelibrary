@@ -86,6 +86,12 @@ title: "Home Library Book List"
 			padding: 7px 16px;
 		}
 	}
+	.booklist-author-link,
+	.booklist-category-link {
+		color: inherit;
+		font-family: inherit;
+		font-style: inherit;
+	}
 </style>
 
 <button class="booklist-cover-toggle" id="booklist-cover-toggle" type="button" aria-controls="booklist-entries" hidden><span class="cover-toggle-label">Show covers</span></button>
@@ -130,7 +136,16 @@ title: "Home Library Book List"
 		class="decorated"
 		style="font-size: 85%"
 	>
-		<i>{{ item.author }}</i>
+		<i>
+			{%- assign book_authors = item.author | default: '' | split: ',' -%}
+			{%- for book_author in book_authors -%}
+				{%- assign author_name = book_author | strip -%}
+				{%- if author_name != '' -%}
+					{%- assign author_query = author_name | url_encode -%}
+					<a class="booklist-author-link" href="{{ '/authors/' | relative_url }}?author={{ author_query }}">{{ author_name | escape }}</a>{% unless forloop.last %}, {% endunless %}
+				{%- endif -%}
+			{%- endfor -%}
+		</i>
 	</div>
 
 	<div
@@ -210,35 +225,35 @@ title: "Home Library Book List"
 		style="font-size: 85%; color: darkgray"
 	>
 		{% if item.categories == "BiographyLifeStories" %}
-		<i>Biography & Life Stories</i>
+		<i><a class="booklist-category-link" href="{{ '/categories/' | relative_url }}?category={{ item.categories | url_encode }}">Biography & Life Stories</a></i>
 		{% elsif item.categories == "BusinessEconomics" %}
-		<i>Business & Economics</i>
+		<i><a class="booklist-category-link" href="{{ '/categories/' | relative_url }}?category={{ item.categories | url_encode }}">Business & Economics</a></i>
 		{% elsif item.categories == "ConsumerMarketing" %}
-		<i>Consumer & Marketing</i>
+		<i><a class="booklist-category-link" href="{{ '/categories/' | relative_url }}?category={{ item.categories | url_encode }}">Consumer & Marketing</a></i>
 		{% elsif item.categories == "CreativityExpression" %}
-		<i>Creativity & Expression</i>
+		<i><a class="booklist-category-link" href="{{ '/categories/' | relative_url }}?category={{ item.categories | url_encode }}">Creativity & Expression</a></i>
 		{% elsif item.categories == "EnvironmentSustainableLiving" %}
-		<i>Environment & Sustainable Living</i>
+		<i><a class="booklist-category-link" href="{{ '/categories/' | relative_url }}?category={{ item.categories | url_encode }}">Environment & Sustainable Living</a></i>
 		{% elsif item.categories == "HealthNutrition" %}
-		<i>Health & Nutrition</i>
+		<i><a class="booklist-category-link" href="{{ '/categories/' | relative_url }}?category={{ item.categories | url_encode }}">Health & Nutrition</a></i>
 		{% elsif item.categories == "HistoryPoliticalThought" %}
-		<i>History & Political Thought</i>
+		<i><a class="booklist-category-link" href="{{ '/categories/' | relative_url }}?category={{ item.categories | url_encode }}">History & Political Thought</a></i>
 		{% elsif item.categories == "PersonalGrowthProductivity" %}
-		<i>Personal Growth & Productivity</i>
+		<i><a class="booklist-category-link" href="{{ '/categories/' | relative_url }}?category={{ item.categories | url_encode }}">Personal Growth & Productivity</a></i>
 		{% elsif item.categories == "PhilosophyMeaning" %}
-		<i>Philosophy & Meaning</i>
+		<i><a class="booklist-category-link" href="{{ '/categories/' | relative_url }}?category={{ item.categories | url_encode }}">Philosophy & Meaning</a></i>
 		{% elsif item.categories == "PsychologyMentalLife" %}
-		<i>Psychology & Mental Life</i>
+		<i><a class="booklist-category-link" href="{{ '/categories/' | relative_url }}?category={{ item.categories | url_encode }}">Psychology & Mental Life</a></i>
 		{% elsif item.categories == "SimpleLivingEverydayComforts" %}
-		<i>Simple Living & Everyday Comforts</i>
+		<i><a class="booklist-category-link" href="{{ '/categories/' | relative_url }}?category={{ item.categories | url_encode }}">Simple Living & Everyday Comforts</a></i>
 		{% elsif item.categories == "ScienceDiscovery" %}
-		<i>Science & Discovery</i>
+		<i><a class="booklist-category-link" href="{{ '/categories/' | relative_url }}?category={{ item.categories | url_encode }}">Science & Discovery</a></i>
 		{% elsif item.categories == "SocietyCulture" %}
-		<i>Society & Culture</i>
+		<i><a class="booklist-category-link" href="{{ '/categories/' | relative_url }}?category={{ item.categories | url_encode }}">Society & Culture</a></i>
 		{% elsif item.categories == "TechnologyTheDigitalWorld" %}
-		<i>Technology & the Digital World</i>
+		<i><a class="booklist-category-link" href="{{ '/categories/' | relative_url }}?category={{ item.categories | url_encode }}">Technology & the Digital World</a></i>
 		{% elsif item.categories == "WorkCareer" %}
-		<i>Work & Career</i>
+		<i><a class="booklist-category-link" href="{{ '/categories/' | relative_url }}?category={{ item.categories | url_encode }}">Work & Career</a></i>
 		{% else %}
 		<div style="visibility: hidden"></div>
 		{% endif %}
